@@ -3,6 +3,10 @@ import cTheoryData from './c_theory.json';
 import sqlData from './sql.json';
 import httpJsData from './http_js.json';
 
+export const DEFAULT_PRACTICE_COUNT = 30;
+export const DEFAULT_EXAM_COUNT = 30;
+export const DEFAULT_EXAM_DURATION_MINUTES = 60;
+
 export const CATEGORIES = [
   {
     id: 'devops',
@@ -10,6 +14,7 @@ export const CATEGORIES = [
     icon: 'Terminal',
     color: 'from-blue-600 to-indigo-600',
     totalQuestions: devopsData.questions.length,
+    practiceQuestionCount: 30,
     examQuestionCount: 30,
     examDurationMinutes: 60,
     isMultilingual: true,
@@ -21,6 +26,7 @@ export const CATEGORIES = [
     icon: 'Globe',
     color: 'from-amber-500 to-orange-600',
     totalQuestions: httpJsData.questions.length,
+    practiceQuestionCount: 23,
     examQuestionCount: 23,
     examDurationMinutes: 60,
     isMultilingual: true,
@@ -32,6 +38,7 @@ export const CATEGORIES = [
     icon: 'Database',
     color: 'from-emerald-500 to-teal-600',
     totalQuestions: sqlData.questions.length,
+    practiceQuestionCount: 30,
     examQuestionCount: 30,
     examDurationMinutes: 60,
     isMultilingual: true,
@@ -43,12 +50,28 @@ export const CATEGORIES = [
     icon: 'Cpu',
     color: 'from-purple-600 to-pink-600',
     totalQuestions: cTheoryData.questions.length,
+    practiceQuestionCount: 24,
     examQuestionCount: 24,
     examDurationMinutes: 60,
     isMultilingual: true,
     rawQuestions: cTheoryData.questions,
   },
 ];
+
+export function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+export function getRandomQuestions(rawQuestions, count = 30) {
+  if (!rawQuestions || rawQuestions.length === 0) return [];
+  const shuffled = shuffleArray(rawQuestions);
+  return shuffled.slice(0, Math.min(count, shuffled.length));
+}
 
 export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
   // If multilingual question (question is an object with uz/ru/en)

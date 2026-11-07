@@ -9,7 +9,7 @@ import {
   LayoutGrid 
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { CATEGORIES, normalizeQuestion } from '../data/categories';
+import { CATEGORIES, normalizeQuestion, getRandomQuestions } from '../data/categories';
 import MarkdownView from '../components/MarkdownView';
 
 export default function ExamPage() {
@@ -17,16 +17,20 @@ export default function ExamPage() {
 
   const currentCategory = selectedCategory || CATEGORIES[0];
 
-  // Select questions for the exam (randomized sample based on category rules)
+  // Pick 30 random questions for this exam session
+  const rawExamQuestions = useMemo(() => {
+    return getRandomQuestions(
+      currentCategory.rawQuestions, 
+      currentCategory.examQuestionCount || 30
+    );
+  }, [currentCategory.id]);
+
+  // Translate/normalize to active language without altering question set
   const examQuestions = useMemo(() => {
-    const all = currentCategory.rawQuestions.map(q => 
+    return rawExamQuestions.map(q => 
       normalizeQuestion(q, lang, currentCategory.id)
     );
-    // Shuffle
-    const shuffled = [...all].sort(() => Math.random() - 0.5);
-    const count = Math.min(currentCategory.examQuestionCount, all.length);
-    return shuffled.slice(0, count);
-  }, [currentCategory, lang]);
+  }, [rawExamQuestions, lang, currentCategory.id]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({}); // { [qIndex]: optionId or array }

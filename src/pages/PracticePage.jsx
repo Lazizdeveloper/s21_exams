@@ -4,6 +4,7 @@ import {
   ChevronRight, 
   Star, 
   RotateCcw, 
+  Shuffle,
   HelpCircle, 
   Check, 
   X, 
@@ -11,7 +12,7 @@ import {
   ArrowLeft 
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
-import { CATEGORIES, normalizeQuestion } from '../data/categories';
+import { CATEGORIES, normalizeQuestion, getRandomQuestions } from '../data/categories';
 import MarkdownView from '../components/MarkdownView';
 
 export default function PracticePage() {
@@ -19,12 +20,22 @@ export default function PracticePage() {
 
   // If no category selected, default to DevOps
   const currentCategory = selectedCategory || CATEGORIES[0];
+  const [sessionKey, setSessionKey] = useState(0);
 
+  // Pick 30 random questions for this practice session
+  const rawSessionQuestions = useMemo(() => {
+    return getRandomQuestions(
+      currentCategory.rawQuestions, 
+      currentCategory.practiceQuestionCount || 30
+    );
+  }, [currentCategory.id, sessionKey]);
+
+  // Translate to current language without losing current question set
   const questions = useMemo(() => {
-    return currentCategory.rawQuestions.map(q => 
+    return rawSessionQuestions.map(q => 
       normalizeQuestion(q, lang, currentCategory.id)
     );
-  }, [currentCategory, lang]);
+  }, [rawSessionQuestions, lang, currentCategory.id]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({}); // { [questionIndex]: selectedOptionId or array }
@@ -60,11 +71,16 @@ export default function PracticePage() {
     if (!isFirst) setCurrentIndex(prev => prev - 1);
   };
 
+  const handleShuffleNew = () => {
+    setUserAnswers({});
+    setShowExplanation({});
+    setCurrentIndex(0);
+    setSessionKey(prev => prev + 1);
+  };
+
   const handleReset = () => {
-    if (window.confirm("Barcha javoblarni tozalab, qaytadan boshlamoqchimisiz?")) {
-      setUserAnswers({});
-      setShowExplanation({});
-      setCurrentIndex(0);
+    if (window.confirm("Barcha javoblarni tozalab, yangi 30 ta tasodifiy savol bilan qaytadan boshlamoqchimisiz?")) {
+      handleShuffleNew();
     }
   };
 
@@ -86,7 +102,7 @@ export default function PracticePage() {
               {t.practice.title}: {t.categories[currentCategory.key]?.title || currentCategory.id}
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              {questions.length} ta savoldan iborat to'plam
+              {questions.length} ta tasodifiy savol (Jami: {currentCategory.totalQuestions} ta)
             </p>
           </div>
         </div>
@@ -101,6 +117,8 @@ export default function PracticePage() {
                 setSelectedCategory(cat);
                 setCurrentIndex(0);
                 setUserAnswers({});
+                setShowExplanation({});
+                setSessionKey(prev => prev + 1);
               }}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
                 cat.id === currentCategory.id
@@ -131,6 +149,16 @@ export default function PracticePage() {
         </div>
 
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={handleShuffleNew}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 text-xs font-bold transition-colors"
+            title="Yangi 30 ta tasodifiy savol olish"
+          >
+            <Shuffle size={16} />
+            <span className="hidden sm:inline">Aralashtirish (30 ta)</span>
+          </button>
+
           <button
             type="button"
             onClick={() => toggleBookmark(currentQ.id)}
