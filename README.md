@@ -16,8 +16,14 @@ Ushbu repozitoriyda «Школа 21» nazariy imtihonlariga tayyorgarlik savolla
 - **Fayl**: `c_theory_exam_questions.json`
 - **Skript**: `scrape_c_theory.py`
 
+### 3. SQL (Теория и практика)
+- **Manba**: [widum.ru/s21/sql/](https://widum.ru/s21/sql/)
+- **Savollar soni**: 30 ta (nazariy va amaliy savollar jadvallar hamda SQL kodlar bilan)
+- **Fayl**: `sql_exam_questions.json`
+- **Skript**: `scrape_sql.py`
+
 Har bir savolda:
-- Savol matni (`question`)
+- Savol matni (`question`), SQL so'rovlar va jadvallar (Markdown ko'rinishida)
 - Savol turi (`radio` / `checkbox`)
 - Variantlar (`answers`) va ularning to'g'riligi (`is_correct`)
 - To'g'ri javoblar ro'yxati (`correct_answers`)
