@@ -10661,15 +10661,15 @@
       "question": {
         "ru": "В чём значение слоёв в образе?",
         "uz": "Rasmdagi qatlamlarning ahamiyati nimada?",
-        "en": "В чём значение слоёв в образе?"
+        "en": "What is the significance of layers in an image?"
       },
       "answers": [
         {
           "id": "2074",
           "text": {
             "ru": "A) В контейнере каждое приложение устанавливается на слой",
-            "uz": "A) В контейнере каждое приложение устанавливается на слой",
-            "en": "A) В контейнере каждое приложение устанавливается на слой"
+            "uz": "A) Konteynerda har bir dastur qatlamga o'rnatiladi",
+            "en": "A) In a container, each application is installed on a layer"
           },
           "is_correct": false
         },
@@ -10677,8 +10677,8 @@
           "id": "2072",
           "text": {
             "ru": "B) Новый слой – это новые данные не связанные с предыдущими слоями",
-            "uz": "B) Новый слой – это новые данные не связанные с предыдущими слоями",
-            "en": "B) Новый слой – это новые данные не связанные с предыдущими слоями"
+            "uz": "B) Yangi qatlam - oldingi qatlamlar bilan bog'lanmagan yangi ma'lumotlar",
+            "en": "B) A new layer is new data not associated with previous layers"
           },
           "is_correct": false
         },
@@ -10686,8 +10686,8 @@
           "id": "2071",
           "text": {
             "ru": "C) Каждый слой описывает, как будет запущено и работать какое-либо приложение",
-            "uz": "C) Каждый слой описывает, как будет запущено и работать какое-либо приложение",
-            "en": "C) Каждый слой описывает, как будет запущено и работать какое-либо приложение"
+            "uz": "C) Har bir qatlam dastur qanday ishga tushirilishi va ishga tushirilishini tavsiflaydi.",
+            "en": "C) Each layer describes how an application will be launched and run."
           },
           "is_correct": false
         },
@@ -10695,16 +10695,16 @@
           "id": "2073",
           "text": {
             "ru": "D) Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере",
-            "uz": "D) Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере",
-            "en": "D) Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере"
+            "uz": "D) Har bir qatlam ishlaydigan konteynerdagi ma'lumotlarga kiritilishi kerak bo'lgan o'zgarishlarni tavsiflaydi",
+            "en": "D) Each layer describes some kind of change that must be made to the data on the running container"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере",
-        "uz": "Правильный ответ: Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере",
-        "en": "Правильный ответ: Каждый слой описывает какое-то изменение, которые должны быть выполнены с данными на запущенном контейнере"
+        "uz": "To'g'ri javob: Har bir qatlam ishlaydigan konteynerdagi ma'lumotlarga kiritilishi kerak bo'lgan o'zgarishlarni tavsiflaydi",
+        "en": "Correct answer: Each layer describes some kind of change that must be made to the data on the running container"
       }
     },
     {
@@ -10713,15 +10713,15 @@
       "question": {
         "ru": "Для чего используется цепочка FORWARD в iptables?",
         "uz": "iptablesdagi FORWARD zanjiri nima uchun ishlatiladi?",
-        "en": "Для чего используется цепочка FORWARD в iptables?"
+        "en": "What is the FORWARD chain in iptables used for?"
       },
       "answers": [
         {
           "id": "2075",
           "text": {
             "ru": "A) Переадресация пакетов",
-            "uz": "A) Переадресация пакетов",
-            "en": "A) Переадресация пакетов"
+            "uz": "A) Paketlarni yo'naltirish",
+            "en": "A) Packet Forwarding"
           },
           "is_correct": true
         },
@@ -10729,16 +10729,16 @@
           "id": "2076",
           "text": {
             "ru": "B) Маршрутизация пакетов",
-            "uz": "B) Маршрутизация пакетов",
-            "en": "B) Маршрутизация пакетов"
+            "uz": "B) Paketlarni marshrutlash",
+            "en": "B) Packet Routing"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Переадресация пакетов",
-        "uz": "Правильный ответ: Переадресация пакетов",
-        "en": "Правильный ответ: Переадресация пакетов"
+        "uz": "To'g'ri javob: Paketni yo'naltirish",
+        "en": "Correct answer: Packet forwarding"
       }
     },
     {
@@ -10746,8 +10746,8 @@
       "type": "radio",
       "question": {
         "ru": "34. Где можно использовать переменную $CI_JOB_STATUS в gitlab-ci?",
-        "uz": "34. Где можно использовать переменную $CI_JOB_STATUS в gitlab-ci?",
-        "en": "34. Где можно использовать переменную $CI_JOB_STATUS в gitlab-ci?"
+        "uz": "34. Gitlab-ci da $CI_JOB_STATUS o'zgaruvchisidan qayerda foydalanishim mumkin?",
+        "en": "34. Where can I use $CI_JOB_STATUS variable in gitlab-ci?"
       },
       "answers": [
         {
@@ -10789,8 +10789,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: after_script",
-        "uz": "Правильный ответ: after_script",
-        "en": "Правильный ответ: after_script"
+        "uz": "To'g'ri javob: after_script",
+        "en": "Correct answer: after_script"
       }
     },
     {
@@ -10798,16 +10798,16 @@
       "type": "radio",
       "question": {
         "ru": "Для чего придерживаться минимального количества вызовов RUN внутри образа?",
-        "uz": "Для чего придерживаться минимального количества вызовов RUN внутри образа?",
-        "en": "Для чего придерживаться минимального количества вызовов RUN внутри образа?"
+        "uz": "Nega rasmdagi RUN qo'ng'iroqlarining minimal soniga rioya qilish kerak?",
+        "en": "Why stick to a minimum number of RUN calls within an image?"
       },
       "answers": [
         {
           "id": "2084",
           "text": {
             "ru": "A) Для каждого контейнера есть ограничение на количество RUN",
-            "uz": "A) Для каждого контейнера есть ограничение на количество RUN",
-            "en": "A) Для каждого контейнера есть ограничение на количество RUN"
+            "uz": "A) Har bir konteyner uchun RUNlar soni bo'yicha cheklov mavjud",
+            "en": "A) For each container there is a limit on the number of RUNs"
           },
           "is_correct": false
         },
@@ -10815,8 +10815,8 @@
           "id": "2081",
           "text": {
             "ru": "B) Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-            "uz": "B) Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-            "en": "B) Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти"
+            "uz": "B) Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
+            "en": "B) In order not to increase the volume of the image, since each RUN creates a layer that requires memory"
           },
           "is_correct": true
         },
@@ -10824,8 +10824,8 @@
           "id": "2082",
           "text": {
             "ru": "C) Чтобы не увеличивать время запуска контейнера, так как каждый RUN работает последовательно",
-            "uz": "C) Чтобы не увеличивать время запуска контейнера, так как каждый RUN работает последовательно",
-            "en": "C) Чтобы не увеличивать время запуска контейнера, так как каждый RUN работает последовательно"
+            "uz": "C) Konteynerni ishga tushirish vaqtini ko'paytirmaslik uchun, chunki har bir RUN ketma-ket ishlaydi",
+            "en": "C) To avoid increasing container startup time, since each RUN runs sequentially"
           },
           "is_correct": false
         },
@@ -10833,16 +10833,16 @@
           "id": "2083",
           "text": {
             "ru": "D) Для каждого RUN нужен совой docker file",
-            "uz": "D) Для каждого RUN нужен совой docker file",
-            "en": "D) Для каждого RUN нужен совой docker file"
+            "uz": "D) Har bir RUN uchun sizga docker fayli kerak bo'ladi",
+            "en": "D) For each RUN you need a docker file"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-        "uz": "Правильный ответ: Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-        "en": "Правильный ответ: Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти"
+        "uz": "To'g'ri javob: Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
+        "en": "Correct answer: To avoid increasing the volume of the image, since each RUN creates a layer that requires memory"
       }
     },
     {
@@ -10850,8 +10850,8 @@
       "type": "radio",
       "question": {
         "ru": "Какой командой можно открыть второй терминал?",
-        "uz": "Какой командой можно открыть второй терминал?",
-        "en": "Какой командой можно открыть второй терминал?"
+        "uz": "Ikkinchi terminalni qanday buyruq ochishingiz mumkin?",
+        "en": "What command can you open a second terminal?"
       },
       "answers": [
         {
@@ -10893,8 +10893,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Alt+Ctrl+T",
-        "uz": "Правильный ответ: Alt+Ctrl+T",
-        "en": "Правильный ответ: Alt+Ctrl+T"
+        "uz": "To'g'ri javob: Alt + Ctrl + T",
+        "en": "Correct answer: Alt+Ctrl+T"
       }
     },
     {
@@ -10902,8 +10902,8 @@
       "type": "radio",
       "question": {
         "ru": "Какой параметр в bash-е позволяет узнать существует ли файл?",
-        "uz": "Какой параметр в bash-е позволяет узнать существует ли файл?",
-        "en": "Какой параметр в bash-е позволяет узнать существует ли файл?"
+        "uz": "bash da qaysi parametr fayl mavjudligini aniqlash imkonini beradi?",
+        "en": "What parameter in bash allows you to find out if a file exists?"
       },
       "answers": [
         {
@@ -10945,8 +10945,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: -f",
-        "uz": "Правильный ответ: -f",
-        "en": "Правильный ответ: -f"
+        "uz": "To'g'ri javob: -f",
+        "en": "Correct answer: -f"
       }
     },
     {
@@ -10954,16 +10954,16 @@
       "type": "radio",
       "question": {
         "ru": "Кто такие обычные пользователи?",
-        "uz": "Кто такие обычные пользователи?",
-        "en": "Кто такие обычные пользователи?"
+        "uz": "Doimiy foydalanuvchilar kimlar?",
+        "en": "Who are regular users?"
       },
       "answers": [
         {
           "id": "2096",
           "text": {
             "ru": "A) УЗП, которые могут взаимодействовать только с собственными запущенными службами",
-            "uz": "A) УЗП, которые могут взаимодействовать только с собственными запущенными службами",
-            "en": "A) УЗП, которые могут взаимодействовать только с собственными запущенными службами"
+            "uz": "A) Faqat o'zlarining ishlaydigan xizmatlari bilan o'zaro aloqada bo'lishi mumkin bo'lgan UZPlar",
+            "en": "A) UZPs that can only interact with their own running services"
           },
           "is_correct": false
         },
@@ -10971,8 +10971,8 @@
           "id": "2094",
           "text": {
             "ru": "B) УЗП, допущенные к управлению системой",
-            "uz": "B) УЗП, допущенные к управлению системой",
-            "en": "B) УЗП, допущенные к управлению системой"
+            "uz": "B) SPDlar tizimni boshqarishga ruxsat berdi",
+            "en": "B) SPDs allowed to control the system"
           },
           "is_correct": false
         },
@@ -10980,8 +10980,8 @@
           "id": "2095",
           "text": {
             "ru": "C) УЗП, которые не могут устанавливать новые приложения",
-            "uz": "C) УЗП, которые не могут устанавливать новые приложения",
-            "en": "C) УЗП, которые не могут устанавливать новые приложения"
+            "uz": "C) Yangi ilovalarni o'rnatolmaydigan UZPlar",
+            "en": "C) UZPs that cannot install new applications"
           },
           "is_correct": false
         },
@@ -10989,16 +10989,16 @@
           "id": "2093",
           "text": {
             "ru": "D) Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения",
-            "uz": "D) Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения",
-            "en": "D) Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения"
+            "uz": "D) Xizmat jarayonlariga kirishi, fayl ruxsatini o'zgartirishi mumkin bo'lgan, lekin xizmat ilovalarini o'chira yoki to'xtata olmaydigan foydalanuvchi hisoblari (UAC).",
+            "en": "D) User accounts (UACs) that can access service processes, change file permissions, but cannot delete or suspend service applications"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения",
-        "uz": "Правильный ответ: Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения",
-        "en": "Правильный ответ: Учетные записи пользователей (УЗП), которые могут обращаться к служебным процессам, изменять права на файлы, но не могут удалять и приостанавливать служебные приложения"
+        "uz": "To'g'ri javob: Xizmat jarayonlariga kirishi, fayl ruxsatini o'zgartirishi mumkin bo'lgan, lekin xizmat ilovalarini o'chira yoki to'xtata olmaydigan foydalanuvchi hisoblari (UAC).",
+        "en": "Correct answer: User accounts (UACs) that can access service processes, change file permissions, but cannot delete or suspend service applications"
       }
     },
     {
@@ -11006,16 +11006,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое docker hub?",
-        "uz": "Что такое docker hub?",
-        "en": "Что такое docker hub?"
+        "uz": "docker hub nima?",
+        "en": "What is docker hub?"
       },
       "answers": [
         {
           "id": "2097",
           "text": {
             "ru": "A) Удаленный репозиторий, где хранятся докер-образы",
-            "uz": "A) Удаленный репозиторий, где хранятся докер-образы",
-            "en": "A) Удаленный репозиторий, где хранятся докер-образы"
+            "uz": "A) Docker tasvirlari saqlanadigan masofaviy ombor",
+            "en": "A) Remote repository where docker images are stored"
           },
           "is_correct": true
         },
@@ -11023,16 +11023,16 @@
           "id": "2098",
           "text": {
             "ru": "B) Облачный сервис для хранения и резервного копирования файлов Linux",
-            "uz": "B) Облачный сервис для хранения и резервного копирования файлов Linux",
-            "en": "B) Облачный сервис для хранения и резервного копирования файлов Linux"
+            "uz": "B) Linux fayllarini saqlash va zaxiralash uchun bulutli xizmat",
+            "en": "B) Cloud service for storing and backing up Linux files"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Удаленный репозиторий, где хранятся докер-образы",
-        "uz": "Правильный ответ: Удаленный репозиторий, где хранятся докер-образы",
-        "en": "Правильный ответ: Удаленный репозиторий, где хранятся докер-образы"
+        "uz": "To'g'ri javob: Docker tasvirlari saqlanadigan masofaviy ombor",
+        "en": "Correct answer: Remote repository where docker images are stored"
       }
     },
     {
@@ -11040,8 +11040,8 @@
       "type": "radio",
       "question": {
         "ru": "Указать числовую комбинацию прав: все для пользователя, чтение и выполнение для группы и остальных",
-        "uz": "Указать числовую комбинацию прав: все для пользователя, чтение и выполнение для группы и остальных",
-        "en": "Указать числовую комбинацию прав: все для пользователя, чтение и выполнение для группы и остальных"
+        "uz": "Huquqlarning raqamli kombinatsiyasini belgilang: barchasi foydalanuvchi uchun, guruh va boshqalar uchun o'qing va bajaring",
+        "en": "Specify a numeric combination of rights: all for the user, read and execute for the group and others"
       },
       "answers": [
         {
@@ -11083,8 +11083,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: URL с которого перешёл пользователь",
-        "uz": "Правильный ответ: URL с которого перешёл пользователь",
-        "en": "Правильный ответ: URL с которого перешёл пользователь"
+        "uz": "To'g'ri javob: foydalanuvchi kelgan URL",
+        "en": "Correct answer: URL from which the user came"
       }
     },
     {
@@ -11092,16 +11092,16 @@
       "type": "radio",
       "question": {
         "ru": "За что отвечает ”%{Referer}i” в combined Log Format?",
-        "uz": "За что отвечает ”%{Referer}i” в combined Log Format?",
-        "en": "За что отвечает ”%{Referer}i” в combined Log Format?"
+        "uz": "combined Log Formatdagi “%{Referer}i” nimani anglatadi?",
+        "en": "What does “%{Referer}i” in combined Log Format represent?"
       },
       "answers": [
         {
           "id": "2103",
           "text": {
             "ru": "A) IP-адрес пользователя",
-            "uz": "A) IP-адрес пользователя",
-            "en": "A) IP-адрес пользователя"
+            "uz": "A) Foydalanuvchi IP manzili",
+            "en": "A) User IP address"
           },
           "is_correct": false
         },
@@ -11109,8 +11109,8 @@
           "id": "2104",
           "text": {
             "ru": "B) URL с которого перешёл пользователь",
-            "uz": "B) URL с которого перешёл пользователь",
-            "en": "B) URL с которого перешёл пользователь"
+            "uz": "B) Foydalanuvchi kelgan URL",
+            "en": "B) URL from which the user came"
           },
           "is_correct": true
         },
@@ -11118,8 +11118,8 @@
           "id": "2105",
           "text": {
             "ru": "C) Провайдер пользователя",
-            "uz": "C) Провайдер пользователя",
-            "en": "C) Провайдер пользователя"
+            "uz": "C) Foydalanuvchi provayderi",
+            "en": "C) User Provider"
           },
           "is_correct": false
         },
@@ -11127,16 +11127,16 @@
           "id": "2106",
           "text": {
             "ru": "D) Браузер пользователя",
-            "uz": "D) Браузер пользователя",
-            "en": "D) Браузер пользователя"
+            "uz": "D) Foydalanuvchi brauzeri",
+            "en": "D) User browser"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: URL с которого перешёл пользователь",
-        "uz": "Правильный ответ: URL с которого перешёл пользователь",
-        "en": "Правильный ответ: URL с которого перешёл пользователь"
+        "uz": "To'g'ri javob: foydalanuvchi kelgan URL",
+        "en": "Correct answer: URL from which the user came"
       }
     },
     {
@@ -11144,16 +11144,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое ICMP?",
-        "uz": "Что такое ICMP?",
-        "en": "Что такое ICMP?"
+        "uz": "ICMP nima?",
+        "en": "What is ICMP?"
       },
       "answers": [
         {
           "id": "2108",
           "text": {
             "ru": "A) Протокол, который используется для динамического назначения IP адреса",
-            "uz": "A) Протокол, который используется для динамического назначения IP адреса",
-            "en": "A) Протокол, который используется для динамического назначения IP адреса"
+            "uz": "A) IP-manzilni dinamik ravishda tayinlash uchun ishlatiladigan protokol",
+            "en": "A) Protocol that is used to dynamically assign an IP address"
           },
           "is_correct": false
         },
@@ -11161,16 +11161,16 @@
           "id": "2107",
           "text": {
             "ru": "B) Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных",
-            "uz": "B) Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных",
-            "en": "B) Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных"
+            "uz": "B) Ma'lumotlarni uzatish paytida yuzaga keladigan xatolar va boshqa istisnolar haqida xabar berish uchun ishlatiladigan protokol",
+            "en": "B) A protocol that is used to report errors and other exceptions that occur during data transfer"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных",
-        "uz": "Правильный ответ: Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных",
-        "en": "Правильный ответ: Протокол, который используется для передачи сообщений об ошибках и других исключительных ситуациях, возникших при передаче данных"
+        "uz": "To'g'ri javob: Ma'lumotlarni uzatish paytida yuzaga keladigan xatolar va boshqa istisnolar haqida xabarlarni uzatish uchun ishlatiladigan protokol",
+        "en": "Correct answer: A protocol that is used to transmit messages about errors and other exceptions that occur during data transfer"
       }
     },
     {
@@ -11178,8 +11178,8 @@
       "type": "radio",
       "question": {
         "ru": "Что такое localhost? (Зарезервированное доменное имя для сети)",
-        "uz": "Что такое localhost? (Зарезервированное доменное имя для сети)",
-        "en": "Что такое localhost? (Зарезервированное доменное имя для сети)"
+        "uz": "localhost nima? (Tarmoq uchun zahiralangan domen nomi)",
+        "en": "What is localhost? (Reserved domain name for the network)"
       },
       "answers": [
         {
@@ -11221,8 +11221,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 127.0.0.1/8",
-        "uz": "Правильный ответ: 127.0.0.1/8",
-        "en": "Правильный ответ: 127.0.0.1/8"
+        "uz": "Toʻgʻri javob: 127.0.0.1/8",
+        "en": "Correct answer: 127.0.0.1/8"
       }
     },
     {
@@ -11230,16 +11230,16 @@
       "type": "radio",
       "question": {
         "ru": "Что означает chmod +x?",
-        "uz": "Что означает chmod +x?",
-        "en": "Что означает chmod +x?"
+        "uz": "chmod +x nimani anglatadi?",
+        "en": "What does chmod +x mean?"
       },
       "answers": [
         {
           "id": "2114",
           "text": {
             "ru": "A) Права на удаление",
-            "uz": "A) Права на удаление",
-            "en": "A) Права на удаление"
+            "uz": "A) O'chirish huquqlari",
+            "en": "A) Deletion rights"
           },
           "is_correct": false
         },
@@ -11247,16 +11247,16 @@
           "id": "2113",
           "text": {
             "ru": "B) Права на исполнение",
-            "uz": "B) Права на исполнение",
-            "en": "B) Права на исполнение"
+            "uz": "B) Ishlash huquqlari",
+            "en": "B) Performance rights"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Права на исполнение",
-        "uz": "Правильный ответ: Права на исполнение",
-        "en": "Правильный ответ: Права на исполнение"
+        "uz": "To'g'ri javob: Ishlash huquqlari",
+        "en": "Correct answer: Performance rights"
       }
     },
     {
@@ -11264,8 +11264,8 @@
       "type": "radio",
       "question": {
         "ru": "Что выведется в результате выполнения? if [ 4 –gt 5 ]; then echo “0”; else echo “1”; fi ?",
-        "uz": "Что выведется в результате выполнения? if [ 4 –gt 5 ]; then echo “0”; else echo “1”; fi ?",
-        "en": "Что выведется в результате выполнения? if [ 4 –gt 5 ]; then echo “0”; else echo “1”; fi ?"
+        "uz": "Bajarish natijasida qanday natija bo'ladi? if [ 4 –gt 5 ]; then aks-sado “0”; else aks-sado “1”; fi?",
+        "en": "What will be the output as a result of execution? if [ 4 –gt 5 ]; then echo “0”; else echo “1”; fi ?"
       },
       "answers": [
         {
@@ -11307,8 +11307,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 1",
-        "uz": "Правильный ответ: 1",
-        "en": "Правильный ответ: 1"
+        "uz": "To'g'ri javob: 1",
+        "en": "Correct answer: 1"
       }
     },
     {
@@ -11316,8 +11316,8 @@
       "type": "radio",
       "question": {
         "ru": "По какому протоколу работает служба SSHd по умолчанию?",
-        "uz": "По какому протоколу работает служба SSHd по умолчанию?",
-        "en": "По какому протоколу работает служба SSHd по умолчанию?"
+        "uz": "SSHd xizmati sukut bo'yicha qanday protokoldan foydalanadi?",
+        "en": "What protocol does the SSHd service use by default?"
       },
       "answers": [
         {
@@ -11341,8 +11341,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: TCP",
-        "uz": "Правильный ответ: TCP",
-        "en": "Правильный ответ: TCP"
+        "uz": "Toʻgʻri javob: TCP",
+        "en": "Correct answer: TCP"
       }
     },
     {
@@ -11350,8 +11350,8 @@
       "type": "radio",
       "question": {
         "ru": "Как перенаправить stdout из одной команды в stdin другой?",
-        "uz": "Как перенаправить stdout из одной команды в stdin другой?",
-        "en": "Как перенаправить stdout из одной команды в stdin другой?"
+        "uz": "stdoutni bir buyruqdan stdinga boshqasiga qanday yo'naltirish mumkin?",
+        "en": "How to redirect stdout from one command to stdin to another?"
       },
       "answers": [
         {
@@ -11393,8 +11393,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: cmd1 | cmd2",
-        "uz": "Правильный ответ: cmd1 | cmd2",
-        "en": "Правильный ответ: cmd1 | cmd2"
+        "uz": "To'g'ri javob: cmd1 | cmd2",
+        "en": "Correct answer: cmd1 | cmd2"
       }
     },
     {
@@ -11402,8 +11402,8 @@
       "type": "radio",
       "question": {
         "ru": "Номер порта для https (по умолчанию)",
-        "uz": "Номер порта для https (по умолчанию)",
-        "en": "Номер порта для https (по умолчанию)"
+        "uz": "https uchun port raqami (standart)",
+        "en": "Port number for https (default)"
       },
       "answers": [
         {
@@ -11445,8 +11445,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 443",
-        "uz": "Правильный ответ: 443",
-        "en": "Правильный ответ: 443"
+        "uz": "To‘g‘ri javob: 443",
+        "en": "Correct answer: 443"
       }
     },
     {
@@ -11454,16 +11454,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое SNAT?",
-        "uz": "Что такое SNAT?",
-        "en": "Что такое SNAT?"
+        "uz": "SNAT nima?",
+        "en": "What is SNAT?"
       },
       "answers": [
         {
           "id": "2132",
           "text": {
             "ru": "A) Предоставляется возможность журналирования текстов в пользовательское пространство",
-            "uz": "A) Предоставляется возможность журналирования текстов в пользовательское пространство",
-            "en": "A) Предоставляется возможность журналирования текстов в пользовательское пространство"
+            "uz": "A) Matnlarni foydalanuvchi maydoniga kiritish imkoniyatini beradi",
+            "en": "A) Provides the ability to log texts into user space"
           },
           "is_correct": false
         },
@@ -11471,8 +11471,8 @@
           "id": "2129",
           "text": {
             "ru": "B) Изменения адреса и порта назначения пакета в цепочки PREROUTING и OUTPUT",
-            "uz": "B) Изменения адреса и порта назначения пакета в цепочки PREROUTING и OUTPUT",
-            "en": "B) Изменения адреса и порта назначения пакета в цепочки PREROUTING и OUTPUT"
+            "uz": "B) PREROUTING va OUTPUT zanjirlaridagi paketning maqsad manzili va portidagi o'zgarishlar",
+            "en": "B) Changes to the packet's destination address and port in the PREROUTING and OUTPUT chains"
           },
           "is_correct": false
         },
@@ -11480,8 +11480,8 @@
           "id": "2131",
           "text": {
             "ru": "C) Используется для установки битов в поле Type of Service IP заголовка",
-            "uz": "C) Используется для установки битов в поле Type of Service IP заголовка",
-            "en": "C) Используется для установки битов в поле Type of Service IP заголовка"
+            "uz": "C) IP sarlavhasining Service turi maydoniga bitlarni o'rnatish uchun foydalaniladi",
+            "en": "C) Used to set bits in the Type of Service field of the IP header"
           },
           "is_correct": false
         },
@@ -11489,16 +11489,16 @@
           "id": "2130",
           "text": {
             "ru": "D) Изменения адреса и порта назначения пакета в цепочки POSTROUTING",
-            "uz": "D) Изменения адреса и порта назначения пакета в цепочки POSTROUTING",
-            "en": "D) Изменения адреса и порта назначения пакета в цепочки POSTROUTING"
+            "uz": "D) Paketning maqsad manzili va POSTROUTING zanjiridagi portiga o'zgarishlar",
+            "en": "D) Changes to the packet's destination address and port in the POSTROUTING chain"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "SNAT (Source NAT) используется для подмены исходного IP-адреса и порта.",
-        "uz": "SNAT (Source NAT) используется для подмены исходного IP-адреса и порта.",
-        "en": "SNAT (Source NAT) используется для подмены исходного IP-адреса и порта."
+        "uz": "SNAT (Manba NAT) manba IP manzili va portini buzish uchun ishlatiladi.",
+        "en": "SNAT (Source NAT) is used to spoof the source IP address and port."
       }
     },
     {
@@ -11506,8 +11506,8 @@
       "type": "radio",
       "question": {
         "ru": "Какой параметр в bash-е позволяет узнать пустой ли файл?",
-        "uz": "Какой параметр в bash-е позволяет узнать пустой ли файл?",
-        "en": "Какой параметр в bash-е позволяет узнать пустой ли файл?"
+        "uz": "bash dagi qaysi parametr fayl bo'sh yoki yo'qligini aniqlash imkonini beradi?",
+        "en": "What parameter in bash allows you to find out if the file is empty?"
       },
       "answers": [
         {
@@ -11549,8 +11549,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: -s",
-        "uz": "Правильный ответ: -s",
-        "en": "Правильный ответ: -s"
+        "uz": "To'g'ri javob: -s",
+        "en": "Correct answer: -s"
       }
     },
     {
@@ -11558,8 +11558,8 @@
       "type": "radio",
       "question": {
         "ru": "Что выведет на экран следующий скрипт? #!/bin/bash function myfunc { local temp=$[$value + 5] echo “$temp” } temp=4 myfunc echo $((temp))",
-        "uz": "Что выведет на экран следующий скрипт? #!/bin/bash function myfunc { local temp=$[$value + 5] echo “$temp” } temp=4 myfunc echo $((temp))",
-        "en": "Что выведет на экран следующий скрипт? #!/bin/bash function myfunc { local temp=$[$value + 5] echo “$temp” } temp=4 myfunc echo $((temp))"
+        "uz": "Quyidagi skript nimani ko'rsatadi? #!/bin/bash function myfunc { local temp=$[$value + 5] echo “$temp” } temp=4 myfunc echo $((temp))",
+        "en": "What will the following script display? #!/bin/bash function myfunc { local temp=$[$value + 5] echo “$temp” } temp=4 myfunc echo $((temp))"
       },
       "answers": [
         {
@@ -11584,8 +11584,8 @@
           "id": "2139",
           "text": {
             "ru": "C) ошибка",
-            "uz": "C) ошибка",
-            "en": "C) ошибка"
+            "uz": "C) xato",
+            "en": "C) error"
           },
           "is_correct": false
         },
@@ -11601,8 +11601,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 5 4",
-        "uz": "Правильный ответ: 5 4",
-        "en": "Правильный ответ: 5 4"
+        "uz": "Toʻgʻri javob: 54",
+        "en": "Correct answer: 5 4"
       }
     },
     {
@@ -11610,8 +11610,8 @@
       "type": "radio",
       "question": {
         "ru": "При помощи какой командой можно скопировать файл внутрь образа при написание файла dockerfile?",
-        "uz": "При помощи какой командой можно скопировать файл внутрь образа при написание файла dockerfile?",
-        "en": "При помощи какой командой можно скопировать файл внутрь образа при написание файла dockerfile?"
+        "uz": "dockerfile faylini yozishda rasm ichidagi faylni qaysi buyruq yordamida nusxalash mumkin?",
+        "en": "Using what command can you copy a file inside the image when writing the file dockerfile?"
       },
       "answers": [
         {
@@ -11653,8 +11653,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: COPY",
-        "uz": "Правильный ответ: COPY",
-        "en": "Правильный ответ: COPY"
+        "uz": "To'g'ri javob: NUSHIRA",
+        "en": "Correct answer: COPY"
       }
     },
     {
@@ -11662,16 +11662,16 @@
       "type": "radio",
       "question": {
         "ru": "Iptables -A INPUT -s 10.3.10.10/24 -j DROP разрешён ли доступ с ip 10.3.10.10?",
-        "uz": "Iptables -A INPUT -s 10.3.10.10/24 -j DROP разрешён ли доступ с ip 10.3.10.10?",
-        "en": "Iptables -A INPUT -s 10.3.10.10/24 -j DROP разрешён ли доступ с ip 10.3.10.10?"
+        "uz": "Iptables -A INPUT -s 10.3.10.10/24 -j DROP 10.3.10.10 ip dan kirishga ruxsat berilganmi?",
+        "en": "Iptables -A INPUT -s 10.3.10.10/24 -j DROP is access allowed from ip 10.3.10.10?"
       },
       "answers": [
         {
           "id": "2146",
           "text": {
             "ru": "A) нет, так как (запрещена) сеть 10.3.10.0/24",
-            "uz": "A) нет, так как (запрещена) сеть 10.3.10.0/24",
-            "en": "A) нет, так как (запрещена) сеть 10.3.10.0/24"
+            "uz": "A) yo'q, chunki 10.3.10.0/24 tarmog'i (taqiqlangan)",
+            "en": "A) no, because the 10.3.10.0/24 network is (forbidden)"
           },
           "is_correct": true
         },
@@ -11679,16 +11679,16 @@
           "id": "2145",
           "text": {
             "ru": "B) да, так как запрещена сеть 10.3.10.3/24",
-            "uz": "B) да, так как запрещена сеть 10.3.10.3/24",
-            "en": "B) да, так как запрещена сеть 10.3.10.3/24"
+            "uz": "B) ha, chunki 10.3.10.3/24 tarmog'i taqiqlangan",
+            "en": "B) yes, because the 10.3.10.3/24 network is prohibited"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: нет, так как (запрещена) сеть 10.3.10.0/24",
-        "uz": "Правильный ответ: нет, так как (запрещена) сеть 10.3.10.0/24",
-        "en": "Правильный ответ: нет, так как (запрещена) сеть 10.3.10.0/24"
+        "uz": "To'g'ri javob: yo'q, chunki 10.3.10.0/24 tarmog'i (taqiqlangan)",
+        "en": "Correct answer: no, because the 10.3.10.0/24 network is (forbidden)"
       }
     },
     {
@@ -11696,8 +11696,8 @@
       "type": "radio",
       "question": {
         "ru": "Системные порты",
-        "uz": "Системные порты",
-        "en": "Системные порты"
+        "uz": "Tizim portlari",
+        "en": "System ports"
       },
       "answers": [
         {
@@ -11730,8 +11730,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 0 - 1023",
-        "uz": "Правильный ответ: 0 - 1023",
-        "en": "Правильный ответ: 0 - 1023"
+        "uz": "To'g'ri javob: 0 - 1023",
+        "en": "Correct answer: 0 - 1023"
       }
     },
     {
@@ -11739,8 +11739,8 @@
       "type": "radio",
       "question": {
         "ru": "Какая команда gitlab-ci хранит артефакты сроком 10 дней?",
-        "uz": "Какая команда gitlab-ci хранит артефакты сроком 10 дней?",
-        "en": "Какая команда gitlab-ci хранит артефакты сроком 10 дней?"
+        "uz": "Qaysi gitlab-ci buyrug'i artefaktlarni 10 kun davomida saqlaydi?",
+        "en": "Which gitlab-ci command stores artifacts for 10 days?"
       },
       "answers": [
         {
@@ -11764,8 +11764,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: expire_in: 10 day",
-        "uz": "Правильный ответ: expire_in: 10 day",
-        "en": "Правильный ответ: expire_in: 10 day"
+        "uz": "To'g'ri javob: expire_in: 10 kun",
+        "en": "Correct answer: expire_in: 10 day"
       }
     },
     {
@@ -11773,8 +11773,8 @@
       "type": "radio",
       "question": {
         "ru": "Как выглядит маска 255.255.255.0 в префиксной записи?",
-        "uz": "Как выглядит маска 255.255.255.0 в префиксной записи?",
-        "en": "Как выглядит маска 255.255.255.0 в префиксной записи?"
+        "uz": "255.255.255.0 niqobi prefiks belgisida qanday ko'rinishga ega?",
+        "en": "What does the 255.255.255.0 mask look like in a prefix notation?"
       },
       "answers": [
         {
@@ -11798,8 +11798,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: /24",
-        "uz": "Правильный ответ: /24",
-        "en": "Правильный ответ: /24"
+        "uz": "Toʻgʻri javob: /24",
+        "en": "Correct answer: /24"
       }
     },
     {
@@ -11807,8 +11807,8 @@
       "type": "radio",
       "question": {
         "ru": "Чему равна маска подсети в адресе 172.10.8.160/24?",
-        "uz": "Чему равна маска подсети в адресе 172.10.8.160/24?",
-        "en": "Чему равна маска подсети в адресе 172.10.8.160/24?"
+        "uz": "172.10.8.160/24 manzilidagi pastki tarmoq niqobi nima?",
+        "en": "What is the subnet mask in the 172.10.8.160/24 address?"
       },
       "answers": [
         {
@@ -11832,8 +11832,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 255.255.255.0",
-        "uz": "Правильный ответ: 255.255.255.0",
-        "en": "Правильный ответ: 255.255.255.0"
+        "uz": "Toʻgʻri javob: 255.255.255.0",
+        "en": "Correct answer: 255.255.255.0"
       }
     },
     {
@@ -11841,16 +11841,16 @@
       "type": "radio",
       "question": {
         "ru": "Что понимается под статусом запущенной команды?",
-        "uz": "Что понимается под статусом запущенной команды?",
-        "en": "Что понимается под статусом запущенной команды?"
+        "uz": "Ishlayotgan buyruqning holati deganda nima tushuniladi?",
+        "en": "What is meant by the status of a running command?"
       },
       "answers": [
         {
           "id": "2159",
           "text": {
             "ru": "A) Результат выполнения команды",
-            "uz": "A) Результат выполнения команды",
-            "en": "A) Результат выполнения команды"
+            "uz": "A) Buyruqning natijasi",
+            "en": "A) Result of the command"
           },
           "is_correct": false
         },
@@ -11858,8 +11858,8 @@
           "id": "2160",
           "text": {
             "ru": "B) Успешное выполнение команды",
-            "uz": "B) Успешное выполнение команды",
-            "en": "B) Успешное выполнение команды"
+            "uz": "B) Buyruqning muvaffaqiyatli bajarilishi",
+            "en": "B) Successful command execution"
           },
           "is_correct": false
         },
@@ -11867,16 +11867,16 @@
           "id": "2158",
           "text": {
             "ru": "C) Код возврата команды",
-            "uz": "C) Код возврата команды",
-            "en": "C) Код возврата команды"
+            "uz": "C) Buyruqni qaytarish kodi",
+            "en": "C) Command return code"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Код возврата команды",
-        "uz": "Правильный ответ: Код возврата команды",
-        "en": "Правильный ответ: Код возврата команды"
+        "uz": "To'g'ri javob: Buyruqni qaytarish kodi",
+        "en": "Correct answer: Command return code"
       }
     },
     {
@@ -11884,8 +11884,8 @@
       "type": "radio",
       "question": {
         "ru": "Какая утилита Nmap или ping позволяет точно определить наличие хоста в сети?",
-        "uz": "Какая утилита Nmap или ping позволяет точно определить наличие хоста в сети?",
-        "en": "Какая утилита Nmap или ping позволяет точно определить наличие хоста в сети?"
+        "uz": "Qaysi Nmap yoki ping yordam dasturi tarmoqdagi xost mavjudligini aniq aniqlash imkonini beradi?",
+        "en": "Which Nmap or ping utility allows you to accurately determine the presence of a host on the network?"
       },
       "answers": [
         {
@@ -11918,8 +11918,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Nmap",
-        "uz": "Правильный ответ: Nmap",
-        "en": "Правильный ответ: Nmap"
+        "uz": "To'g'ri javob: Nmap",
+        "en": "Correct answer: Nmap"
       }
     },
     {
@@ -11927,16 +11927,16 @@
       "type": "radio",
       "question": {
         "ru": "За что отвечает четвертый бит в IPv4?",
-        "uz": "За что отвечает четвертый бит в IPv4?",
-        "en": "За что отвечает четвертый бит в IPv4?"
+        "uz": "IPv4 dagi to'rtinchi bit nima uchun javob beradi?",
+        "en": "What is the fourth bit in IPv4 responsible for?"
       },
       "answers": [
         {
           "id": "2165",
           "text": {
             "ru": "A) Подсеть",
-            "uz": "A) Подсеть",
-            "en": "A) Подсеть"
+            "uz": "A) Subnet",
+            "en": "A) Subnet"
           },
           "is_correct": false
         },
@@ -11944,8 +11944,8 @@
           "id": "2167",
           "text": {
             "ru": "B) Маска",
-            "uz": "B) Маска",
-            "en": "B) Маска"
+            "uz": "B) Niqob",
+            "en": "B) Mask"
           },
           "is_correct": false
         },
@@ -11953,8 +11953,8 @@
           "id": "2164",
           "text": {
             "ru": "C) Cеть",
-            "uz": "C) Cеть",
-            "en": "C) Cеть"
+            "uz": "C) Tarmoq",
+            "en": "C) Network"
           },
           "is_correct": false
         },
@@ -11962,16 +11962,16 @@
           "id": "2166",
           "text": {
             "ru": "D) Хост",
-            "uz": "D) Хост",
-            "en": "D) Хост"
+            "uz": "D) Xost",
+            "en": "D) Host"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Хост",
-        "uz": "Правильный ответ: Хост",
-        "en": "Правильный ответ: Хост"
+        "uz": "To'g'ri javob: Xost",
+        "en": "Correct answer: Host"
       }
     },
     {
@@ -11979,16 +11979,16 @@
       "type": "radio",
       "question": {
         "ru": "Что выведет скрипт: While true; false; echo “success”",
-        "uz": "Что выведет скрипт: While true; false; echo “success”",
-        "en": "Что выведет скрипт: While true; false; echo “success”"
+        "uz": "Skript nima chiqaradi: While true; false; echo \"muvaffaqiyat\"",
+        "en": "What the script will output: While true; false; echo \"success\""
       },
       "answers": [
         {
           "id": "2169",
           "text": {
             "ru": "A) Бесконечный success",
-            "uz": "A) Бесконечный success",
-            "en": "A) Бесконечный success"
+            "uz": "A) Cheksiz muvaffaqiyat",
+            "en": "A) Endless success"
           },
           "is_correct": false
         },
@@ -12005,8 +12005,8 @@
           "id": "2170",
           "text": {
             "ru": "C) Ничего",
-            "uz": "C) Ничего",
-            "en": "C) Ничего"
+            "uz": "C) Hech narsa",
+            "en": "C) Nothing"
           },
           "is_correct": true
         },
@@ -12022,8 +12022,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Ничего",
-        "uz": "Правильный ответ: Ничего",
-        "en": "Правильный ответ: Ничего"
+        "uz": "To'g'ri javob: Hech narsa",
+        "en": "Correct answer: Nothing"
       }
     },
     {
@@ -12031,16 +12031,16 @@
       "type": "radio",
       "question": {
         "ru": "Может ли код возврата в баше быть отрицательным числом?",
-        "uz": "Может ли код возврата в баше быть отрицательным числом?",
-        "en": "Может ли код возврата в баше быть отрицательным числом?"
+        "uz": "Bash-dagi qaytarish kodi salbiy raqam bo'lishi mumkinmi?",
+        "en": "Can the return code in bash be a negative number?"
       },
       "answers": [
         {
           "id": "2172",
           "text": {
             "ru": "A) Нет",
-            "uz": "A) Нет",
-            "en": "A) Нет"
+            "uz": "A) Yo'q",
+            "en": "A) No"
           },
           "is_correct": true
         },
@@ -12048,16 +12048,16 @@
           "id": "2173",
           "text": {
             "ru": "B) Да",
-            "uz": "B) Да",
-            "en": "B) Да"
+            "uz": "B) Ha",
+            "en": "B) Yes"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Нет",
-        "uz": "Правильный ответ: Нет",
-        "en": "Правильный ответ: Нет"
+        "uz": "To'g'ri javob: Yo'q",
+        "en": "Correct answer: No"
       }
     },
     {
@@ -12065,16 +12065,16 @@
       "type": "radio",
       "question": {
         "ru": "В чем разница «>» и «>»?",
-        "uz": "В чем разница «>» и «>»?",
-        "en": "В чем разница «>» и «>»?"
+        "uz": "\">\" va \">\" o'rtasidagi farq nima?",
+        "en": "What is the difference between \">\" and \">\"?"
       },
       "answers": [
         {
           "id": "2174",
           "text": {
             "ru": "A) Оператор сравнения и перенаправление вывода",
-            "uz": "A) Оператор сравнения и перенаправление вывода",
-            "en": "A) Оператор сравнения и перенаправление вывода"
+            "uz": "A) Taqqoslash operatori va chiqishni qayta yo'naltirish",
+            "en": "A) Comparison operator and output redirection"
           },
           "is_correct": true
         },
@@ -12082,16 +12082,16 @@
           "id": "2175",
           "text": {
             "ru": "B) Разницы нет",
-            "uz": "B) Разницы нет",
-            "en": "B) Разницы нет"
+            "uz": "B) Farqi yo'q",
+            "en": "B) No difference"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Оператор сравнения и перенаправление вывода",
-        "uz": "Правильный ответ: Оператор сравнения и перенаправление вывода",
-        "en": "Правильный ответ: Оператор сравнения и перенаправление вывода"
+        "uz": "To'g'ri javob: Taqqoslash operatori va chiqishni qayta yo'naltirish",
+        "en": "Correct answer: Comparison operator and output redirection"
       }
     },
     {
@@ -12099,16 +12099,16 @@
       "type": "radio",
       "question": {
         "ru": "Что в combined log означает поле {user-agent}?",
-        "uz": "Что в combined log означает поле {user-agent}?",
-        "en": "Что в combined log означает поле {user-agent}?"
+        "uz": "Birlashtirilgan jurnalda {user-agent} maydoni nimani anglatadi?",
+        "en": "What does the {user-agent} field mean in combined log?"
       },
       "answers": [
         {
           "id": "2176",
           "text": {
             "ru": "A) Браузер пользователя",
-            "uz": "A) Браузер пользователя",
-            "en": "A) Браузер пользователя"
+            "uz": "A) Foydalanuvchi brauzeri",
+            "en": "A) User browser"
           },
           "is_correct": true
         },
@@ -12116,16 +12116,16 @@
           "id": "2177",
           "text": {
             "ru": "B) ОС пользователя",
-            "uz": "B) ОС пользователя",
-            "en": "B) ОС пользователя"
+            "uz": "B) Foydalanuvchi OS",
+            "en": "B) User OS"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Браузер пользователя",
-        "uz": "Правильный ответ: Браузер пользователя",
-        "en": "Правильный ответ: Браузер пользователя"
+        "uz": "To'g'ri javob: foydalanuvchi brauzeri",
+        "en": "Correct answer: User browser"
       }
     },
     {
@@ -12133,8 +12133,8 @@
       "type": "radio",
       "question": {
         "ru": "Как Вызвать cron каждые 4 часа?",
-        "uz": "Как Вызвать cron каждые 4 часа?",
-        "en": "Как Вызвать cron каждые 4 часа?"
+        "uz": "cronga har 4 soatda qanday qo'ng'iroq qilish mumkin?",
+        "en": "How to Call cron every 4 hours?"
       },
       "answers": [
         {
@@ -12176,8 +12176,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: * */4 * * *",
-        "uz": "Правильный ответ: * */4 * * *",
-        "en": "Правильный ответ: * */4 * * *"
+        "uz": "To'g'ri javob: * */4 * * *",
+        "en": "Correct answer: * */4 * * *"
       }
     },
     {
@@ -12185,8 +12185,8 @@
       "type": "radio",
       "question": {
         "ru": "Как в gitlab-ci указать, что этап будет запущен вручную?",
-        "uz": "Как в gitlab-ci указать, что этап будет запущен вручную?",
-        "en": "Как в gitlab-ci указать, что этап будет запущен вручную?"
+        "uz": "Gitlab-ci-da sahna qo'lda ishga tushirilishini qanday aniqlash mumkin?",
+        "en": "How to specify in gitlab-ci that the stage will be launched manually?"
       },
       "answers": [
         {
@@ -12228,8 +12228,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: rules: - when: manual",
-        "uz": "Правильный ответ: rules: - when: manual",
-        "en": "Правильный ответ: rules: - when: manual"
+        "uz": "To'g'ri javob: qoidalar: - qachon: qo'llanma",
+        "en": "Correct answer: rules: - when: manual"
       }
     },
     {
@@ -12237,8 +12237,8 @@
       "type": "radio",
       "question": {
         "ru": "Какая команда выдает список всех директориев находящихся в текущем?",
-        "uz": "Какая команда выдает список всех директориев находящихся в текущем?",
-        "en": "Какая команда выдает список всех директориев находящихся в текущем?"
+        "uz": "Qaysi buyruq joriy katalogdagi barcha kataloglar ro'yxatini yaratadi?",
+        "en": "Which command produces a list of all directories in the current one?"
       },
       "answers": [
         {
@@ -12280,8 +12280,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: ls -R",
-        "uz": "Правильный ответ: ls -R",
-        "en": "Правильный ответ: ls -R"
+        "uz": "To'g'ri javob: ls -R",
+        "en": "Correct answer: ls -R"
       }
     },
     {
@@ -12289,8 +12289,8 @@
       "type": "radio",
       "question": {
         "ru": "Укажите динамический порт",
-        "uz": "Укажите динамический порт",
-        "en": "Укажите динамический порт"
+        "uz": "Dinamik portni belgilang",
+        "en": "Specify a dynamic port"
       },
       "answers": [
         {
@@ -12332,8 +12332,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 50000",
-        "uz": "Правильный ответ: 50000",
-        "en": "Правильный ответ: 50000"
+        "uz": "To'g'ri javob: 50 000",
+        "en": "Correct answer: 50000"
       }
     },
     {
@@ -12341,16 +12341,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое /var/log/auth.log?",
-        "uz": "Что такое /var/log/auth.log?",
-        "en": "Что такое /var/log/auth.log?"
+        "uz": "/var/log/auth.log nima?",
+        "en": "What is /var/log/auth.log?"
       },
       "answers": [
         {
           "id": "2196",
           "text": {
             "ru": "A) Журнал логов, который включает только неудачные попытки авторизации пользователей",
-            "uz": "A) Журнал логов, который включает только неудачные попытки авторизации пользователей",
-            "en": "A) Журнал логов, который включает только неудачные попытки авторизации пользователей"
+            "uz": "A) Faqat muvaffaqiyatsiz foydalanuvchi avtorizatsiya urinishlarini o'z ichiga olgan jurnal jurnali",
+            "en": "A) Log log, which includes only failed user authorization attempts"
           },
           "is_correct": false
         },
@@ -12358,8 +12358,8 @@
           "id": "2195",
           "text": {
             "ru": "B) Журнал логов, который включает только удачные попытки авторизации пользователей",
-            "uz": "B) Журнал логов, который включает только удачные попытки авторизации пользователей",
-            "en": "B) Журнал логов, который включает только удачные попытки авторизации пользователей"
+            "uz": "B) Faqat muvaffaqiyatli foydalanuvchi avtorizatsiya urinishlarini o'z ichiga olgan jurnal jurnali",
+            "en": "B) Log log, which includes only successful user authorization attempts"
           },
           "is_correct": false
         },
@@ -12367,8 +12367,8 @@
           "id": "2197",
           "text": {
             "ru": "C) Журнал логов, который включает информацию об авторизованных пользователях в текущий момент",
-            "uz": "C) Журнал логов, который включает информацию об авторизованных пользователях в текущий момент",
-            "en": "C) Журнал логов, который включает информацию об авторизованных пользователях в текущий момент"
+            "uz": "C) Joriy avtorizatsiya qilingan foydalanuvchilar haqidagi ma'lumotlarni o'z ichiga olgan jurnal jurnali",
+            "en": "C) Log log, which includes information about currently authorized users"
           },
           "is_correct": false
         },
@@ -12376,16 +12376,16 @@
           "id": "2194",
           "text": {
             "ru": "D) Журнал логов, который включает удачные и неудачные попытки авторизации пользователей",
-            "uz": "D) Журнал логов, который включает удачные и неудачные попытки авторизации пользователей",
-            "en": "D) Журнал логов, который включает удачные и неудачные попытки авторизации пользователей"
+            "uz": "D) Foydalanuvchilarni avtorizatsiya qilish uchun muvaffaqiyatli va muvaffaqiyatsiz urinishlarni o'z ichiga olgan jurnal jurnali",
+            "en": "D) Log log, which includes successful and unsuccessful attempts to authorize users"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Журнал логов, который включает удачные и неудачные попытки авторизации пользователей",
-        "uz": "Правильный ответ: Журнал логов, который включает удачные и неудачные попытки авторизации пользователей",
-        "en": "Правильный ответ: Журнал логов, который включает удачные и неудачные попытки авторизации пользователей"
+        "uz": "To'g'ri javob: foydalanuvchilarni avtorizatsiya qilish uchun muvaffaqiyatli va muvaffaqiyatsiz urinishlarni o'z ichiga olgan jurnal jurnali",
+        "en": "Correct answer: Log log, which includes successful and unsuccessful attempts to authorize users"
       }
     },
     {
@@ -12393,16 +12393,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое dhcp?",
-        "uz": "Что такое dhcp?",
-        "en": "Что такое dhcp?"
+        "uz": "dhcp nima?",
+        "en": "What is dhcp?"
       },
       "answers": [
         {
           "id": "2200",
           "text": {
             "ru": "A) Это технология сегментации локальной сети на более мелкие виртуальные локальные сети со своими широковещательными доменами",
-            "uz": "A) Это технология сегментации локальной сети на более мелкие виртуальные локальные сети со своими широковещательными доменами",
-            "en": "A) Это технология сегментации локальной сети на более мелкие виртуальные локальные сети со своими широковещательными доменами"
+            "uz": "A) Bu mahalliy tarmoqni o'zlarining translyatsiya domenlari bo'lgan kichikroq virtual mahalliy tarmoqlarga segmentlash texnologiyasidir",
+            "en": "A) This is a technology for segmenting a local network into smaller virtual local networks with their own broadcast domains"
           },
           "is_correct": false
         },
@@ -12410,8 +12410,8 @@
           "id": "2199",
           "text": {
             "ru": "B) Это стандартный протокол, который позволяет пользователям получать доступ к веб-сайтам, используя удобочитаемые адреса",
-            "uz": "B) Это стандартный протокол, который позволяет пользователям получать доступ к веб-сайтам, используя удобочитаемые адреса",
-            "en": "B) Это стандартный протокол, который позволяет пользователям получать доступ к веб-сайтам, используя удобочитаемые адреса"
+            "uz": "B) Bu standart protokol bo'lib, foydalanuvchilarga inson o'qiy oladigan manzillar yordamida veb-saytlarga kirish imkonini beradi",
+            "en": "B) This is a standard protocol that allows users to access websites using human-readable addresses"
           },
           "is_correct": false
         },
@@ -12419,8 +12419,8 @@
           "id": "2198",
           "text": {
             "ru": "C) Протокол прикладного уровня, разрешающий использование статического IP-адреса клиенту в локальной сети",
-            "uz": "C) Протокол прикладного уровня, разрешающий использование статического IP-адреса клиенту в локальной сети",
-            "en": "C) Протокол прикладного уровня, разрешающий использование статического IP-адреса клиенту в локальной сети"
+            "uz": "C) Mijozga mahalliy tarmoqda statik IP-manzildan foydalanish imkonini beruvchi dastur sathi protokoli",
+            "en": "C) An application layer protocol that allows a client to use a static IP address on a local network"
           },
           "is_correct": false
         },
@@ -12428,16 +12428,16 @@
           "id": "2201",
           "text": {
             "ru": "D) Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети",
-            "uz": "D) Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети",
-            "en": "D) Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети"
+            "uz": "D) Mahalliy tarmoqdagi mijozga dinamik IP-manzilni avtomatik belgilash uchun foydalaniladigan dastur sathi protokoli",
+            "en": "D) Application layer protocol used to automatically assign a dynamic IP address to a client on a local network"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети",
-        "uz": "Правильный ответ: Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети",
-        "en": "Правильный ответ: Протокол прикладного уровня, используемый для автоматического назначения динамического IP-адреса клиенту в локальной сети"
+        "uz": "To'g'ri javob: Mahalliy tarmoqdagi mijozga dinamik IP-manzilni avtomatik belgilash uchun ishlatiladigan dastur qatlami protokoli",
+        "en": "Correct Answer: Application layer protocol used to automatically assign a dynamic IP address to a client on a local network"
       }
     },
     {
@@ -12445,8 +12445,8 @@
       "type": "radio",
       "question": {
         "ru": "Как в gitlab-ci.yml указать образ который будет использоваться при выполнении стадии?",
-        "uz": "Как в gitlab-ci.yml указать образ который будет использоваться при выполнении стадии?",
-        "en": "Как в gitlab-ci.yml указать образ который будет использоваться при выполнении стадии?"
+        "uz": "Sahnani bajarishda foydalaniladigan gitlab-ci.yml da tasvirni qanday belgilashim mumkin?",
+        "en": "How can I specify the image in gitlab-ci.yml that will be used when executing the stage?"
       },
       "answers": [
         {
@@ -12488,8 +12488,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: image: image_name",
-        "uz": "Правильный ответ: image: image_name",
-        "en": "Правильный ответ: image: image_name"
+        "uz": "Toʻgʻri javob: image: image_name",
+        "en": "Correct answer: image: image_name"
       }
     },
     {
@@ -12497,8 +12497,8 @@
       "type": "radio",
       "question": {
         "ru": "Как удалить все правила из iptables?",
-        "uz": "Как удалить все правила из iptables?",
-        "en": "Как удалить все правила из iptables?"
+        "uz": "iptables dan barcha qoidalarni qanday olib tashlash mumkin?",
+        "en": "How to remove all rules from iptables?"
       },
       "answers": [
         {
@@ -12540,8 +12540,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: iptables -F",
-        "uz": "Правильный ответ: iptables -F",
-        "en": "Правильный ответ: iptables -F"
+        "uz": "Toʻgʻri javob: iptables -F",
+        "en": "Correct answer: iptables -F"
       }
     },
     {
@@ -12549,8 +12549,8 @@
       "type": "radio",
       "question": {
         "ru": "Что будет выведено? false echo $",
-        "uz": "Что будет выведено? false echo $",
-        "en": "Что будет выведено? false echo $"
+        "uz": "Chiqarish nima bo'ladi? false echo $",
+        "en": "What will be output? false echo $"
       },
       "answers": [
         {
@@ -12592,8 +12592,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: $",
-        "uz": "Правильный ответ: $",
-        "en": "Правильный ответ: $"
+        "uz": "Toʻgʻri javob: $",
+        "en": "Correct answer: $"
       }
     },
     {
@@ -12601,16 +12601,16 @@
       "type": "radio",
       "question": {
         "ru": "Что означает код возврата 1 в bash-е?",
-        "uz": "Что означает код возврата 1 в bash-е?",
-        "en": "Что означает код возврата 1 в bash-е?"
+        "uz": "Qaytish kodi 1 bashda nimani anglatadi?",
+        "en": "What does return code 1 mean in bash?"
       },
       "answers": [
         {
           "id": "2217",
           "text": {
             "ru": "A) 1 означает, что вызванная команда выполнена успешно",
-            "uz": "A) 1 означает, что вызванная команда выполнена успешно",
-            "en": "A) 1 означает, что вызванная команда выполнена успешно"
+            "uz": "A) 1 chaqirilgan buyruq muvaffaqiyatli bajarilganligini bildiradi",
+            "en": "A) 1 means the command called was completed successfully"
           },
           "is_correct": false
         },
@@ -12618,8 +12618,8 @@
           "id": "2216",
           "text": {
             "ru": "B) В результате выполнения команды возникли ошибки",
-            "uz": "B) В результате выполнения команды возникли ошибки",
-            "en": "B) В результате выполнения команды возникли ошибки"
+            "uz": "B) Buyruqni bajarish natijasida xatolar yuzaga keldi",
+            "en": "B) Errors occurred as a result of executing the command"
           },
           "is_correct": true
         },
@@ -12627,8 +12627,8 @@
           "id": "2215",
           "text": {
             "ru": "C) 1 означает, что неправильно указан аргумент",
-            "uz": "C) 1 означает, что неправильно указан аргумент",
-            "en": "C) 1 означает, что неправильно указан аргумент"
+            "uz": "C) 1 argument noto'g'ri ekanligini anglatadi",
+            "en": "C) 1 means the argument is incorrect"
           },
           "is_correct": false
         },
@@ -12636,16 +12636,16 @@
           "id": "2214",
           "text": {
             "ru": "D) Команда не найдена",
-            "uz": "D) Команда не найдена",
-            "en": "D) Команда не найдена"
+            "uz": "D) Buyruq topilmadi",
+            "en": "D) Command not found"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: В результате выполнения команды возникли ошибки",
-        "uz": "Правильный ответ: В результате выполнения команды возникли ошибки",
-        "en": "Правильный ответ: В результате выполнения команды возникли ошибки"
+        "uz": "To'g'ri javob: Buyruqni bajarish natijasida xatolar yuzaga keldi",
+        "en": "Correct answer: Errors occurred as a result of executing the command"
       }
     },
     {
@@ -12653,16 +12653,16 @@
       "type": "radio",
       "question": {
         "ru": "Можно ли в Ubuntu20.04.3 LTS работать от пользователя root?",
-        "uz": "Можно ли в Ubuntu20.04.3 LTS работать от пользователя root?",
-        "en": "Можно ли в Ubuntu20.04.3 LTS работать от пользователя root?"
+        "uz": "Ubuntu20.04.3 LTS da root foydalanuvchi sifatida ishga tushirish mumkinmi?",
+        "en": "Is it possible to run as root user in Ubuntu20.04.3 LTS?"
       },
       "answers": [
         {
           "id": "2219",
           "text": {
             "ru": "A) Нужно добавить root при установке",
-            "uz": "A) Нужно добавить root при установке",
-            "en": "A) Нужно добавить root при установке"
+            "uz": "A) O'rnatish vaqtida ildiz qo'shish kerak",
+            "en": "A) Need to add root during installation"
           },
           "is_correct": false
         },
@@ -12670,8 +12670,8 @@
           "id": "2221",
           "text": {
             "ru": "B) Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-            "uz": "B) Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-            "en": "B) Можно, но не по-умолчанию, а при помощи вызова su или sudo"
+            "uz": "B) Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudoga qo'ng'iroq qilish orqali",
+            "en": "B) It is possible, but not by default, but by calling su or sudo"
           },
           "is_correct": true
         },
@@ -12679,8 +12679,8 @@
           "id": "2218",
           "text": {
             "ru": "C) Можно, по-умолчанию",
-            "uz": "C) Можно, по-умолчанию",
-            "en": "C) Можно, по-умолчанию"
+            "uz": "C) Ha, sukut bo'yicha",
+            "en": "C) Yes, by default"
           },
           "is_correct": false
         },
@@ -12688,16 +12688,16 @@
           "id": "2220",
           "text": {
             "ru": "D) В LTS версиях нельзя работать от пользователя root",
-            "uz": "D) В LTS версиях нельзя работать от пользователя root",
-            "en": "D) В LTS версиях нельзя работать от пользователя root"
+            "uz": "D) LTS versiyalarida siz root foydalanuvchisi sifatida ishlay olmaysiz",
+            "en": "D) In LTS versions you cannot work as the root user"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-        "uz": "Правильный ответ: Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-        "en": "Правильный ответ: Можно, но не по-умолчанию, а при помощи вызова su или sudo"
+        "uz": "To'g'ri javob: Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudoga qo'ng'iroq qilish orqali",
+        "en": "Correct answer: It is possible, but not by default, but by calling su or sudo"
       }
     },
     {
@@ -12705,8 +12705,8 @@
       "type": "radio",
       "question": {
         "ru": "Как выйти без сохранение из текстового редактора VI?",
-        "uz": "Как выйти без сохранение из текстового редактора VI?",
-        "en": "Как выйти без сохранение из текстового редактора VI?"
+        "uz": "VI matn muharriridan saqlamasdan qanday chiqish mumkin?",
+        "en": "How to exit without saving from text editor VI?"
       },
       "answers": [
         {
@@ -12748,8 +12748,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: :q!",
-        "uz": "Правильный ответ: :q!",
-        "en": "Правильный ответ: :q!"
+        "uz": "To'g'ri javob: :q!",
+        "en": "Correct answer: :q!"
       }
     },
     {
@@ -12757,8 +12757,8 @@
       "type": "radio",
       "question": {
         "ru": "Редактор по умолчанию?",
-        "uz": "Редактор по умолчанию?",
-        "en": "Редактор по умолчанию?"
+        "uz": "Birlamchi muharrirmi?",
+        "en": "Default editor?"
       },
       "answers": [
         {
@@ -12800,8 +12800,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: vi",
-        "uz": "Правильный ответ: vi",
-        "en": "Правильный ответ: vi"
+        "uz": "To'g'ri javob: vi",
+        "en": "Correct answer: vi"
       }
     },
     {
@@ -12809,16 +12809,16 @@
       "type": "radio",
       "question": {
         "ru": "Что дает ключ -l команде ls?",
-        "uz": "Что дает ключ -l команде ls?",
-        "en": "Что дает ключ -l команде ls?"
+        "uz": "-l tugmasi ls buyrug'i uchun nima qiladi?",
+        "en": "What does the -l switch do for the ls command?"
       },
       "answers": [
         {
           "id": "2231",
           "text": {
             "ru": "A) Выводит список символьных ссылок",
-            "uz": "A) Выводит список символьных ссылок",
-            "en": "A) Выводит список символьных ссылок"
+            "uz": "A) Ramziy havolalar ro'yxati",
+            "en": "A) Lists symbolic links"
           },
           "is_correct": false
         },
@@ -12826,16 +12826,16 @@
           "id": "2230",
           "text": {
             "ru": "B) Выводит дополнительную информацию",
-            "uz": "B) Выводит дополнительную информацию",
-            "en": "B) Выводит дополнительную информацию"
+            "uz": "B) Qo'shimcha ma'lumotlarni ko'rsatadi",
+            "en": "B) Displays additional information"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Выводит дополнительную информацию",
-        "uz": "Правильный ответ: Выводит дополнительную информацию",
-        "en": "Правильный ответ: Выводит дополнительную информацию"
+        "uz": "To'g'ri javob: Qo'shimcha ma'lumotlarni ko'rsatadi",
+        "en": "Correct answer: Displays additional information"
       }
     },
     {
@@ -12843,16 +12843,16 @@
       "type": "radio",
       "question": {
         "ru": "На каких правах для использования распространяется Ubuntu 20.04 LTS?",
-        "uz": "На каких правах для использования распространяется Ubuntu 20.04 LTS?",
-        "en": "На каких правах для использования распространяется Ubuntu 20.04 LTS?"
+        "uz": "Ubuntu 20.04 LTS qanday foydalanish huquqlariga ega?",
+        "en": "What usage rights does Ubuntu 20.04 LTS come with?"
       },
       "answers": [
         {
           "id": "2233",
           "text": {
             "ru": "A) По подписке",
-            "uz": "A) По подписке",
-            "en": "A) По подписке"
+            "uz": "A) Obuna bo'yicha",
+            "en": "A) By subscription"
           },
           "is_correct": false
         },
@@ -12860,16 +12860,16 @@
           "id": "2232",
           "text": {
             "ru": "B) Бесплатно",
-            "uz": "B) Бесплатно",
-            "en": "B) Бесплатно"
+            "uz": "B) Bepul",
+            "en": "B) Free"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Бесплатно",
-        "uz": "Правильный ответ: Бесплатно",
-        "en": "Правильный ответ: Бесплатно"
+        "uz": "To'g'ri javob: bepul",
+        "en": "Correct answer: Free"
       }
     },
     {
@@ -12877,8 +12877,8 @@
       "type": "radio",
       "question": {
         "ru": "Чему равен адрес сети 10.0.0.20/28?",
-        "uz": "Чему равен адрес сети 10.0.0.20/28?",
-        "en": "Чему равен адрес сети 10.0.0.20/28?"
+        "uz": "10.0.0.20/28 tarmoq manzili nima?",
+        "en": "What is the network address 10.0.0.20/28?"
       },
       "answers": [
         {
@@ -12911,8 +12911,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 10.0.0.16",
-        "uz": "Правильный ответ: 10.0.0.16",
-        "en": "Правильный ответ: 10.0.0.16"
+        "uz": "Toʻgʻri javob: 10.0.0.16",
+        "en": "Correct answer: 10.0.0.16"
       }
     },
     {
@@ -12920,8 +12920,8 @@
       "type": "radio",
       "question": {
         "ru": "Что не является текстовым редактором?",
-        "uz": "Что не является текстовым редактором?",
-        "en": "Что не является текстовым редактором?"
+        "uz": "Matn muharriri nima emas?",
+        "en": "What is not a text editor?"
       },
       "answers": [
         {
@@ -12963,8 +12963,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: cat",
-        "uz": "Правильный ответ: cat",
-        "en": "Правильный ответ: cat"
+        "uz": "Toʻgʻri javob: cat",
+        "en": "Correct answer: cat"
       }
     },
     {
@@ -12972,16 +12972,16 @@
       "type": "radio",
       "question": {
         "ru": "Что такое grafana?",
-        "uz": "Что такое grafana?",
-        "en": "Что такое grafana?"
+        "uz": "grafana nima?",
+        "en": "What is grafana?"
       },
       "answers": [
         {
           "id": "2241",
           "text": {
             "ru": "A) Инструмент визуализации данных",
-            "uz": "A) Инструмент визуализации данных",
-            "en": "A) Инструмент визуализации данных"
+            "uz": "A) Ma'lumotlarni vizualizatsiya qilish vositasi",
+            "en": "A) Data visualization tool"
           },
           "is_correct": true
         },
@@ -12989,16 +12989,16 @@
           "id": "2242",
           "text": {
             "ru": "B) Графическая оболочка для Ubuntu",
-            "uz": "B) Графическая оболочка для Ubuntu",
-            "en": "B) Графическая оболочка для Ubuntu"
+            "uz": "B) Ubuntu uchun grafik qobiq",
+            "en": "B) Graphical shell for Ubuntu"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Инструмент визуализации данных",
-        "uz": "Правильный ответ: Инструмент визуализации данных",
-        "en": "Правильный ответ: Инструмент визуализации данных"
+        "uz": "To'g'ri javob: Ma'lumotlarni vizualizatsiya qilish vositasi",
+        "en": "Correct Answer: Data Visualization Tool"
       }
     },
     {
@@ -13006,8 +13006,8 @@
       "type": "radio",
       "question": {
         "ru": "Чему равен адрес сети 128.0.1.1/8?",
-        "uz": "Чему равен адрес сети 128.0.1.1/8?",
-        "en": "Чему равен адрес сети 128.0.1.1/8?"
+        "uz": "128.0.1.1/8 tarmoq manzili nima?",
+        "en": "What is the network address 128.0.1.1/8?"
       },
       "answers": [
         {
@@ -13049,8 +13049,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 128.0.0.0",
-        "uz": "Правильный ответ: 128.0.0.0",
-        "en": "Правильный ответ: 128.0.0.0"
+        "uz": "Toʻgʻri javob: 128.0.0.0",
+        "en": "Correct answer: 128.0.0.0"
       }
     },
     {
@@ -13058,8 +13058,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Выбрать этапы CD",
-        "uz": "Выбрать этапы CD",
-        "en": "Выбрать этапы CD"
+        "uz": "CD bosqichlarini tanlang",
+        "en": "Select CD stages"
       },
       "answers": [
         {
@@ -13119,8 +13119,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: release",
-        "uz": "Правильный ответ: release",
-        "en": "Правильный ответ: release"
+        "uz": "To'g'ri javob: ozod qilish",
+        "en": "Correct answer: release"
       }
     },
     {
@@ -13128,16 +13128,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Отличия udp от tcp?",
-        "uz": "Отличия udp от tcp?",
-        "en": "Отличия udp от tcp?"
+        "uz": "udp va tcp o'rtasidagi farqlar?",
+        "en": "Differences between udp and tcp?"
       },
       "answers": [
         {
           "id": "2262",
           "text": {
             "ru": "A) TCP требует заранее установленного соединения",
-            "uz": "A) TCP требует заранее установленного соединения",
-            "en": "A) TCP требует заранее установленного соединения"
+            "uz": "A) TCP oldindan o'rnatilgan ulanishni talab qiladi",
+            "en": "A) TCP requires a pre-established connection"
           },
           "is_correct": true
         },
@@ -13145,8 +13145,8 @@
           "id": "2253",
           "text": {
             "ru": "B) TCP гарантирует доставку пакетов данных в неизменном виде",
-            "uz": "B) TCP гарантирует доставку пакетов данных в неизменном виде",
-            "en": "B) TCP гарантирует доставку пакетов данных в неизменном виде"
+            "uz": "B) TCP ma'lumotlar paketlarini o'zgarishsiz yetkazib berishni kafolatlaydi",
+            "en": "B) TCP guarantees the delivery of data packets unchanged"
           },
           "is_correct": true
         },
@@ -13154,8 +13154,8 @@
           "id": "2255",
           "text": {
             "ru": "C) TCP данные не передаются потоково",
-            "uz": "C) TCP данные не передаются потоково",
-            "en": "C) TCP данные не передаются потоково"
+            "uz": "C) TCP maʼlumotlari uzatilmayapti",
+            "en": "C) TCP data is not being streamed"
           },
           "is_correct": false
         },
@@ -13163,8 +13163,8 @@
           "id": "2260",
           "text": {
             "ru": "D) UPD не содержит функций восстановления данных",
-            "uz": "D) UPD не содержит функций восстановления данных",
-            "en": "D) UPD не содержит функций восстановления данных"
+            "uz": "D) UPD ma'lumotlarni tiklash funktsiyalarini o'z ichiga olmaydi",
+            "en": "D) UPD does not contain data recovery functions"
           },
           "is_correct": true
         },
@@ -13172,8 +13172,8 @@
           "id": "2258",
           "text": {
             "ru": "E) UDP надежнее",
-            "uz": "E) UDP надежнее",
-            "en": "E) UDP надежнее"
+            "uz": "E) UDP ishonchliroq",
+            "en": "E) UDP is more reliable"
           },
           "is_correct": false
         },
@@ -13181,8 +13181,8 @@
           "id": "2256",
           "text": {
             "ru": "F) UDP обеспечивает более высокую скорость передачи данных",
-            "uz": "F) UDP обеспечивает более высокую скорость передачи данных",
-            "en": "F) UDP обеспечивает более высокую скорость передачи данных"
+            "uz": "F) UDP yuqori maʼlumotlarni uzatish tezligini taʼminlaydi",
+            "en": "F) UDP provides higher data transfer speed"
           },
           "is_correct": true
         },
@@ -13190,8 +13190,8 @@
           "id": "2254",
           "text": {
             "ru": "G) TCP нумерует пакеты при передаче",
-            "uz": "G) TCP нумерует пакеты при передаче",
-            "en": "G) TCP нумерует пакеты при передаче"
+            "uz": "G) TCP uzatish paytida paketlarni raqamlaydi",
+            "en": "G) TCP numbers packets during transmission"
           },
           "is_correct": true
         },
@@ -13199,8 +13199,8 @@
           "id": "2259",
           "text": {
             "ru": "H) UDP нумерует пакеты при передаче",
-            "uz": "H) UDP нумерует пакеты при передаче",
-            "en": "H) UDP нумерует пакеты при передаче"
+            "uz": "H) UDP uzatish paytida paketlarni raqamlaydi",
+            "en": "H) UDP numbers packets during transmission"
           },
           "is_correct": false
         },
@@ -13208,8 +13208,8 @@
           "id": "2257",
           "text": {
             "ru": "I) UDP гарантирует доставку пакетов без потерь",
-            "uz": "I) UDP гарантирует доставку пакетов без потерь",
-            "en": "I) UDP гарантирует доставку пакетов без потерь"
+            "uz": "I) UDP paketlarni yo'qotmasdan yetkazib berishni kafolatlaydi",
+            "en": "I) UDP guarantees packet delivery without loss"
           },
           "is_correct": false
         },
@@ -13217,16 +13217,16 @@
           "id": "2261",
           "text": {
             "ru": "J) TCP работает в полудуплексном режиме",
-            "uz": "J) TCP работает в полудуплексном режиме",
-            "en": "J) TCP работает в полудуплексном режиме"
+            "uz": "J) TCP yarim dupleks rejimida ishlaydi",
+            "en": "J) TCP operates in half-duplex mode"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: TCP гарантирует доставку пакетов данных в неизменном виде",
-        "uz": "Правильный ответ: TCP гарантирует доставку пакетов данных в неизменном виде",
-        "en": "Правильный ответ: TCP гарантирует доставку пакетов данных в неизменном виде"
+        "uz": "To'g'ri javob: TCP ma'lumotlar paketlarini o'zgarishsiz yetkazib berishni kafolatlaydi",
+        "en": "Correct answer: TCP guarantees the delivery of data packets unchanged"
       }
     },
     {
@@ -13234,8 +13234,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие перечисленные протоколы входят в транспортный уровень модели OSI ?",
-        "uz": "Какие перечисленные протоколы входят в транспортный уровень модели OSI ?",
-        "en": "Какие перечисленные протоколы входят в транспортный уровень модели OSI ?"
+        "uz": "Quyidagi protokollardan qaysi biri OSI modelining transport qatlamiga kiradi?",
+        "en": "Which of the following protocols are included in the transport layer of the OSI model?"
       },
       "answers": [
         {
@@ -13313,8 +13313,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: UDP",
-        "uz": "Правильный ответ: UDP",
-        "en": "Правильный ответ: UDP"
+        "uz": "Toʻgʻri javob: UDP",
+        "en": "Correct answer: UDP"
       }
     },
     {
@@ -13322,8 +13322,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Как посмотреть версию docker?",
-        "uz": "Как посмотреть версию docker?",
-        "en": "Как посмотреть версию docker?"
+        "uz": "docker versiyasini qanday ko'rish mumkin?",
+        "en": "How to view the version of docker?"
       },
       "answers": [
         {
@@ -13365,8 +13365,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: docker version",
-        "uz": "Правильный ответ: docker version",
-        "en": "Правильный ответ: docker version"
+        "uz": "Toʻgʻri javob: docker versiyasi",
+        "en": "Correct answer: docker version"
       }
     },
     {
@@ -13374,16 +13374,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Выбрать уровни, входящие в модель OSI",
-        "uz": "Выбрать уровни, входящие в модель OSI",
-        "en": "Выбрать уровни, входящие в модель OSI"
+        "uz": "OSI modeliga kiritilgan qatlamlarni tanlang",
+        "en": "Select layers included in the OSI model"
       },
       "answers": [
         {
           "id": "2277",
           "text": {
             "ru": "A) представления",
-            "uz": "A) представления",
-            "en": "A) представления"
+            "uz": "A) taqdimotlar",
+            "en": "A) submissions"
           },
           "is_correct": true
         },
@@ -13391,8 +13391,8 @@
           "id": "2284",
           "text": {
             "ru": "B) транспортный",
-            "uz": "B) транспортный",
-            "en": "B) транспортный"
+            "uz": "B) transport",
+            "en": "B) transport"
           },
           "is_correct": true
         },
@@ -13400,8 +13400,8 @@
           "id": "2285",
           "text": {
             "ru": "C) сеансовый",
-            "uz": "C) сеансовый",
-            "en": "C) сеансовый"
+            "uz": "C) sessiya",
+            "en": "C) sessional"
           },
           "is_correct": true
         },
@@ -13409,8 +13409,8 @@
           "id": "2276",
           "text": {
             "ru": "D) приложений",
-            "uz": "D) приложений",
-            "en": "D) приложений"
+            "uz": "D) ilovalar",
+            "en": "D) applications"
           },
           "is_correct": true
         },
@@ -13418,8 +13418,8 @@
           "id": "2275",
           "text": {
             "ru": "E) канальный",
-            "uz": "E) канальный",
-            "en": "E) канальный"
+            "uz": "E) kanal",
+            "en": "E) duct"
           },
           "is_correct": true
         },
@@ -13427,8 +13427,8 @@
           "id": "2283",
           "text": {
             "ru": "F) битовый",
-            "uz": "F) битовый",
-            "en": "F) битовый"
+            "uz": "F) bit bo'yicha",
+            "en": "F) bitwise"
           },
           "is_correct": false
         },
@@ -13436,8 +13436,8 @@
           "id": "2282",
           "text": {
             "ru": "G) физический",
-            "uz": "G) физический",
-            "en": "G) физический"
+            "uz": "G) jismoniy",
+            "en": "G) physical"
           },
           "is_correct": true
         },
@@ -13445,8 +13445,8 @@
           "id": "2279",
           "text": {
             "ru": "H) потоковый",
-            "uz": "H) потоковый",
-            "en": "H) потоковый"
+            "uz": "H) oqim",
+            "en": "H) streaming"
           },
           "is_correct": false
         },
@@ -13454,8 +13454,8 @@
           "id": "2278",
           "text": {
             "ru": "I) данных",
-            "uz": "I) данных",
-            "en": "I) данных"
+            "uz": "I) ma'lumotlar",
+            "en": "I) data"
           },
           "is_correct": false
         },
@@ -13463,8 +13463,8 @@
           "id": "2281",
           "text": {
             "ru": "J) пакетов",
-            "uz": "J) пакетов",
-            "en": "J) пакетов"
+            "uz": "J) paketlar",
+            "en": "J) packages"
           },
           "is_correct": false
         },
@@ -13472,16 +13472,16 @@
           "id": "2280",
           "text": {
             "ru": "K) сетевой",
-            "uz": "K) сетевой",
-            "en": "K) сетевой"
+            "uz": "K) tarmoq",
+            "en": "K) network"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: канальный",
-        "uz": "Правильный ответ: канальный",
-        "en": "Правильный ответ: канальный"
+        "uz": "To'g'ri javob: kanal",
+        "en": "Correct answer: channel"
       }
     },
     {
@@ -13489,8 +13489,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Выберите из предложенных вариантов сборщик single metrics OS для Prometheus",
-        "uz": "Выберите из предложенных вариантов сборщик single metrics OS для Prometheus",
-        "en": "Выберите из предложенных вариантов сборщик single metrics OS для Prometheus"
+        "uz": "Prometey uchun yagona ko'rsatkichlar OS kollektori taqdim etilgan variantlardan tanlang",
+        "en": "Select from the options provided the single metrics OS collector for Prometheus"
       },
       "answers": [
         {
@@ -13541,8 +13541,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: blackbox_exporter",
-        "uz": "Правильный ответ: blackbox_exporter",
-        "en": "Правильный ответ: blackbox_exporter"
+        "uz": "To'g'ri javob: blackbox_exporter",
+        "en": "Correct answer: blackbox_exporter"
       }
     },
     {
@@ -13550,16 +13550,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие параметры можно мониторить в ОС?",
-        "uz": "Какие параметры можно мониторить в ОС?",
-        "en": "Какие параметры можно мониторить в ОС?"
+        "uz": "OTda qanday parametrlarni kuzatish mumkin?",
+        "en": "What parameters can be monitored in the OS?"
       },
       "answers": [
         {
           "id": "2294",
           "text": {
             "ru": "A) доступ к веб-сайту,",
-            "uz": "A) доступ к веб-сайту,",
-            "en": "A) доступ к веб-сайту,"
+            "uz": "A) veb-saytga kirish,",
+            "en": "A) access to the website,"
           },
           "is_correct": false
         },
@@ -13567,8 +13567,8 @@
           "id": "2295",
           "text": {
             "ru": "B) статус системы",
-            "uz": "B) статус системы",
-            "en": "B) статус системы"
+            "uz": "B) tizim holati",
+            "en": "B) system status"
           },
           "is_correct": true
         },
@@ -13585,8 +13585,8 @@
           "id": "2293",
           "text": {
             "ru": "D) место занимаемое на диске",
-            "uz": "D) место занимаемое на диске",
-            "en": "D) место занимаемое на диске"
+            "uz": "D) disk maydoni egalladi",
+            "en": "D) disk space occupied"
           },
           "is_correct": true
         },
@@ -13594,16 +13594,16 @@
           "id": "2291",
           "text": {
             "ru": "E) трафик сет",
-            "uz": "E) трафик сет",
-            "en": "E) трафик сет"
+            "uz": "E) trafik to'plami",
+            "en": "E) traffic set"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: CPU",
-        "uz": "Правильный ответ: CPU",
-        "en": "Правильный ответ: CPU"
+        "uz": "To'g'ri javob: CPU",
+        "en": "Correct answer: CPU"
       }
     },
     {
@@ -13611,8 +13611,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие executor`ы бывают у gitlab-runner`а?",
-        "uz": "Какие executor`ы бывают у gitlab-runner`а?",
-        "en": "Какие executor`ы бывают у gitlab-runner`а?"
+        "uz": "`ы бывают у gitlab-runner`a qanday ijrochi?",
+        "en": "What executor`ы бывают у gitlab-runner`а?"
       },
       "answers": [
         {
@@ -13708,8 +13708,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: ssh",
-        "uz": "Правильный ответ: ssh",
-        "en": "Правильный ответ: ssh"
+        "uz": "Toʻgʻri javob: ssh",
+        "en": "Correct answer: ssh"
       }
     },
     {
@@ -13717,8 +13717,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Определить какой ip является частным?",
-        "uz": "Определить какой ip является частным?",
-        "en": "Определить какой ip является частным?"
+        "uz": "Qaysi IP shaxsiy ekanligini aniqlang?",
+        "en": "Determine which IP is private?"
       },
       "answers": [
         {
@@ -13769,8 +13769,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 10.9.2.1",
-        "uz": "Правильный ответ: 10.9.2.1",
-        "en": "Правильный ответ: 10.9.2.1"
+        "uz": "Toʻgʻri javob: 10.9.2.1",
+        "en": "Correct answer: 10.9.2.1"
       }
     },
     {
@@ -13778,16 +13778,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Что такое SSH?",
-        "uz": "Что такое SSH?",
-        "en": "Что такое SSH?"
+        "uz": "SSH nima?",
+        "en": "What is SSH?"
       },
       "answers": [
         {
           "id": "2314",
           "text": {
             "ru": "A) нет верного ответа",
-            "uz": "A) нет верного ответа",
-            "en": "A) нет верного ответа"
+            "uz": "A) to'g'ri javob yo'q",
+            "en": "A) there is no right answer"
           },
           "is_correct": false
         },
@@ -13795,8 +13795,8 @@
           "id": "2313",
           "text": {
             "ru": "B) Сетевой протокол прикладного уровня",
-            "uz": "B) Сетевой протокол прикладного уровня",
-            "en": "B) Сетевой протокол прикладного уровня"
+            "uz": "B) Ilova qatlamining tarmoq protokoli",
+            "en": "B) Application layer network protocol"
           },
           "is_correct": true
         },
@@ -13804,8 +13804,8 @@
           "id": "2311",
           "text": {
             "ru": "C) Secure Shell - «безопасная оболочка»",
-            "uz": "C) Secure Shell - «безопасная оболочка»",
-            "en": "C) Secure Shell - «безопасная оболочка»"
+            "uz": "C) Secure Shell - \"xavfsiz qobiq\"",
+            "en": "C) Secure Shell - “safe shell”"
           },
           "is_correct": true
         },
@@ -13813,16 +13813,16 @@
           "id": "2312",
           "text": {
             "ru": "D) удалённое управление операционной системой и туннелирование TCP-соединений",
-            "uz": "D) удалённое управление операционной системой и туннелирование TCP-соединений",
-            "en": "D) удалённое управление операционной системой и туннелирование TCP-соединений"
+            "uz": "D) operatsion tizimni masofadan boshqarish va TCP ulanishlarini tunnel qilish",
+            "en": "D) remote control of the operating system and tunneling of TCP connections"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Secure Shell - «безопасная оболочка»",
-        "uz": "Правильный ответ: Secure Shell - «безопасная оболочка»",
-        "en": "Правильный ответ: Secure Shell - «безопасная оболочка»"
+        "uz": "To'g'ri javob: Secure Shell",
+        "en": "Correct answer: Secure Shell"
       }
     },
     {
@@ -13830,16 +13830,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Что такое root?",
-        "uz": "Что такое root?",
-        "en": "Что такое root?"
+        "uz": "Ildiz nima?",
+        "en": "What is root?"
       },
       "answers": [
         {
           "id": "2317",
           "text": {
             "ru": "A) команда проверки целостности файлов",
-            "uz": "A) команда проверки целостности файлов",
-            "en": "A) команда проверки целостности файлов"
+            "uz": "A) fayl yaxlitligini tekshirish buyrug'i",
+            "en": "A) file integrity check command"
           },
           "is_correct": false
         },
@@ -13847,8 +13847,8 @@
           "id": "2316",
           "text": {
             "ru": "B) корневая папка системы",
-            "uz": "B) корневая папка системы",
-            "en": "B) корневая папка системы"
+            "uz": "B) tizim ildiz papkasi",
+            "en": "B) system root folder"
           },
           "is_correct": false
         },
@@ -13856,8 +13856,8 @@
           "id": "2318",
           "text": {
             "ru": "C) аккаунт, который предоставляет доступ и права ко всем функциям операционной системы",
-            "uz": "C) аккаунт, который предоставляет доступ и права ко всем функциям операционной системы",
-            "en": "C) аккаунт, который предоставляет доступ и права ко всем функциям операционной системы"
+            "uz": "C) operatsion tizimning barcha funktsiyalariga kirish va huquqlarni ta'minlaydigan hisob",
+            "en": "C) an account that provides access and rights to all functions of the operating system"
           },
           "is_correct": true
         },
@@ -13865,16 +13865,16 @@
           "id": "2315",
           "text": {
             "ru": "D) суперпользователь",
-            "uz": "D) суперпользователь",
-            "en": "D) суперпользователь"
+            "uz": "D) superfoydalanuvchi",
+            "en": "D) superuser"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: суперпользователь",
-        "uz": "Правильный ответ: суперпользователь",
-        "en": "Правильный ответ: суперпользователь"
+        "uz": "To'g'ri javob: superuser",
+        "en": "Correct answer: superuser"
       }
     },
     {
@@ -13882,8 +13882,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Чему равна маска подсети 172.168.4.10/8",
-        "uz": "Чему равна маска подсети 172.168.4.10/8",
-        "en": "Чему равна маска подсети 172.168.4.10/8"
+        "uz": "172.168.4.10/8 pastki netmask (tarmoq maskasi) nima",
+        "en": "What is the subnet mask of 172.168.4.10/8"
       },
       "answers": [
         {
@@ -13943,8 +13943,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: 11111111.00000000.00000000.00000000",
-        "uz": "Правильный ответ: 11111111.00000000.00000000.00000000",
-        "en": "Правильный ответ: 11111111.00000000.00000000.00000000"
+        "uz": "To'g'ri javob: 11111111.00000000.00000000.00000000",
+        "en": "Correct answer: 11111111.00000000.00000000.00000000"
       }
     },
     {
@@ -13952,8 +13952,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Выбрать этапы CI",
-        "uz": "Выбрать этапы CI",
-        "en": "Выбрать этапы CI"
+        "uz": "CI bosqichlarini tanlang",
+        "en": "Select CI stages"
       },
       "answers": [
         {
@@ -14013,8 +14013,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: test",
-        "uz": "Правильный ответ: test",
-        "en": "Правильный ответ: test"
+        "uz": "To'g'ri javob: test",
+        "en": "Correct answer: test"
       }
     },
     {
@@ -14022,8 +14022,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие перечисленные протоколы входят в network layer?",
-        "uz": "Какие перечисленные протоколы входят в network layer?",
-        "en": "Какие перечисленные протоколы входят в network layer?"
+        "uz": "Qaysi protokollar tarmoq qatlamiga kiritilgan?",
+        "en": "Which listed protocols are included in the network layer?"
       },
       "answers": [
         {
@@ -14119,8 +14119,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: ICMP",
-        "uz": "Правильный ответ: ICMP",
-        "en": "Правильный ответ: ICMP"
+        "uz": "Toʻgʻri javob: ICMP",
+        "en": "Correct answer: ICMP"
       }
     },
     {
@@ -14128,8 +14128,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Какая команда заменяет маску ? *я не знаю какие варианты ответов были, перечисленное взято из интернета по идее и ifconfig, sed и replace отталкиваемся от вариантов на экзамене",
-        "uz": "Какая команда заменяет маску ? *я не знаю какие варианты ответов были, перечисленное взято из интернета по идее и ifconfig, sed и replace отталкиваемся от вариантов на экзамене",
-        "en": "Какая команда заменяет маску ? *я не знаю какие варианты ответов были, перечисленное взято из интернета по идее и ifconfig, sed и replace отталкиваемся от вариантов на экзамене"
+        "uz": "Qaysi buyruq niqob o‘rnini bosadi? *Qanday javob variantlari borligini bilmayman, sanab o'tilganlar nazariy jihatdan Internetdan olingan va ifconfig, sed va almashtirish imtihondagi variantlarga asoslanadi.",
+        "en": "Which command replaces the mask? *I don’t know what answer options there were, the ones listed were taken from the Internet in theory and ifconfig, sed and replace are based on the options in the exam"
       },
       "answers": [
         {
@@ -14171,8 +14171,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: sed -i 's/255.255.255.0/255.255.128.0/g' /etc/netplan/*.yaml",
-        "uz": "Правильный ответ: sed -i 's/255.255.255.0/255.255.128.0/g' /etc/netplan/*.yaml",
-        "en": "Правильный ответ: sed -i 's/255.255.255.0/255.255.128.0/g' /etc/netplan/*.yaml"
+        "uz": "Toʻgʻri javob: sed -i 's/255.255.255.0/255.255.128.0/g' /etc/netplan/*.yaml",
+        "en": "Correct answer: sed -i 's/255.255.255.0/255.255.128.0/g' /etc/netplan/*.yaml"
       }
     },
     {
@@ -14180,16 +14180,16 @@
       "type": "checkbox",
       "question": {
         "ru": "За что отвечает главный поток nginx?",
-        "uz": "За что отвечает главный поток nginx?",
-        "en": "За что отвечает главный поток nginx?"
+        "uz": "nginx asosiy mavzu nima uchun javob beradi?",
+        "en": "What is the main thread nginx responsible for?"
       },
       "answers": [
         {
           "id": "2348",
           "text": {
             "ru": "A) Чтение и проверка конфигураций и управление рабочими процессами",
-            "uz": "A) Чтение и проверка конфигураций и управление рабочими процессами",
-            "en": "A) Чтение и проверка конфигураций и управление рабочими процессами"
+            "uz": "A) Konfiguratsiyalarni o'qing va tasdiqlang va ish oqimlarini boshqaring",
+            "en": "A) Read and validate configurations and manage workflows"
           },
           "is_correct": true
         },
@@ -14197,8 +14197,8 @@
           "id": "2347",
           "text": {
             "ru": "B) Старт, прерывание и поддержку сконфигурированного количества worker-процессов, также создание, связывание и закрытие сокетов",
-            "uz": "B) Старт, прерывание и поддержку сконфигурированного количества worker-процессов, также создание, связывание и закрытие сокетов",
-            "en": "B) Старт, прерывание и поддержку сконфигурированного количества worker-процессов, также создание, связывание и закрытие сокетов"
+            "uz": "B) Sozlangan miqdordagi ishchi jarayonlarni ishga tushirish, to'xtatish va qo'llab-quvvatlash, shuningdek rozetkalarni yaratish, bog'lash va yopish",
+            "en": "B) Start, interrupt and support a configured number of worker processes, as well as create, bind and close sockets"
           },
           "is_correct": false
         },
@@ -14206,8 +14206,8 @@
           "id": "2345",
           "text": {
             "ru": "C) Только за управление рабочими процессами",
-            "uz": "C) Только за управление рабочими процессами",
-            "en": "C) Только за управление рабочими процессами"
+            "uz": "C) Faqat ish jarayonini boshqarish uchun",
+            "en": "C) Only for workflow management"
           },
           "is_correct": false
         },
@@ -14215,16 +14215,16 @@
           "id": "2346",
           "text": {
             "ru": "D) Чтение, проверка конфигураций и управление рабочими процессами",
-            "uz": "D) Чтение, проверка конфигураций и управление рабочими процессами",
-            "en": "D) Чтение, проверка конфигураций и управление рабочими процессами"
+            "uz": "D) Konfiguratsiyalarni o'qing, tekshiring va ish oqimlarini boshqaring",
+            "en": "D) Read, check configurations and manage workflows"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Чтение, проверка конфигураций и управление рабочими процессами",
-        "uz": "Правильный ответ: Чтение, проверка конфигураций и управление рабочими процессами",
-        "en": "Правильный ответ: Чтение, проверка конфигураций и управление рабочими процессами"
+        "uz": "To'g'ri javob: konfiguratsiyalarni o'qish, tekshirish va ish oqimlarini boshqarish",
+        "en": "Correct answer: Reading, checking configurations and managing workflows"
       }
     },
     {
@@ -14232,8 +14232,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Этапы CD?",
-        "uz": "Этапы CD?",
-        "en": "Этапы CD?"
+        "uz": "CD bosqichlari?",
+        "en": "CD stages?"
       },
       "answers": [
         {
@@ -14293,8 +14293,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: PUBLISH",
-        "uz": "Правильный ответ: PUBLISH",
-        "en": "Правильный ответ: PUBLISH"
+        "uz": "Toʻgʻri javob: PUBLISH",
+        "en": "Correct answer: PUBLISH"
       }
     },
     {
@@ -14302,16 +14302,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Что означает user is not in the sudoers file?",
-        "uz": "Что означает user is not in the sudoers file?",
-        "en": "Что означает user is not in the sudoers file?"
+        "uz": "user is not in the sudoers file nimani anglatadi?",
+        "en": "What does user is not in the sudoers file mean?"
       },
       "answers": [
         {
           "id": "2357",
           "text": {
             "ru": "A) Ошибка указывает на невозможность добавления пользователя в файл sudoers",
-            "uz": "A) Ошибка указывает на невозможность добавления пользователя в файл sudoers",
-            "en": "A) Ошибка указывает на невозможность добавления пользователя в файл sudoers"
+            "uz": "A) Xato sudoers fayliga foydalanuvchi qo'shish mumkin emasligini ko'rsatadi",
+            "en": "A) The error indicates that it is not possible to add a user to the sudoers file"
           },
           "is_correct": false
         },
@@ -14319,8 +14319,8 @@
           "id": "2356",
           "text": {
             "ru": "B) Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers",
-            "uz": "B) Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers",
-            "en": "B) Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers"
+            "uz": "B) Bu foydalanuvchining /etc/sudoers faylida sudo buyrug‘ini bajarishga ruxsati yo‘q",
+            "en": "B) This user does not have permission to execute the sudo command in the /etc/sudoers file"
           },
           "is_correct": true
         },
@@ -14328,8 +14328,8 @@
           "id": "2358",
           "text": {
             "ru": "C) Пользователь не имеет право на использование sudo",
-            "uz": "C) Пользователь не имеет право на использование sudo",
-            "en": "C) Пользователь не имеет право на использование sudo"
+            "uz": "C) Foydalanuvchi sudo dan foydalanish huquqiga ega emas",
+            "en": "C) The user does not have the right to use sudo"
           },
           "is_correct": true
         },
@@ -14337,16 +14337,16 @@
           "id": "2355",
           "text": {
             "ru": "D) Ошибка при написании команды добавления пользователя в файл sudoers",
-            "uz": "D) Ошибка при написании команды добавления пользователя в файл sudoers",
-            "en": "D) Ошибка при написании команды добавления пользователя в файл sudoers"
+            "uz": "D) Sudoers fayliga foydalanuvchi qo'shish buyrug'ini yozishda xatolik yuz berdi",
+            "en": "D) Error when writing the command to add a user to the sudoers file"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers",
-        "uz": "Правильный ответ: Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers",
-        "en": "Правильный ответ: Данному пользователю не прописано разрешение на выполнение команды sudo в файле /etc/sudoers"
+        "uz": "Toʻgʻri javob: Bu foydalanuvchi /etc/sudoers faylida sudo buyrugʻini bajarishga ruxsati yoʻq.",
+        "en": "Correct answer: This user does not have permission to execute the sudo command in the /etc/sudoers file"
       }
     },
     {
@@ -14354,16 +14354,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие параметры можно мониторить в операционной системе?",
-        "uz": "Какие параметры можно мониторить в операционной системе?",
-        "en": "Какие параметры можно мониторить в операционной системе?"
+        "uz": "Operatsion tizimda qanday parametrlarni kuzatish mumkin?",
+        "en": "What parameters can be monitored in the operating system?"
       },
       "answers": [
         {
           "id": "2363",
           "text": {
             "ru": "A) трафик сети",
-            "uz": "A) трафик сети",
-            "en": "A) трафик сети"
+            "uz": "A) tarmoq trafigi",
+            "en": "A) network traffic"
           },
           "is_correct": false
         },
@@ -14371,8 +14371,8 @@
           "id": "2360",
           "text": {
             "ru": "B) место занимаемое на диске",
-            "uz": "B) место занимаемое на диске",
-            "en": "B) место занимаемое на диске"
+            "uz": "B) disk maydoni egalladi",
+            "en": "B) disk space occupied"
           },
           "is_correct": true
         },
@@ -14380,8 +14380,8 @@
           "id": "2362",
           "text": {
             "ru": "C) доступ к веб-сайту",
-            "uz": "C) доступ к веб-сайту",
-            "en": "C) доступ к веб-сайту"
+            "uz": "C) veb-saytga kirish",
+            "en": "C) website access"
           },
           "is_correct": false
         },
@@ -14389,8 +14389,8 @@
           "id": "2361",
           "text": {
             "ru": "D) статус системы",
-            "uz": "D) статус системы",
-            "en": "D) статус системы"
+            "uz": "D) tizim holati",
+            "en": "D) system status"
           },
           "is_correct": true
         },
@@ -14406,8 +14406,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: CPU",
-        "uz": "Правильный ответ: CPU",
-        "en": "Правильный ответ: CPU"
+        "uz": "To'g'ri javob: CPU",
+        "en": "Correct answer: CPU"
       }
     },
     {
@@ -14415,16 +14415,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Выбрать уровни OSI",
-        "uz": "Выбрать уровни OSI",
-        "en": "Выбрать уровни OSI"
+        "uz": "OSI darajalarini tanlang",
+        "en": "Select OSI levels"
       },
       "answers": [
         {
           "id": "2368",
           "text": {
             "ru": "A) межсетевой",
-            "uz": "A) межсетевой",
-            "en": "A) межсетевой"
+            "uz": "A) internet ishi",
+            "en": "A) internetwork"
           },
           "is_correct": false
         },
@@ -14432,8 +14432,8 @@
           "id": "2366",
           "text": {
             "ru": "B) сеансовый",
-            "uz": "B) сеансовый",
-            "en": "B) сеансовый"
+            "uz": "B) sessiya",
+            "en": "B) sessional"
           },
           "is_correct": true
         },
@@ -14441,8 +14441,8 @@
           "id": "2365",
           "text": {
             "ru": "C) сетевой",
-            "uz": "C) сетевой",
-            "en": "C) сетевой"
+            "uz": "C) tarmoq",
+            "en": "C) network"
           },
           "is_correct": true
         },
@@ -14450,8 +14450,8 @@
           "id": "2367",
           "text": {
             "ru": "D) виртуальный",
-            "uz": "D) виртуальный",
-            "en": "D) виртуальный"
+            "uz": "D) virtual",
+            "en": "D) virtual"
           },
           "is_correct": false
         },
@@ -14459,8 +14459,8 @@
           "id": "2370",
           "text": {
             "ru": "E) транспортный",
-            "uz": "E) транспортный",
-            "en": "E) транспортный"
+            "uz": "E) transport",
+            "en": "E) transport"
           },
           "is_correct": true
         },
@@ -14468,8 +14468,8 @@
           "id": "2371",
           "text": {
             "ru": "F) представления",
-            "uz": "F) представления",
-            "en": "F) представления"
+            "uz": "F) taqdimotlar",
+            "en": "F) submissions"
           },
           "is_correct": true
         },
@@ -14477,8 +14477,8 @@
           "id": "2364",
           "text": {
             "ru": "G) физический",
-            "uz": "G) физический",
-            "en": "G) физический"
+            "uz": "G) jismoniy",
+            "en": "G) physical"
           },
           "is_correct": true
         },
@@ -14486,8 +14486,8 @@
           "id": "2369",
           "text": {
             "ru": "H) технический",
-            "uz": "H) технический",
-            "en": "H) технический"
+            "uz": "H) texnik",
+            "en": "H) technical"
           },
           "is_correct": false
         },
@@ -14495,16 +14495,16 @@
           "id": "2372",
           "text": {
             "ru": "I) прикладной",
-            "uz": "I) прикладной",
-            "en": "I) прикладной"
+            "uz": "I) qo'llaniladi",
+            "en": "I) applied"
           },
           "is_correct": true
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: физический",
-        "uz": "Правильный ответ: физический",
-        "en": "Правильный ответ: физический"
+        "uz": "To'g'ri javob: jismoniy",
+        "en": "Correct answer: physical"
       }
     },
     {
@@ -14512,8 +14512,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Как посмотреть данные по сетевому интерфейсу?",
-        "uz": "Как посмотреть данные по сетевому интерфейсу?",
-        "en": "Как посмотреть данные по сетевому интерфейсу?"
+        "uz": "Tarmoq interfeysidagi ma'lumotlarni qanday ko'rish mumkin?",
+        "en": "How to view data on the network interface?"
       },
       "answers": [
         {
@@ -14555,8 +14555,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: tcpdump -i eth0",
-        "uz": "Правильный ответ: tcpdump -i eth0",
-        "en": "Правильный ответ: tcpdump -i eth0"
+        "uz": "To'g'ri javob: tcpdump -i eth0",
+        "en": "Correct answer: tcpdump -i eth0"
       }
     },
     {
@@ -14564,8 +14564,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Какой командой можно вывести 5 последних строк файла?",
-        "uz": "Какой командой можно вывести 5 последних строк файла?",
-        "en": "Какой командой можно вывести 5 последних строк файла?"
+        "uz": "Qaysi buyruq faylning oxirgi 5 satrini chop etishi mumkin?",
+        "en": "Which command can print the last 5 lines of a file?"
       },
       "answers": [
         {
@@ -14607,8 +14607,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: tail --lines=5 file",
-        "uz": "Правильный ответ: tail --lines=5 file",
-        "en": "Правильный ответ: tail --lines=5 file"
+        "uz": "Toʻgʻri javob: tail --lines=5 fayl",
+        "en": "Correct answer: tail --lines=5 file"
       }
     },
     {
@@ -14616,16 +14616,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Какой командой создается user?",
-        "uz": "Какой командой создается user?",
-        "en": "Какой командой создается user?"
+        "uz": "Qaysi buyruq foydalanuvchi yaratadi?",
+        "en": "What command creates the user?"
       },
       "answers": [
         {
           "id": "2383",
           "text": {
             "ru": "A) использовать команду useradd",
-            "uz": "A) использовать команду useradd",
-            "en": "A) использовать команду useradd"
+            "uz": "A) useradd buyrug'idan foydalaning",
+            "en": "A) use useradd command"
           },
           "is_correct": true
         },
@@ -14633,8 +14633,8 @@
           "id": "2381",
           "text": {
             "ru": "B) добавить в файл sudoers",
-            "uz": "B) добавить в файл sudoers",
-            "en": "B) добавить в файл sudoers"
+            "uz": "B) sudoers fayliga qo'shing",
+            "en": "B) add to sudoers file"
           },
           "is_correct": false
         },
@@ -14642,8 +14642,8 @@
           "id": "2382",
           "text": {
             "ru": "C) использовать команду adduser",
-            "uz": "C) использовать команду adduser",
-            "en": "C) использовать команду adduser"
+            "uz": "C) adduser buyrug'idan foydalaning",
+            "en": "C) use the adduser command"
           },
           "is_correct": true
         },
@@ -14651,16 +14651,16 @@
           "id": "2384",
           "text": {
             "ru": "D) добавить в файл /etc/password",
-            "uz": "D) добавить в файл /etc/password",
-            "en": "D) добавить в файл /etc/password"
+            "uz": "D) /etc/password fayliga qo'shing",
+            "en": "D) add to /etc/password file"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: использовать команду adduser",
-        "uz": "Правильный ответ: использовать команду adduser",
-        "en": "Правильный ответ: использовать команду adduser"
+        "uz": "To'g'ri javob: adduser buyrug'idan foydalaning",
+        "en": "Correct answer: use the adduser command"
       }
     },
     {
@@ -14668,8 +14668,8 @@
       "type": "checkbox",
       "question": {
         "ru": "Как загрузить образ?",
-        "uz": "Как загрузить образ?",
-        "en": "Как загрузить образ?"
+        "uz": "Rasmni qanday yuklab olish mumkin?",
+        "en": "How to download the image?"
       },
       "answers": [
         {
@@ -14693,8 +14693,8 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: docker load",
-        "uz": "Правильный ответ: docker load",
-        "en": "Правильный ответ: docker load"
+        "uz": "To'g'ri javob: docker yuk",
+        "en": "Correct answer: docker load"
       }
     },
     {
@@ -14702,16 +14702,16 @@
       "type": "checkbox",
       "question": {
         "ru": "Чем отличается Docker и виртуальной машины?",
-        "uz": "Чем отличается Docker и виртуальной машины?",
-        "en": "Чем отличается Docker и виртуальной машины?"
+        "uz": "Docker va virtual mashina o'rtasidagi farq nima?",
+        "en": "What is the difference between Docker and a virtual machine?"
       },
       "answers": [
         {
           "id": "2389",
           "text": {
             "ru": "A) Ничем. Docker и есть виртуальная машина.",
-            "uz": "A) Ничем. Docker и есть виртуальная машина.",
-            "en": "A) Ничем. Docker и есть виртуальная машина."
+            "uz": "A) Hech narsa. Docker virtual mashinadir.",
+            "en": "A) Nothing. Docker is the virtual machine."
           },
           "is_correct": false
         },
@@ -14719,8 +14719,8 @@
           "id": "2390",
           "text": {
             "ru": "B) Отличие технологий, тем что виртуальная машина виртуализирует аппаратные ресурсы, а контейнер виртуализирует только операционную систему",
-            "uz": "B) Отличие технологий, тем что виртуальная машина виртуализирует аппаратные ресурсы, а контейнер виртуализирует только операционную систему",
-            "en": "B) Отличие технологий, тем что виртуальная машина виртуализирует аппаратные ресурсы, а контейнер виртуализирует только операционную систему"
+            "uz": "B) Texnologiyalar orasidagi farq shundaki, virtual mashina apparat resurslarini virtualizatsiya qiladi, konteyner esa faqat operatsion tizimni virtualizatsiya qiladi.",
+            "en": "B) The difference between the technologies is that a virtual machine virtualizes hardware resources, while a container virtualizes only the operating system"
           },
           "is_correct": true
         },
@@ -14728,8 +14728,8 @@
           "id": "2387",
           "text": {
             "ru": "C) Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро",
-            "uz": "C) Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро",
-            "en": "C) Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро"
+            "uz": "C) Docker o'z yadrosiga ega emas va har bir virtual mashina o'zining shaxsiy yadrosiga ega.",
+            "en": "C) Docker does not have its own kernel, and each virtual machine has its own personal kernel"
           },
           "is_correct": true
         },
@@ -14737,16 +14737,16 @@
           "id": "2388",
           "text": {
             "ru": "D) Docker имеет отдельную операционную систему, а виртуальная машина обращается за ресурсами непосредственно к ядру хоста",
-            "uz": "D) Docker имеет отдельную операционную систему, а виртуальная машина обращается за ресурсами непосредственно к ядру хоста",
-            "en": "D) Docker имеет отдельную операционную систему, а виртуальная машина обращается за ресурсами непосредственно к ядру хоста"
+            "uz": "D) Docker alohida operatsion tizimga ega va virtual mashina resurslar uchun bevosita xost yadrosiga kiradi.",
+            "en": "D) Docker has a separate operating system, and the virtual machine accesses the host kernel directly for resources"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "Правильный ответ: Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро",
-        "uz": "Правильный ответ: Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро",
-        "en": "Правильный ответ: Docker не имеет своего ядра, а у каждой виртуальной машины есть своё персональное ядро"
+        "uz": "To'g'ri javob: Docker o'z yadrosiga ega emas va har bir virtual mashinaning shaxsiy yadrosi mavjud.",
+        "en": "Correct answer: Docker does not have its own kernel, and each virtual machine has its own personal kernel"
       }
     }
   ]

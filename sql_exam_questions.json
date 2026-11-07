@@ -242,8 +242,8 @@
           "id": "1145",
           "text": {
             "ru": "C) хранилище JSON-файлов",
-            "uz": "B) Katta fayllar to'plami",
-            "en": "B) Large files collection"
+            "uz": "D) jadvallar orasidagi bog'liqliklarga asoslangan ma'lumotlar tuzilmasi",
+            "en": "D) data structure based on relationships between tables"
           },
           "is_correct": false
         },
@@ -303,8 +303,8 @@
           "id": "1151",
           "text": {
             "ru": "D) применяет изменения текущей транзакции только для чтения",
-            "uz": "C) Barcha o'zgarishlarni orqaga qaytaradi (rollback)",
-            "en": "C) Rolls back all changes"
+            "uz": "A) joriy tranzaksiyada kiritilgan barcha o'zgarishlarni commit qiladi (tasdiqlaydi)",
+            "en": "A) commits all changes made in the current transaction"
           },
           "is_correct": false
         }
@@ -554,8 +554,8 @@
           "id": "1170",
           "text": {
             "ru": "C) Уникальный идентификатор записей в таблице",
-            "uz": "B) Unikal qiymat va NULL bo'lishi mumkin bo'lgan ustun",
-            "en": "B) A column with unique values and NULL allowed"
+            "uz": "B) Unique qiymat va NULL ga ega ustun",
+            "en": "B) Column with unique values and NULL"
           },
           "is_correct": true
         },
@@ -597,8 +597,8 @@
           "id": "1175",
           "text": {
             "ru": "B) Каждая ячейка в таблице содержит только 1 значение",
-            "uz": "A) Har bir atribut qiymati takrorlanuvchi bo'lishi",
-            "en": "A) All attribute values must be repeatable"
+            "uz": "D) Har bir jadvalda Primary Key bo'lishi",
+            "en": "D) Every table has a primary key"
           },
           "is_correct": true
         },
