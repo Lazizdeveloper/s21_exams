@@ -112,7 +112,7 @@ export default function HomePage() {
           <div>
             <h4 className="font-bold text-slate-900 dark:text-white mb-1">Vaqtli Imtihon Rejimi</h4>
             <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-              Haqiqiy imtihon muhiti: 40 ta tasodifiy savol, qat'iy timer va yakuniy foizli tahlil.
+              Haqiqiy imtihon muhiti: 30 ta tasodifiy savol, 1 soatlik qat'iy timer va yakuniy foizli tahlil.
             </p>
           </div>
         </div>
