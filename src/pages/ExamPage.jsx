@@ -109,7 +109,8 @@ export default function ExamPage() {
 
     const total = examQuestions.length;
     const percentage = Math.round((correctCount / total) * 100);
-    const passed = percentage >= 75; // Standard 75% threshold
+    const passingScorePercent = currentCategory.passingScorePercent || (currentCategory.id === 'devops' ? 80 : 50);
+    const passed = percentage >= passingScorePercent;
     const timeSpentSeconds = (currentCategory.examDurationMinutes * 60) - secondsRemaining;
 
     saveExamResult({
@@ -119,6 +120,7 @@ export default function ExamPage() {
       correctCount,
       incorrectCount: total - correctCount,
       percentage,
+      passingScorePercent,
       passed,
       timeSpentSeconds,
       reviewData

@@ -7,6 +7,10 @@ export const DEFAULT_PRACTICE_COUNT = 30;
 export const DEFAULT_EXAM_COUNT = 30;
 export const DEFAULT_EXAM_DURATION_MINUTES = 60;
 
+export const getPassingScorePercent = (categoryId) => {
+  return categoryId === 'devops' ? 80 : 50;
+};
+
 export const CATEGORIES = [
   {
     id: 'devops',
@@ -17,6 +21,7 @@ export const CATEGORIES = [
     practiceQuestionCount: 30,
     examQuestionCount: 30,
     examDurationMinutes: 60,
+    passingScorePercent: 80, // DevOps exam requires 80% to pass
     isMultilingual: true,
     rawQuestions: devopsData.questions,
   },
@@ -29,6 +34,7 @@ export const CATEGORIES = [
     practiceQuestionCount: 23,
     examQuestionCount: 23,
     examDurationMinutes: 60,
+    passingScorePercent: 50, // JS/Networking requires 50% to pass
     isMultilingual: true,
     rawQuestions: httpJsData.questions,
   },
@@ -41,6 +47,7 @@ export const CATEGORIES = [
     practiceQuestionCount: 30,
     examQuestionCount: 30,
     examDurationMinutes: 60,
+    passingScorePercent: 50, // SQL requires 50% to pass
     isMultilingual: true,
     rawQuestions: sqlData.questions,
   },
@@ -53,6 +60,7 @@ export const CATEGORIES = [
     practiceQuestionCount: 24,
     examQuestionCount: 24,
     examDurationMinutes: 60,
+    passingScorePercent: 50, // C Theory requires 50% to pass
     isMultilingual: true,
     rawQuestions: cTheoryData.questions,
   },

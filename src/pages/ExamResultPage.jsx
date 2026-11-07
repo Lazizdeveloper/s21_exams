@@ -78,7 +78,7 @@ export default function ExamResultPage() {
             {res.passed ? t.exam.passed : t.exam.failed}
           </h2>
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            O'tish chegarasi: 75% • Sizning natijangiz: <span className="font-bold text-slate-900 dark:text-white">{res.percentage}%</span>
+            {t.exam.passingScore || "O'tish chegarasi"}: <span className="font-bold text-slate-900 dark:text-white">{res.passingScorePercent || (res.categoryKey === 'devops' ? 80 : 50)}%</span> • {t.exam.yourScore || "Sizning natijangiz"}: <span className="font-bold text-slate-900 dark:text-white">{res.percentage}%</span>
           </p>
         </div>
 

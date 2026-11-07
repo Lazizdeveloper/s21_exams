@@ -67,7 +67,9 @@ export const translations = {
     },
     exam: {
       title: "Haqiqiy imtihon rejimi",
-      rules: "Qoidalar: 30 ta tasodifiy savol, 1 soat (60 daqiqa) vaqt. Natija yakunda hisoblanadi.",
+      rules: "Qoidalar: 30 ta tasodifiy savol, 1 soat (60 daqiqa) vaqt (DevOps: 80%, C / JS / SQL: 50%).",
+      passingScore: "O'tish chegarasi",
+      yourScore: "Sizning natijangiz",
       timeLeft: "Qolgan vaqt",
       progress: "Savollar bajarilishi",
       confirmFinish: "Haqiqatan ham imtihonni yakunlamoqchimisiz?",
@@ -170,7 +172,9 @@ export const translations = {
     },
     exam: {
       title: "Реальный экзаменационный режим",
-      rules: "Правила: 30 случайных вопросов, 1 час (60 минут). Результат рассчитывается в конце.",
+      rules: "Правила: 30 случайных вопросов, 1 час (60 минут). DevOps: проходной 80%, C / JS / SQL: 50%.",
+      passingScore: "Проходной балл",
+      yourScore: "Ваш результат",
       timeLeft: "Осталось времени",
       progress: "Прогресс ответов",
       confirmFinish: "Вы уверены, что хотите досрочно завершить экзамен?",
@@ -273,7 +277,9 @@ export const translations = {
     },
     exam: {
       title: "Official Exam Simulation",
-      rules: "Rules: 30 randomized questions, 1 hour (60 minutes). Final score calculated at the end.",
+      rules: "Rules: 30 randomized questions, 1 hour (60 minutes). DevOps: 80% passing score, C / JS / SQL: 50%.",
+      passingScore: "Passing score",
+      yourScore: "Your score",
       timeLeft: "Time Left",
       progress: "Answer Progress",
       confirmFinish: "Are you sure you want to finish the exam now?",

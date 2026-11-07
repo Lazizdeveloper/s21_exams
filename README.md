@@ -32,9 +32,9 @@ npm run preview
    - Interfeys va barcha menyular 3 tilda ishlaydi.
    - HTTP, Tarmoqlar & JavaScript savollari 3 tilda to'liq taqdim etilgan.
 2. **Imtihon rejimi (Official Exam Simulation)**:
-   - Tasodifiy 40 ta savol (DevOps) yoki fanga mos savollar to'plami.
+   - Tasodifiy 30 ta savol, 1 soat (60 daqiqa) vaqt.
    - Haqiqiy vaqt hisoblagich (Timer).
-   - Imtihon yakunida aniqlik foizi (75% dan o'tish balli), xatolar tahlili va konfetti animatsiyasi.
+   - Imtihon yakunida aniqlik foizi (DevOps: 80%, C / JS / SQL: 50% o'tish balli), xatolar tahlili va konfetti animatsiyasi.
 3. **Mashq / O'rganish rejimi (Practice Mode)**:
    - Har bir savolga javob berilishi bilanoq to'g'ri/xato ekanligi ko'rinadi.
    - Har bir savolga batafsil tushuntirish va izoh (`explanation`).
