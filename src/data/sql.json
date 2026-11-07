@@ -1,0 +1,1089 @@
+{
+  "source": "https://widum.ru/s21/sql/",
+  "title": "Школа 21. Экзамен SQL (теория и практика)",
+  "total_questions": 30,
+  "scraped_at": "2026-11-07T17:48:22+0500",
+  "questions": [
+    {
+      "id": 385,
+      "type": "radio",
+      "question": "Какой принцип ACID гарантирует, что если транзакция прошла успешно, изменения будут сохранены даже в случае сбоя?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1131",
+          "text": "A) Изоляция",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1134",
+          "text": "B) Согласованность",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1132",
+          "text": "C) Надежность",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1133",
+          "text": "D) Атомарность",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) Надежность"
+      ],
+      "explanation": "Надежность (Durability) обеспечивает сохранение данных даже при сбое."
+    },
+    {
+      "id": 386,
+      "type": "radio",
+      "question": "Что означает CAP в CAP-теореме?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1257",
+          "text": "A) Coordination, Availability, Processing",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1258",
+          "text": "B) Connection, Authentication, Persistence",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1135",
+          "text": "C) Consistency, Accuracy, Performance",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1256",
+          "text": "D) Consistency, Availability, Partition Tolerance",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Consistency, Availability, Partition Tolerance"
+      ],
+      "explanation": "CAP-теорема описывает невозможность одновременного соблюдения всех трёх свойств в распределённой системе."
+    },
+    {
+      "id": 387,
+      "type": "radio",
+      "question": "Какая из перечисленных служб управляет доступом к данным?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1137",
+          "text": "A) DBMS",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1138",
+          "text": "B) Transaction Manager",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1139",
+          "text": "C) Query Optimizer",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1136",
+          "text": "D) SQL server",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) DBMS"
+      ],
+      "explanation": "DBMS (СУБД) управляет хранением, изменением и доступом к данным."
+    },
+    {
+      "id": 388,
+      "type": "radio",
+      "question": "Какая из перечисленных не относится к реляционным БД?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1143",
+          "text": "A) mysql",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1142",
+          "text": "B) mongodb",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1140",
+          "text": "C) psql",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1141",
+          "text": "D) oracle",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) mongodb"
+      ],
+      "explanation": "MongoDB — это документо-ориентированная база, а не реляционная."
+    },
+    {
+      "id": 389,
+      "type": "radio",
+      "question": "Что подходит по термин реляционная БД?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1147",
+          "text": "A) на графах",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1146",
+          "text": "B) большие файлы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1145",
+          "text": "C) хранилище JSON-файлов",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1144",
+          "text": "D) структура, данных основанная на связях между таблицами",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) структура, данных основанная на связях между таблицами"
+      ],
+      "explanation": "Реляционная модель — это таблицы, связанные друг с другом через ключи."
+    },
+    {
+      "id": 390,
+      "type": "radio",
+      "question": "Какое действие выполняет команда COMMIT?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1148",
+          "text": "A) подтверждает все изменения, сделанные в текущей транзакции",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1150",
+          "text": "B) отменяет текущую транзакцию",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1149",
+          "text": "C) отменяет все изменения",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1151",
+          "text": "D) применяет изменения текущей транзакции только для чтения",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) подтверждает все изменения, сделанные в текущей транзакции"
+      ],
+      "explanation": "COMMIT сохраняет все изменения, сделанные с начала транзакции."
+    },
+    {
+      "id": 391,
+      "type": "radio",
+      "question": "Какая команда используется для создания составного индекса?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1155",
+          "text": "A) CREATE INDEX comp_index on table_name (col1, col2)",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1153",
+          "text": "B) CREATE COMPOSITE INDEX",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1154",
+          "text": "C) CREATE INDEX table_name (col, index, col2)",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1152",
+          "text": "D) ADD COMPOSITE INDEX",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) CREATE INDEX comp_index on table_name (col1, col2)"
+      ],
+      "explanation": "Правильный синтаксис: CREATE INDEX имя ON таблица (поле1, поле2)."
+    },
+    {
+      "id": 392,
+      "type": "radio",
+      "question": "Какая команда используется для создания FOREIGN KEY?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1159",
+          "text": "A) CREATE INDEX",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1158",
+          "text": "B) INSERT INTO",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1157",
+          "text": "C) ADD CONSTRAINT",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1156",
+          "text": "D) ALTER VIEW",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) ADD CONSTRAINT"
+      ],
+      "explanation": "FOREIGN KEY добавляется через ADD CONSTRAINT."
+    },
+    {
+      "id": 393,
+      "type": "checkbox",
+      "question": "Какая команда используется для создания CHECK CONSTRAINT?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1160",
+          "text": "A) UPDATE TABLE",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1163",
+          "text": "B) INSERT INTO",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1162",
+          "text": "C) ALTER TABLE",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1161",
+          "text": "D) CREATE TABLE",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) ALTER TABLE",
+        "D) CREATE TABLE"
+      ],
+      "explanation": "CHECK можно добавить с помощью ALTER TABLE или при создании — через CREATE TABLE."
+    },
+    {
+      "id": 394,
+      "type": "radio",
+      "question": "Что произойдет, если объект с CHECK CONSTRAINT не пройдет проверку при вставке?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1167",
+          "text": "A) Операция вставки или обновления будет отклонена",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1165",
+          "text": "B) Ограничение будет автоматически отключено",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1166",
+          "text": "C) Данные будут автоматически удалены",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1164",
+          "text": "D) БД выдаст предупреждение, но продолжит операцию",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Операция вставки или обновления будет отклонена"
+      ],
+      "explanation": "CHECK CONSTRAINT запрещает вставку данных, нарушающих условие."
+    },
+    {
+      "id": 395,
+      "type": "radio",
+      "question": "Что такое первичный ключ?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1169",
+          "text": "A) Столбец с дублирующимися значениями",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1168",
+          "text": "B) Столбец с уникальным значением и NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1170",
+          "text": "C) Уникальный идентификатор записей в таблице",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1171",
+          "text": "D) Столбец содержащий внешний ключ",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) Уникальный идентификатор записей в таблице"
+      ],
+      "explanation": "Первичный ключ — уникальный идентификатор строки, не может быть NULL."
+    },
+    {
+      "id": 396,
+      "type": "radio",
+      "question": "Что представляет собой первая нормальная форма (1NF)?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1174",
+          "text": "A) Все значения атрибутов в таблице уникальны",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1175",
+          "text": "B) Каждая ячейка в таблице содержит только 1 значение",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1173",
+          "text": "C) Все атрибуты зависят от первичного ключа",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1172",
+          "text": "D) Каждая таблица имеет первичный ключ",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) Каждая ячейка в таблице содержит только 1 значение"
+      ],
+      "explanation": "1NF требует атомарности: каждое поле содержит только одно значение."
+    },
+    {
+      "id": 397,
+      "type": "radio",
+      "question": "Какое из следующих понятий описывает связь между двумя сущностями в логической модели данных?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1176",
+          "text": "A) Внешний ключ",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1178",
+          "text": "B) Индекс",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1177",
+          "text": "C) Триггер",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1179",
+          "text": "D) Хеш-код",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Внешний ключ"
+      ],
+      "explanation": "Внешний ключ связывает строки между таблицами, устанавливая логические связи."
+    },
+    {
+      "id": 398,
+      "type": "radio",
+      "question": "Какой из следующих языков используется для описания логической модели данных?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1182",
+          "text": "A) JSON",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1180",
+          "text": "B) UML",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1181",
+          "text": "C) SQL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1183",
+          "text": "D) HTML",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) UML"
+      ],
+      "explanation": "UML — язык для визуального описания логической модели данных, сущностей и связей между ними."
+    },
+    {
+      "id": 399,
+      "type": "radio",
+      "question": "Что концептуально представляет собой структура ER-модели?",
+      "image": null,
+      "answers": [
+        {
+          "id": "1185",
+          "text": "A) Характеристики сущностей",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1187",
+          "text": "B) Отношения между сущностями",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1186",
+          "text": "C) Имена сущностей",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1184",
+          "text": "D) Ключевые слова",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) Отношения между сущностями"
+      ],
+      "explanation": "ER-модель описывает отношения между сущностями, это её основная цель."
+    },
+    {
+      "id": 400,
+      "type": "radio",
+      "question": "Практика 1\n\n```sql\nSELECT CASE WHEN NULL = 5 THEN ‘A’ WHEN NULL <> 5 THEN ‘B’ ELSE ‘C’ END AS result;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1191",
+          "text": "A) ‘A’",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1190",
+          "text": "B) NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1189",
+          "text": "C) ‘C’",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1188",
+          "text": "D) ‘B’",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) ‘C’"
+      ],
+      "explanation": "NULL не равен и не неравен 5, условие не срабатывает, ELSE → ‘C’."
+    },
+    {
+      "id": 401,
+      "type": "radio",
+      "question": "Практика 8\n\nEmployee\n\n| id | employee | transaction |\n| --- | --- | --- |\n| 1 | Иван | 100 |\n| 2 | Анна | 200 |\n| 3 | Ирина | 50 |\n| 4 | Иван | 330 |\n| 5 | Анна | 45 |\n\n```sql\nSELECT employee, sum(transaction) FROM Employee GROUP BY employee ORDER BY 2 DESC LIMIT 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1193",
+          "text": "A) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1195",
+          "text": "B) ('Ирина', 50)",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1192",
+          "text": "C) ('Иван', 430)",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1194",
+          "text": "D) ('Анна', 530)",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) ('Иван', 430)"
+      ],
+      "explanation": "Иван: 100+330 = 430. У Анны: 200+45 = 245. Значит, Иван на первом месте."
+    },
+    {
+      "id": 402,
+      "type": "radio",
+      "question": "Практика 9\n\nEmployee\n\n| id | employee | transaction |\n| --- | --- | --- |\n| 1 | Иван | 100 |\n| 2 | Анна | 200 |\n| 3 | Ирина | 50 |\n| 4 | Иван | 330 |\n| 5 | Анна | 45 |\n\n```sql\nSELECT DISTINCT employee as emp FROM Employee ORDER BY 1 DESC LIMIT 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1196",
+          "text": "A) ‘Иван’",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1198",
+          "text": "B) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1199",
+          "text": "C) ‘Анна’",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1197",
+          "text": "D) ‘Ирина’",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) ‘Ирина’"
+      ],
+      "explanation": "Имена сортируются по алфавиту, DESC — значит последняя по алфавиту: ‘Ирина’."
+    },
+    {
+      "id": 403,
+      "type": "radio",
+      "question": "Практика 10\n\nEmployee\n\n| id | employee | transaction |\n| --- | --- | --- |\n| 1 | Иван | 100 |\n| 2 | Анна | 200 |\n| 3 | Ирина | 50 |\n| 4 | Иван | 330 |\n| 5 | Анна | 45 |\n\n```sql\nSELECT employee FROM (SELECT employee, row_number() OVER (ORDER BY transaction) as row_num FROM Employee GROUP BY employee) AS tl WHERE tl.row_num = 2 ORDER BY 1 ASC LIMIT 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1202",
+          "text": "A) ‘Анна’",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1200",
+          "text": "B) синт. ошибка",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1201",
+          "text": "C) ‘Иван’",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1203",
+          "text": "D) ‘Ирина’",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) синт. ошибка"
+      ],
+      "explanation": "Ошибка: нельзя использовать window-функции (row_number) вместе с GROUP BY без агрегатных функций."
+    },
+    {
+      "id": 404,
+      "type": "radio",
+      "question": "Практика 11\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Иван |\n| 2 | Анна |\n| 3 | Ирина |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Хоккей |\n| 20 | 1 | Музыка |\n| 30 | 3 | Чтение |\n| 40 | 4 | Плавание |\n\n```sql\nSELECT s.name, h.hobby FROM Student AS s INNER JOIN Hobby AS h ON s.id = h.student_id WHERE h.hobby = ‘Хоккей’ AND h.hobby = ‘Чтение’;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1204",
+          "text": "A) не вернет ни одной строки",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1207",
+          "text": "B) (NULL, NULL)",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1206",
+          "text": "C) ('Иван', 'Хоккей')",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1205",
+          "text": "D) ('Ирина', 'Чтение')",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) не вернет ни одной строки"
+      ],
+      "explanation": "Одновременно hobby не может быть и 'Хоккей', и 'Чтение'. Условие невозможно выполнить."
+    },
+    {
+      "id": 405,
+      "type": "radio",
+      "question": "Практика 12\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Иван |\n| 2 | Анна |\n| 3 | Ирина |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Хоккей |\n| 20 | 1 | Музыка |\n| 30 | 3 | Чтение |\n| 40 | 4 | Плавание |\n\n```sql\nSELECT * FROM Student AS s CROSS JOIN Hobby AS h;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1211",
+          "text": "A) R = 4, C = 4",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1209",
+          "text": "B) R = 4, C = 5",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1210",
+          "text": "C) R = 12, C = 4",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1208",
+          "text": "D) R = 12, C = 5",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) R = 12, C = 5"
+      ],
+      "explanation": "CROSS JOIN перемножает 3 студента × 4 хобби = 12 строк . Выбираются все столбцы из обеих таблиц: id, name (из Student) + id, student_id, hobby (из Hobby) → всего 5 столбцов ."
+    },
+    {
+      "id": 406,
+      "type": "radio",
+      "question": "Практика 13\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Иван |\n| 2 | Анна |\n| 3 | Ирина |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Хоккей |\n| 20 | 1 | Музыка |\n| 30 | 3 | Чтение |\n| 40 | 4 | Плавание |\n\n```sql\nSELECT s.name, h.hobby FROM Student AS s RIGHT JOIN Hobby AS h ON s.id = h.student_id ORDER BY s.name NULLS FIRST;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1213",
+          "text": "A) ('Анна', NULL)",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1212",
+          "text": "B) не вернет ни одной строки",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1214",
+          "text": "C) ('Иван', 'Музыка')",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1215",
+          "text": "D) (NULL, 'Плавание')",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) (NULL, 'Плавание')"
+      ],
+      "explanation": "ID 4 нет в Student, но есть в Hobby — RIGHT JOIN даст строку с NULL в имени."
+    },
+    {
+      "id": 407,
+      "type": "radio",
+      "question": "Практика 14\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Иван |\n| 2 | Анна |\n| 3 | Ирина |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Хоккей |\n| 20 | 1 | Музыка |\n| 30 | 3 | Чтение |\n| 40 | 4 | Плавание |\n\n```sql\nSELECT string_agg(tl.id::VARCHAR, ‘,’ ORDER BY tl.id) AS result FROM (SELECT s.id FROM Student AS s UNION SELECT h.student_id FROM Hobby as h) as tl;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1217",
+          "text": "A) 1, 2, 3, 4",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1219",
+          "text": "B) 1, 1, 1, 2, 3, 3, 4",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1218",
+          "text": "C) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1216",
+          "text": "D) 1, 1, 2, 3, 3, 4",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) 1, 2, 3, 4"
+      ],
+      "explanation": "UNION убирает дубликаты, поэтому получим уникальные id: 1, 2, 3, 4."
+    },
+    {
+      "id": 408,
+      "type": "radio",
+      "question": "Практика 15\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Иван |\n| 2 | Анна |\n| 3 | Ирина |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Хоккей |\n| 20 | 1 | Музыка |\n| 30 | 3 | Чтение |\n| 40 | 4 | Плавание |\n\n```sql\nWITH _a AS (SELECT s.name, h.hobby FROM Student AS s RIGHT JOIN Hobby AS h ON s.id = h.student_id ORDER BY s.name NULLS FIRST LIMIT 1), _b AS (SELECT 1/0 AS res) SELECT * FROM _a;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1222",
+          "text": "A) ('Иван', 'Музыка')",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1223",
+          "text": "B) не вернет ни одной строки",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1220",
+          "text": "C) ('Анна', NULL)",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1221",
+          "text": "D) (NULL, 'Плавание')",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) (NULL, 'Плавание')"
+      ],
+      "explanation": "CTE _b с делением на 0 не используется, поэтому SELECT из _a сработает."
+    },
+    {
+      "id": 409,
+      "type": "radio",
+      "question": "Практика 2\n\n```sql\nSELECT sum(tl.value) FROM (SELECT NULL::INTEGER as value) AS tl;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1224",
+          "text": "A) 1",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1226",
+          "text": "B) NULL",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1227",
+          "text": "C) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1225",
+          "text": "D) 0",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) NULL"
+      ],
+      "explanation": "SUM от NULL без фильтра возвращает NULL."
+    },
+    {
+      "id": 410,
+      "type": "radio",
+      "question": "Практика 3\n\n```sql\nSELECT 1 + 1 AS value WHERE 1 = 1 AND 2 = 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1229",
+          "text": "A) 2",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1230",
+          "text": "B) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1231",
+          "text": "C) не вернет ни одной строки",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1228",
+          "text": "D) NULL",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) не вернет ни одной строки"
+      ],
+      "explanation": "WHERE 1=1 AND 2=1 → FALSE, значит ни одна строка не вернется."
+    },
+    {
+      "id": 411,
+      "type": "radio",
+      "question": "Практика 4\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Ivan |\n| 2 | Anna |\n| 3 | Irina |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Hockey |\n| 20 | 1 | Music |\n| 30 | 3 | Reading |\n| 40 | 4 | Swimming |\n\n```sql\nSELECT count(*) FROM Student AS s WHERE EXISTS (SELECT NULL FROM Hobby AS h WHERE h.student_id = s.id LIMIT 1);\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1235",
+          "text": "A) не вернет ни одной строки",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1232",
+          "text": "B) 3",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1234",
+          "text": "C) NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1233",
+          "text": "D) 2",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) 2"
+      ],
+      "explanation": "Только два студента имеют записи в Hobby."
+    },
+    {
+      "id": 412,
+      "type": "radio",
+      "question": "Практика 5\n\nStudent\n\n| id | name |\n| --- | --- |\n| 1 | Ivan |\n| 2 | Anna |\n| 3 | Irina |\n\nHobby\n\n| id | student_id | hobby |\n| --- | --- | --- |\n| 10 | 1 | Hockey |\n| 20 | 1 | Music |\n| 30 | 3 | Reading |\n| 40 | 4 | Swimming |\n\n```sql\nSELECT count(*) FROM Student AS s WHERE id IN (SELECT * FROM Hobby);\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1239",
+          "text": "A) NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1237",
+          "text": "B) синт. ошибка",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1238",
+          "text": "C) 3",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1236",
+          "text": "D) 2",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) синт. ошибка"
+      ],
+      "explanation": "SELECT * нельзя использовать в подзапросе в IN — синтаксическая ошибка."
+    },
+    {
+      "id": 413,
+      "type": "radio",
+      "question": "Практика 6\n\nStudent\n\n| id | name | reg_num |\n| --- | --- | --- |\n| 1 | Ivan | 123 |\n| 2 | Anna | NULL |\n| 3 | Irina | 456 |\n\n```sql\nSELECT reg_num FROM Student ORDER BY reg_num NULLS LAST LIMIT 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1242",
+          "text": "A) 456",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1243",
+          "text": "B) NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1241",
+          "text": "C) 123",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "1240",
+          "text": "D) не вернет ни одной строки",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) 123"
+      ],
+      "explanation": "NULLS LAST означает, что NULL в конце. ORDER BY reg_num — по возрастанию: 123, 456, NULL . LIMIT 1 — берём первый элемент → 123 ."
+    },
+    {
+      "id": 416,
+      "type": "radio",
+      "question": "Практика 7\n\nHobby\n\n| id | student | hobby |\n| --- | --- | --- |\n| 1 | Иван | Хоккей |\n| 2 | Анна | Блог |\n| 3 | Ирина | Чтение |\n| 4 | Иван | Футбол |\n| 5 | Анна | Спорт |\n\n```sql\nSELECT student FROM Hobby GROUP BY student HAVING student LIKE ‘%Анна%’ LIMIT 1;\n```",
+      "image": null,
+      "answers": [
+        {
+          "id": "1255",
+          "text": "A) NULL",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1252",
+          "text": "B) не вернет ни одной строки",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1253",
+          "text": "C) синт. ошибка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "1254",
+          "text": "D) ‘Анна’",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) ‘Анна’"
+      ],
+      "explanation": "HAVING используется после GROUP BY. Если значение удовлетворяет LIKE — оно будет выбрано."
+    }
+  ]
+}
