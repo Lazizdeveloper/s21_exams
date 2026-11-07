@@ -1,0 +1,889 @@
+{
+  "source": "https://widum.ru/s21/c-theory/",
+  "title": "Школа 21. Экзамен С (теория)",
+  "total_questions": 24,
+  "scraped_at": "2026-11-07T17:44:35+0500",
+  "questions": [
+    {
+      "id": 752,
+      "type": "checkbox",
+      "question": "Основные компоненты Unix?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2469",
+          "text": "A) Системные библиотеки",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2467",
+          "text": "B) Графическая оболочка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2468",
+          "text": "C) Системные утилиты",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2470",
+          "text": "D) Ядро",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Системные библиотеки",
+        "C) Системные утилиты",
+        "D) Ядро"
+      ],
+      "explanation": "Unix состоит из ядра, системных библиотек, утилит и интерфейсов, но не обязательно включает графическую оболочку."
+    },
+    {
+      "id": 753,
+      "type": "radio",
+      "question": "Какое имя файла является валидным?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2474",
+          "text": "A) Имя должно быть не длиннее 8 символов",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2472",
+          "text": "B) Любая последовательность букв и цифр",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2473",
+          "text": "C) Любая последовательность букв, цифр и спец. символов",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2471",
+          "text": "D) Любая последовательность символов, кроме «/» и «\u0000»",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Любая последовательность символов, кроме «/» и «\u0000»"
+      ],
+      "explanation": "В Unix имя файла может содержать любые символы, кроме «/» (разделителя директорий) и нулевого байта «\u0000»."
+    },
+    {
+      "id": 754,
+      "type": "radio",
+      "question": "Что такое SSH и где применяется?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2477",
+          "text": "A) SSH применяется для безопасной передачи данных",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2478",
+          "text": "B) SSH применяется для передачи гипертекста",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2476",
+          "text": "C) SSH – это протокол канального уровня",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2475",
+          "text": "D) SSH (secure shell) – это сетевой протокол для защищенного управления удалёнными системами",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) SSH (secure shell) – это сетевой протокол для защищенного управления удалёнными системами"
+      ],
+      "explanation": "SSH — это прикладной протокол, предназначенный для безопасного управления удалёнными машинами и передачи данных."
+    },
+    {
+      "id": 755,
+      "type": "radio",
+      "question": "В чем разница между git и GitLab?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2480",
+          "text": "A) Git – это веб-интерфейс, а GitLab – язык программирования",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2482",
+          "text": "B) Git и GitLab — одно и то же",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2481",
+          "text": "C) GitLab – это клиент для Git",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2479",
+          "text": "D) Git – это система управления версиями, а GitLab – это веб сервис для размещения репозиториев",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Git – это система управления версиями, а GitLab – это веб сервис для размещения репозиториев"
+      ],
+      "explanation": "Git — это система контроля версий, а GitLab — платформа для хранения и управления репозиториями с интерфейсом и CI/CD."
+    },
+    {
+      "id": 756,
+      "type": "radio",
+      "question": "Как хранятся строки в памяти в С?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2483",
+          "text": "A) Хранятся как массив с последним символом «\u0000»",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2485",
+          "text": "B) Хранятся в виде объекта",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2486",
+          "text": "C) Хранятся в бинарном дереве",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2484",
+          "text": "D) Хранятся как структура данных",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Хранятся как массив с последним символом «\u0000»"
+      ],
+      "explanation": "Строки в C — это массивы символов, оканчивающиеся специальным символом null — «\u0000»."
+    },
+    {
+      "id": 757,
+      "type": "checkbox",
+      "question": "Что такое строки в языке С?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2490",
+          "text": "A) Строка — это объект",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2488",
+          "text": "B) Строка — это массив символов",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2489",
+          "text": "C) Можно получить доступ к отдельным символам",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2487",
+          "text": "D) Источник ошибок, так как нет защиты при выходе за границы",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) Строка — это массив символов",
+        "C) Можно получить доступ к отдельным символам"
+      ],
+      "explanation": "Строка в C — это массив символов, к каждому из которых можно обратиться по индексу. Нет встроенной защиты от выхода за границы."
+    },
+    {
+      "id": 758,
+      "type": "checkbox",
+      "question": "Как происходит обработка ошибок в С и нужно ли проверять выделение памяти?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2494",
+          "text": "A) Malloc не всегда выделяет память",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2492",
+          "text": "B) Нужно проверять результат malloc",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2493",
+          "text": "C) Ошибки обрабатываются автоматически",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2491",
+          "text": "D) В C нет встроенной поддержки исключений",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Malloc не всегда выделяет память",
+        "B) Нужно проверять результат malloc",
+        "D) В C нет встроенной поддержки исключений"
+      ],
+      "explanation": "В C нет исключений, поэтому нужно вручную проверять успешность выделения памяти через malloc и аналогичные функции."
+    },
+    {
+      "id": 759,
+      "type": "checkbox",
+      "question": "Какие существуют функции для работы с памятью?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2498",
+          "text": "A) free",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2495",
+          "text": "B) malloc",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2496",
+          "text": "C) calloc",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2497",
+          "text": "D) realloc",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) free",
+        "B) malloc",
+        "C) calloc",
+        "D) realloc"
+      ],
+      "explanation": "malloc, calloc, realloc — выделяют память, free — освобождает. Это стандартные функции работы с памятью в C."
+    },
+    {
+      "id": 760,
+      "type": "checkbox",
+      "question": "Какие аргументы у main()?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2502",
+          "text": "A) main() не принимает аргументы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2501",
+          "text": "B) char *argv[], int argc",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2499",
+          "text": "C) int argc, char *argv[]",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2500",
+          "text": "D) int argc, char **argv",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) int argc, char *argv[]",
+        "D) int argc, char **argv"
+      ],
+      "explanation": "Чаще всего используются формы int main(int argc, char *argv[]) и int main(int argc, char **argv)."
+    },
+    {
+      "id": 761,
+      "type": "radio",
+      "question": "Как происходит обработка аргументов командной строки?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2505",
+          "text": "A) Используется глобальный массив",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2504",
+          "text": "B) Система автоматически разбирает аргументы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2503",
+          "text": "C) Обрабатывается программистом с использованием argc и argv",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2506",
+          "text": "D) Командная строка не поддерживается",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) Обрабатывается программистом с использованием argc и argv"
+      ],
+      "explanation": "В языке C аргументы командной строки обрабатываются вручную с помощью argc и argv."
+    },
+    {
+      "id": 762,
+      "type": "radio",
+      "question": "Каким режимом открыть файл для до записи в конец?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2508",
+          "text": "A) r",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2510",
+          "text": "B) w+",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2507",
+          "text": "C) a",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2509",
+          "text": "D) w",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) a"
+      ],
+      "explanation": "Режим 'a' (append) используется для открытия файла и записи в конец без стирания его содержимого."
+    },
+    {
+      "id": 763,
+      "type": "radio",
+      "question": "Как вернуть код ошибки и значение функции?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2514",
+          "text": "A) Использовать исключения",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2512",
+          "text": "B) Через глобальную переменную",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2513",
+          "text": "C) Функция может возвращать два значения",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2511",
+          "text": "D) Возврат кода ошибки, значение — через указатель",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Возврат кода ошибки, значение — через указатель"
+      ],
+      "explanation": "Функции в C могут возвращать только одно значение, поэтому значение можно передать через аргумент-указатель, а возвращаемое значение — код ошибки."
+    },
+    {
+      "id": 764,
+      "type": "checkbox",
+      "question": "Какие типы файлов существуют?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2516",
+          "text": "A) Блочные",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2518",
+          "text": "B) Универсальные",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2517",
+          "text": "C) Бинарные",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2515",
+          "text": "D) Текстовые",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Блочные",
+        "C) Бинарные",
+        "D) Текстовые"
+      ],
+      "explanation": "Файлы бывают текстовыми, бинарными, блочными и символьными. 'Универсальные' — неформальный термин."
+    },
+    {
+      "id": 765,
+      "type": "checkbox",
+      "question": "Укажите верные утверждения о структурах в С?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2521",
+          "text": "A) Можно менять тип переменных",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2522",
+          "text": "B) Структуры нельзя использовать в функциях",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2519",
+          "text": "C) В C для struct нужно динамически выделять память",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2520",
+          "text": "D) Для struct можно выделять как статически, так и динамически память",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Можно менять тип переменных",
+        "D) Для struct можно выделять как статически, так и динамически память"
+      ],
+      "explanation": "Память под структуры можно выделять как статически, так и динамически. Также можно использовать разные типы переменных внутри struct."
+    },
+    {
+      "id": 766,
+      "type": "checkbox",
+      "question": "Какие операции можно проводить над структурами?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2526",
+          "text": "A) Можно прибавлять указатель к структуре",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2523",
+          "text": "B) Можно обращаться с помощью операций . и ->",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2524",
+          "text": "C) Можно сравнивать структуры напрямую",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2525",
+          "text": "D) Можно копировать структуры присваиванием",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) Можно обращаться с помощью операций . и ->",
+        "D) Можно копировать структуры присваиванием"
+      ],
+      "explanation": "Доступ к полям осуществляется через . или ->. Также возможна копия структуры через =."
+    },
+    {
+      "id": 767,
+      "type": "checkbox",
+      "question": "Какие существуют способы представления матрицы в памяти?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2528",
+          "text": "A) Массив указателей на столбцы",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2529",
+          "text": "B) Двумерный массив",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2530",
+          "text": "C) Связанный список",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2527",
+          "text": "D) Массив указателей на строки",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Массив указателей на столбцы",
+        "B) Двумерный массив",
+        "D) Массив указателей на строки"
+      ],
+      "explanation": "Матрицу можно представить через массив массивов (двумерный), или массив указателей на строки/столбцы. Связанный список не используется для матриц."
+    },
+    {
+      "id": 768,
+      "type": "radio",
+      "question": "Какая функция позволяет скопировать строку с выделением памяти под новую строку?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2532",
+          "text": "A) strdup",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2534",
+          "text": "B) strcpy",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2533",
+          "text": "C) memcpy",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2531",
+          "text": "D) strconcat",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) strdup"
+      ],
+      "explanation": "Функция strdup копирует строку в новую область памяти и автоматически выделяет память."
+    },
+    {
+      "id": 769,
+      "type": "radio",
+      "question": "Что вернет strcmp(«adcb», «abc»)?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2535",
+          "text": "A) 1",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2536",
+          "text": "B) 0",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2537",
+          "text": "C) -1",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2538",
+          "text": "D) Положительное число",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Положительное число"
+      ],
+      "explanation": "Функция strcmp возвращает положительное значение, если первая строка лексикографически больше."
+    },
+    {
+      "id": 770,
+      "type": "checkbox",
+      "question": "Что такое структурное программирование?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2539",
+          "text": "A) В нем используются классы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2541",
+          "text": "B) В нем используются функции",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2540",
+          "text": "C) В нем используются структуры",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2542",
+          "text": "D) В нем используется декомпозиция и 3 базовые конструкции",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) В нем используются функции",
+        "D) В нем используется декомпозиция и 3 базовые конструкции"
+      ],
+      "explanation": "Структурное программирование использует декомпозицию, функции и конструкции: последовательность, ветвление, цикл."
+    },
+    {
+      "id": 771,
+      "type": "checkbox",
+      "question": "Что не является принципом структурного программирования?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2545",
+          "text": "A) Использование goto",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2546",
+          "text": "B) Использование функций",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2544",
+          "text": "C) Использование глобальных переменных",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2543",
+          "text": "D) Использование циклов",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Использование goto",
+        "C) Использование глобальных переменных"
+      ],
+      "explanation": "Структурное программирование избегает goto и глобальных переменных, поощряя модульность и читаемость."
+    },
+    {
+      "id": 772,
+      "type": "radio",
+      "question": "Что является принципом структурного программирования?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2549",
+          "text": "A) Следует использовать только глобальные переменные",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2550",
+          "text": "B) Рекомендуется использовать классы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2548",
+          "text": "C) Все должно быть написано в одной функции",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2547",
+          "text": "D) Программа должна быть разбита на отдельные блоки или функции",
+          "is_correct": true,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "D) Программа должна быть разбита на отдельные блоки или функции"
+      ],
+      "explanation": "Ключевая идея структурного программирования — декомпозиция кода на функции и блоки."
+    },
+    {
+      "id": 773,
+      "type": "radio",
+      "question": "Что такое компиляция?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2553",
+          "text": "A) Запуск программы на выполнение",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2552",
+          "text": "B) Проверка стиля и форматирования кода",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2551",
+          "text": "C) Процесс преобразования исходного кода в исполняемый файл",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2554",
+          "text": "D) Сжатие исходного кода",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "C) Процесс преобразования исходного кода в исполняемый файл"
+      ],
+      "explanation": "Компиляция — это преобразование исходного кода в машинный код, понятный процессору."
+    },
+    {
+      "id": 774,
+      "type": "radio",
+      "question": "Что такое препроцессор в С?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2555",
+          "text": "A) Выполняет замену макросов и вставку текстов перед компиляцией",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2556",
+          "text": "B) Преобразует код в машинные инструкции",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2558",
+          "text": "C) Оптимизирует бинарный файл",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2557",
+          "text": "D) Запускает программу",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "A) Выполняет замену макросов и вставку текстов перед компиляцией"
+      ],
+      "explanation": "Препроцессор обрабатывает директивы вида #include, #define и подготавливает код к компиляции."
+    },
+    {
+      "id": 775,
+      "type": "radio",
+      "question": "Что такое компоновщик?",
+      "image": null,
+      "answers": [
+        {
+          "id": "2561",
+          "text": "A) Проверяет грамматику языка",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2559",
+          "text": "B) Соединяет объектные файлы в единый исполняемый файл",
+          "is_correct": true,
+          "image": null
+        },
+        {
+          "id": "2560",
+          "text": "C) Удаляет ненужные части программы",
+          "is_correct": false,
+          "image": null
+        },
+        {
+          "id": "2562",
+          "text": "D) Переименовывает переменные",
+          "is_correct": false,
+          "image": null
+        }
+      ],
+      "correct_answers": [
+        "B) Соединяет объектные файлы в единый исполняемый файл"
+      ],
+      "explanation": "Компоновщик (linker) объединяет все объектные файлы и библиотеки в итоговый исполняемый файл."
+    }
+  ]
+}
