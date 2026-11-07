@@ -6,3 +6,6 @@ __pycache__/
 *.pyo
 .DS_Store
 *.tmp
+*_cache.json
+test_*.py
+

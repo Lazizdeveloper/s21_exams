@@ -12,7 +12,7 @@ export const CATEGORIES = [
     totalQuestions: devopsData.questions.length,
     examQuestionCount: 40,
     examDurationMinutes: 40,
-    isMultilingual: false,
+    isMultilingual: true,
     rawQuestions: devopsData.questions,
   },
   {
@@ -34,7 +34,7 @@ export const CATEGORIES = [
     totalQuestions: sqlData.questions.length,
     examQuestionCount: 30,
     examDurationMinutes: 30,
-    isMultilingual: false,
+    isMultilingual: true,
     rawQuestions: sqlData.questions,
   },
   {
@@ -45,22 +45,31 @@ export const CATEGORIES = [
     totalQuestions: cTheoryData.questions.length,
     examQuestionCount: 24,
     examDurationMinutes: 25,
-    isMultilingual: false,
+    isMultilingual: true,
     rawQuestions: cTheoryData.questions,
   },
 ];
 
 export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
-  // If multilingual question (http_js)
-  if (q.question && typeof q.question === 'object' && ('uz' in q.question || 'ru' in q.question)) {
-    const qText = q.question[lang] || q.question.ru || q.question.en || q.question.uz || '';
-    const options = (q.options || []).map((opt) => {
-      const optText = typeof opt.text === 'object' 
-        ? (opt.text[lang] || opt.text.ru || opt.text.en || opt.text.uz || '')
-        : opt.text;
+  // If multilingual question (question is an object with uz/ru/en)
+  if (q.question && typeof q.question === 'object') {
+    const qText = q.question[lang] || q.question.ru || q.question.uz || q.question.en || '';
+    const rawOptions = q.options || q.answers || [];
+
+    const options = rawOptions.map((opt, idx) => {
+      let optText = '';
+      if (typeof opt.text === 'object' && opt.text) {
+        optText = opt.text[lang] || opt.text.ru || opt.text.uz || opt.text.en || '';
+      } else {
+        optText = opt.text || '';
+      }
+
+      const keyMatch = optText.match(/^([A-D])\)/);
+      const key = opt.key || (keyMatch ? keyMatch[1] : String.fromCharCode(65 + idx));
+
       return {
-        id: opt.key || String(opt.id),
-        key: opt.key || '',
+        id: opt.id || opt.key || String(idx),
+        key,
         text: optText,
         is_correct: !!opt.is_correct,
       };
@@ -68,27 +77,36 @@ export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
 
     const correctAnswers = options.filter(o => o.is_correct).map(o => o.text);
 
+    let explanationText = '';
+    if (typeof q.explanation === 'object' && q.explanation) {
+      explanationText = q.explanation[lang] || q.explanation.ru || q.explanation.uz || q.explanation.en || '';
+    } else if (typeof q.explanation === 'string') {
+      explanationText = q.explanation;
+    }
+
     return {
       id: `${categoryId || 'q'}-${q.id}`,
       rawId: q.id,
       categoryId,
-      type: 'radio',
+      type: q.type || (options.filter(o => o.is_correct).length > 1 ? 'checkbox' : 'radio'),
       question: qText,
       options,
       correctAnswers,
-      explanation: '',
-      isCode: !!q.is_code,
+      explanation: explanationText,
+      image: q.image || null,
+      isCode: !!q.is_code || qText.includes('```') || qText.includes('`') || qText.includes('| --- |'),
     };
   }
 
-  // Standard question (devops, c, sql)
-  const options = (q.answers || []).map((ans, idx) => {
-    const keyMatch = ans.text.match(/^([A-D])\)/);
-    const key = keyMatch ? keyMatch[1] : String.fromCharCode(65 + idx);
+  // Standard legacy question with string text
+  const options = (q.answers || q.options || []).map((ans, idx) => {
+    const optText = typeof ans.text === 'object' ? (ans.text[lang] || ans.text.ru || '') : ans.text;
+    const keyMatch = optText.match(/^([A-D])\)/);
+    const key = ans.key || (keyMatch ? keyMatch[1] : String.fromCharCode(65 + idx));
     return {
       id: ans.id || String(idx),
       key,
-      text: ans.text,
+      text: optText,
       is_correct: !!ans.is_correct,
     };
   });
