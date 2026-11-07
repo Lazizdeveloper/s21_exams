@@ -61,7 +61,8 @@ export const translations = {
       incorrect: "Noto'g'ri javob",
       explanation: "Tushuntirish va izoh:",
       selectOption: "Variantlardan birini tanlang",
-      selectMultiple: "Bir yoki bir nechta variantni tanlang",
+      selectMultiple: "Bu savolning javobi 1 va undan ortiq bo'lishi mumkin",
+      multiNotice: "Bu savolning javobi 1 va undan ortiq bo'lishi mumkin",
       allAnswered: "Barcha savollar yakunlandi!",
     },
     exam: {
@@ -163,7 +164,8 @@ export const translations = {
       incorrect: "Неверно",
       explanation: "Пояснение к ответу:",
       selectOption: "Выберите один из вариантов",
-      selectMultiple: "Выберите один или несколько вариантов",
+      selectMultiple: "Ответ на этот вопрос может содержать один и более вариантов",
+      multiNotice: "Ответ на этот вопрос может содержать один и более вариантов",
       allAnswered: "Все вопросы пройдены!",
     },
     exam: {
@@ -265,7 +267,8 @@ export const translations = {
       incorrect: "Incorrect",
       explanation: "Explanation:",
       selectOption: "Select one option",
-      selectMultiple: "Select one or more options",
+      selectMultiple: "This question may have one or more correct answers",
+      multiNotice: "This question may have one or more correct answers",
       allAnswered: "All questions completed!",
     },
     exam: {
