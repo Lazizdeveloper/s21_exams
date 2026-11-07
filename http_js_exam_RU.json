@@ -1,0 +1,721 @@
+{
+  "title": "Экзаменационные вопросы — HTTP, сети и JavaScript",
+  "category": "HTTP, Networks & JavaScript",
+  "language": "ru",
+  "total_questions": 23,
+  "questions": [
+    {
+      "id": 1,
+      "number": 1,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение HTTP.",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "HTTP — это транспортный протокол, устанавливающий надёжное соединение между двумя узлами.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "HTTP — это протокол сетевого уровня для маршрутизации пакетов между устройствами в интернете.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "HTTP (HyperText Transfer Protocol) — это протокол прикладного уровня для передачи гипертекстовых (веб-) документов между клиентом и сервером.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "HTTP — это формат хранения данных для обмена структурированными объектами между системами.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "HTTP (HyperText Transfer Protocol) — это протокол прикладного уровня для передачи гипертекстовых (веб-) документов между клиентом и сервером."
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение метода запроса GET.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "GET — это метод HTTP, используемый для отправки данных на обработку указанному ресурсу, изменяющий состояние сервера.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "GET — это метод HTTP, используемый для запроса данных с указанного ресурса без его изменения.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "GET — это метод HTTP, используемый для полной замены ресурса новыми данными.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "GET — это метод HTTP, используемый для удаления указанного ресурса с сервера.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "GET — это метод HTTP, используемый для запроса данных с указанного ресурса без его изменения."
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение метода запроса POST.",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "POST — это метод HTTP, используемый для получения данных ресурса без побочных эффектов.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "POST — это метод HTTP, используемый для полной замены существующего ресурса предоставленными данными.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "POST — это метод HTTP, используемый для удаления ресурса, идентифицируемого URI.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "POST — это метод HTTP, используемый для отправки данных на сервер с целью создания или обработки ресурса, потенциально изменяющий состояние сервера.",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "POST — это метод HTTP, используемый для отправки данных на сервер с целью создания или обработки ресурса, потенциально изменяющий состояние сервера."
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение метода PUT.",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "PUT — это метод HTTP, используемый для обновления или полной замены существующего ресурса данными из запроса (идемпотентный).",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "PUT — это метод HTTP, используемый только для получения представления ресурса.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "PUT — это метод HTTP, используемый для добавления новых данных без влияния на существующие, являющийся неидемпотентным.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "PUT — это метод HTTP, используемый исключительно для удаления ресурса с сервера.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "PUT — это метод HTTP, используемый для обновления или полной замены существующего ресурса данными из запроса (идемпотентный)."
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение метода запроса DELETE.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "DELETE — это метод HTTP, используемый для создания нового ресурса на сервере.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "DELETE — это метод HTTP, используемый для удаления указанного ресурса с сервера.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "DELETE — это метод HTTP, используемый для получения метаданных ресурса без тела ответа.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "DELETE — это метод HTTP, используемый для замены всего содержимого ресурса.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "DELETE — это метод HTTP, используемый для удаления указанного ресурса с сервера."
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Каким типом кода ответа является код 404?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Код серверной ошибки (5xx), указывающий на невозможность сервера выполнить корректный запрос.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Код перенаправления (3xx), указывающий на то, что ресурс был перемещён навсегда.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "Код клиентской ошибки (4xx), означающий, что запрашиваемый ресурс не найден на сервере.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "Код успеха (2xx), означающий, что запрос принят, но содержимое не возвращается.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Код клиентской ошибки (4xx), означающий, что запрашиваемый ресурс не найден на сервере."
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что такое 401?",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "401 Unauthorized — означает, что клиент должен пройти аутентификацию для получения запрошенного ответа.",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "401 означает, что клиент аутентифицирован, но не имеет прав доступа к ресурсу.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "401 означает, что запрашиваемый ресурс не найден на сервере.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "401 означает, что сервер понял запрос, но отказывается его обрабатывать из-за некорректного синтаксиса.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "401 Unauthorized — означает, что клиент должен пройти аутентификацию для получения запрошенного ответа."
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Выбери верное определение понятия 403.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "403 означает, что клиент вообще не предоставил учётные данные для аутентификации.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "403 Forbidden — сервер понял запрос, но отказывается его авторизовать; у клиента нет прав доступа даже при действительных учётных данных.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "403 означает, что запрашиваемая страница была окончательно удалена и больше не существует.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "403 означает, что запрос выполнен успешно, но сервер перенаправляет на другой ресурс.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "403 Forbidden — сервер понял запрос, но отказывается его авторизовать; у клиента нет прав доступа даже при действительных учётных данных."
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что обозначает число 500?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "500 указывает на то, что клиент отправил некорректный запрос, который сервер не смог понять.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "500 Internal Server Error — общая ошибка, означающая, что сервер столкнулся с непредвиденным условием, помешавшим выполнить запрос.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "500 указывает на то, что запрашиваемый ресурс был окончательно перемещён на новый URL.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "500 указывает на то, что запрос выполнен успешно и ресурс был создан.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "500 Internal Server Error — общая ошибка, означающая, что сервер столкнулся с непредвиденным условием, помешавшим выполнить запрос."
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Кто разрабатывает веб-стандарты?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Веб-стандарты разрабатываются исключительно отдельными производителями браузеров (например, Google и Microsoft) без какой-либо совместной организации.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Веб-стандарты разрабатываются ICANN — организацией, отвечающей за регистрацию доменных имён.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "Веб-стандарты разрабатываются такими организациями, как W3C (World Wide Web Consortium) и WHATWG, которые создают и публикуют спецификации HTML, CSS и других веб-технологий.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "Веб-стандарты разрабатываются исключительно IEEE — организацией, отвечающей за стандарты в области электротехники и электроники.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Веб-стандарты разрабатываются такими организациями, как W3C (World Wide Web Consortium) и WHATWG, которые создают и публикуют спецификации HTML, CSS и других веб-технологий."
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что из себя представляет IP-адрес?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "IP-адрес — это доменное имя в удобочитаемом виде, используемое для идентификации веб-сайта.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "IP-адрес — это уникальная числовая метка, присваиваемая каждому устройству, подключённому к сети, использующей протокол IP для связи, идентифицирующая узел и его местоположение в сети.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "IP-адрес — это уникальный аппаратный идентификатор, записанный производителем в сетевую карту.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "IP-адрес — это номер порта, используемый для идентификации конкретного приложения на устройстве.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "IP-адрес — это уникальная числовая метка, присваиваемая каждому устройству, подключённому к сети, использующей протокол IP для связи, идентифицирующая узел и его местоположение в сети."
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что такое маска подсети?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Маска подсети — это адрес, используемый для определения шлюза по умолчанию в сети.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Маска подсети — это 32-битное число, разделяющее IP-адрес на сетевую и узловую части, определяя, какая часть идентифицирует сеть, а какая — устройство.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Маска подсети — это уникальный идентификатор сетевого интерфейса устройства, присваиваемый производителем.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "Маска подсети — это таблица, сопоставляющая доменные имена с IP-адресами.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Маска подсети — это 32-битное число, разделяющее IP-адрес на сетевую и узловую части, определяя, какая часть идентифицирует сеть, а какая — устройство."
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что такое TCP/IP?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "TCP/IP — это единственный протокол, отвечающий исключительно за преобразование доменных имён в IP-адреса.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "TCP/IP — это язык разметки, используемый для структурирования содержимого веб-страниц.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "TCP/IP — это набор протоколов связи, используемых для объединения сетевых устройств в интернете, определяющих, как данные разбиваются на пакеты, адресуются, передаются, маршрутизируются и принимаются.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "TCP/IP — это протокол безопасности, используемый исключительно для шифрования данных, передаваемых по HTTPS.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "TCP/IP — это набор протоколов связи, используемых для объединения сетевых устройств в интернете, определяющих, как данные разбиваются на пакеты, адресуются, передаются, маршрутизируются и принимаются."
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Какая инструкция в JS гарантирует выполнение блока кода хотя бы раз, даже если условие ложно?",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "do...while"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Какая инструкция в JS означает ветвление?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "if...else"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что вернёт следующий фрагмент кода: var result = !(\"false\" == false)?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "false",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "undefined",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "true",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "NaN",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "true"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что произойдёт при выполнении следующего фрагмента кода, использующего тип данных symbol в JS?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "result будет равен true, так как символы с одинаковым описанием считаются равными.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Код выбросит TypeError, так как символы нельзя сравнивать с помощью оператора строгого равенства.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "result будет равен false, так как символы всегда уникальны, даже с одинаковым описанием.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "result будет равен true, так как JavaScript кэширует символы с одинаковым описанием, как это происходит со строковыми примитивами.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "result будет равен false, так как символы всегда уникальны, даже с одинаковым описанием."
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "В чём отличие «слабых» ссылок от «строгих»?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "«Слабая» ссылка может указывать только на примитивные значения, а «строгая» — только на объекты.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "«Строгая» ссылка удерживает объект, на который указывает, в памяти, пока существует сама ссылка, предотвращая сборку мусора; «слабая» ссылка не препятствует сборке мусора для объекта, на который указывает.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "«Строгая» ссылка создаётся только внутри функций, а «слабая» — только в глобальной области видимости.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "«Слабая» ссылка всегда выполняется асинхронно, а «строгая» — всегда синхронно.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "«Строгая» ссылка удерживает объект, на который указывает, в памяти, пока существует сама ссылка, предотвращая сборку мусора; «слабая» ссылка не препятствует сборке мусора для объекта, на который указывает."
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Что хранится в стеке вызовов (Call Stack)?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Объекты, ожидающие сборки мусора.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Информация об активных вызовах функций программы — какая функция выполняется в данный момент и какие функции были вызваны для этого, в порядке LIFO (последним пришёл — первым ушёл).",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Функции обратного вызова (callback), ожидающие выполнения после завершения асинхронных операций.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "Объявления переменных на протяжении всего выполнения программы, независимо от выполнения функций.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Информация об активных вызовах функций программы — какая функция выполняется в данный момент и какие функции были вызваны для этого, в порядке LIFO (последним пришёл — первым ушёл)."
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Объяви класс Person с нестатическим полем name = 'John'. Используй обыкновенные возможности стандарта ES2015.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "function Person() {\nthis.name = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Person {\nname = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nstatic name = 'John';\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Как добавить статический метод к классу Person в JS?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Person {\ngreet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Person.prototype.greet = function() {\nconsole.log('Hello!');\n};",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nfunction static greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Какой фрагмент кода является корректным? (ES6+)",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nfunction increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n},\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nthis.count = 0;\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}"
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Как объявить приватный метод в JS?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\n_increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\n#increment() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nprivate increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nvar #increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\n#increment() {\nthis.count++;\n}\n}"
+    }
+  ]
+}

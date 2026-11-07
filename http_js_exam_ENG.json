@@ -1,0 +1,721 @@
+{
+  "title": "Exam Questions — HTTP, Networking & JavaScript",
+  "category": "HTTP, Networks & JavaScript",
+  "language": "en",
+  "total_questions": 23,
+  "questions": [
+    {
+      "id": 1,
+      "number": 1,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of HTTP.",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "HTTP is a transport-layer protocol that establishes a reliable connection between two hosts.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "HTTP is a network-layer protocol for routing packets between devices on the Internet.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "HTTP (HyperText Transfer Protocol) is an application-layer protocol for transmitting hypertext (web) documents between a client and a server.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "HTTP is a data storage format for exchanging structured objects between systems.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "HTTP (HyperText Transfer Protocol) is an application-layer protocol for transmitting hypertext (web) documents between a client and a server."
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of the GET request method.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "GET is an HTTP method used to submit data to be processed by a specified resource, changing server state.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "GET is an HTTP method used to request data from a specified resource without modifying it.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "GET is an HTTP method used to completely replace a resource with new data.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "GET is an HTTP method used to remove a specified resource from the server.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "GET is an HTTP method used to request data from a specified resource without modifying it."
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of the POST request method.",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "POST is an HTTP method used to retrieve data from a resource without any side effects.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "POST is an HTTP method used to replace an existing resource entirely with the provided data.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "POST is an HTTP method used to delete a resource identified by a URI.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "POST is an HTTP method used to send data to a server to create or process a resource, potentially changing server state.",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "POST is an HTTP method used to send data to a server to create or process a resource, potentially changing server state."
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of the PUT method.",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "PUT is an HTTP method used to update or completely replace an existing resource with the data provided in the request (idempotent).",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "PUT is an HTTP method used only to fetch a representation of a resource.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "PUT is an HTTP method used to append new data without affecting existing data, and is non-idempotent.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "PUT is an HTTP method used exclusively to remove a resource from the server.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "PUT is an HTTP method used to update or completely replace an existing resource with the data provided in the request (idempotent)."
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of the DELETE request method.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "DELETE is an HTTP method used to create a new resource on the server.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "DELETE is an HTTP method used to remove a specified resource from the server.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "DELETE is an HTTP method used to retrieve a resource's metadata without the body.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "DELETE is an HTTP method used to replace a resource's full content.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "DELETE is an HTTP method used to remove a specified resource from the server."
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What type of response code is 404?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Server Error status code (5xx), indicating the server failed to fulfill a valid request.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "A Redirection status code (3xx), indicating the resource has moved permanently.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "A Client Error status code (4xx), meaning the requested resource was not found on the server.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "A Success status code (2xx), indicating the request was accepted but no content is returned.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "A Client Error status code (4xx), meaning the requested resource was not found on the server."
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is 401?",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "401 Unauthorized — the client must authenticate itself to get the requested response.",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "401 means the client is authenticated but doesn't have permission to access the resource.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "401 means the requested resource could not be found on the server.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "401 means the server understood the request but refuses to process it due to bad request syntax.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "401 Unauthorized — the client must authenticate itself to get the requested response."
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Choose the correct definition of the concept 403.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "403 means the client has not provided authentication credentials at all.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "403 Forbidden — the server understood the request but refuses to authorize it; the client lacks permission even with valid credentials.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "403 means the requested page was permanently removed and no longer exists.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "403 means the request succeeded but the server is redirecting to another resource.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "403 Forbidden — the server understood the request but refuses to authorize it; the client lacks permission even with valid credentials."
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What does the number 500 mean?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "500 indicates the client sent an invalid request that the server could not understand.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "500 Internal Server Error — a generic error indicating the server encountered an unexpected condition preventing it from fulfilling the request.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "500 indicates the requested resource has been permanently moved to a new URL.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "500 indicates the request was successful and the resource was created.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "500 Internal Server Error — a generic error indicating the server encountered an unexpected condition preventing it from fulfilling the request."
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Who develops web standards?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Web standards are developed exclusively by individual browser vendors like Google and Microsoft, without any joint organization.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Web standards are developed by ICANN, the organization responsible for domain name registration.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "Web standards are developed by organizations such as the W3C (World Wide Web Consortium) and WHATWG, which create and publish specifications for HTML, CSS and other web technologies.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "Web standards are developed solely by IEEE, the organization responsible for electrical and electronics engineering standards.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Web standards are developed by organizations such as the W3C (World Wide Web Consortium) and WHATWG, which create and publish specifications for HTML, CSS and other web technologies."
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is an IP address?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "An IP address is a human-readable domain name used to identify a website.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "An IP address is a unique numerical label assigned to each device connected to a network that uses the Internet Protocol for communication, identifying the host and its location on the network.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "An IP address is a unique hardware identifier burned into a network card by its manufacturer.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "An IP address is a port number used to identify a specific application running on a device.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "An IP address is a unique numerical label assigned to each device connected to a network that uses the Internet Protocol for communication, identifying the host and its location on the network."
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is a subnet mask?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "A subnet mask is the address used to identify the default gateway of a network.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "A subnet mask is a 32-bit number that divides an IP address into network and host portions, determining which part identifies the network and which identifies the device.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "A subnet mask is a unique identifier assigned to a device's network interface by the manufacturer.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "A subnet mask is a table that maps domain names to IP addresses.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "A subnet mask is a 32-bit number that divides an IP address into network and host portions, determining which part identifies the network and which identifies the device."
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is TCP/IP?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "TCP/IP is a single protocol responsible only for translating domain names into IP addresses.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "TCP/IP is a markup language used to structure content on web pages.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "TCP/IP is a suite of communication protocols used to interconnect network devices on the Internet, defining how data is packetized, addressed, transmitted, routed, and received.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "TCP/IP is a security protocol used exclusively for encrypting data transmitted over HTTPS.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "TCP/IP is a suite of communication protocols used to interconnect network devices on the Internet, defining how data is packetized, addressed, transmitted, routed, and received."
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Which JS statement guarantees that a code block executes at least once, even if the condition is false?",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "do...while"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Which JS statement represents branching?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "if...else"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What will the following code fragment return: var result = !(\"false\" == false)?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "false",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "undefined",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "true",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "NaN",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "true"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What happens when the following code fragment, using the symbol data type in JS, is executed?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "result will be true, because symbols with identical descriptions are considered equal.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "The code throws a TypeError, because symbols cannot be compared using the strict equality operator.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "result will be false, because symbols are always unique, even with an identical description.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "result will be true, because JavaScript caches symbols with the same description like it does with string primitives.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "result will be false, because symbols are always unique, even with an identical description."
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is the difference between \"weak\" references and \"strong\" references?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "A \"weak\" reference can only point to primitive values, while a \"strong\" reference can only point to objects.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "A strong reference keeps its target object alive in memory as long as the reference exists, preventing garbage collection; a weak reference does not prevent the referenced object from being garbage collected.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "A strong reference is created only inside functions, while a weak reference is created only in the global scope.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "A weak reference always executes asynchronously, while a strong reference always executes synchronously.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "A strong reference keeps its target object alive in memory as long as the reference exists, preventing garbage collection; a weak reference does not prevent the referenced object from being garbage collected."
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "What is stored in the Call Stack?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Objects that are waiting to be garbage collected.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Information about the active function calls of a program — which function is currently executing and which functions were called to get there, in LIFO (Last-In-First-Out) order.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Callback functions waiting to be executed after asynchronous operations complete.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "Variable declarations for the entire duration of the program, regardless of function execution.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Information about the active function calls of a program — which function is currently executing and which functions were called to get there, in LIFO (Last-In-First-Out) order."
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Declare a Person class with a non-static field name = 'John'. Use plain ES2015 features.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "function Person() {\nthis.name = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Person {\nname = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nstatic name = 'John';\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "How do you add a static method to the Person class in JS?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Person {\ngreet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Person.prototype.greet = function() {\nconsole.log('Hello!');\n};",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nfunction static greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Which code fragment is correct? (ES6+)",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nfunction increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n},\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nthis.count = 0;\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}"
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "How do you declare a private method in JS?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\n_increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\n#increment() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nprivate increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nvar #increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\n#increment() {\nthis.count++;\n}\n}"
+    }
+  ]
+}

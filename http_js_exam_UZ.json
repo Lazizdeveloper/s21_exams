@@ -1,0 +1,721 @@
+{
+  "title": "Imtihon savollari — HTTP, tarmoqlar va JavaScript",
+  "category": "HTTP, Networks & JavaScript",
+  "language": "uz",
+  "total_questions": 23,
+  "questions": [
+    {
+      "id": 1,
+      "number": 1,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "HTTP ning to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "HTTP — ikki tugun orasida ishonchli aloqa o‘rnatadigan transport darajasidagi protokol.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "HTTP — internetdagi qurilmalar orasida paketlarni marshrutlash uchun tarmoq darajasidagi protokol.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "HTTP (HyperText Transfer Protocol) — mijoz va server o‘rtasida gipermatn (veb) hujjatlarini uzatish uchun ilova darajasidagi protokol.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "HTTP — tizimlar orasida tuzilgan obyektlarni almashish uchun ma’lumotlarni saqlash formati.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "HTTP (HyperText Transfer Protocol) — mijoz va server o‘rtasida gipermatn (veb) hujjatlarini uzatish uchun ilova darajasidagi protokol."
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "GET so‘rov metodining to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "GET — ko‘rsatilgan resursga ishlov berish uchun ma’lumot yuboradigan, server holatini o‘zgartiradigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "GET — ko‘rsatilgan resursdan uni o‘zgartirmasdan ma’lumot so‘rash uchun ishlatiladigan HTTP metodi.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "GET — resursni yangi ma’lumotlar bilan to‘liq almashtirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "GET — ko‘rsatilgan resursni serverdan o‘chirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "GET — ko‘rsatilgan resursdan uni o‘zgartirmasdan ma’lumot so‘rash uchun ishlatiladigan HTTP metodi."
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "POST so‘rov metodining to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "POST — hech qanday yon ta’sirsiz resursdan ma’lumot olish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "POST — mavjud resursni taqdim etilgan ma’lumotlar bilan to‘liq almashtirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "POST — URI orqali aniqlangan resursni o‘chirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "POST — resurs yaratish yoki qayta ishlash uchun serverga ma’lumot yuboradigan, server holatini o‘zgartirishi mumkin bo‘lgan HTTP metodi.",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "POST — resurs yaratish yoki qayta ishlash uchun serverga ma’lumot yuboradigan, server holatini o‘zgartirishi mumkin bo‘lgan HTTP metodi."
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "PUT metodining to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "PUT — so‘rovdagi ma’lumotlar bilan mavjud resursni yangilash yoki to‘liq almashtirish uchun ishlatiladigan HTTP metodi (idempotent).",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "PUT — faqat resursning ko‘rinishini olish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "PUT — mavjud ma’lumotlarga ta’sir qilmasdan yangi ma’lumot qo‘shadigan, idempotent bo‘lmagan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "PUT — faqat resursni serverdan o‘chirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "PUT — so‘rovdagi ma’lumotlar bilan mavjud resursni yangilash yoki to‘liq almashtirish uchun ishlatiladigan HTTP metodi (idempotent)."
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "DELETE so‘rov metodining to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "DELETE — serverda yangi resurs yaratish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "DELETE — ko‘rsatilgan resursni serverdan o‘chirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "DELETE — resurs tanasisiz, faqat metama’lumotlarini olish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "DELETE — resursning butun mazmunini almashtirish uchun ishlatiladigan HTTP metodi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "DELETE — ko‘rsatilgan resursni serverdan o‘chirish uchun ishlatiladigan HTTP metodi."
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "404 kodi qanday javob kodi turiga kiradi?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Server so‘rovni to‘g‘ri bajara olmaganini bildiruvchi server xatosi kodi (5xx).",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Resurs butunlay boshqa manzilga ko‘chirilganini bildiruvchi yo‘naltirish kodi (3xx).",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "So‘ralgan resurs serverda topilmaganini bildiruvchi mijoz xatosi kodi (4xx).",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "So‘rov qabul qilingani, lekin tarkib qaytarilmaganini bildiruvchi muvaffaqiyat kodi (2xx).",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "So‘ralgan resurs serverda topilmaganini bildiruvchi mijoz xatosi kodi (4xx)."
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "401 nima?",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "401 Unauthorized — mijoz so‘ralgan javobni olish uchun autentifikatsiyadan o‘tishi kerakligini bildiradi.",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "401 — mijoz autentifikatsiyadan o‘tgan, lekin resursga kirish huquqiga ega emasligini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "401 — so‘ralgan resurs serverda topilmaganini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "401 — server so‘rovni tushundi, lekin noto‘g‘ri sintaksis tufayli uni qayta ishlashdan bosh tortayotganini bildiradi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "401 Unauthorized — mijoz so‘ralgan javobni olish uchun autentifikatsiyadan o‘tishi kerakligini bildiradi."
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "403 tushunchasining to‘g‘ri ta’rifini tanlang.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "403 — mijoz umuman autentifikatsiya ma’lumotlarini taqdim etmaganini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "403 Forbidden — server so‘rovni tushundi, lekin uni avtorizatsiya qilishdan bosh tortadi; mijozda haqiqiy ma’lumotlar bo‘lsa ham kirish huquqi yo‘q.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "403 — so‘ralgan sahifa butunlay o‘chirilgani va endi mavjud emasligini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "403 — so‘rov muvaffaqiyatli bajarilgani, lekin server boshqa resursga yo‘naltirayotganini bildiradi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "403 Forbidden — server so‘rovni tushundi, lekin uni avtorizatsiya qilishdan bosh tortadi; mijozda haqiqiy ma’lumotlar bo‘lsa ham kirish huquqi yo‘q."
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "500 raqami nimani bildiradi?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "500 — mijoz server tushuna olmagan noto‘g‘ri so‘rov yuborganini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "500 Internal Server Error — server so‘rovni bajarishga to‘sqinlik qiluvchi kutilmagan holatga duch kelganini bildiruvchi umumiy xato.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "500 — so‘ralgan resurs yangi URL manziliga butunlay ko‘chirilganini bildiradi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "500 — so‘rov muvaffaqiyatli bajarilgani va resurs yaratilganini bildiradi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "500 Internal Server Error — server so‘rovni bajarishga to‘sqinlik qiluvchi kutilmagan holatga duch kelganini bildiruvchi umumiy xato."
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Veb-standartlarni kim ishlab chiqadi?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "Veb-standartlar faqat alohida brauzer ishlab chiqaruvchilari (masalan, Google va Microsoft) tomonidan, hech qanday birgalikdagi tashkilotsiz ishlab chiqiladi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Veb-standartlarni domen nomlarini ro‘yxatga olish bilan shug‘ullanadigan ICANN tashkiloti ishlab chiqadi.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "Veb-standartlarni HTML, CSS va boshqa veb-texnologiyalar spetsifikatsiyalarini yaratadigan va nashr etadigan W3C (World Wide Web Consortium) va WHATWG kabi tashkilotlar ishlab chiqadi.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "Veb-standartlarni faqat elektrotexnika va elektronika standartlari bilan shug‘ullanadigan IEEE tashkiloti ishlab chiqadi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Veb-standartlarni HTML, CSS va boshqa veb-texnologiyalar spetsifikatsiyalarini yaratadigan va nashr etadigan W3C (World Wide Web Consortium) va WHATWG kabi tashkilotlar ishlab chiqadi."
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "IP-manzil nima?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "IP-manzil — veb-saytni aniqlash uchun ishlatiladigan, o‘qishga qulay domen nomi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "IP-manzil — IP protokolidan foydalanadigan tarmoqqa ulangan har bir qurilmaga beriladigan, tugun va uning tarmoqdagi joylashuvini aniqlaydigan noyob raqamli belgi.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "IP-manzil — ishlab chiqaruvchi tomonidan tarmoq kartasiga yozilgan noyob apparat identifikatori.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "IP-manzil — qurilmadagi muayyan ilovani aniqlash uchun ishlatiladigan port raqami.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "IP-manzil — IP protokolidan foydalanadigan tarmoqqa ulangan har bir qurilmaga beriladigan, tugun va uning tarmoqdagi joylashuvini aniqlaydigan noyob raqamli belgi."
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Subnet mask (kichik tarmoq niqobi) nima?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Subnet mask — tarmoqning standart shlyuzini aniqlash uchun ishlatiladigan manzil.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Subnet mask — IP-manzilni tarmoq va tugun qismlariga ajratadigan, qaysi qism tarmoqni va qaysi qism qurilmani aniqlashini belgilaydigan 32-bitli son.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Subnet mask — ishlab chiqaruvchi tomonidan qurilma tarmoq interfeysiga beriladigan noyob identifikator.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "Subnet mask — domen nomlarini IP-manzillarga moslashtiruvchi jadval.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Subnet mask — IP-manzilni tarmoq va tugun qismlariga ajratadigan, qaysi qism tarmoqni va qaysi qism qurilmani aniqlashini belgilaydigan 32-bitli son."
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "TCP/IP nima?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "TCP/IP — faqat domen nomlarini IP-manzillarga aylantirish bilan shug‘ullanadigan yagona protokol.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "TCP/IP — veb-sahifalar tarkibini tuzish uchun ishlatiladigan belgilash tili.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "TCP/IP — internetdagi tarmoq qurilmalarini bog‘lash uchun ishlatiladigan, ma’lumotlar qanday paketlarga bo‘linishi, manzillanishi, uzatilishi, marshrutlanishi va qabul qilinishini belgilaydigan aloqa protokollari to‘plami.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "TCP/IP — faqat HTTPS orqali uzatiladigan ma’lumotlarni shifrlash uchun ishlatiladigan xavfsizlik protokoli.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "TCP/IP — internetdagi tarmoq qurilmalarini bog‘lash uchun ishlatiladigan, ma’lumotlar qanday paketlarga bo‘linishi, manzillanishi, uzatilishi, marshrutlanishi va qabul qilinishini belgilaydigan aloqa protokollari to‘plami."
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "JSda shart yolg‘on bo‘lsa ham kod blokini kamida bir marta bajarilishini kafolatlaydigan buyruq qaysi?",
+      "correct_option": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": true
+        }
+      ],
+      "correct_answer_text": "do...while"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "JSda tarmoqlanish (branching)ni bildiruvchi buyruq qaysi?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "for",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "if...else",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "while",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "do...while",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "if...else"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Quyidagi kod fragmenti nimani qaytaradi: var result = !(\"false\" == false)?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "false",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "undefined",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "true",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "NaN",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "true"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "JSda symbol ma’lumot turidan foydalanadigan quyidagi kod fragmenti bajarilganda nima yuz beradi?",
+      "correct_option": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "result true bo‘ladi, chunki bir xil tavsifga ega symbollar teng hisoblanadi.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Kod TypeError chiqaradi, chunki symbollarni qat’iy tenglik operatori bilan solishtirib bo‘lmaydi.",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "result false bo‘ladi, chunki symbollar bir xil tavsifga ega bo‘lsa ham, har doim noyob bo‘ladi.",
+          "is_correct": true
+        },
+        {
+          "key": "D",
+          "text": "result true bo‘ladi, chunki JavaScript satr primitivlarida bo‘lgani kabi bir xil tavsifli symbollarni keshlaydi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "result false bo‘ladi, chunki symbollar bir xil tavsifga ega bo‘lsa ham, har doim noyob bo‘ladi."
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "\"Zaif\" (weak) havolalar bilan \"kuchli\" (strong) havolalar o‘rtasidagi farq nimada?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"Zaif\" havola faqat primitiv qiymatlarga, \"kuchli\" havola esa faqat obyektlarga ishora qilishi mumkin.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "\"Kuchli\" havola mavjud bo‘lgan vaqt davomida u ko‘rsatgan obyektni xotirada saqlab qoladi, chiqindilar yig‘uvchisi (garbage collector) tomonidan tozalanishiga yo‘l qo‘ymaydi; \"zaif\" havola esa ko‘rsatgan obyektning chiqindilar yig‘uvchisi tomonidan tozalanishiga to‘sqinlik qilmaydi.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "\"Kuchli\" havola faqat funksiyalar ichida, \"zaif\" havola esa faqat global doirada yaratiladi.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "\"Zaif\" havola har doim asinxron, \"kuchli\" havola esa har doim sinxron bajariladi.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "\"Kuchli\" havola mavjud bo‘lgan vaqt davomida u ko‘rsatgan obyektni xotirada saqlab qoladi, chiqindilar yig‘uvchisi (garbage collector) tomonidan tozalanishiga yo‘l qo‘ymaydi; \"zaif\" havola esa ko‘rsatgan obyektning chiqindilar yig‘uvchisi tomonidan tozalanishiga to‘sqinlik qilmaydi."
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": false,
+      "question": "Chaqiruvlar stekida (Call Stack) nima saqlanadi?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chiqindilar yig‘uvchisi (garbage collector) tomonidan tozalanishini kutayotgan obyektlar.",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "Dasturning faol funksiya chaqiruvlari haqidagi ma’lumot — hozirda qaysi funksiya bajarilayotgani va bu funksiyaga yetish uchun qanday funksiyalar chaqirilgani, LIFO (oxirgi kirgan — birinchi chiqadi) tartibida.",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Asinxron operatsiyalar tugagandan so‘ng bajarilishini kutayotgan callback funksiyalar.",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "Funksiyalar bajarilishidan qat’i nazar, butun dastur davomida o‘zgaruvchilar e’lonlari.",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "Dasturning faol funksiya chaqiruvlari haqidagi ma’lumot — hozirda qaysi funksiya bajarilayotgani va bu funksiyaga yetish uchun qanday funksiyalar chaqirilgani, LIFO (oxirgi kirgan — birinchi chiqadi) tartibida."
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "name = 'John' nostatik maydoni bilan Person klassini e’lon qil. ES2015 standartining oddiy imkoniyatlaridan foydalan.",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "function Person() {\nthis.name = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Person {\nname = 'John';\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nstatic name = 'John';\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nconstructor() {\nthis.name = 'John';\n}\n}"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "JSda Person klassiga statik metodni qanday qo‘shish mumkin?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Person {\ngreet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "Person.prototype.greet = function() {\nconsole.log('Hello!');\n};",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Person {\nfunction static greet() {\nconsole.log('Hello!');\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Person {\nstatic greet() {\nconsole.log('Hello!');\n}\n}"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "Qaysi kod fragmenti to‘g‘ri? (ES6+)",
+      "correct_option": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nfunction increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nconstructor() {\nthis.count = 0;\n},\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nthis.count = 0;\nincrement() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\nconstructor() {\nthis.count = 0;\n}\nincrement() {\nthis.count++;\n}\n}"
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "category": "HTTP, Networks & JavaScript",
+      "is_code": true,
+      "question": "JSda maxfiy (private) metodni qanday e’lon qilish mumkin?",
+      "correct_option": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "class Counter {\n_increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "B",
+          "text": "class Counter {\n#increment() {\nthis.count++;\n}\n}",
+          "is_correct": true
+        },
+        {
+          "key": "C",
+          "text": "class Counter {\nprivate increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        },
+        {
+          "key": "D",
+          "text": "class Counter {\nvar #increment() {\nthis.count++;\n}\n}",
+          "is_correct": false
+        }
+      ],
+      "correct_answer_text": "class Counter {\n#increment() {\nthis.count++;\n}\n}"
+    }
+  ]
+}
