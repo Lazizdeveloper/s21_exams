@@ -1393,7 +1393,7 @@
           "id": "1365",
           "text": {
             "ru": "B) машинная среда для хранения образов с различным ПО",
-            "uz": "B) turli xil dasturlar bilan tasvirlarni saqlash uchun mashina muhiti",
+            "uz": "B) turli xil dasturlar bilan image'larni saqlash uchun mashina muhiti",
             "en": "B) machine environment for storing images with various software"
           },
           "is_correct": false
@@ -1411,7 +1411,7 @@
           "id": "1363",
           "text": {
             "ru": "D) репозиторий предназначенный для хранения образов с различным ПО",
-            "uz": "D) turli xil dasturlar bilan tasvirlarni saqlash uchun mo'ljallangan ombor",
+            "uz": "D) turli xil dasturlar bilan image'larni saqlash uchun mo'ljallangan ombor",
             "en": "D) a repository designed to store images with various software"
           },
           "is_correct": true
@@ -1419,7 +1419,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: репозиторий предназначенный для хранения образов с различным ПО",
-        "uz": "To'g'ri javob: turli xil dasturlar bilan tasvirlarni saqlash uchun mo'ljallangan ombor",
+        "uz": "To'g'ri javob: turli xil dasturlar bilan image'larni saqlash uchun mo'ljallangan ombor",
         "en": "Correct answer: a repository designed to store images with various software"
       }
     },
@@ -1428,7 +1428,7 @@
       "type": "radio",
       "question": {
         "ru": "Как в гитлаб указать образ который будет использоваться при выполнении стадии?",
-        "uz": "GitLab-da sahnani bajarishda ishlatiladigan tasvirni qanday aniqlash mumkin?",
+        "uz": "GitLab-da bosqichni bajarishda ishlatiladigan image'ni qanday ko'rsatish mumkin?",
         "en": "How to specify in GitLab the image that will be used when performing a stage?"
       },
       "answers": [
@@ -1644,7 +1644,7 @@
           "id": "1384",
           "text": {
             "ru": "B) директория пользователя root",
-            "uz": "B) ildiz foydalanuvchi katalogi",
+            "uz": "B) root foydalanuvchisi katalogi (/root)",
             "en": "B) root user directory"
           },
           "is_correct": false
@@ -1662,7 +1662,7 @@
           "id": "1382",
           "text": {
             "ru": "D) корень файловой системы",
-            "uz": "D) fayl tizimining ildizi",
+            "uz": "D) fayl tizimi ildizi (root directory /)",
             "en": "D) file system root"
           },
           "is_correct": true
@@ -1670,7 +1670,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: корень файловой системы",
-        "uz": "To'g'ri javob: fayl tizimining ildizi",
+        "uz": "To'g'ri javob: fayl tizimi ildizi (root directory /)",
         "en": "Correct answer: file system root"
       }
     },
@@ -2155,7 +2155,7 @@
           "id": "1423",
           "text": {
             "ru": "A) Образ контейнера представляет собой специальный исполняемый файл, который включает все необходимое для его запуска",
-            "uz": "A) Konteyner tasviri - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
+            "uz": "A) Container image (obraz) - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
             "en": "A) A container image is a special executable file that includes everything needed to run it"
           },
           "is_correct": false
@@ -2546,7 +2546,7 @@
           "id": "1450",
           "text": {
             "ru": "D) задаёт базовый образ",
-            "uz": "D) asosiy tasvirni o'rnatadi",
+            "uz": "D) asosiy (base) image'ni belgilaydi",
             "en": "D) sets the base image"
           },
           "is_correct": true
@@ -2554,7 +2554,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: задаёт базовый образ",
-        "uz": "To'g'ri javob: asosiy tasvirni o'rnatadi",
+        "uz": "To'g'ri javob: asosiy (base) image'ni belgilaydi",
         "en": "Correct answer: sets the base image"
       }
     },
@@ -3195,7 +3195,7 @@
           "id": "1502",
           "text": {
             "ru": "C) директория пользователя root",
-            "uz": "C) ildiz foydalanuvchi katalogi",
+            "uz": "C) root foydalanuvchisi katalogi (/root)",
             "en": "C) root user directory"
           },
           "is_correct": false
@@ -3204,7 +3204,7 @@
           "id": "1500",
           "text": {
             "ru": "D) корень файловой системы",
-            "uz": "D) fayl tizimining ildizi",
+            "uz": "D) fayl tizimi ildizi (root directory /)",
             "en": "D) file system root"
           },
           "is_correct": true
@@ -3212,7 +3212,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: корень файловой системы",
-        "uz": "To'g'ri javob: fayl tizimining ildizi",
+        "uz": "To'g'ri javob: fayl tizimi ildizi (root directory /)",
         "en": "Correct answer: file system root"
       }
     },
@@ -3697,7 +3697,7 @@
           "id": "1541",
           "text": {
             "ru": "A) Образ контейнера представляет собой специальный исполняемый файл, который включает все необходимое для его запуска",
-            "uz": "A) Konteyner tasviri - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
+            "uz": "A) Container image (obraz) - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
             "en": "A) A container image is a special executable file that includes everything needed to run it"
           },
           "is_correct": false
@@ -4088,7 +4088,7 @@
           "id": "1568",
           "text": {
             "ru": "D) задаёт базовый образ",
-            "uz": "D) asosiy tasvirni o'rnatadi",
+            "uz": "D) asosiy (base) image'ni belgilaydi",
             "en": "D) sets the base image"
           },
           "is_correct": true
@@ -4096,7 +4096,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: задаёт базовый образ",
-        "uz": "To'g'ri javob: asosiy tasvirni o'rnatadi",
+        "uz": "To'g'ri javob: asosiy (base) image'ni belgilaydi",
         "en": "Correct answer: sets the base image"
       }
     },
@@ -4564,7 +4564,7 @@
       "type": "radio",
       "question": {
         "ru": "В чeм значение слоев в образе?",
-        "uz": "Rasmdagi qatlamlarning ahamiyati nimada?",
+        "uz": "Docker image qatlamlarining (layers) ahamiyati nimada?",
         "en": "What is the significance of layers in an image?"
       },
       "answers": [
@@ -4720,7 +4720,7 @@
       "type": "radio",
       "question": {
         "ru": "В чем назначение слоев образа?",
-        "uz": "Rasm qatlamlarining maqsadi nima?",
+        "uz": "Docker image qatlamlarining (layers) vazifasi nima?",
         "en": "What is the purpose of image layers?"
       },
       "answers": [
@@ -4884,7 +4884,7 @@
           "id": "1632",
           "text": {
             "ru": "B) Файл содержащий готовый образ контейнера",
-            "uz": "B) Tayyor konteyner tasvirini o'z ichiga olgan fayl",
+            "uz": "B) Tayyor Container image (obraz)ni o'z ichiga olgan fayl",
             "en": "B) File containing the finished container image"
           },
           "is_correct": false
@@ -4919,7 +4919,7 @@
       "type": "radio",
       "question": {
         "ru": "Для чего придерживаются минимального количества вызовов RUN внутри образа?",
-        "uz": "Nima uchun rasmda RUN qo'ng'iroqlarining minimal soni bor?",
+        "uz": "Nima uchun Docker image ichida RUN buyruqlarining minimal soni bor?",
         "en": "Why is there a minimum number of RUN calls within an image?"
       },
       "answers": [
@@ -4945,7 +4945,7 @@
           "id": "1634",
           "text": {
             "ru": "C) Чтобы не увеличивать объем образа, так как каждый RUN создает слой, который требует памяти",
-            "uz": "C) Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
+            "uz": "C) Image hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
             "en": "C) To avoid increasing the size of the image, since each RUN creates a layer that requires memory"
           },
           "is_correct": true
@@ -4962,7 +4962,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Чтобы не увеличивать объем образа, так как каждый RUN создает слой, который требует памяти",
-        "uz": "To'g'ri javob: Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotira talab qiladigan qatlam yaratadi",
+        "uz": "To'g'ri javob: Image hajmini oshirmaslik uchun, chunki har bir RUN xotira talab qiladigan qatlam yaratadi",
         "en": "Correct answer: To avoid increasing the size of the image, since each RUN creates a layer that requires memory"
       }
     },
@@ -5647,7 +5647,7 @@
       "type": "radio",
       "question": {
         "ru": "Что такое образ?",
-        "uz": "Tasvir nima?",
+        "uz": "Docker image (obraz) nima?",
         "en": "What is an image?"
       },
       "answers": [
@@ -5655,7 +5655,7 @@
           "id": "1691",
           "text": {
             "ru": "A) Образ контейнера представляет собой автономный исполняемый пакет части программного обеспечения, который включает все необходимое для его запуска",
-            "uz": "A) Konteyner tasviri - bu dasturiy ta'minotning mustaqil bajariladigan to'plami bo'lib, uni ishga tushirish uchun zarur bo'lgan hamma narsani o'z ichiga oladi.",
+            "uz": "A) Container image (obraz) - bu dasturiy ta'minotning mustaqil bajariladigan to'plami bo'lib, uni ishga tushirish uchun zarur bo'lgan hamma narsani o'z ichiga oladi.",
             "en": "A) A container image is a self-contained executable package of a piece of software that includes everything needed to run it"
           },
           "is_correct": false
@@ -5673,7 +5673,7 @@
           "id": "1692",
           "text": {
             "ru": "C) Образ контейнера представляет собой специальный исполняемый файл, который включает все необходимое для его запуска",
-            "uz": "C) Konteyner tasviri - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
+            "uz": "C) Container image (obraz) - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan maxsus bajariladigan fayl",
             "en": "C) A container image is a special executable file that includes everything needed to run it"
           },
           "is_correct": false
@@ -5682,7 +5682,7 @@
           "id": "1693",
           "text": {
             "ru": "D) Образ контейнера представляет собой ПО, который включает все необходимое для его запуска",
-            "uz": "D) Konteyner tasviri - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan dastur",
+            "uz": "D) Container image (obraz) - bu uni ishga tushirish uchun zarur bo'lgan barcha narsalarni o'z ichiga olgan dastur",
             "en": "D) A container image is software that includes everything needed to run it"
           },
           "is_correct": false
@@ -5759,7 +5759,7 @@
           "id": "1698",
           "text": {
             "ru": "A) Репозиторий, предназначенный для хранения образов с различным программным обеспечением",
-            "uz": "A) Turli xil dasturlar bilan tasvirlarni saqlash uchun mo'ljallangan ombor",
+            "uz": "A) Turli xil dasturlar bilan image'larni saqlash uchun mo'ljallangan ombor",
             "en": "A) A repository designed to store images with various software"
           },
           "is_correct": false
@@ -5768,7 +5768,7 @@
           "id": "1701",
           "text": {
             "ru": "B) Инструмент для проверки безопасности образов контейнера, который можно использовать для поиска уязвимостей",
-            "uz": "B) Zaifliklarni topish uchun ishlatilishi mumkin bo'lgan konteyner tasviri xavfsizligini tekshirish vositasi",
+            "uz": "B) Zaifliklarni topish uchun ishlatilishi mumkin bo'lgan Container image (obraz) xavfsizligini tekshirish vositasi",
             "en": "B) Container image security testing tool that can be used to find vulnerabilities"
           },
           "is_correct": false
@@ -6011,7 +6011,7 @@
       "type": "radio",
       "question": {
         "ru": "Как получить список всех образов?",
-        "uz": "Barcha rasmlar ro'yxatini qanday olish mumkin?",
+        "uz": "Barcha Docker image'lar ro'yxatini qanday olish mumkin?",
         "en": "How to get a list of all images?"
       },
       "answers": [
@@ -6721,7 +6721,7 @@
       "type": "radio",
       "question": {
         "ru": "Как загрузить образ?",
-        "uz": "Rasmni qanday yuklab olish mumkin?",
+        "uz": "Docker image'ni qanday yuklab olish (pull) mumkin?",
         "en": "How to download the image?"
       },
       "answers": [
@@ -7214,7 +7214,7 @@
       "type": "radio",
       "question": {
         "ru": "Как удалить Docker-образ?",
-        "uz": "Docker tasvirini qanday olib tashlash mumkin?",
+        "uz": "Docker image'ni qanday olib tashlash mumkin?",
         "en": "How to remove Docker image?"
       },
       "answers": [
@@ -7794,7 +7794,7 @@
           "id": "1853",
           "text": {
             "ru": "A) можно при помощи вызова sudo / su",
-            "uz": "A) sudo / su ga qo'ng'iroq qilish orqali amalga oshirilishi mumkin",
+            "uz": "A) sudo / su buyrug'ini chaqirish (ishlatish) orqali amalga oshirilishi mumkin",
             "en": "A) can be done by calling sudo / su"
           },
           "is_correct": true
@@ -7829,7 +7829,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: можно при помощи вызова sudo / su",
-        "uz": "To'g'ri javob: sudo / su raqamlariga qo'ng'iroq qilishingiz mumkin",
+        "uz": "To'g'ri javob: sudo / su buyrug'ini chaqirish orqali amalga oshirish mumkin",
         "en": "Correct answer: you can by calling sudo / su"
       }
     },
@@ -7899,7 +7899,7 @@
       "type": "radio",
       "question": {
         "ru": "С каким ключём нужно запустить команду df для отображения инфы в человекочитаемом виде?",
-        "uz": "Axborotni odam o‘qiy oladigan shaklda ko‘rsatish uchun df buyrug‘ini qaysi tugma yordamida bajarish kerak?",
+        "uz": "Axborotni odam o‘qiy oladigan shaklda ko‘rsatish uchun df buyrug'ida ma'lumotlarni odam o'qiy oladigan ko'rinishda (human-readable) chiqarish uchun qaysi parametr (flag) ishlatiladi?",
         "en": "With what key do you need to run the df command to display information in human-readable form?"
       },
       "answers": [
@@ -8012,7 +8012,7 @@
       "type": "radio",
       "question": {
         "ru": "Как выгрузить образ?",
-        "uz": "Rasmni qanday yuklash kerak?",
+        "uz": "Docker image'ni qanday yuklash (push / save) kerak?",
         "en": "How to upload an image?"
       },
       "answers": [
@@ -8342,7 +8342,7 @@
       "type": "radio",
       "question": {
         "ru": "При помощи какой команды можно скопировать файл внутрь образа при написание файла dockerfile?",
-        "uz": "dockerfile faylini yozishda rasm ichidagi faylni qaysi buyruq yordamida nusxalash mumkin?",
+        "uz": "dockerfile faylini yozishda image ichidagi faylni qaysi buyruq yordamida nusxalash mumkin?",
         "en": "Using what command can you copy a file inside the image when writing the file dockerfile?"
       },
       "answers": [
@@ -9294,7 +9294,7 @@
       "type": "radio",
       "question": {
         "ru": "Какой ключ используется при вызове df для вывода информации обо всех размерах, кроме указанных файловых систем",
-        "uz": "Belgilangan fayl tizimlaridan tashqari barcha o'lchamlar haqidagi ma'lumotlarni ko'rsatish uchun df ga qo'ng'iroq qilishda qanday kalit ishlatiladi",
+        "uz": "Belgilangan fayl tizimlaridan tashqari barcha o'lchamlar haqidagi ma'lumotlarni ko'rsatish uchun df buyrug'ini ishlatishda qaysi parametr (flag) ishlatiladi",
         "en": "What key is used when calling df to display information about all sizes except the specified file systems"
       },
       "answers": [
@@ -9346,7 +9346,7 @@
       "type": "radio",
       "question": {
         "ru": "Как вызвать /usr/bin/script.shск.sh из под root по cron каждый месяц?",
-        "uz": "Har oyda cron yordamida /usr/bin/script.shsk.sh ni ildizdan qanday chaqirish mumkin?",
+        "uz": "Har oyda cron yordamida /usr/bin/script.shsk.sh ni root foydalanuvchisi ostida qanday ishga tushirish mumkin?",
         "en": "How to call /usr/bin/script.shск.sh from root using cron every month?"
       },
       "answers": [
@@ -9579,7 +9579,7 @@
       "type": "radio",
       "question": {
         "ru": "Какой командой можно создать слой образа?",
-        "uz": "Tasvir qatlamini qanday buyruq yaratish mumkin?",
+        "uz": "Image qatlamini qaysi buyruq yaratadi?",
         "en": "What command can you create an image layer?"
       },
       "answers": [
@@ -10471,7 +10471,7 @@
           "id": "2058",
           "text": {
             "ru": "B) Отсутсвует ключ -с у команды touch",
-            "uz": "B) Sensorli buyruqda -c tugmasi yo'q",
+            "uz": "B) touch buyrug'ida -c parametri (flag) yo'q",
             "en": "B) The -c switch is missing from the touch command"
           },
           "is_correct": false
@@ -10660,7 +10660,7 @@
       "type": "radio",
       "question": {
         "ru": "В чём значение слоёв в образе?",
-        "uz": "Rasmdagi qatlamlarning ahamiyati nimada?",
+        "uz": "Docker image qatlamlarining (layers) ahamiyati nimada?",
         "en": "What is the significance of layers in an image?"
       },
       "answers": [
@@ -10798,7 +10798,7 @@
       "type": "radio",
       "question": {
         "ru": "Для чего придерживаться минимального количества вызовов RUN внутри образа?",
-        "uz": "Nega rasmdagi RUN qo'ng'iroqlarining minimal soniga rioya qilish kerak?",
+        "uz": "Nega Docker image ichidagi RUN buyruqlarining minimal soniga rioya qilish kerak?",
         "en": "Why stick to a minimum number of RUN calls within an image?"
       },
       "answers": [
@@ -10815,7 +10815,7 @@
           "id": "2081",
           "text": {
             "ru": "B) Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-            "uz": "B) Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
+            "uz": "B) Image hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
             "en": "B) In order not to increase the volume of the image, since each RUN creates a layer that requires memory"
           },
           "is_correct": true
@@ -10841,7 +10841,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Чтобы не увеличивать объём образа, так как каждый RUN создаёт слой, который требует памяти",
-        "uz": "To'g'ri javob: Tasvir hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
+        "uz": "To'g'ri javob: Image hajmini oshirmaslik uchun, chunki har bir RUN xotirani talab qiladigan qatlam yaratadi",
         "en": "Correct answer: To avoid increasing the volume of the image, since each RUN creates a layer that requires memory"
       }
     },
@@ -11014,7 +11014,7 @@
           "id": "2097",
           "text": {
             "ru": "A) Удаленный репозиторий, где хранятся докер-образы",
-            "uz": "A) Docker tasvirlari saqlanadigan masofaviy ombor",
+            "uz": "A) Docker image'lari saqlanadigan masofaviy ombor",
             "en": "A) Remote repository where docker images are stored"
           },
           "is_correct": true
@@ -11031,7 +11031,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Удаленный репозиторий, где хранятся докер-образы",
-        "uz": "To'g'ri javob: Docker tasvirlari saqlanadigan masofaviy ombor",
+        "uz": "To'g'ri javob: Docker image'lari saqlanadigan masofaviy ombor",
         "en": "Correct answer: Remote repository where docker images are stored"
       }
     },
@@ -11610,7 +11610,7 @@
       "type": "radio",
       "question": {
         "ru": "При помощи какой командой можно скопировать файл внутрь образа при написание файла dockerfile?",
-        "uz": "dockerfile faylini yozishda rasm ichidagi faylni qaysi buyruq yordamida nusxalash mumkin?",
+        "uz": "dockerfile faylini yozishda image ichidagi faylni qaysi buyruq yordamida nusxalash mumkin?",
         "en": "Using what command can you copy a file inside the image when writing the file dockerfile?"
       },
       "answers": [
@@ -12133,7 +12133,7 @@
       "type": "radio",
       "question": {
         "ru": "Как Вызвать cron каждые 4 часа?",
-        "uz": "cronga har 4 soatda qanday qo'ng'iroq qilish mumkin?",
+        "uz": "cron yordamida har 4 soatda vazifani qanday ishga tushirish mumkin?",
         "en": "How to Call cron every 4 hours?"
       },
       "answers": [
@@ -12445,7 +12445,7 @@
       "type": "radio",
       "question": {
         "ru": "Как в gitlab-ci.yml указать образ который будет использоваться при выполнении стадии?",
-        "uz": "Sahnani bajarishda foydalaniladigan gitlab-ci.yml da tasvirni qanday belgilashim mumkin?",
+        "uz": "Sahnani bajarishda foydalaniladigan gitlab-ci.yml da qaysi Docker image ishlatilishini qanday ko'rsatish mumkin?",
         "en": "How can I specify the image in gitlab-ci.yml that will be used when executing the stage?"
       },
       "answers": [
@@ -12661,7 +12661,7 @@
           "id": "2219",
           "text": {
             "ru": "A) Нужно добавить root при установке",
-            "uz": "A) O'rnatish vaqtida ildiz qo'shish kerak",
+            "uz": "A) O'rnatish vaqtida root foydalanuvchisini qo'shish kerak",
             "en": "A) Need to add root during installation"
           },
           "is_correct": false
@@ -12670,7 +12670,7 @@
           "id": "2221",
           "text": {
             "ru": "B) Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-            "uz": "B) Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudoga qo'ng'iroq qilish orqali",
+            "uz": "B) Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudo buyrug'ini chaqirish orqali",
             "en": "B) It is possible, but not by default, but by calling su or sudo"
           },
           "is_correct": true
@@ -12696,7 +12696,7 @@
       ],
       "explanation": {
         "ru": "Правильный ответ: Можно, но не по-умолчанию, а при помощи вызова su или sudo",
-        "uz": "To'g'ri javob: Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudoga qo'ng'iroq qilish orqali",
+        "uz": "To'g'ri javob: Bu mumkin, lekin sukut bo'yicha emas, balki su yoki sudo buyrug'ini chaqirish orqali",
         "en": "Correct answer: It is possible, but not by default, but by calling su or sudo"
       }
     },
@@ -12809,7 +12809,7 @@
       "type": "radio",
       "question": {
         "ru": "Что дает ключ -l команде ls?",
-        "uz": "-l tugmasi ls buyrug'i uchun nima qiladi?",
+        "uz": "-l parametri (flag) ls buyrug'ida nima vazifani bajaradi?",
         "en": "What does the -l switch do for the ls command?"
       },
       "answers": [
@@ -13611,7 +13611,7 @@
       "type": "checkbox",
       "question": {
         "ru": "Какие executor`ы бывают у gitlab-runner`а?",
-        "uz": "`ы бывают у gitlab-runner`a qanday ijrochi?",
+        "uz": "gitlab-runner'da qanday executor (ijrochi) turlari mavjud?",
         "en": "What executor`ы бывают у gitlab-runner`а?"
       },
       "answers": [
@@ -13830,7 +13830,7 @@
       "type": "checkbox",
       "question": {
         "ru": "Что такое root?",
-        "uz": "Ildiz nima?",
+        "uz": "root (superfoydalanuvchi) nima?",
         "en": "What is root?"
       },
       "answers": [
@@ -13847,7 +13847,7 @@
           "id": "2316",
           "text": {
             "ru": "B) корневая папка системы",
-            "uz": "B) tizim ildiz papkasi",
+            "uz": "B) tizimning ildiz (root /) papkasi",
             "en": "B) system root folder"
           },
           "is_correct": false
@@ -14180,7 +14180,7 @@
       "type": "checkbox",
       "question": {
         "ru": "За что отвечает главный поток nginx?",
-        "uz": "nginx asosiy mavzu nima uchun javob beradi?",
+        "uz": "nginx'ning asosiy oqimi (master process / main thread) nima uchun javob beradi?",
         "en": "What is the main thread nginx responsible for?"
       },
       "answers": [
@@ -14668,7 +14668,7 @@
       "type": "checkbox",
       "question": {
         "ru": "Как загрузить образ?",
-        "uz": "Rasmni qanday yuklab olish mumkin?",
+        "uz": "Docker image'ni qanday yuklab olish (pull) mumkin?",
         "en": "How to download the image?"
       },
       "answers": [
