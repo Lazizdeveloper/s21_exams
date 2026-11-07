@@ -1,20 +1,21 @@
 import React, { useState, useMemo } from 'react';
 import { 
-  Code2, 
   Search, 
-  Copy, 
-  Check, 
   ArrowLeft, 
   Terminal, 
-  AlertTriangle, 
-  FileCode, 
-  Layers, 
-  Sparkles,
-  ExternalLink
+  AlertTriangle 
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import cPracticalData from '../data/c_practical.json';
 import MarkdownView from '../components/MarkdownView';
+
+// Subcomponents
+import TaskListItem from '../components/c_practice/TaskListItem';
+import TaskHeader from '../components/c_practice/TaskHeader';
+import TaskExamplesTable from '../components/c_practice/TaskExamplesTable';
+import TaskCodeViewer from '../components/c_practice/TaskCodeViewer';
+import VerterCheckerModal from '../components/c_practice/VerterCheckerModal';
+import VerterGuideModal from '../components/c_practice/VerterGuideModal';
 
 const EXERCISE_MODULES = [
   { id: 'all', title: { uz: 'Hammasi', ru: 'Все', en: 'All' } },
@@ -33,8 +34,12 @@ export default function CPracticePage() {
   const [selectedModule, setSelectedModule] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTaskId, setActiveTaskId] = useState('ex_01_01');
-  const [activeCodeTab, setActiveCodeTab] = useState('solution'); // 'solution' | 'original'
+  const [activeCodeTab, setActiveCodeTab] = useState('solution');
   const [copied, setCopied] = useState(false);
+  
+  // Modals state
+  const [isVerterOpen, setIsVerterOpen] = useState(false);
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
 
   const exercises = cPracticalData.exercises || [];
 
@@ -124,7 +129,6 @@ export default function CPracticePage() {
               type="button"
               onClick={() => {
                 setSelectedModule(mod.id);
-                // If current task is not in new module, select first task of module
                 if (mod.id !== 'all') {
                   const firstOfMod = exercises.find(e => e.exerciseGroup === mod.id);
                   if (firstOfMod) setActiveTaskId(firstOfMod.id);
@@ -147,7 +151,7 @@ export default function CPracticePage() {
         })}
       </div>
 
-      {/* Main Grid: Left Task List (1/3) + Right Task Details (2/3) */}
+      {/* Main Grid: Left Tasks (4 col) + Right Details (8 col) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Left: Task Navigation List */}
         <div className="lg:col-span-5 xl:col-span-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-3 max-h-[calc(100vh-280px)] overflow-y-auto space-y-1.5">
@@ -161,68 +165,34 @@ export default function CPracticePage() {
               {t.cPractice.noTasksFound}
             </div>
           ) : (
-            filteredTasks.map((task) => {
-              const isCurrent = task.id === activeTask.id;
-              return (
-                <div
-                  key={task.id}
-                  onClick={() => {
-                    setActiveTaskId(task.id);
-                    setActiveCodeTab('solution');
-                  }}
-                  className={`p-3 rounded-xl cursor-pointer transition-all border ${
-                    isCurrent
-                      ? 'border-purple-500 bg-purple-50/70 dark:bg-purple-950/40 text-purple-950 dark:text-purple-200 shadow-sm ring-1 ring-purple-500/30'
-                      : 'border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/60 text-slate-800 dark:text-slate-200'
-                  }`}
-                >
-                  <div className="flex items-center justify-between gap-2 mb-1">
-                    <span className="text-xs font-bold font-mono tracking-tight text-purple-600 dark:text-purple-400">
-                      {task.id.toUpperCase()}
-                    </span>
-                    <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
-                      Level {task.level}
-                    </span>
-                  </div>
-                  <div className="text-xs sm:text-sm font-semibold line-clamp-1">
-                    {getTaskTitle(task)}
-                  </div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
-                    {getTaskTopics(task)}
-                  </div>
-                </div>
-              );
-            })
+            filteredTasks.map((task) => (
+              <TaskListItem
+                key={task.id}
+                task={task}
+                isCurrent={task.id === activeTask.id}
+                title={getTaskTitle(task)}
+                topics={getTaskTopics(task)}
+                onSelect={() => {
+                  setActiveTaskId(task.id);
+                  setActiveCodeTab('solution');
+                }}
+              />
+            ))
           )}
         </div>
 
-        {/* Right: Task Details & Code Viewer */}
+        {/* Right: Task Details & Verter Inspector */}
         <div className="lg:col-span-7 xl:col-span-8 space-y-6">
           {activeTask ? (
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 space-y-6 animate-fadeIn">
-              {/* Task Header */}
-              <div className="space-y-3 pb-5 border-b border-slate-100 dark:border-slate-800">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-purple-500 text-white shadow-sm">
-                    {activeTask.exerciseGroup}
-                  </span>
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                    Level {activeTask.level}
-                  </span>
-                  <span className="text-xs text-slate-400 font-mono">
-                    ID: {activeTask.id}
-                  </span>
-                </div>
-
-                <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-                  {getTaskTitle(activeTask)}
-                </h2>
-
-                <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
-                  <span className="font-bold text-slate-700 dark:text-slate-300">Mavzu:</span>
-                  <span>{getTaskTopics(activeTask)}</span>
-                </div>
-              </div>
+              {/* Task Header with Verter Actions */}
+              <TaskHeader
+                activeTask={activeTask}
+                title={getTaskTitle(activeTask)}
+                topics={getTaskTopics(activeTask)}
+                onOpenVerter={() => setIsVerterOpen(true)}
+                onOpenGuide={() => setIsGuideOpen(true)}
+              />
 
               {/* Task Description */}
               <div className="space-y-2">
@@ -236,35 +206,10 @@ export default function CPracticePage() {
               </div>
 
               {/* Examples (Input -> Output) */}
-              {activeTask.examples && activeTask.examples.length > 0 && (
-                <div className="space-y-2">
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                    {t.cPractice.examples}
-                  </h3>
-                  <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
-                    <table className="w-full text-xs text-left">
-                      <thead className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold uppercase">
-                        <tr>
-                          <th className="px-4 py-2.5 w-1/2">Kiruvchi oqim (stdin)</th>
-                          <th className="px-4 py-2.5 w-1/2">Kutilgan chiqish (stdout)</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-slate-200 dark:divide-slate-800 bg-white dark:bg-slate-900 font-mono">
-                        {activeTask.examples.map((ex, idx) => (
-                          <tr key={idx} className="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-                            <td className="px-4 py-2.5 text-slate-800 dark:text-slate-200 whitespace-pre-wrap">
-                              {ex.input || "(bo'sh)"}
-                            </td>
-                            <td className="px-4 py-2.5 text-emerald-600 dark:text-emerald-400 font-bold whitespace-pre-wrap">
-                              {ex.output}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              )}
+              <TaskExamplesTable 
+                examples={activeTask.examples} 
+                label={t.cPractice.examples} 
+              />
 
               {/* School 21 Exam Requirement Notice */}
               <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 text-xs space-y-1">
@@ -273,73 +218,24 @@ export default function CPracticePage() {
                   <span>{t.cPractice.notes}</span>
                 </div>
                 <ul className="list-disc list-inside space-y-0.5 text-amber-800/90 dark:text-amber-300/90 pl-1">
-                  <li>Har qanday noto'g'ri kiritishda faqat <code className="font-mono font-bold bg-amber-100 dark:bg-amber-900/60 px-1 rounded">"n/a"</code> chiqarilishi shart.</li>
-                  <li>Chiqarish oxirida yangi qatorga o'tish (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">\n</code>) bo'lmasligi kerak (agar shartda alohida aytilmagan bo'lsa).</li>
-                  <li>Dinamik xotira (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">malloc</code>) ishlatilgan bo'lsa, uni tozalash (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">free</code>) majburiydir.</li>
+                  <li>Noto'g'ri kiritishda faqat <code className="font-mono font-bold bg-amber-100 dark:bg-amber-900/60 px-1 rounded">"n/a"</code> chiqariladi.</li>
+                  <li>Chiqarish oxirida ortiqcha <code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">\n</code> bo'lmasligi kerak.</li>
+                  <li>Dinamik xotira (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">malloc</code>) ishlatilgan bo'lsa, uni tozalash (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">free</code>) shart.</li>
                 </ul>
               </div>
 
-              {/* Code Viewer Box with Tabs (Solution vs Original Buggy Code) */}
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <div className="flex items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-xl text-xs font-bold">
-                    <button
-                      type="button"
-                      onClick={() => setActiveCodeTab('solution')}
-                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
-                        activeCodeTab === 'solution'
-                          ? 'bg-purple-600 text-white shadow-sm'
-                          : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                      }`}
-                    >
-                      <Check size={14} />
-                      <span>{t.cPractice.solutionCode}</span>
-                    </button>
-
-                    {activeTask.originalCode && (
-                      <button
-                        type="button"
-                        onClick={() => setActiveCodeTab('original')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
-                          activeCodeTab === 'original'
-                            ? 'bg-rose-600 text-white shadow-sm'
-                            : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                        }`}
-                      >
-                        <FileCode size={14} />
-                        <span>{t.cPractice.originalCode}</span>
-                      </button>
-                    )}
-                  </div>
-
-                  {/* Copy Button */}
-                  <button
-                    type="button"
-                    onClick={() => handleCopyCode(activeCodeTab === 'solution' ? activeTask.solutionCode : activeTask.originalCode)}
-                    className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm"
-                  >
-                    {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} />}
-                    <span>{copied ? t.actions.copied : t.actions.copyCode}</span>
-                  </button>
-                </div>
-
-                {/* Code Block Container */}
-                <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-inner">
-                  <div className="flex items-center justify-between px-4 py-2 bg-slate-900/80 border-b border-slate-800 text-[11px] text-slate-400 font-mono">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-                      <span className="ml-2 font-bold text-slate-300">main.c</span>
-                    </div>
-                    <span>C (C99 / School 21)</span>
-                  </div>
-
-                  <pre className="p-4 overflow-x-auto text-xs sm:text-sm font-mono text-emerald-400 leading-relaxed max-h-[460px]">
-                    <code>{activeCodeTab === 'solution' ? activeTask.solutionCode : activeTask.originalCode}</code>
-                  </pre>
-                </div>
-              </div>
+              {/* Code Viewer Box */}
+              <TaskCodeViewer
+                activeCodeTab={activeCodeTab}
+                setActiveCodeTab={setActiveCodeTab}
+                activeTask={activeTask}
+                copied={copied}
+                onCopyCode={handleCopyCode}
+                solutionLabel={t.cPractice.solutionCode}
+                originalLabel={t.cPractice.originalCode}
+                copyLabel={t.actions.copyCode}
+                copiedLabel={t.actions.copied}
+              />
             </div>
           ) : (
             <div className="p-12 text-center text-slate-500 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
@@ -348,6 +244,19 @@ export default function CPracticePage() {
           )}
         </div>
       </div>
+
+      {/* Verter Modals */}
+      <VerterCheckerModal
+        isOpen={isVerterOpen}
+        onClose={() => setIsVerterOpen(false)}
+        activeTask={activeTask}
+        lang={lang}
+      />
+
+      <VerterGuideModal
+        isOpen={isGuideOpen}
+        onClose={() => setIsGuideOpen(false)}
+      />
     </div>
   );
 }

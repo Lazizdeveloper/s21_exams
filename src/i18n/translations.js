@@ -68,6 +68,8 @@ export const translations = {
       topics: "Mavzular",
       noTasksFound: "Topshiriqlar topilmadi",
       copySolution: "Yechimni nusxalash",
+      verterCheck: "Verter Tekshiruvi",
+      verterGuide: "Verter Qo'llanmasi",
     },
     practice: {
       title: "Mashq rejimi",
@@ -189,6 +191,8 @@ export const translations = {
       topics: "Темы",
       noTasksFound: "Задания не найдены",
       copySolution: "Копировать решение",
+      verterCheck: "Проверка Вертером",
+      verterGuide: "Гайд по Вертеру",
     },
     practice: {
       title: "Режим тренировки",
@@ -310,6 +314,8 @@ export const translations = {
       topics: "Topics",
       noTasksFound: "No tasks found",
       copySolution: "Copy Solution",
+      verterCheck: "Verter Check",
+      verterGuide: "Verter Guide",
     },
     practice: {
       title: "Practice Mode",
