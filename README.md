@@ -22,6 +22,11 @@ Ushbu repozitoriyda «Школа 21» nazariy imtihonlariga tayyorgarlik savolla
 - **Fayl**: `sql_exam_questions.json`
 - **Skript**: `scrape_sql.py`
 
+### 4. Qo'shimcha imtihon savollari (DOCX formatida)
+- `exam-questions-UZB.docx` — O'zbek tilidagi imtihon savollari
+- `exam-questions-RUS.docx` — Rus tilidagi imtihon savollari
+- `exam-questions-ENG.docx` — Ingliz tilidagi imtihon savollari
+
 Har bir savolda:
 - Savol matni (`question`), SQL so'rovlar va jadvallar (Markdown ko'rinishida)
 - Savol turi (`radio` / `checkbox`)
