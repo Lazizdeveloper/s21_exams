@@ -81,6 +81,12 @@ export function getRandomQuestions(rawQuestions, count = 30) {
   return shuffled.slice(0, Math.min(count, shuffled.length));
 }
 
+export function stripLeadingOptionLetter(text) {
+  if (typeof text !== 'string') return text || '';
+  const stripped = text.replace(/^[A-Da-d][\)\.\:\-]\s+/, '').trim();
+  return stripped.length > 0 ? stripped : text;
+}
+
 export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
   // If multilingual question (question is an object with uz/ru/en)
   if (q.question && typeof q.question === 'object') {
@@ -88,15 +94,15 @@ export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
     const rawOptions = q.options || q.answers || [];
 
     const options = rawOptions.map((opt, idx) => {
-      let optText = '';
+      let rawText = '';
       if (typeof opt.text === 'object' && opt.text) {
-        optText = opt.text[lang] || opt.text.ru || opt.text.uz || opt.text.en || '';
+        rawText = opt.text[lang] || opt.text.ru || opt.text.uz || opt.text.en || '';
       } else {
-        optText = opt.text || '';
+        rawText = opt.text || '';
       }
 
-      const keyMatch = optText.match(/^([A-D])\)/);
-      const key = opt.key || (keyMatch ? keyMatch[1] : String.fromCharCode(65 + idx));
+      const optText = stripLeadingOptionLetter(rawText);
+      const key = String.fromCharCode(65 + idx);
 
       return {
         id: opt.id || opt.key || String(idx),
@@ -131,9 +137,9 @@ export function normalizeQuestion(q, lang = 'uz', categoryId = '') {
 
   // Standard legacy question with string text
   const options = (q.answers || q.options || []).map((ans, idx) => {
-    const optText = typeof ans.text === 'object' ? (ans.text[lang] || ans.text.ru || '') : ans.text;
-    const keyMatch = optText.match(/^([A-D])\)/);
-    const key = ans.key || (keyMatch ? keyMatch[1] : String.fromCharCode(65 + idx));
+    const rawText = typeof ans.text === 'object' ? (ans.text[lang] || ans.text.ru || '') : ans.text;
+    const optText = stripLeadingOptionLetter(rawText);
+    const key = String.fromCharCode(65 + idx);
     return {
       id: ans.id || String(idx),
       key,

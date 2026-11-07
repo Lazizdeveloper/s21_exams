@@ -8,51 +8,51 @@
       "type": "radio",
       "question": {
         "ru": "Какой принцип ACID гарантирует, что если транзакция прошла успешно, изменения будут сохранены даже в случае сбоя?",
-        "uz": "ACID prinsiplaridan qaysi biri, agar tranzaksiya muvaffaqiyatli yakunlansa, tizim ishdan chiqqan (crash) taqdirda ham o'zgarishlar saqlanib qolishini kafolatlaydi?",
-        "en": "Which ACID principle guarantees that once a transaction has committed, its changes will survive even in the event of a system crash?"
+        "uz": "ACID prinsiplaridan qaysi biri tranzaksiya muvaffaqiyatli yakunlansa, tizim ishdan chiqqan taqdirda ham o'zgarishlar saqlanib qolishini kafolatlaydi?",
+        "en": "Which ACID principle guarantees that once a transaction completes successfully, changes are preserved even in the event of a system crash?"
       },
       "answers": [
         {
           "id": "1131",
           "text": {
-            "ru": "A) Изоляция",
-            "uz": "B) Izolyatsiya (Isolation)",
-            "en": "B) Isolation"
+            "ru": "Изоляция",
+            "uz": "Izolyatsiya (Isolation)",
+            "en": "Isolation"
           },
           "is_correct": false
         },
         {
           "id": "1134",
           "text": {
-            "ru": "B) Согласованность",
-            "uz": "C) Muvofiqlik (Consistency)",
-            "en": "C) Consistency"
+            "ru": "Согласованность",
+            "uz": "Muvofiqlik (Consistency)",
+            "en": "Consistency"
           },
           "is_correct": false
         },
         {
           "id": "1132",
           "text": {
-            "ru": "C) Надежность",
-            "uz": "A) Bardavomlik (Durability)",
-            "en": "A) Durability"
+            "ru": "Надежность (Durability)",
+            "uz": "Bardavomlik (Durability)",
+            "en": "Durability"
           },
           "is_correct": true
         },
         {
           "id": "1133",
           "text": {
-            "ru": "D) Атомарность",
-            "uz": "D) Atomlilik (Atomicity)",
-            "en": "D) Atomicity"
+            "ru": "Атомарность",
+            "uz": "Atomlilik (Atomicity)",
+            "en": "Atomicity"
           },
           "is_correct": false
         }
       ],
       "explanation": {
-        "ru": "Надежность (Durability) обеспечивает сохранение данных даже при сбое.",
-        "uz": "Durability (Ishonchlilik / Bardavomlik) nosozlik yuz berganda ham committed tranzaksiya ma'lumotlari xotirada saqlanishini ta'minlaydi.",
-        "en": "Durability guarantees that committed transaction changes survive system failures and crashes."
+        "ru": "Надежность (Durability) обеспечивает сохранение данных даже при аппаратном или программном сбое.",
+        "uz": "Bardavomlik (Durability) — tranzaksiya tasdiqlangach (commit), server o'chib qolsa ham ma'lumotlar saqlanishini ta'minlaydi.",
+        "en": "Durability guarantees that once a transaction is committed, it will persist even in a system failure."
       }
     },
     {
@@ -60,51 +60,51 @@
       "type": "radio",
       "question": {
         "ru": "Что означает CAP в CAP-теореме?",
-        "uz": "CAP-teoremasidagi CAP qisqartmasi nimani anglatadi?",
+        "uz": "CAP teoremasidagi CAP qisqartmasi nimani anglatadi?",
         "en": "What does CAP stand for in the CAP theorem?"
       },
       "answers": [
         {
           "id": "1257",
           "text": {
-            "ru": "A) Coordination, Availability, Processing",
-            "uz": "A) Coordination, Availability, Processing",
-            "en": "A) Coordination, Availability, Processing"
+            "ru": "Coordination, Availability, Processing",
+            "uz": "Coordination, Availability, Processing",
+            "en": "Coordination, Availability, Processing"
           },
           "is_correct": false
         },
         {
           "id": "1258",
           "text": {
-            "ru": "B) Connection, Authentication, Persistence",
-            "uz": "B) Connection, Authentication, Persistence",
-            "en": "B) Connection, Authentication, Persistence"
+            "ru": "Connection, Authentication, Persistence",
+            "uz": "Connection, Authentication, Persistence",
+            "en": "Connection, Authentication, Persistence"
           },
           "is_correct": false
         },
         {
           "id": "1135",
           "text": {
-            "ru": "C) Consistency, Accuracy, Performance",
-            "uz": "C) Consistency, Accuracy, Performance",
-            "en": "C) Consistency, Accuracy, Performance"
+            "ru": "Consistency, Accuracy, Performance",
+            "uz": "Consistency, Accuracy, Performance",
+            "en": "Consistency, Accuracy, Performance"
           },
           "is_correct": false
         },
         {
           "id": "1256",
           "text": {
-            "ru": "D) Consistency, Availability, Partition Tolerance",
-            "uz": "D) Consistency, Availability, Partition Tolerance",
-            "en": "D) Consistency, Availability, Partition Tolerance"
+            "ru": "Consistency, Availability, Partition Tolerance",
+            "uz": "Consistency, Availability, Partition Tolerance",
+            "en": "Consistency, Availability, Partition Tolerance"
           },
           "is_correct": true
         }
       ],
       "explanation": {
-        "ru": "CAP-теорема описывает невозможность одновременного соблюдения всех трёх свойств в распределённой системе.",
-        "uz": "CAP-teoremaga ko'ra, taqsimlangan tizimda Consistency (muvofiqlik), Availability (mavjudlik) va Partition Tolerance (bo'linishga chidamlilik) ning barchasini birdaniga ta'minlab bo'lmaydi.",
-        "en": "The CAP theorem states that a distributed system cannot simultaneously provide Consistency, Availability, and Partition Tolerance."
+        "ru": "CAP-теорема: Consistency (согласованность), Availability (доступность), Partition tolerance (устойчивость к разделению).",
+        "uz": "CAP teoremasi: Consistency (izchillik), Availability (mavjudlik), Partition Tolerance (taqsimlanishga bardoshlilik).",
+        "en": "CAP theorem: Consistency, Availability, Partition Tolerance."
       }
     },
     {
@@ -119,44 +119,44 @@
         {
           "id": "1137",
           "text": {
-            "ru": "A) DBMS",
-            "uz": "C) Query Optimizer",
-            "en": "C) Query Optimizer"
+            "ru": "DBMS (СУБД)",
+            "uz": "DBMS (MBBT - Ma'lumotlar bazasini boshqarish tizimi)",
+            "en": "DBMS (Database Management System)"
           },
           "is_correct": true
         },
         {
           "id": "1138",
           "text": {
-            "ru": "B) Transaction Manager",
-            "uz": "B) Transaction Manager",
-            "en": "B) Transaction Manager"
+            "ru": "Transaction Manager",
+            "uz": "Transaction Manager (Tranzaksiya boshqaruvchisi)",
+            "en": "Transaction Manager"
           },
           "is_correct": false
         },
         {
           "id": "1139",
           "text": {
-            "ru": "C) Query Optimizer",
-            "uz": "D) SQL Server",
-            "en": "D) SQL Server"
+            "ru": "Query Optimizer",
+            "uz": "Query Optimizer (So'rov optimallashtirgichi)",
+            "en": "Query Optimizer"
           },
           "is_correct": false
         },
         {
           "id": "1136",
           "text": {
-            "ru": "D) SQL server",
-            "uz": "D) SQL server",
-            "en": "D) SQL server"
+            "ru": "SQL server",
+            "uz": "SQL Server ilovasi",
+            "en": "SQL Server application"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "DBMS (СУБД) управляет хранением, изменением и доступом к данным.",
-        "uz": "DBMS (Ma'lumotlar bazasini boshqarish tizimi — СУБД) ma'lumotlarni saqlash, o'zgartirish va ularga kirishni boshqaradi.",
-        "en": "A DBMS (Database Management System) manages storage, modification, and access to data."
+        "uz": "DBMS (MBBT) ma'lumotlarni saqlash, o'zgartirish va ularga kirish huquqlarini markazlashgan holda boshqaradi.",
+        "en": "DBMS manages the storage, modification, and access to data."
       }
     },
     {
@@ -171,44 +171,44 @@
         {
           "id": "1143",
           "text": {
-            "ru": "A) mysql",
-            "uz": "A) MySQL",
-            "en": "A) MySQL"
+            "ru": "MySQL",
+            "uz": "MySQL",
+            "en": "MySQL"
           },
           "is_correct": false
         },
         {
           "id": "1142",
           "text": {
-            "ru": "B) mongodb",
-            "uz": "D) Oracle",
-            "en": "D) Oracle"
+            "ru": "MongoDB",
+            "uz": "MongoDB",
+            "en": "MongoDB"
           },
           "is_correct": true
         },
         {
           "id": "1140",
           "text": {
-            "ru": "C) psql",
-            "uz": "C) psql",
-            "en": "C) psql"
+            "ru": "PostgreSQL (psql)",
+            "uz": "PostgreSQL (psql)",
+            "en": "PostgreSQL (psql)"
           },
           "is_correct": false
         },
         {
           "id": "1141",
           "text": {
-            "ru": "D) oracle",
-            "uz": "B) MongoDB",
-            "en": "B) MongoDB"
+            "ru": "Oracle",
+            "uz": "Oracle Database",
+            "en": "Oracle Database"
           },
           "is_correct": false
         }
       ],
       "explanation": {
-        "ru": "MongoDB — это документо-ориентированная база, а не реляционная.",
-        "uz": "MongoDB — bu NoSQL document-oriented ma'lumotlar bazasi, RDBMS emas.",
-        "en": "MongoDB is a document-oriented NoSQL database, not an RDBMS."
+        "ru": "MongoDB — это документо-ориентированная NoSQL база, а не реляционная.",
+        "uz": "MongoDB — bu hujjatlarga asoslangan NoSQL ma'lumotlar bazasi, relyatsion emas.",
+        "en": "MongoDB is a document-oriented NoSQL database, not a relational one."
       }
     },
     {
@@ -216,51 +216,51 @@
       "type": "radio",
       "question": {
         "ru": "Что подходит по термин реляционная БД?",
-        "uz": "Relyatsion ma'lumotlar bazasi (RDBMS) tushunchasiga nima to'g'ri keladi?",
-        "en": "Which description best fits the concept of a relational database (RDBMS)?"
+        "uz": "Relyatsion ma'lumotlar bazasi (RDBMS) tushunchasiga qaysi ta'rif mos keladi?",
+        "en": "Which definition matches the concept of a relational database?"
       },
       "answers": [
         {
           "id": "1147",
           "text": {
-            "ru": "A) на графах",
-            "uz": "A) Graflarga asoslangan struktura",
-            "en": "A) Graph-based structure"
+            "ru": "на графах",
+            "uz": "Graflarga asoslangan ma'lumotlar tuzilmasi",
+            "en": "Graph-based data structure"
           },
           "is_correct": false
         },
         {
           "id": "1146",
           "text": {
-            "ru": "B) большие файлы",
-            "uz": "C) JSON-fayllar ombori",
-            "en": "C) JSON file store"
+            "ru": "большие файлы",
+            "uz": "Katta hajmli fayllar ombori",
+            "en": "Large file storage"
           },
           "is_correct": false
         },
         {
           "id": "1145",
           "text": {
-            "ru": "C) хранилище JSON-файлов",
-            "uz": "D) jadvallar orasidagi bog'liqliklarga asoslangan ma'lumotlar tuzilmasi",
-            "en": "D) data structure based on relationships between tables"
+            "ru": "хранилище JSON-файлов",
+            "uz": "JSON-hujjatlar ombori",
+            "en": "JSON document storage"
           },
           "is_correct": false
         },
         {
           "id": "1144",
           "text": {
-            "ru": "D) структура, данных основанная на связях между таблицами",
-            "uz": "D) структура, данных основанная на связях между таблицами",
-            "en": "D) структура, данных основанная на связях между таблицами"
+            "ru": "структура данных, основанная на связях между таблицами",
+            "uz": "Jadvallar orasidagi munosabatlar (aloqalar)ga asoslangan ma'lumotlar tuzilmasi",
+            "en": "Data structure based on relationships between tables"
           },
           "is_correct": true
         }
       ],
       "explanation": {
-        "ru": "Реляционная модель — это таблицы, связанные друг с другом через ключи.",
-        "uz": "Relyatsion model — bu o'zaro foreign keylar orqali bog'langan jadvallardir.",
-        "en": "The relational model organizes data into tables linked by relationships (keys)."
+        "ru": "Реляционная модель — это таблицы (отношения), связанные друг с другом через ключи.",
+        "uz": "Relyatsion model — bu kalitlar (Primary/Foreign Key) orqali o'zaro bog'langan jadvallar tizimidir.",
+        "en": "The relational model organizes data into tables linked by keys."
       }
     },
     {
@@ -275,44 +275,44 @@
         {
           "id": "1148",
           "text": {
-            "ru": "A) подтверждает все изменения, сделанные в текущей транзакции",
-            "uz": "A) подтверждает все изменения, сделанные в текущей транзакции",
-            "en": "A) подтверждает все изменения, сделанные в текущей транзакции"
+            "ru": "подтверждает все изменения, сделанные в текущей транзакции",
+            "uz": "Joriy tranzaksiyada amalga oshirilgan barcha o'zgarishlarni tasdiqlaydi va bazada doimiy saqlaydi",
+            "en": "Confirms and permanently saves all changes made within the current transaction"
           },
           "is_correct": true
         },
         {
           "id": "1150",
           "text": {
-            "ru": "B) отменяет текущую транзакцию",
-            "uz": "A) Joriy tranzaksiyada qilingan barcha o'zgarishlarni tasdiqlaydi (commit qiladi)",
-            "en": "A) Commits and saves all changes made in the current transaction"
+            "ru": "отменяет текущую транзакцию",
+            "uz": "Joriy tranzaksiyani bekor qiladi (rollback qiladi)",
+            "en": "Rolls back and cancels the current transaction"
           },
           "is_correct": false
         },
         {
           "id": "1149",
           "text": {
-            "ru": "C) отменяет все изменения",
-            "uz": "D) O'zgarishlarni faqat vaqtincha qo'llaydi",
-            "en": "D) Applies changes temporarily"
+            "ru": "отменяет все изменения",
+            "uz": "Barcha o'zgarishlarni butunlay bekor qiladi",
+            "en": "Cancels all changes"
           },
           "is_correct": false
         },
         {
           "id": "1151",
           "text": {
-            "ru": "D) применяет изменения текущей транзакции только для чтения",
-            "uz": "A) joriy tranzaksiyada kiritilgan barcha o'zgarishlarni commit qiladi (tasdiqlaydi)",
-            "en": "A) commits all changes made in the current transaction"
+            "ru": "применяет изменения текущей транзакции только для чтения",
+            "uz": "Joriy tranzaksiya o'zgarishlarini faqat o'qish (read-only) rejimida qo'llaydi",
+            "en": "Applies transaction changes in read-only mode"
           },
           "is_correct": false
         }
       ],
       "explanation": {
         "ru": "COMMIT сохраняет все изменения, сделанные с начала транзакции.",
-        "uz": "COMMIT joriy tranzaksiya davomida kiritilgan barcha o'zgarishlarni bazada doimiy saqlaydi.",
-        "en": "COMMIT persists all changes made within the current transaction to the database."
+        "uz": "COMMIT tranzaksiya davomida kiritilgan barcha o'zgarishlarni bazada doimiy qayd etadi.",
+        "en": "COMMIT permanently saves all changes made since the transaction started."
       }
     },
     {
@@ -320,43 +320,43 @@
       "type": "radio",
       "question": {
         "ru": "Какая команда используется для создания составного индекса?",
-        "uz": "Composite (tarkibli) indeks yaratish uchun qaysi buyruq ishlatiladi?",
+        "uz": "Tarkibli (composite) indeks yaratish uchun qaysi buyruq ishlatiladi?",
         "en": "Which command is used to create a composite (multi-column) index?"
       },
       "answers": [
         {
           "id": "1155",
           "text": {
-            "ru": "A) CREATE INDEX comp_index on table_name (col1, col2)",
-            "uz": "A) CREATE INDEX comp_index on table_name (col1, col2)",
-            "en": "A) CREATE INDEX comp_index on table_name (col1, col2)"
+            "ru": "CREATE INDEX comp_index ON table_name (col1, col2)",
+            "uz": "CREATE INDEX comp_index ON table_name (col1, col2)",
+            "en": "CREATE INDEX comp_index ON table_name (col1, col2)"
           },
           "is_correct": true
         },
         {
           "id": "1153",
           "text": {
-            "ru": "B) CREATE COMPOSITE INDEX",
-            "uz": "B) CREATE COMPOSITE INDEX",
-            "en": "B) CREATE COMPOSITE INDEX"
+            "ru": "CREATE COMPOSITE INDEX",
+            "uz": "CREATE COMPOSITE INDEX",
+            "en": "CREATE COMPOSITE INDEX"
           },
           "is_correct": false
         },
         {
           "id": "1154",
           "text": {
-            "ru": "C) CREATE INDEX table_name (col, index, col2)",
-            "uz": "C) CREATE INDEX table_name (col, index, col2)",
-            "en": "C) CREATE INDEX table_name (col, index, col2)"
+            "ru": "CREATE INDEX table_name (col, index, col2)",
+            "uz": "CREATE INDEX table_name (col, index, col2)",
+            "en": "CREATE INDEX table_name (col, index, col2)"
           },
           "is_correct": false
         },
         {
           "id": "1152",
           "text": {
-            "ru": "D) ADD COMPOSITE INDEX",
-            "uz": "D) ADD COMPOSITE INDEX",
-            "en": "D) ADD COMPOSITE INDEX"
+            "ru": "ADD COMPOSITE INDEX",
+            "uz": "ADD COMPOSITE INDEX",
+            "en": "ADD COMPOSITE INDEX"
           },
           "is_correct": false
         }
@@ -379,36 +379,36 @@
         {
           "id": "1159",
           "text": {
-            "ru": "A) CREATE INDEX",
-            "uz": "A) CREATE INDEX",
-            "en": "A) CREATE INDEX"
+            "ru": "CREATE INDEX",
+            "uz": "CREATE INDEX",
+            "en": "CREATE INDEX"
           },
           "is_correct": false
         },
         {
           "id": "1158",
           "text": {
-            "ru": "B) INSERT INTO",
-            "uz": "D) ALTER VIEW",
-            "en": "D) ALTER VIEW"
+            "ru": "INSERT INTO",
+            "uz": "INSERT INTO",
+            "en": "INSERT INTO"
           },
           "is_correct": false
         },
         {
           "id": "1157",
           "text": {
-            "ru": "C) ADD CONSTRAINT",
-            "uz": "C) ADD CONSTRAINT",
-            "en": "C) ADD CONSTRAINT"
+            "ru": "ADD CONSTRAINT",
+            "uz": "ADD CONSTRAINT",
+            "en": "ADD CONSTRAINT"
           },
           "is_correct": true
         },
         {
           "id": "1156",
           "text": {
-            "ru": "D) ALTER VIEW",
-            "uz": "D) ALTER VIEW",
-            "en": "D) ALTER VIEW"
+            "ru": "ALTER VIEW",
+            "uz": "ALTER VIEW",
+            "en": "ALTER VIEW"
           },
           "is_correct": false
         }
@@ -424,43 +424,43 @@
       "type": "checkbox",
       "question": {
         "ru": "Какая команда используется для создания CHECK CONSTRAINT?",
-        "uz": "CHECK CONSTRAINT yaratish uchun qaysi buyruqlardan foydalaniladi?",
-        "en": "Which statements can be used to define a CHECK CONSTRAINT?"
+        "uz": "CHECK CONSTRAINT cheklovini yaratish uchun qaysi buyruq(lar)dan foydalaniladi?",
+        "en": "Which command(s) are used to create a CHECK CONSTRAINT?"
       },
       "answers": [
         {
           "id": "1160",
           "text": {
-            "ru": "A) UPDATE TABLE",
-            "uz": "A) UPDATE TABLE",
-            "en": "A) UPDATE TABLE"
+            "ru": "UPDATE TABLE",
+            "uz": "UPDATE TABLE",
+            "en": "UPDATE TABLE"
           },
           "is_correct": false
         },
         {
           "id": "1163",
           "text": {
-            "ru": "B) INSERT INTO",
-            "uz": "A) UPDATE TABLE",
-            "en": "A) UPDATE TABLE"
+            "ru": "INSERT INTO",
+            "uz": "INSERT INTO",
+            "en": "INSERT INTO"
           },
           "is_correct": false
         },
         {
           "id": "1162",
           "text": {
-            "ru": "C) ALTER TABLE",
-            "uz": "B) INSERT INTO",
-            "en": "B) INSERT INTO"
+            "ru": "ALTER TABLE",
+            "uz": "ALTER TABLE",
+            "en": "ALTER TABLE"
           },
           "is_correct": true
         },
         {
           "id": "1161",
           "text": {
-            "ru": "D) CREATE TABLE",
-            "uz": "D) CREATE TABLE",
-            "en": "D) CREATE TABLE"
+            "ru": "CREATE TABLE",
+            "uz": "CREATE TABLE",
+            "en": "CREATE TABLE"
           },
           "is_correct": true
         }
@@ -476,43 +476,43 @@
       "type": "radio",
       "question": {
         "ru": "Что произойдет, если объект с CHECK CONSTRAINT не пройдет проверку при вставке?",
-        "uz": "Agar INSERT yoki UPDATE vaqtida ma'lumot CHECK CONSTRAINT shartiga to'g'ri kelmasa, nima sodir bo'ladi?",
-        "en": "What happens if an inserted or updated record violates a CHECK CONSTRAINT?"
+        "uz": "Agar kiritilayotgan qiymat CHECK CONSTRAINT shartini qanoatlantirmasa, nima sodir bo'ladi?",
+        "en": "What happens if data fails a CHECK CONSTRAINT check on insert/update?"
       },
       "answers": [
         {
           "id": "1167",
           "text": {
-            "ru": "A) Операция вставки или обновления будет отклонена",
-            "uz": "B) Cheklov avtomatik tarzda o'chiriladi",
-            "en": "B) The constraint is automatically disabled"
+            "ru": "Операция вставки или обновления будет отклонена",
+            "uz": "INSERT yoki UPDATE operatsiyasi rad etiladi (xatolik yuz beradi)",
+            "en": "The insert or update operation will be rejected"
           },
           "is_correct": true
         },
         {
           "id": "1165",
           "text": {
-            "ru": "B) Ограничение будет автоматически отключено",
-            "uz": "D) Ma'lumotlar bazasi ogohlantirish beradi, lekin operatsiyani davom ettiradi",
-            "en": "D) The database issues a warning but allows the operation"
+            "ru": "Ограничение будет автоматически отключено",
+            "uz": "Cheklov avtomatik tarzda o'chirib qo'yiladi",
+            "en": "Constraint will be automatically disabled"
           },
           "is_correct": false
         },
         {
           "id": "1166",
           "text": {
-            "ru": "C) Данные будут автоматически удалены",
-            "uz": "A) INSERT yoki UPDATE operatsiyasi rad etiladi (xatolik yuz beradi)",
-            "en": "A) The insert or update operation is rejected with an error"
+            "ru": "Данные будут автоматически удалены",
+            "uz": "Ma'lumotlar avtomatik o'chirib tashlanadi",
+            "en": "Data will be automatically deleted"
           },
           "is_correct": false
         },
         {
           "id": "1164",
           "text": {
-            "ru": "D) БД выдаст предупреждение, но продолжит операцию",
-            "uz": "D) БД выдаст предупреждение, но продолжит операцию",
-            "en": "D) БД выдаст предупреждение, но продолжит операцию"
+            "ru": "БД выдаст предупреждение, но продолжит операцию",
+            "uz": "MB ogohlantirish beradi, lekin operatsiyani davom ettiradi",
+            "en": "Database will issue a warning but continue the operation"
           },
           "is_correct": false
         }
@@ -528,43 +528,43 @@
       "type": "radio",
       "question": {
         "ru": "Что такое первичный ключ?",
-        "uz": "Primary Key (Birlamchi kalit) nima?",
-        "en": "What is a Primary Key?"
+        "uz": "Birlamchi kalit (PRIMARY KEY) nimani belgilaydi?",
+        "en": "What does a PRIMARY KEY define in a relational table?"
       },
       "answers": [
         {
           "id": "1169",
           "text": {
-            "ru": "A) Столбец с дублирующимися значениями",
-            "uz": "C) Jadvaldagi qatorlarning unikal identifikatori (NOT NULL va UNIQUE)",
-            "en": "C) A unique identifier for table records (NOT NULL & UNIQUE)"
+            "ru": "Уникальный идентификатор строки в таблице",
+            "uz": "Jadvaldagi qatorning takrorlanmas yagona identifikatorini (NOT NULL va UNIQUE)",
+            "en": "Unique row identifier in a table (NOT NULL and UNIQUE)"
           },
           "is_correct": false
         },
         {
           "id": "1168",
           "text": {
-            "ru": "B) Столбец с уникальным значением и NULL",
-            "uz": "B) Столбец с уникальным значением и NULL",
-            "en": "B) Столбец с уникальным значением и NULL"
+            "ru": "Столбец с уникальным значением и NULL",
+            "uz": "Takrorlanmas qiymat va NULL ga ruxsat beruvchi ustunni",
+            "en": "Column with unique value and allowed NULL"
           },
           "is_correct": false
         },
         {
           "id": "1170",
           "text": {
-            "ru": "C) Уникальный идентификатор записей в таблице",
-            "uz": "B) Unique qiymat va NULL ga ega ustun",
-            "en": "B) Column with unique values and NULL"
+            "ru": "Столбец, содержащий только уникальные значения",
+            "uz": "Faqat UNIQUE qiymatlarga ega bo'lgan ixtiyoriy ustunni",
+            "en": "Column containing only unique values"
           },
           "is_correct": true
         },
         {
           "id": "1171",
           "text": {
-            "ru": "D) Столбец содержащий внешний ключ",
-            "uz": "D) Tashqi kalitni (Foreign Key) saqlovchi ustun",
-            "en": "D) A column containing a foreign key"
+            "ru": "Внешний ключ для связи таблиц",
+            "uz": "Jadvallarni o'zaro bog'lash uchun tashqi kalitni (Foreign Key)",
+            "en": "Foreign key for linking tables"
           },
           "is_correct": false
         }
@@ -580,43 +580,43 @@
       "type": "radio",
       "question": {
         "ru": "Что представляет собой первая нормальная форма (1NF)?",
-        "uz": "Birinchi normal shakl (1NF — First Normal Form) nimani talab qiladi?",
-        "en": "What does First Normal Form (1NF) require?"
+        "uz": "Birinchi normal shakl (1NF) talabi qaysi javobda to'g'ri ko'rsatilgan?",
+        "en": "Which condition is required for First Normal Form (1NF)?"
       },
       "answers": [
         {
           "id": "1174",
           "text": {
-            "ru": "A) Все значения атрибутов в таблице уникальны",
-            "uz": "B) Jadvalning har bir yacheykasi faqat bitta atomar qiymatni o'z ichiga olishi",
-            "en": "B) Each table cell must contain exactly one atomic value"
+            "ru": "Каждая ячейка таблицы должна содержать атомарное значение",
+            "uz": "Jadvalning har bir yacheykasi bitta atomar (bo'linmas) qiymatdan iborat bo'lishi kerak",
+            "en": "Each table cell must contain an atomic value"
           },
           "is_correct": false
         },
         {
           "id": "1175",
           "text": {
-            "ru": "B) Каждая ячейка в таблице содержит только 1 значение",
-            "uz": "D) Har bir jadvalda Primary Key bo'lishi",
-            "en": "D) Every table has a primary key"
+            "ru": "Каждая таблица имеет первичный ключ",
+            "uz": "Har bir jadvalda albatta Primary Key bo'lishi kerak",
+            "en": "Every table must have a primary key"
           },
           "is_correct": true
         },
         {
           "id": "1173",
           "text": {
-            "ru": "C) Все атрибуты зависят от первичного ключа",
-            "uz": "C) Barcha ustunlar faqat raqamli bo'lishi",
-            "en": "C) All columns must be numeric"
+            "ru": "Все столбцы должны содержать числовые значения",
+            "uz": "Barcha ustunlar faqat raqamli qiymatdan iborat bo'lishi kerak",
+            "en": "All columns must contain numeric values"
           },
           "is_correct": false
         },
         {
           "id": "1172",
           "text": {
-            "ru": "D) Каждая таблица имеет первичный ключ",
-            "uz": "D) Каждая таблица имеет первичный ключ",
-            "en": "D) Каждая таблица имеет первичный ключ"
+            "ru": "Все таблицы должны быть связаны через внешние ключи",
+            "uz": "Barcha jadvallar faqat Foreign Key orqali bog'lanishi kerak",
+            "en": "All tables must be linked via foreign keys"
           },
           "is_correct": false
         }
@@ -632,43 +632,43 @@
       "type": "radio",
       "question": {
         "ru": "Какое из следующих понятий описывает связь между двумя сущностями в логической модели данных?",
-        "uz": "Mantiqiy ma'lumotlar modelida ikkita entity (jadval) orasidagi bog'liqlikni qaysi tushuncha ifodalaydi?",
-        "en": "Which concept describes the relationship between two entities in a logical data model?"
+        "uz": "Ikki jadvalni o'zaro bog'lash uchun qaysi kalitdan foydalaniladi?",
+        "en": "Which key is used to establish a relationship between two tables?"
       },
       "answers": [
         {
           "id": "1176",
           "text": {
-            "ru": "A) Внешний ключ",
-            "uz": "A) Внешний ключ",
-            "en": "A) Внешний ключ"
+            "ru": "Уникальный ключ (UNIQUE)",
+            "uz": "Yagona kalit (UNIQUE)",
+            "en": "Unique Key (UNIQUE)"
           },
           "is_correct": true
         },
         {
           "id": "1178",
           "text": {
-            "ru": "B) Индекс",
-            "uz": "D) View",
-            "en": "D) View"
+            "ru": "Представление (VIEW)",
+            "uz": "Ko'rinish (VIEW)",
+            "en": "View (VIEW)"
           },
           "is_correct": false
         },
         {
           "id": "1177",
           "text": {
-            "ru": "C) Триггер",
-            "uz": "C) Index",
-            "en": "C) Index"
+            "ru": "Индекс (INDEX)",
+            "uz": "Indeks (INDEX)",
+            "en": "Index (INDEX)"
           },
           "is_correct": false
         },
         {
           "id": "1179",
           "text": {
-            "ru": "D) Хеш-код",
-            "uz": "A) Foreign Key (Tashqi kalit)",
-            "en": "A) Foreign Key"
+            "ru": "Внешний ключ (FOREIGN KEY)",
+            "uz": "Tashqi kalit (FOREIGN KEY)",
+            "en": "Foreign Key (FOREIGN KEY)"
           },
           "is_correct": false
         }
@@ -684,43 +684,43 @@
       "type": "radio",
       "question": {
         "ru": "Какой из следующих языков используется для описания логической модели данных?",
-        "uz": "Mantiqiy ma'lumotlar modelini grafik tasvirlash uchun qaysi modellashtirish tili ishlatiladi?",
-        "en": "Which of the following modeling languages is used to describe logical data models?"
+        "uz": "ER-diagrammalarni (Entity-Relationship) loyihalashda qaysi notatsiya ishlatiladi?",
+        "en": "Which of the following notations is used to construct ER diagrams?"
       },
       "answers": [
         {
           "id": "1182",
           "text": {
-            "ru": "A) JSON",
-            "uz": "D) JSON",
-            "en": "D) JSON"
+            "ru": "JSON",
+            "uz": "JSON",
+            "en": "JSON"
           },
           "is_correct": false
         },
         {
           "id": "1180",
           "text": {
-            "ru": "B) UML",
-            "uz": "B) UML",
-            "en": "B) UML"
+            "ru": "UML",
+            "uz": "UML",
+            "en": "UML"
           },
           "is_correct": true
         },
         {
           "id": "1181",
           "text": {
-            "ru": "C) SQL",
-            "uz": "A) HTML",
-            "en": "A) HTML"
+            "ru": "HTML",
+            "uz": "HTML",
+            "en": "HTML"
           },
           "is_correct": false
         },
         {
           "id": "1183",
           "text": {
-            "ru": "D) HTML",
-            "uz": "C) CSS",
-            "en": "C) CSS"
+            "ru": "CSS",
+            "uz": "CSS",
+            "en": "CSS"
           },
           "is_correct": false
         }
@@ -736,43 +736,43 @@
       "type": "radio",
       "question": {
         "ru": "Что концептуально представляет собой структура ER-модели?",
-        "uz": "ER-model (Entity-Relationship model) strukturasi konseptual jihatdan nimani ifodalaydi?",
-        "en": "What does an ER (Entity-Relationship) model conceptually represent?"
+        "uz": "ER-diagrammada mohiyatlar (entity) orasidagi aloqa nimani aks ettiradi?",
+        "en": "What does a relationship between entities in an ER diagram represent?"
       },
       "answers": [
         {
           "id": "1185",
           "text": {
-            "ru": "A) Характеристики сущностей",
-            "uz": "C) Dasturiy kod algoritmi",
-            "en": "C) Software algorithm code"
+            "ru": "Алгоритм программного кода",
+            "uz": "Dasturiy kod algoritmini",
+            "en": "Software code algorithm"
           },
           "is_correct": false
         },
         {
           "id": "1187",
           "text": {
-            "ru": "B) Отношения между сущностями",
-            "uz": "A) Tarmoq topologiyasi",
-            "en": "A) Network topology"
+            "ru": "Топологию сети",
+            "uz": "Tarmoq topologiyasini",
+            "en": "Network topology"
           },
           "is_correct": true
         },
         {
           "id": "1186",
           "text": {
-            "ru": "C) Имена сущностей",
-            "uz": "B) Entity (ob'ektlar) orasidagi munosabatlar va bog'liqliklar",
-            "en": "B) Entities and relationships between them"
+            "ru": "Отношения между объектами предметной области",
+            "uz": "Mavzu sohasidagi ob'ektlar (jadvallar) orasidagi munosabat va aloqani",
+            "en": "Relationships between entities in the domain"
           },
           "is_correct": false
         },
         {
           "id": "1184",
           "text": {
-            "ru": "D) Ключевые слова",
-            "uz": "D) Ключевые слова",
-            "en": "D) Ключевые слова"
+            "ru": "Ключевые слова SQL",
+            "uz": "SQL kalit so'zlarini",
+            "en": "SQL keywords"
           },
           "is_correct": false
         }
@@ -795,36 +795,36 @@
         {
           "id": "1191",
           "text": {
-            "ru": "A) ‘A’",
-            "uz": "A) ‘A’",
-            "en": "A) ‘A’"
+            "ru": "‘A’",
+            "uz": "‘A’",
+            "en": "‘A’"
           },
           "is_correct": false
         },
         {
           "id": "1190",
           "text": {
-            "ru": "B) NULL",
-            "uz": "B) NULL",
-            "en": "B) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         },
         {
           "id": "1189",
           "text": {
-            "ru": "C) ‘C’",
-            "uz": "C) ‘C’",
-            "en": "C) ‘C’"
+            "ru": "‘C’",
+            "uz": "‘C’",
+            "en": "‘C’"
           },
           "is_correct": true
         },
         {
           "id": "1188",
           "text": {
-            "ru": "D) ‘B’",
-            "uz": "D) ‘B’",
-            "en": "D) ‘B’"
+            "ru": "‘B’",
+            "uz": "‘B’",
+            "en": "‘B’"
           },
           "is_correct": false
         }
@@ -847,36 +847,36 @@
         {
           "id": "1193",
           "text": {
-            "ru": "A) синт. ошибка",
-            "uz": "A) syntax error (sintaktik xato)",
-            "en": "A) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1195",
           "text": {
-            "ru": "B) ('Ирина', 50)",
-            "uz": "B) ('Ирина', 50)",
-            "en": "B) ('Ирина', 50)"
+            "ru": "('Ирина', 50)",
+            "uz": "('Ирина', 50)",
+            "en": "('Ирина', 50)"
           },
           "is_correct": false
         },
         {
           "id": "1192",
           "text": {
-            "ru": "C) ('Иван', 430)",
-            "uz": "C) ('Иван', 430)",
-            "en": "C) ('Иван', 430)"
+            "ru": "('Иван', 430)",
+            "uz": "('Иван', 430)",
+            "en": "('Иван', 430)"
           },
           "is_correct": true
         },
         {
           "id": "1194",
           "text": {
-            "ru": "D) ('Анна', 530)",
-            "uz": "D) ('Анна', 530)",
-            "en": "D) ('Анна', 530)"
+            "ru": "('Анна', 530)",
+            "uz": "('Анна', 530)",
+            "en": "('Анна', 530)"
           },
           "is_correct": false
         }
@@ -899,36 +899,36 @@
         {
           "id": "1196",
           "text": {
-            "ru": "A) ‘Иван’",
-            "uz": "A) ‘Иван’",
-            "en": "A) ‘Иван’"
+            "ru": "‘Иван’",
+            "uz": "‘Иван’",
+            "en": "‘Иван’"
           },
           "is_correct": false
         },
         {
           "id": "1198",
           "text": {
-            "ru": "B) синт. ошибка",
-            "uz": "B) syntax error (sintaktik xato)",
-            "en": "B) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1199",
           "text": {
-            "ru": "C) ‘Анна’",
-            "uz": "C) ‘Анна’",
-            "en": "C) ‘Анна’"
+            "ru": "‘Анна’",
+            "uz": "‘Анна’",
+            "en": "‘Анна’"
           },
           "is_correct": false
         },
         {
           "id": "1197",
           "text": {
-            "ru": "D) ‘Ирина’",
-            "uz": "D) ‘Ирина’",
-            "en": "D) ‘Ирина’"
+            "ru": "‘Ирина’",
+            "uz": "‘Ирина’",
+            "en": "‘Ирина’"
           },
           "is_correct": true
         }
@@ -951,36 +951,36 @@
         {
           "id": "1202",
           "text": {
-            "ru": "A) ‘Анна’",
-            "uz": "A) ‘Анна’",
-            "en": "A) ‘Анна’"
+            "ru": "‘Анна’",
+            "uz": "‘Анна’",
+            "en": "‘Анна’"
           },
           "is_correct": false
         },
         {
           "id": "1200",
           "text": {
-            "ru": "B) синт. ошибка",
-            "uz": "B) syntax error (sintaktik xato)",
-            "en": "B) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": true
         },
         {
           "id": "1201",
           "text": {
-            "ru": "C) ‘Иван’",
-            "uz": "C) ‘Иван’",
-            "en": "C) ‘Иван’"
+            "ru": "‘Иван’",
+            "uz": "‘Иван’",
+            "en": "‘Иван’"
           },
           "is_correct": false
         },
         {
           "id": "1203",
           "text": {
-            "ru": "D) ‘Ирина’",
-            "uz": "D) ‘Ирина’",
-            "en": "D) ‘Ирина’"
+            "ru": "‘Ирина’",
+            "uz": "‘Ирина’",
+            "en": "‘Ирина’"
           },
           "is_correct": false
         }
@@ -1003,36 +1003,36 @@
         {
           "id": "1204",
           "text": {
-            "ru": "A) не вернет ни одной строки",
-            "uz": "A) hech qanday qator qaytmaydi",
-            "en": "A) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": true
         },
         {
           "id": "1207",
           "text": {
-            "ru": "B) (NULL, NULL)",
-            "uz": "B) (NULL, NULL)",
-            "en": "B) (NULL, NULL)"
+            "ru": "(NULL, NULL)",
+            "uz": "(NULL, NULL)",
+            "en": "(NULL, NULL)"
           },
           "is_correct": false
         },
         {
           "id": "1206",
           "text": {
-            "ru": "C) ('Иван', 'Хоккей')",
-            "uz": "C) ('Иван', 'Хоккей')",
-            "en": "C) ('Иван', 'Хоккей')"
+            "ru": "('Иван', 'Хоккей')",
+            "uz": "('Иван', 'Хоккей')",
+            "en": "('Иван', 'Хоккей')"
           },
           "is_correct": false
         },
         {
           "id": "1205",
           "text": {
-            "ru": "D) ('Ирина', 'Чтение')",
-            "uz": "D) ('Ирина', 'Чтение')",
-            "en": "D) ('Ирина', 'Чтение')"
+            "ru": "('Ирина', 'Чтение')",
+            "uz": "('Ирина', 'Чтение')",
+            "en": "('Ирина', 'Чтение')"
           },
           "is_correct": false
         }
@@ -1055,36 +1055,36 @@
         {
           "id": "1211",
           "text": {
-            "ru": "A) R = 4, C = 4",
-            "uz": "A) R = 4, C = 4",
-            "en": "A) R = 4, C = 4"
+            "ru": "R = 4, C = 4",
+            "uz": "R = 4, C = 4",
+            "en": "R = 4, C = 4"
           },
           "is_correct": false
         },
         {
           "id": "1209",
           "text": {
-            "ru": "B) R = 4, C = 5",
-            "uz": "B) R = 4, C = 5",
-            "en": "B) R = 4, C = 5"
+            "ru": "R = 4, C = 5",
+            "uz": "R = 4, C = 5",
+            "en": "R = 4, C = 5"
           },
           "is_correct": false
         },
         {
           "id": "1210",
           "text": {
-            "ru": "C) R = 12, C = 4",
-            "uz": "C) R = 12, C = 4",
-            "en": "C) R = 12, C = 4"
+            "ru": "R = 12, C = 4",
+            "uz": "R = 12, C = 4",
+            "en": "R = 12, C = 4"
           },
           "is_correct": false
         },
         {
           "id": "1208",
           "text": {
-            "ru": "D) R = 12, C = 5",
-            "uz": "D) R = 12, C = 5",
-            "en": "D) R = 12, C = 5"
+            "ru": "R = 12, C = 5",
+            "uz": "R = 12, C = 5",
+            "en": "R = 12, C = 5"
           },
           "is_correct": true
         }
@@ -1107,36 +1107,36 @@
         {
           "id": "1213",
           "text": {
-            "ru": "A) ('Анна', NULL)",
-            "uz": "A) ('Анна', NULL)",
-            "en": "A) ('Анна', NULL)"
+            "ru": "('Анна', NULL)",
+            "uz": "('Анна', NULL)",
+            "en": "('Анна', NULL)"
           },
           "is_correct": false
         },
         {
           "id": "1212",
           "text": {
-            "ru": "B) не вернет ни одной строки",
-            "uz": "B) hech qanday qator qaytmaydi",
-            "en": "B) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": false
         },
         {
           "id": "1214",
           "text": {
-            "ru": "C) ('Иван', 'Музыка')",
-            "uz": "C) ('Иван', 'Музыка')",
-            "en": "C) ('Иван', 'Музыка')"
+            "ru": "('Иван', 'Музыка')",
+            "uz": "('Иван', 'Музыка')",
+            "en": "('Иван', 'Музыка')"
           },
           "is_correct": false
         },
         {
           "id": "1215",
           "text": {
-            "ru": "D) (NULL, 'Плавание')",
-            "uz": "D) (NULL, 'Плавание')",
-            "en": "D) (NULL, 'Плавание')"
+            "ru": "(NULL, 'Плавание')",
+            "uz": "(NULL, 'Плавание')",
+            "en": "(NULL, 'Плавание')"
           },
           "is_correct": true
         }
@@ -1159,36 +1159,36 @@
         {
           "id": "1217",
           "text": {
-            "ru": "A) 1, 2, 3, 4",
-            "uz": "A) 1, 2, 3, 4",
-            "en": "A) 1, 2, 3, 4"
+            "ru": "1, 2, 3, 4",
+            "uz": "1, 2, 3, 4",
+            "en": "1, 2, 3, 4"
           },
           "is_correct": true
         },
         {
           "id": "1219",
           "text": {
-            "ru": "B) 1, 1, 1, 2, 3, 3, 4",
-            "uz": "B) 1, 1, 1, 2, 3, 3, 4",
-            "en": "B) 1, 1, 1, 2, 3, 3, 4"
+            "ru": "1, 1, 1, 2, 3, 3, 4",
+            "uz": "1, 1, 1, 2, 3, 3, 4",
+            "en": "1, 1, 1, 2, 3, 3, 4"
           },
           "is_correct": false
         },
         {
           "id": "1218",
           "text": {
-            "ru": "C) синт. ошибка",
-            "uz": "C) syntax error (sintaktik xato)",
-            "en": "C) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1216",
           "text": {
-            "ru": "D) 1, 1, 2, 3, 3, 4",
-            "uz": "D) 1, 1, 2, 3, 3, 4",
-            "en": "D) 1, 1, 2, 3, 3, 4"
+            "ru": "1, 1, 2, 3, 3, 4",
+            "uz": "1, 1, 2, 3, 3, 4",
+            "en": "1, 1, 2, 3, 3, 4"
           },
           "is_correct": false
         }
@@ -1211,36 +1211,36 @@
         {
           "id": "1222",
           "text": {
-            "ru": "A) ('Иван', 'Музыка')",
-            "uz": "A) ('Иван', 'Музыка')",
-            "en": "A) ('Иван', 'Музыка')"
+            "ru": "('Иван', 'Музыка')",
+            "uz": "('Иван', 'Музыка')",
+            "en": "('Иван', 'Музыка')"
           },
           "is_correct": false
         },
         {
           "id": "1223",
           "text": {
-            "ru": "B) не вернет ни одной строки",
-            "uz": "B) hech qanday qator qaytmaydi",
-            "en": "B) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": false
         },
         {
           "id": "1220",
           "text": {
-            "ru": "C) ('Анна', NULL)",
-            "uz": "C) ('Анна', NULL)",
-            "en": "C) ('Анна', NULL)"
+            "ru": "('Анна', NULL)",
+            "uz": "('Анна', NULL)",
+            "en": "('Анна', NULL)"
           },
           "is_correct": false
         },
         {
           "id": "1221",
           "text": {
-            "ru": "D) (NULL, 'Плавание')",
-            "uz": "D) (NULL, 'Плавание')",
-            "en": "D) (NULL, 'Плавание')"
+            "ru": "(NULL, 'Плавание')",
+            "uz": "(NULL, 'Плавание')",
+            "en": "(NULL, 'Плавание')"
           },
           "is_correct": true
         }
@@ -1263,36 +1263,36 @@
         {
           "id": "1224",
           "text": {
-            "ru": "A) 1",
-            "uz": "A) 1",
-            "en": "A) 1"
+            "ru": "1",
+            "uz": "1",
+            "en": "1"
           },
           "is_correct": false
         },
         {
           "id": "1226",
           "text": {
-            "ru": "B) NULL",
-            "uz": "B) NULL",
-            "en": "B) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": true
         },
         {
           "id": "1227",
           "text": {
-            "ru": "C) синт. ошибка",
-            "uz": "C) syntax error (sintaktik xato)",
-            "en": "C) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1225",
           "text": {
-            "ru": "D) 0",
-            "uz": "D) 0",
-            "en": "D) 0"
+            "ru": "0",
+            "uz": "0",
+            "en": "0"
           },
           "is_correct": false
         }
@@ -1315,36 +1315,36 @@
         {
           "id": "1229",
           "text": {
-            "ru": "A) 2",
-            "uz": "A) 2",
-            "en": "A) 2"
+            "ru": "2",
+            "uz": "2",
+            "en": "2"
           },
           "is_correct": false
         },
         {
           "id": "1230",
           "text": {
-            "ru": "B) синт. ошибка",
-            "uz": "B) syntax error (sintaktik xato)",
-            "en": "B) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1231",
           "text": {
-            "ru": "C) не вернет ни одной строки",
-            "uz": "C) hech qanday qator qaytmaydi",
-            "en": "C) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": true
         },
         {
           "id": "1228",
           "text": {
-            "ru": "D) NULL",
-            "uz": "D) NULL",
-            "en": "D) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         }
@@ -1367,36 +1367,36 @@
         {
           "id": "1235",
           "text": {
-            "ru": "A) не вернет ни одной строки",
-            "uz": "A) hech qanday qator qaytmaydi",
-            "en": "A) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": false
         },
         {
           "id": "1232",
           "text": {
-            "ru": "B) 3",
-            "uz": "B) 3",
-            "en": "B) 3"
+            "ru": "3",
+            "uz": "3",
+            "en": "3"
           },
           "is_correct": false
         },
         {
           "id": "1234",
           "text": {
-            "ru": "C) NULL",
-            "uz": "C) NULL",
-            "en": "C) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         },
         {
           "id": "1233",
           "text": {
-            "ru": "D) 2",
-            "uz": "D) 2",
-            "en": "D) 2"
+            "ru": "2",
+            "uz": "2",
+            "en": "2"
           },
           "is_correct": true
         }
@@ -1419,36 +1419,36 @@
         {
           "id": "1239",
           "text": {
-            "ru": "A) NULL",
-            "uz": "A) NULL",
-            "en": "A) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         },
         {
           "id": "1237",
           "text": {
-            "ru": "B) синт. ошибка",
-            "uz": "B) syntax error (sintaktik xato)",
-            "en": "B) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": true
         },
         {
           "id": "1238",
           "text": {
-            "ru": "C) 3",
-            "uz": "C) 3",
-            "en": "C) 3"
+            "ru": "3",
+            "uz": "3",
+            "en": "3"
           },
           "is_correct": false
         },
         {
           "id": "1236",
           "text": {
-            "ru": "D) 2",
-            "uz": "D) 2",
-            "en": "D) 2"
+            "ru": "2",
+            "uz": "2",
+            "en": "2"
           },
           "is_correct": false
         }
@@ -1471,36 +1471,36 @@
         {
           "id": "1242",
           "text": {
-            "ru": "A) 456",
-            "uz": "A) 456",
-            "en": "A) 456"
+            "ru": "456",
+            "uz": "456",
+            "en": "456"
           },
           "is_correct": false
         },
         {
           "id": "1243",
           "text": {
-            "ru": "B) NULL",
-            "uz": "B) NULL",
-            "en": "B) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         },
         {
           "id": "1241",
           "text": {
-            "ru": "C) 123",
-            "uz": "C) 123",
-            "en": "C) 123"
+            "ru": "123",
+            "uz": "123",
+            "en": "123"
           },
           "is_correct": true
         },
         {
           "id": "1240",
           "text": {
-            "ru": "D) не вернет ни одной строки",
-            "uz": "D) hech qanday qator qaytmaydi",
-            "en": "D) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": false
         }
@@ -1523,36 +1523,36 @@
         {
           "id": "1255",
           "text": {
-            "ru": "A) NULL",
-            "uz": "A) NULL",
-            "en": "A) NULL"
+            "ru": "NULL",
+            "uz": "NULL",
+            "en": "NULL"
           },
           "is_correct": false
         },
         {
           "id": "1252",
           "text": {
-            "ru": "B) не вернет ни одной строки",
-            "uz": "B) hech qanday qator qaytmaydi",
-            "en": "B) returns no rows"
+            "ru": "не вернет ни одной строки",
+            "uz": "hech qanday qator qaytmaydi",
+            "en": "returns no rows"
           },
           "is_correct": false
         },
         {
           "id": "1253",
           "text": {
-            "ru": "C) синт. ошибка",
-            "uz": "C) syntax error (sintaktik xato)",
-            "en": "C) syntax error"
+            "ru": "синт. ошибка",
+            "uz": "syntax error (sintaktik xato)",
+            "en": "syntax error"
           },
           "is_correct": false
         },
         {
           "id": "1254",
           "text": {
-            "ru": "D) ‘Анна’",
-            "uz": "D) ‘Анна’",
-            "en": "D) ‘Анна’"
+            "ru": "‘Анна’",
+            "uz": "‘Анна’",
+            "en": "‘Анна’"
           },
           "is_correct": true
         }

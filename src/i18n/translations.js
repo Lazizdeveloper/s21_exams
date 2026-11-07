@@ -14,17 +14,17 @@ export const translations = {
       title: "Imtihon yo'nalishlari",
       subtitle: "Tayyorlanmoqchi bo'lgan fanni tanlang",
       devops: {
-        title: "DevOps (Теория)",
+        title: "DevOps (Nazariya)",
         desc: "Docker, Kubernetes, Linux, CI/CD va tarmoqlar bo'yicha imtihon savollari",
         badge: "286 ta savol",
       },
       c_theory: {
-        title: "C Dasturlash (Теория)",
+        title: "C Dasturlash (Nazariya)",
         desc: "C tili arxitekturasi, xotira (malloc/free), ko'rsatkichlar va Unix tizimlari",
         badge: "24 ta savol",
       },
       sql: {
-        title: "SQL (Теория и практика)",
+        title: "SQL (Nazariya va amaliyot)",
         desc: "RDBMS, ACID, normal shakllar, amaliy so'rovlar va jadvallar tahlili",
         badge: "30 ta savol",
       },

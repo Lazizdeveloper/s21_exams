@@ -14,36 +14,36 @@
         {
           "id": "2467",
           "text": {
-            "ru": "A) Системные библиотеки",
-            "uz": "A) System kutubxonalari (libraries)",
-            "en": "A) System libraries"
+            "ru": "Системные библиотеки",
+            "uz": "System kutubxonalari (libraries)",
+            "en": "System libraries"
           },
           "is_correct": true
         },
         {
           "id": "2470",
           "text": {
-            "ru": "B) Графическая оболочка",
-            "uz": "B) Grafik qobiq (GUI)",
-            "en": "B) Graphical shell (GUI)"
+            "ru": "Графическая оболочка",
+            "uz": "Grafik qobiq (GUI)",
+            "en": "Graphical shell (GUI)"
           },
           "is_correct": false
         },
         {
           "id": "2469",
           "text": {
-            "ru": "C) Системные утилиты",
-            "uz": "C) System utilitalari (utilities)",
-            "en": "C) System utilities"
+            "ru": "Системные утилиты",
+            "uz": "System utilitalari (utilities)",
+            "en": "System utilities"
           },
           "is_correct": true
         },
         {
           "id": "2468",
           "text": {
-            "ru": "D) Ядро",
-            "uz": "D) Kernel (Yadro)",
-            "en": "D) Kernel"
+            "ru": "Ядро",
+            "uz": "Kernel (Yadro)",
+            "en": "Kernel"
           },
           "is_correct": true
         }
@@ -65,36 +65,36 @@
         {
           "id": "2473",
           "text": {
-            "ru": "A) Имя должно быть не длиннее 8 символов",
-            "uz": "A) Fayl nomi 8 ta belgidan uzun bo'lmasligi kerak",
-            "en": "A) The name must not exceed 8 characters"
+            "ru": "Имя должно быть не длиннее 8 символов",
+            "uz": "Fayl nomi 8 ta belgidan uzun bo'lmasligi kerak",
+            "en": "The name must not exceed 8 characters"
           },
           "is_correct": false
         },
         {
           "id": "2471",
           "text": {
-            "ru": "B) Любая последовательность букв и цифр",
-            "uz": "B) Harflar va raqamlarning har qanday ketma-ketligi",
-            "en": "B) Any sequence of letters and numbers"
+            "ru": "Любая последовательность букв и цифр",
+            "uz": "Harflar va raqamlarning har qanday ketma-ketligi",
+            "en": "Any sequence of letters and numbers"
           },
           "is_correct": false
         },
         {
           "id": "2472",
           "text": {
-            "ru": "C) Любая последовательность букв, цифр и спец. символов",
-            "uz": "C) Harflar, raqamlar va maxsus belgilarning har qanday ketma-ketligi",
-            "en": "C) Any sequence of letters, numbers, and special characters"
+            "ru": "Любая последовательность букв, цифр и спец. символов",
+            "uz": "Harflar, raqamlar va maxsus belgilarning har qanday ketma-ketligi",
+            "en": "Any sequence of letters, numbers, and special characters"
           },
           "is_correct": false
         },
         {
           "id": "2474",
           "text": {
-            "ru": "D) Любая последовательность символов, кроме «/» и «\\0»",
-            "uz": "D) «/» va «\\0» (null byte) dan tashqari har qanday belgilar ketma-ketligi",
-            "en": "D) Any sequence of characters except '/' and '\\0' (null byte)"
+            "ru": "Любая последовательность символов, кроме «/» и «\\0»",
+            "uz": "«/» va «\\0» (null byte) dan tashqari har qanday belgilar ketma-ketligi",
+            "en": "Any sequence of characters except '/' and '\\0' (null byte)"
           },
           "is_correct": true
         }
@@ -116,36 +116,36 @@
         {
           "id": "2476",
           "text": {
-            "ru": "A) SSH применяется для безопасной передачи данных",
-            "uz": "A) SSH faqat ma'lumotlarni xavfsiz uzatish uchun qo'llaniladi",
-            "en": "A) SSH is used only for secure data transfer"
+            "ru": "SSH применяется для безопасной передачи данных",
+            "uz": "SSH faqat ma'lumotlarni xavfsiz uzatish uchun qo'llaniladi",
+            "en": "SSH is used only for secure data transfer"
           },
           "is_correct": false
         },
         {
           "id": "2475",
           "text": {
-            "ru": "B) SSH применяется для передачи гипертекста",
-            "uz": "B) SSH gipermatn (hypertext) uzatish uchun ishlatiladi",
-            "en": "B) SSH is used for transmitting hypertext"
+            "ru": "SSH применяется для передачи гипертекста",
+            "uz": "SSH gipermatn (hypertext) uzatish uchun ishlatiladi",
+            "en": "SSH is used for transmitting hypertext"
           },
           "is_correct": false
         },
         {
           "id": "2478",
           "text": {
-            "ru": "C) SSH – это протокол канального уровня",
-            "uz": "C) SSH — bu data link darajasidagi protokol",
-            "en": "C) SSH is a data link layer protocol"
+            "ru": "SSH – это протокол канального уровня",
+            "uz": "SSH — bu data link darajasidagi protokol",
+            "en": "SSH is a data link layer protocol"
           },
           "is_correct": false
         },
         {
           "id": "2477",
           "text": {
-            "ru": "D) SSH (secure shell) – это сетевой протокол для защищенного управления удалёнными системами",
-            "uz": "D) SSH (secure shell) — masofadagi tizimlarni xavfsiz boshqarish uchun mo'ljallangan network protokoli",
-            "en": "D) SSH (secure shell) is a network protocol for securely managing remote systems"
+            "ru": "SSH (secure shell) – это сетевой протокол для защищенного управления удалёнными системами",
+            "uz": "SSH (secure shell) — masofadagi tizimlarni xavfsiz boshqarish uchun mo'ljallangan network protokoli",
+            "en": "SSH (secure shell) is a network protocol for securely managing remote systems"
           },
           "is_correct": true
         }
@@ -167,36 +167,36 @@
         {
           "id": "2480",
           "text": {
-            "ru": "A) Git – это веб-интерфейс, а GitLab – язык программирования",
-            "uz": "A) Git — veb-interfeys, GitLab esa dasturlash tili",
-            "en": "A) Git is a web interface, while GitLab is a programming language"
+            "ru": "Git – это веб-интерфейс, а GitLab – язык программирования",
+            "uz": "Git — veb-interfeys, GitLab esa dasturlash tili",
+            "en": "Git is a web interface, while GitLab is a programming language"
           },
           "is_correct": false
         },
         {
           "id": "2482",
           "text": {
-            "ru": "B) Git и GitLab — одно и то же",
-            "uz": "B) Git va GitLab — bir xil narsa",
-            "en": "B) Git and GitLab are the same thing"
+            "ru": "Git и GitLab — одно и то же",
+            "uz": "Git va GitLab — bir xil narsa",
+            "en": "Git and GitLab are the same thing"
           },
           "is_correct": false
         },
         {
           "id": "2481",
           "text": {
-            "ru": "C) GitLab – это клиент для Git",
-            "uz": "C) GitLab — bu Git uchun mijoz dasturi (client)",
-            "en": "C) GitLab is a client for Git"
+            "ru": "GitLab – это клиент для Git",
+            "uz": "GitLab — bu Git uchun mijoz dasturi (client)",
+            "en": "GitLab is a client for Git"
           },
           "is_correct": false
         },
         {
           "id": "2479",
           "text": {
-            "ru": "D) Git – это система управления версиями, а GitLab – это веб сервис для размещения репозиториев",
-            "uz": "D) Git — versiyalarni boshqarish tizimi (VCS), GitLab esa repository joylashtirish uchun veb-servis",
-            "en": "D) Git is a version control system, while GitLab is a web service for hosting repositories"
+            "ru": "Git – это система управления версиями, а GitLab – это веб сервис для размещения репозиториев",
+            "uz": "Git — versiyalarni boshqarish tizimi (VCS), GitLab esa repository joylashtirish uchun veb-servis",
+            "en": "Git is a version control system, while GitLab is a web service for hosting repositories"
           },
           "is_correct": true
         }
@@ -218,36 +218,36 @@
         {
           "id": "2483",
           "text": {
-            "ru": "A) Хранятся как массив с последним символом «\\0»",
-            "uz": "A) Oxirgi belgisi «\\0» (null-terminator) bo'lgan massiv (array) sifatida",
-            "en": "A) Stored as an array terminated with a '\\0' (null character)"
+            "ru": "Хранятся как массив с последним символом «\\0»",
+            "uz": "Oxirgi belgisi «\\0» (null-terminator) bo'lgan massiv (array) sifatida",
+            "en": "Stored as an array terminated with a '\\0' (null character)"
           },
           "is_correct": true
         },
         {
           "id": "2484",
           "text": {
-            "ru": "B) Хранятся в виде объекта",
-            "uz": "B) Obyekt (object) ko'rinishida",
-            "en": "B) Stored as an object"
+            "ru": "Хранятся в виде объекта",
+            "uz": "Obyekt (object) ko'rinishida",
+            "en": "Stored as an object"
           },
           "is_correct": false
         },
         {
           "id": "2485",
           "text": {
-            "ru": "C) Хранятся в бинарном дереве",
-            "uz": "C) Binary tree ko'rinishida",
-            "en": "C) Stored in a binary tree"
+            "ru": "Хранятся в бинарном дереве",
+            "uz": "Binary tree ko'rinishida",
+            "en": "Stored in a binary tree"
           },
           "is_correct": false
         },
         {
           "id": "2486",
           "text": {
-            "ru": "D) Хранятся как структура данных",
-            "uz": "D) Alohida ma'lumotlar strukturasi sifatida",
-            "en": "D) Stored as a data structure"
+            "ru": "Хранятся как структура данных",
+            "uz": "Alohida ma'lumotlar strukturasi sifatida",
+            "en": "Stored as a data structure"
           },
           "is_correct": false
         }
@@ -269,36 +269,36 @@
         {
           "id": "2487",
           "text": {
-            "ru": "A) Строка — это объект",
-            "uz": "A) Satr — bu obyekt (object)",
-            "en": "A) A string is an object"
+            "ru": "Строка — это объект",
+            "uz": "Satr — bu obyekt (object)",
+            "en": "A string is an object"
           },
           "is_correct": false
         },
         {
           "id": "2488",
           "text": {
-            "ru": "B) Строка — это массив символов",
-            "uz": "B) Satr — bu char massivi (array of characters)",
-            "en": "B) A string is an array of characters"
+            "ru": "Строка — это массив символов",
+            "uz": "Satr — bu char massivi (array of characters)",
+            "en": "A string is an array of characters"
           },
           "is_correct": true
         },
         {
           "id": "2489",
           "text": {
-            "ru": "C) Можно получить доступ к отдельным символам",
-            "uz": "C) Har bir alohida belgiga index orqali kirish mumkin",
-            "en": "C) Individual characters can be accessed by index"
+            "ru": "Можно получить доступ к отдельным символам",
+            "uz": "Har bir alohida belgiga index orqali kirish mumkin",
+            "en": "Individual characters can be accessed by index"
           },
           "is_correct": true
         },
         {
           "id": "2490",
           "text": {
-            "ru": "D) Источник ошибок, так как нет защиты при выходе за границы",
-            "uz": "D) Chegaradan chiqishda (buffer overflow) himoyasi yo'q",
-            "en": "D) A source of bugs because there is no bounds checking"
+            "ru": "Источник ошибок, так как нет защиты при выходе за границы",
+            "uz": "Chegaradan chiqishda (buffer overflow) himoyasi yo'q",
+            "en": "A source of bugs because there is no bounds checking"
           },
           "is_correct": false
         }
@@ -320,36 +320,36 @@
         {
           "id": "2492",
           "text": {
-            "ru": "A) Malloc не всегда выделяет память",
-            "uz": "A) malloc doim ham memory ajrata olmasligi mumkin",
-            "en": "A) malloc may fail to allocate memory"
+            "ru": "Malloc не всегда выделяет память",
+            "uz": "malloc doim ham memory ajrata olmasligi mumkin",
+            "en": "malloc may fail to allocate memory"
           },
           "is_correct": true
         },
         {
           "id": "2491",
           "text": {
-            "ru": "B) Нужно проверять результат malloc",
-            "uz": "B) malloc natijasini tekshirish (NULL ga) shart",
-            "en": "B) Checking the result of malloc (for NULL) is required"
+            "ru": "Нужно проверять результат malloc",
+            "uz": "malloc natijasini tekshirish (NULL ga) shart",
+            "en": "Checking the result of malloc (for NULL) is required"
           },
           "is_correct": true
         },
         {
           "id": "2494",
           "text": {
-            "ru": "C) Ошибки обрабатываются автоматически",
-            "uz": "C) Xatolar avtomatik tarzda qayta ishlanadi",
-            "en": "C) Errors are handled automatically"
+            "ru": "Ошибки обрабатываются автоматически",
+            "uz": "Xatolar avtomatik tarzda qayta ishlanadi",
+            "en": "Errors are handled automatically"
           },
           "is_correct": false
         },
         {
           "id": "2493",
           "text": {
-            "ru": "D) В C нет встроенной поддержки исключений",
-            "uz": "D) C tilida o'rnatilgan exception handling mexanizmi mavjud emas",
-            "en": "D) C has no built-in exception handling mechanism"
+            "ru": "В C нет встроенной поддержки исключений",
+            "uz": "C tilida o'rnatilgan exception handling mexanizmi mavjud emas",
+            "en": "C has no built-in exception handling mechanism"
           },
           "is_correct": true
         }
@@ -371,36 +371,36 @@
         {
           "id": "2498",
           "text": {
-            "ru": "A) free",
-            "uz": "A) free",
-            "en": "A) free"
+            "ru": "free",
+            "uz": "free",
+            "en": "free"
           },
           "is_correct": true
         },
         {
           "id": "2495",
           "text": {
-            "ru": "B) malloc",
-            "uz": "B) malloc",
-            "en": "B) malloc"
+            "ru": "malloc",
+            "uz": "malloc",
+            "en": "malloc"
           },
           "is_correct": true
         },
         {
           "id": "2496",
           "text": {
-            "ru": "C) calloc",
-            "uz": "C) calloc",
-            "en": "C) calloc"
+            "ru": "calloc",
+            "uz": "calloc",
+            "en": "calloc"
           },
           "is_correct": true
         },
         {
           "id": "2497",
           "text": {
-            "ru": "D) realloc",
-            "uz": "D) realloc",
-            "en": "D) realloc"
+            "ru": "realloc",
+            "uz": "realloc",
+            "en": "realloc"
           },
           "is_correct": true
         }
@@ -422,36 +422,36 @@
         {
           "id": "2501",
           "text": {
-            "ru": "A) int n, char c",
-            "uz": "A) int n, char c",
-            "en": "A) int n, char c"
+            "ru": "int n, char c",
+            "uz": "int n, char c",
+            "en": "int n, char c"
           },
           "is_correct": false
         },
         {
           "id": "2502",
           "text": {
-            "ru": "B) void *argv",
-            "uz": "B) void *argv",
-            "en": "B) void *argv"
+            "ru": "void *argv",
+            "uz": "void *argv",
+            "en": "void *argv"
           },
           "is_correct": false
         },
         {
           "id": "2500",
           "text": {
-            "ru": "C) int argc, char *argv[]",
-            "uz": "C) int argc, char *argv[]",
-            "en": "C) int argc, char *argv[]"
+            "ru": "int argc, char *argv[]",
+            "uz": "int argc, char *argv[]",
+            "en": "int argc, char *argv[]"
           },
           "is_correct": true
         },
         {
           "id": "2499",
           "text": {
-            "ru": "D) int argc, char **argv",
-            "uz": "D) int argc, char **argv",
-            "en": "D) int argc, char **argv"
+            "ru": "int argc, char **argv",
+            "uz": "int argc, char **argv",
+            "en": "int argc, char **argv"
           },
           "is_correct": true
         }
@@ -473,36 +473,36 @@
         {
           "id": "2505",
           "text": {
-            "ru": "A) Обрабатывается компилятором автоматически",
-            "uz": "A) Compiler tomonidan avtomatik qayta ishlanadi",
-            "en": "A) Handled automatically by the compiler"
+            "ru": "Обрабатывается компилятором автоматически",
+            "uz": "Compiler tomonidan avtomatik qayta ishlanadi",
+            "en": "Handled automatically by the compiler"
           },
           "is_correct": false
         },
         {
           "id": "2506",
           "text": {
-            "ru": "B) Передаются через глобальные переменные",
-            "uz": "B) Global o'zgaruvchilar orqali uzatiladi",
-            "en": "B) Passed via global variables"
+            "ru": "Передаются через глобальные переменные",
+            "uz": "Global o'zgaruvchilar orqali uzatiladi",
+            "en": "Passed via global variables"
           },
           "is_correct": false
         },
         {
           "id": "2503",
           "text": {
-            "ru": "C) Обрабатывается программистом с использованием argc и argv",
-            "uz": "C) Dasturchi tomonidan argc va argv argumentlaridan foydalanib",
-            "en": "C) Handled by the programmer using argc and argv"
+            "ru": "Обрабатывается программистом с использованием argc и argv",
+            "uz": "Dasturchi tomonidan argc va argv argumentlaridan foydalanib",
+            "en": "Handled by the programmer using argc and argv"
           },
           "is_correct": true
         },
         {
           "id": "2504",
           "text": {
-            "ru": "D) Доступны через отдельную библиотеку arguments.h",
-            "uz": "D) arguments.h alohida kutubxonasi orqali olinadi",
-            "en": "D) Accessible via a separate arguments.h library"
+            "ru": "Доступны через отдельную библиотеку arguments.h",
+            "uz": "arguments.h alohida kutubxonasi orqali olinadi",
+            "en": "Accessible via a separate arguments.h library"
           },
           "is_correct": false
         }
@@ -524,36 +524,36 @@
         {
           "id": "2508",
           "text": {
-            "ru": "A) w",
-            "uz": "A) w",
-            "en": "A) w"
+            "ru": "w",
+            "uz": "w",
+            "en": "w"
           },
           "is_correct": false
         },
         {
           "id": "2507",
           "text": {
-            "ru": "B) r",
-            "uz": "B) r",
-            "en": "B) r"
+            "ru": "r",
+            "uz": "r",
+            "en": "r"
           },
           "is_correct": false
         },
         {
           "id": "2509",
           "text": {
-            "ru": "C) a",
-            "uz": "C) a",
-            "en": "C) a"
+            "ru": "a",
+            "uz": "a",
+            "en": "a"
           },
           "is_correct": true
         },
         {
           "id": "2510",
           "text": {
-            "ru": "D) r+",
-            "uz": "D) r+",
-            "en": "D) r+"
+            "ru": "r+",
+            "uz": "r+",
+            "en": "r+"
           },
           "is_correct": false
         }
@@ -575,36 +575,36 @@
         {
           "id": "2513",
           "text": {
-            "ru": "A) Нельзя, функция может возвращать только одно значение",
-            "uz": "A) Mumkin emas, funksiya faqat bitta qiymat qaytara oladi",
-            "en": "A) Not possible, a function can only return a single value"
+            "ru": "Нельзя, функция может возвращать только одно значение",
+            "uz": "Mumkin emas, funksiya faqat bitta qiymat qaytara oladi",
+            "en": "Not possible, a function can only return a single value"
           },
           "is_correct": false
         },
         {
           "id": "2514",
           "text": {
-            "ru": "B) Возврат двух значений через запятую: return a, b",
-            "uz": "B) Vergul orqali ikkita qiymat qaytarish: return a, b",
-            "en": "B) Returning two comma-separated values: return a, b"
+            "ru": "Возврат двух значений через запятую: return a, b",
+            "uz": "Vergul orqali ikkita qiymat qaytarish: return a, b",
+            "en": "Returning two comma-separated values: return a, b"
           },
           "is_correct": false
         },
         {
           "id": "2512",
           "text": {
-            "ru": "C) Через глобальные переменные",
-            "uz": "C) Global o'zgaruvchilar orqali",
-            "en": "C) Via global variables"
+            "ru": "Через глобальные переменные",
+            "uz": "Global o'zgaruvchilar orqali",
+            "en": "Via global variables"
           },
           "is_correct": false
         },
         {
           "id": "2511",
           "text": {
-            "ru": "D) Возврат кода ошибки, значение — через указатель",
-            "uz": "D) Funksiya return orqali error code qaytaradi, qiymat esa pointer (ko'rsatkich) orqali uzatiladi",
-            "en": "D) Return error code via return value, and output computed value via pointer"
+            "ru": "Возврат кода ошибки, значение — через указатель",
+            "uz": "Funksiya return orqali error code qaytaradi, qiymat esa pointer (ko'rsatkich) orqali uzatiladi",
+            "en": "Return error code via return value, and output computed value via pointer"
           },
           "is_correct": true
         }
@@ -626,36 +626,36 @@
         {
           "id": "2517",
           "text": {
-            "ru": "A) Блочные",
-            "uz": "A) Block device fayllari",
-            "en": "A) Block device files"
+            "ru": "Блочные",
+            "uz": "Block device fayllari",
+            "en": "Block device files"
           },
           "is_correct": true
         },
         {
           "id": "2518",
           "text": {
-            "ru": "B) Только текстовые",
-            "uz": "B) Faqat matnli (text)",
-            "en": "B) Text files only"
+            "ru": "Только текстовые",
+            "uz": "Faqat matnli (text)",
+            "en": "Text files only"
           },
           "is_correct": false
         },
         {
           "id": "2515",
           "text": {
-            "ru": "C) Бинарные",
-            "uz": "C) Binary (ikkilik) fayllar",
-            "en": "C) Binary files"
+            "ru": "Бинарные",
+            "uz": "Binary (ikkilik) fayllar",
+            "en": "Binary files"
           },
           "is_correct": true
         },
         {
           "id": "2516",
           "text": {
-            "ru": "D) Текстовые",
-            "uz": "D) Text fayllar",
-            "en": "D) Text files"
+            "ru": "Текстовые",
+            "uz": "Text fayllar",
+            "en": "Text files"
           },
           "is_correct": true
         }
@@ -677,36 +677,36 @@
         {
           "id": "2522",
           "text": {
-            "ru": "A) Можно менять тип переменных",
-            "uz": "A) Turli xil ma'lumot turlaridagi o'zgaruvchilarni birlashtiradi",
-            "en": "A) Groups variables of different data types"
+            "ru": "Можно менять тип переменных",
+            "uz": "Turli xil ma'lumot turlaridagi o'zgaruvchilarni birlashtiradi",
+            "en": "Groups variables of different data types"
           },
           "is_correct": true
         },
         {
           "id": "2520",
           "text": {
-            "ru": "B) Не могут содержать указатели",
-            "uz": "B) Pointerlarni o'z ichiga ololmaydi",
-            "en": "B) Cannot contain pointers"
+            "ru": "Не могут содержать указатели",
+            "uz": "Pointerlarni o'z ichiga ololmaydi",
+            "en": "Cannot contain pointers"
           },
           "is_correct": false
         },
         {
           "id": "2521",
           "text": {
-            "ru": "C) Память для struct выделяется только динамически",
-            "uz": "C) struct uchun xotira faqat dynamic ajratiladi",
-            "en": "C) Memory for struct is allocated dynamically only"
+            "ru": "Память для struct выделяется только динамически",
+            "uz": "struct uchun xotira faqat dynamic ajratiladi",
+            "en": "Memory for struct is allocated dynamically only"
           },
           "is_correct": false
         },
         {
           "id": "2519",
           "text": {
-            "ru": "D) Для struct можно выделять как статически, так и динамически память",
-            "uz": "D) struct uchun ham static (stack), ham dynamic (heap) memory ajratish mumkin",
-            "en": "D) Memory for structs can be allocated both statically and dynamically"
+            "ru": "Для struct можно выделять как статически, так и динамически память",
+            "uz": "struct uchun ham static (stack), ham dynamic (heap) memory ajratish mumkin",
+            "en": "Memory for structs can be allocated both statically and dynamically"
           },
           "is_correct": true
         }
@@ -728,36 +728,36 @@
         {
           "id": "2526",
           "text": {
-            "ru": "A) Сравнение через ==",
-            "uz": "A) == orqali to'g'ridan-to'g'ri taqqoslash",
-            "en": "A) Direct comparison using =="
+            "ru": "Сравнение через ==",
+            "uz": "== orqali to'g'ridan-to'g'ri taqqoslash",
+            "en": "Direct comparison using =="
           },
           "is_correct": false
         },
         {
           "id": "2524",
           "text": {
-            "ru": "B) Можно обращаться с помощью операций . и ->",
-            "uz": "B) . va -> operatorlari orqali maydonlarga murojaat qilish",
-            "en": "B) Member access using . and -> operators"
+            "ru": "Можно обращаться с помощью операций . и ->",
+            "uz": ". va -> operatorlari orqali maydonlarga murojaat qilish",
+            "en": "Member access using . and -> operators"
           },
           "is_correct": true
         },
         {
           "id": "2525",
           "text": {
-            "ru": "C) Сложение структур оператором +",
-            "uz": "C) + operatori bilan strukturalarni qo'shish",
-            "en": "C) Adding structs using the + operator"
+            "ru": "Сложение структур оператором +",
+            "uz": "+ operatori bilan strukturalarni qo'shish",
+            "en": "Adding structs using the + operator"
           },
           "is_correct": false
         },
         {
           "id": "2523",
           "text": {
-            "ru": "D) Можно копировать структуры присваиванием",
-            "uz": "D) = (assignment) operatori orqali strukturalarni nusxalash",
-            "en": "D) Copying structs via assignment (=)"
+            "ru": "Можно копировать структуры присваиванием",
+            "uz": "= (assignment) operatori orqali strukturalarni nusxalash",
+            "en": "Copying structs via assignment (=)"
           },
           "is_correct": true
         }
@@ -779,36 +779,36 @@
         {
           "id": "2529",
           "text": {
-            "ru": "A) Массив указателей на столбцы",
-            "uz": "A) Ustunlarga pointerlar massivi",
-            "en": "A) Array of pointers to columns"
+            "ru": "Массив указателей на столбцы",
+            "uz": "Ustunlarga pointerlar massivi",
+            "en": "Array of pointers to columns"
           },
           "is_correct": true
         },
         {
           "id": "2527",
           "text": {
-            "ru": "B) Двумерный массив",
-            "uz": "B) Ikki o'lchovli statik massiv (2D array)",
-            "en": "B) Two-dimensional array"
+            "ru": "Двумерный массив",
+            "uz": "Ikki o'lchovli statik massiv (2D array)",
+            "en": "Two-dimensional array"
           },
           "is_correct": true
         },
         {
           "id": "2530",
           "text": {
-            "ru": "C) Связанный список",
-            "uz": "C) Linked list",
-            "en": "C) Linked list"
+            "ru": "Связанный список",
+            "uz": "Linked list",
+            "en": "Linked list"
           },
           "is_correct": false
         },
         {
           "id": "2528",
           "text": {
-            "ru": "D) Массив указателей на строки",
-            "uz": "D) Qatorlarga pointerlar massivi (int **matrix)",
-            "en": "D) Array of pointers to rows (e.g. int **)"
+            "ru": "Массив указателей на строки",
+            "uz": "Qatorlarga pointerlar massivi (int **matrix)",
+            "en": "Array of pointers to rows (e.g. int **)"
           },
           "is_correct": true
         }
@@ -830,36 +830,36 @@
         {
           "id": "2532",
           "text": {
-            "ru": "A) strdup",
-            "uz": "A) strdup",
-            "en": "A) strdup"
+            "ru": "strdup",
+            "uz": "strdup",
+            "en": "strdup"
           },
           "is_correct": true
         },
         {
           "id": "2534",
           "text": {
-            "ru": "B) strcpy",
-            "uz": "B) strcpy",
-            "en": "B) strcpy"
+            "ru": "strcpy",
+            "uz": "strcpy",
+            "en": "strcpy"
           },
           "is_correct": false
         },
         {
           "id": "2533",
           "text": {
-            "ru": "C) memcpy",
-            "uz": "C) memcpy",
-            "en": "C) memcpy"
+            "ru": "memcpy",
+            "uz": "memcpy",
+            "en": "memcpy"
           },
           "is_correct": false
         },
         {
           "id": "2531",
           "text": {
-            "ru": "D) strconcat",
-            "uz": "D) strconcat",
-            "en": "D) strconcat"
+            "ru": "strconcat",
+            "uz": "strconcat",
+            "en": "strconcat"
           },
           "is_correct": false
         }
@@ -881,36 +881,36 @@
         {
           "id": "2538",
           "text": {
-            "ru": "A) 1",
-            "uz": "A) 1",
-            "en": "A) 1"
+            "ru": "1",
+            "uz": "1",
+            "en": "1"
           },
           "is_correct": false
         },
         {
           "id": "2536",
           "text": {
-            "ru": "B) 0",
-            "uz": "B) 0",
-            "en": "B) 0"
+            "ru": "0",
+            "uz": "0",
+            "en": "0"
           },
           "is_correct": false
         },
         {
           "id": "2537",
           "text": {
-            "ru": "C) -1",
-            "uz": "C) -1",
-            "en": "C) -1"
+            "ru": "-1",
+            "uz": "-1",
+            "en": "-1"
           },
           "is_correct": false
         },
         {
           "id": "2535",
           "text": {
-            "ru": "D) Положительное число",
-            "uz": "D) Musbat son (> 0)",
-            "en": "D) A positive number (> 0)"
+            "ru": "Положительное число",
+            "uz": "Musbat son (> 0)",
+            "en": "A positive number (> 0)"
           },
           "is_correct": true
         }
@@ -932,36 +932,36 @@
         {
           "id": "2541",
           "text": {
-            "ru": "A) В нем используются классы",
-            "uz": "A) Unda classlar ishlatiladi",
-            "en": "A) It relies on classes"
+            "ru": "В нем используются классы",
+            "uz": "Unda classlar ishlatiladi",
+            "en": "It relies on classes"
           },
           "is_correct": false
         },
         {
           "id": "2539",
           "text": {
-            "ru": "B) В нем используются функции",
-            "uz": "B) Unda funksiyalar (subroutines) ishlatiladi",
-            "en": "B) It uses functions/subroutines"
+            "ru": "В нем используются функции",
+            "uz": "Unda funksiyalar (subroutines) ishlatiladi",
+            "en": "It uses functions/subroutines"
           },
           "is_correct": true
         },
         {
           "id": "2542",
           "text": {
-            "ru": "C) В нем используются структуры",
-            "uz": "C) Unda faqat strukturalar ishlatiladi",
-            "en": "C) It uses structs only"
+            "ru": "В нем используются структуры",
+            "uz": "Unda faqat strukturalar ishlatiladi",
+            "en": "It uses structs only"
           },
           "is_correct": false
         },
         {
           "id": "2540",
           "text": {
-            "ru": "D) В нем используется декомпозиция и 3 базовые конструкции",
-            "uz": "D) Unda dekompozitsiya va 3 ta asosiy boshqaruv konstruksiyasi (ketma-ketlik, tarmoqlanish, tsikl) ishlatiladi",
-            "en": "D) It uses decomposition and 3 control structures: sequence, selection, and iteration"
+            "ru": "В нем используется декомпозиция и 3 базовые конструкции",
+            "uz": "Unda dekompozitsiya va 3 ta asosiy boshqaruv konstruksiyasi (ketma-ketlik, tarmoqlanish, tsikl) ishlatiladi",
+            "en": "It uses decomposition and 3 control structures: sequence, selection, and iteration"
           },
           "is_correct": true
         }
@@ -983,36 +983,36 @@
         {
           "id": "2544",
           "text": {
-            "ru": "A) Использование goto",
-            "uz": "A) goto operatoridan foydalanish",
-            "en": "A) Using the goto statement"
+            "ru": "Использование goto",
+            "uz": "goto operatoridan foydalanish",
+            "en": "Using the goto statement"
           },
           "is_correct": true
         },
         {
           "id": "2546",
           "text": {
-            "ru": "B) Использование функций",
-            "uz": "B) Funksiyalardan foydalanish",
-            "en": "B) Using functions"
+            "ru": "Использование функций",
+            "uz": "Funksiyalardan foydalanish",
+            "en": "Using functions"
           },
           "is_correct": false
         },
         {
           "id": "2543",
           "text": {
-            "ru": "C) Использование глобальных переменных",
-            "uz": "C) Global o'zgaruvchilardan (global variables) foydalanish",
-            "en": "C) Using global variables"
+            "ru": "Использование глобальных переменных",
+            "uz": "Global o'zgaruvchilardan (global variables) foydalanish",
+            "en": "Using global variables"
           },
           "is_correct": true
         },
         {
           "id": "2545",
           "text": {
-            "ru": "D) Использование циклов",
-            "uz": "D) Tsikllardan foydalanish",
-            "en": "D) Using loops"
+            "ru": "Использование циклов",
+            "uz": "Tsikllardan foydalanish",
+            "en": "Using loops"
           },
           "is_correct": false
         }
@@ -1034,36 +1034,36 @@
         {
           "id": "2549",
           "text": {
-            "ru": "A) Следует использовать только глобальные переменные",
-            "uz": "A) Faqat global o'zgaruvchilardan foydalanish kerak",
-            "en": "A) Only global variables should be used"
+            "ru": "Следует использовать только глобальные переменные",
+            "uz": "Faqat global o'zgaruvchilardan foydalanish kerak",
+            "en": "Only global variables should be used"
           },
           "is_correct": false
         },
         {
           "id": "2550",
           "text": {
-            "ru": "B) Рекомендуется использовать классы",
-            "uz": "B) Classlardan foydalanish tavsiya etiladi",
-            "en": "B) Classes are recommended"
+            "ru": "Рекомендуется использовать классы",
+            "uz": "Classlardan foydalanish tavsiya etiladi",
+            "en": "Classes are recommended"
           },
           "is_correct": false
         },
         {
           "id": "2548",
           "text": {
-            "ru": "C) Все должно быть написано в одной функции",
-            "uz": "C) Hamma narsa bitta funksiya ichida yozilishi kerak",
-            "en": "C) Everything must be written inside a single function"
+            "ru": "Все должно быть написано в одной функции",
+            "uz": "Hamma narsa bitta funksiya ichida yozilishi kerak",
+            "en": "Everything must be written inside a single function"
           },
           "is_correct": false
         },
         {
           "id": "2547",
           "text": {
-            "ru": "D) Программа должна быть разбита на отдельные блоки или функции",
-            "uz": "D) Dastur alohida bloklar yoki funksiyalarga bo'lingan (dekompozitsiya qilingan) bo'lishi kerak",
-            "en": "D) The program should be decomposed into separate blocks or functions"
+            "ru": "Программа должна быть разбита на отдельные блоки или функции",
+            "uz": "Dastur alohida bloklar yoki funksiyalarga bo'lingan (dekompozitsiya qilingan) bo'lishi kerak",
+            "en": "The program should be decomposed into separate blocks or functions"
           },
           "is_correct": true
         }
@@ -1085,36 +1085,36 @@
         {
           "id": "2553",
           "text": {
-            "ru": "A) Запуск программы на выполнение",
-            "uz": "A) Dasturni ishga tushirish (execution)",
-            "en": "A) Executing the program"
+            "ru": "Запуск программы на выполнение",
+            "uz": "Dasturni ishga tushirish (execution)",
+            "en": "Executing the program"
           },
           "is_correct": false
         },
         {
           "id": "2552",
           "text": {
-            "ru": "B) Проверка стиля и форматирования кода",
-            "uz": "B) Kodning formatlash va uslubini tekshirish",
-            "en": "B) Checking code formatting and style"
+            "ru": "Проверка стиля и форматирования кода",
+            "uz": "Kodning formatlash va uslubini tekshirish",
+            "en": "Checking code formatting and style"
           },
           "is_correct": false
         },
         {
           "id": "2551",
           "text": {
-            "ru": "C) Процесс преобразования исходного кода в исполняемый файл",
-            "uz": "C) Source kodni mashina kodi / binary executable faylga aylantirish jarayoni",
-            "en": "C) The process of transforming source code into an executable file"
+            "ru": "Процесс преобразования исходного кода в исполняемый файл",
+            "uz": "Source kodni mashina kodi / binary executable faylga aylantirish jarayoni",
+            "en": "The process of transforming source code into an executable file"
           },
           "is_correct": true
         },
         {
           "id": "2554",
           "text": {
-            "ru": "D) Сжатие исходного кода",
-            "uz": "D) Source kodni siqish (compress)",
-            "en": "D) Compressing the source code"
+            "ru": "Сжатие исходного кода",
+            "uz": "Source kodni siqish (compress)",
+            "en": "Compressing the source code"
           },
           "is_correct": false
         }
@@ -1136,36 +1136,36 @@
         {
           "id": "2555",
           "text": {
-            "ru": "A) Выполняет замену макросов и вставку текстов перед компиляцией",
-            "uz": "A) Kompilyatsiyadan oldin makroslarni almashtirish va fayllarni include qilishni bajaradi",
-            "en": "A) Performs macro expansion, conditional compilation, and header inclusion prior to compilation"
+            "ru": "Выполняет замену макросов и вставку текстов перед компиляцией",
+            "uz": "Kompilyatsiyadan oldin makroslarni almashtirish va fayllarni include qilishni bajaradi",
+            "en": "Performs macro expansion, conditional compilation, and header inclusion prior to compilation"
           },
           "is_correct": true
         },
         {
           "id": "2557",
           "text": {
-            "ru": "B) Преобразует код в машинные инструкции",
-            "uz": "B) Kodni to'g'ridan-to'g'ri machine instructionlarga aylantiradi",
-            "en": "B) Translates code into machine instructions"
+            "ru": "Преобразует код в машинные инструкции",
+            "uz": "Kodni to'g'ridan-to'g'ri machine instructionlarga aylantiradi",
+            "en": "Translates code into machine instructions"
           },
           "is_correct": false
         },
         {
           "id": "2558",
           "text": {
-            "ru": "C) Оптимизирует бинарный файл",
-            "uz": "C) Binary faylni optimallashtiradi",
-            "en": "C) Optimizes the binary file"
+            "ru": "Оптимизирует бинарный файл",
+            "uz": "Binary faylni optimallashtiradi",
+            "en": "Optimizes the binary file"
           },
           "is_correct": false
         },
         {
           "id": "2556",
           "text": {
-            "ru": "D) Запускает программу",
-            "uz": "D) Dasturni ishga tushiradi",
-            "en": "D) Runs the program"
+            "ru": "Запускает программу",
+            "uz": "Dasturni ishga tushiradi",
+            "en": "Runs the program"
           },
           "is_correct": false
         }
@@ -1187,36 +1187,36 @@
         {
           "id": "2561",
           "text": {
-            "ru": "A) Проверяет грамматику языка",
-            "uz": "A) Dasturlash tili grammatikasini tekshiradi",
-            "en": "A) Checks the syntax/grammar of the language"
+            "ru": "Проверяет грамматику языка",
+            "uz": "Dasturlash tili grammatikasini tekshiradi",
+            "en": "Checks the syntax/grammar of the language"
           },
           "is_correct": false
         },
         {
           "id": "2559",
           "text": {
-            "ru": "B) Соединяет объектные файлы в единый исполняемый файл",
-            "uz": "B) Object fayllar (.o/.obj) va kutubxonalarni bitta executable faylga birlashtiradi",
-            "en": "B) Combines object files and libraries into a single executable file"
+            "ru": "Соединяет объектные файлы в единый исполняемый файл",
+            "uz": "Object fayllar (.o/.obj) va kutubxonalarni bitta executable faylga birlashtiradi",
+            "en": "Combines object files and libraries into a single executable file"
           },
           "is_correct": true
         },
         {
           "id": "2562",
           "text": {
-            "ru": "C) Удаляет ненужные части программы",
-            "uz": "C) Dasturning keraksiz qismlarini o'chiradi",
-            "en": "C) Deletes unused parts of the program"
+            "ru": "Удаляет ненужные части программы",
+            "uz": "Dasturning keraksiz qismlarini o'chiradi",
+            "en": "Deletes unused parts of the program"
           },
           "is_correct": false
         },
         {
           "id": "2560",
           "text": {
-            "ru": "D) Переименовывает переменные",
-            "uz": "D) O'zgaruvchilar nomini o'zgartiradi",
-            "en": "D) Renames variables"
+            "ru": "Переименовывает переменные",
+            "uz": "O'zgaruvchilar nomini o'zgartiradi",
+            "en": "Renames variables"
           },
           "is_correct": false
         }
