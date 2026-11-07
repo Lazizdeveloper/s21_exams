@@ -9,7 +9,8 @@ import {
   Check, 
   X, 
   LayoutGrid, 
-  ArrowLeft 
+  ArrowLeft,
+  ArrowRight
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { CATEGORIES, normalizeQuestion, getRandomQuestions } from '../data/categories';
@@ -39,6 +40,7 @@ export default function PracticePage() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({}); // { [questionIndex]: selectedOptionId or array }
+  const [submittedQuestions, setSubmittedQuestions] = useState({}); // { [questionIndex]: true }
   const [showExplanation, setShowExplanation] = useState({});
   const [isGridOpen, setIsGridOpen] = useState(false);
 
@@ -46,22 +48,45 @@ export default function PracticePage() {
   const isLast = currentIndex === questions.length - 1;
   const isFirst = currentIndex === 0;
 
+  // Determine multi-choice properties
+  const correctOptions = useMemo(() => {
+    return currentQ?.options?.filter(o => o.is_correct) || [];
+  }, [currentQ]);
+  const correctCount = Math.max(1, correctOptions.length);
+  const isMulti = currentQ?.type === 'checkbox' || correctOptions.length > 1;
+
   const currentSelection = userAnswers[currentIndex];
-  const hasAnswered = currentSelection !== undefined;
+  const isSubmitted = !!submittedQuestions[currentIndex];
+  const hasAnswered = isSubmitted;
+
+  const selectedList = useMemo(() => {
+    if (Array.isArray(currentSelection)) return currentSelection;
+    if (currentSelection !== undefined) return [currentSelection];
+    return [];
+  }, [currentSelection]);
+  const selectedCount = selectedList.length;
 
   const handleSelectOption = (optId) => {
-    if (currentQ.type === 'checkbox') {
+    // If already evaluated, lock selection
+    if (isSubmitted) return;
+
+    if (isMulti) {
       const current = Array.isArray(currentSelection) ? currentSelection : [];
       const next = current.includes(optId)
         ? current.filter(id => id !== optId)
         : [...current, optId];
       setUserAnswers(prev => ({ ...prev, [currentIndex]: next }));
     } else {
+      // Single choice: evaluate immediately without extra button
       setUserAnswers(prev => ({ ...prev, [currentIndex]: optId }));
+      setSubmittedQuestions(prev => ({ ...prev, [currentIndex]: true }));
     }
   };
 
-  const isOptionCorrect = (opt) => opt.is_correct;
+  const handleSubmitMulti = () => {
+    if (isSubmitted || selectedCount === 0) return;
+    setSubmittedQuestions(prev => ({ ...prev, [currentIndex]: true }));
+  };
 
   const handleNext = () => {
     if (!isLast) setCurrentIndex(prev => prev + 1);
@@ -73,6 +98,7 @@ export default function PracticePage() {
 
   const handleShuffleNew = () => {
     setUserAnswers({});
+    setSubmittedQuestions({});
     setShowExplanation({});
     setCurrentIndex(0);
     setSessionKey(prev => prev + 1);
@@ -197,20 +223,31 @@ export default function PracticePage() {
             </button>
           </div>
           <div className="grid grid-cols-8 sm:grid-cols-12 md:grid-cols-16 gap-1.5 max-h-48 overflow-y-auto p-1">
-            {questions.map((_, idx) => {
+            {questions.map((q, idx) => {
               const ans = userAnswers[idx];
+              const isSub = !!submittedQuestions[idx];
               const isCurr = idx === currentIndex;
               let bg = 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
-              if (ans !== undefined) {
-                // Determine if answered correct
-                const q = questions[idx];
-                const isCorr = q.type === 'checkbox'
-                  ? Array.isArray(ans) && ans.length > 0 && ans.every(id => q.options.find(o => o.id === id)?.is_correct)
-                  : q.options.find(o => o.id === ans)?.is_correct;
+
+              if (isSub && ans !== undefined) {
+                const qCorrectIds = q.options.filter(o => o.is_correct).map(o => o.id);
+                const qIsMulti = q.type === 'checkbox' || qCorrectIds.length > 1;
+                let isCorr = false;
+
+                if (qIsMulti) {
+                  const userSel = Array.isArray(ans) ? ans : [];
+                  isCorr = userSel.length === qCorrectIds.length && userSel.every(id => qCorrectIds.includes(id));
+                } else {
+                  isCorr = q.options.find(o => o.id === ans)?.is_correct;
+                }
+
                 bg = isCorr
                   ? 'bg-emerald-500 text-white font-bold'
                   : 'bg-rose-500 text-white font-bold';
+              } else if (!isSub && ans !== undefined && (Array.isArray(ans) ? ans.length > 0 : true)) {
+                bg = 'bg-amber-500/20 text-amber-600 dark:text-amber-400 font-bold border border-amber-500/30';
               }
+
               return (
                 <button
                   key={idx}
@@ -238,7 +275,11 @@ export default function PracticePage() {
           <div className="flex items-center gap-2 text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-2">
             <span>{currentCategory.id.toUpperCase()}</span>
             <span>•</span>
-            <span>{currentQ.type === 'checkbox' ? t.practice.selectMultiple : t.practice.selectOption}</span>
+            <span>
+              {isMulti 
+                ? (correctCount > 1 ? `${correctCount} TA JAVOBNI TANLANG` : t.practice.selectMultiple) 
+                : t.practice.selectOption}
+            </span>
           </div>
 
           <div className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white leading-relaxed">
@@ -249,11 +290,11 @@ export default function PracticePage() {
         {/* Options */}
         <div className="space-y-3 pt-2">
           {currentQ.options.map((opt) => {
-            const isSelected = currentQ.type === 'checkbox'
+            const isSelected = isMulti
               ? Array.isArray(currentSelection) && currentSelection.includes(opt.id)
               : currentSelection === opt.id;
 
-            // Colors after selection
+            // Colors after selection / submission
             let containerStyle = 'border-slate-200 dark:border-slate-800 hover:border-emerald-400 dark:hover:border-emerald-600 bg-white dark:bg-slate-900';
             let badgeStyle = 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
 
@@ -266,8 +307,8 @@ export default function PracticePage() {
                 badgeStyle = 'bg-rose-500 text-white font-bold';
               }
             } else if (isSelected) {
-              containerStyle = 'border-emerald-500 bg-emerald-50/30 dark:bg-emerald-950/20';
-              badgeStyle = 'bg-emerald-500 text-white';
+              containerStyle = 'border-emerald-500 bg-emerald-50/40 dark:bg-emerald-950/30 text-slate-900 dark:text-white shadow-sm ring-1 ring-emerald-500/40';
+              badgeStyle = 'bg-emerald-500 text-white font-bold';
             }
 
             return (
@@ -281,6 +322,8 @@ export default function PracticePage() {
                     <Check size={16} />
                   ) : hasAnswered && isSelected && !opt.is_correct ? (
                     <X size={16} />
+                  ) : !hasAnswered && isSelected ? (
+                    <Check size={16} />
                   ) : (
                     opt.key
                   )}
@@ -293,6 +336,41 @@ export default function PracticePage() {
             );
           })}
         </div>
+
+        {/* Multi-Select Submit / Continue Action Button */}
+        {isMulti && !isSubmitted && (
+          <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 animate-fadeIn">
+            <div className="text-xs text-slate-500 dark:text-slate-400">
+              {selectedCount === 0 ? (
+                <span>Kerakli variantlarni tanlang ({correctCount} ta to'g'ri javob bor)</span>
+              ) : selectedCount < correctCount ? (
+                <span>Yana <strong className="text-amber-500">{correctCount - selectedCount}</strong> ta variant tanlang ({selectedCount}/{correctCount})</span>
+              ) : (
+                <span className="text-emerald-600 dark:text-emerald-400 font-semibold">✓ {selectedCount} ta javob tanlandi. Davom etish mumkin.</span>
+              )}
+            </div>
+
+            {selectedCount >= correctCount ? (
+              <button
+                type="button"
+                onClick={handleSubmitMulti}
+                className="flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all"
+              >
+                <span>Davom etish</span>
+                <ArrowRight size={16} />
+              </button>
+            ) : selectedCount > 0 ? (
+              <button
+                type="button"
+                onClick={handleSubmitMulti}
+                className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                title="To'liq tanlamasdan javobni tekshirish"
+              >
+                <span>Baribir tekshirish ({selectedCount})</span>
+              </button>
+            ) : null}
+          </div>
+        )}
 
         {/* Explanation Box */}
         {hasAnswered && currentQ.explanation && (
