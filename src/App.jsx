@@ -8,6 +8,7 @@ import ExamPage from './pages/ExamPage';
 import ExamResultPage from './pages/ExamResultPage';
 import BrowseCatalogPage from './pages/BrowseCatalogPage';
 import BookmarksPage from './pages/BookmarksPage';
+import CPracticePage from './pages/CPracticePage';
 
 function AppContent() {
   const { currentView } = useApp();
@@ -18,6 +19,7 @@ function AppContent() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {currentView === 'home' && <HomePage />}
         {currentView === 'practice' && <PracticePage />}
+        {currentView === 'c_practice' && <CPracticePage />}
         {currentView === 'exam' && <ExamPage />}
         {currentView === 'exam_result' && <ExamResultPage />}
         {currentView === 'catalog' && <BrowseCatalogPage />}

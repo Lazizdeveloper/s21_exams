@@ -6,7 +6,9 @@ import {
   ShieldCheck, 
   Clock, 
   Languages, 
-  BookMarked 
+  BookMarked,
+  Code2,
+  ArrowRight
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { CATEGORIES } from '../data/categories';
@@ -100,6 +102,35 @@ export default function HomePage() {
               onSelectCatalog={handleSelectCatalog}
             />
           ))}
+        </div>
+      </section>
+
+      {/* C Practical Exam Feature Banner */}
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-purple-900 via-indigo-900 to-slate-900 text-white p-6 sm:p-8 border border-purple-500/30 shadow-xl">
+        <div className="absolute right-0 top-0 -mt-8 -mr-8 w-64 h-64 rounded-full bg-purple-500/20 blur-2xl pointer-events-none" />
+        
+        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div className="space-y-2 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 text-xs font-bold border border-purple-500/30">
+              <Code2 size={14} />
+              <span>Yangi: C Amaliy Masalalar (Ex_01 — Ex_08)</span>
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+              C Dasturlash bo'yicha Haqiqiy Imtihon Topshiriqlari
+            </h3>
+            <p className="text-sm text-purple-200/90 leading-relaxed">
+              «Школа 21» amaliy imtihonlarining 35 ta masalasi: xatolarni tuzatish, kirish/chiqish formatlari, matritsalar, dinamik massivlar va strukturalar — to'liq tekshirilgan yechim kodlari bilan.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setCurrentView('c_practice')}
+            className="flex items-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 text-white shadow-lg shadow-purple-500/30 hover:scale-105 active:scale-95 transition-all whitespace-nowrap flex-shrink-0"
+          >
+            <span>C Praktikani ochish</span>
+            <ArrowRight size={18} />
+          </button>
         </div>
       </section>
 

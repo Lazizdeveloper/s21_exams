@@ -8,7 +8,8 @@ import {
   Sun, 
   Menu, 
   X, 
-  GraduationCap 
+  GraduationCap,
+  Code2
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
@@ -19,6 +20,7 @@ export default function Navbar() {
   const navItems = [
     { key: 'home', label: t.nav.home, icon: GraduationCap },
     { key: 'practice', label: t.nav.practice, icon: BookOpen },
+    { key: 'c_practice', label: t.nav.cPractice || "C Praktika", icon: Code2 },
     { key: 'exam', label: t.nav.exam, icon: CheckCircle },
     { key: 'catalog', label: t.nav.catalog, icon: ListFilter },
     { key: 'bookmarks', label: t.nav.bookmarks, icon: Bookmark, badge: bookmarks.length },
