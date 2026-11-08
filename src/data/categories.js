@@ -2,6 +2,7 @@ import devopsData from './devops.json';
 import cTheoryData from './c_theory.json';
 import sqlData from './sql.json';
 import httpJsData from './http_js.json';
+import algorithmsData from './algorithms.json';
 
 export const DEFAULT_PRACTICE_COUNT = 30;
 export const DEFAULT_EXAM_COUNT = 30;
@@ -24,6 +25,19 @@ export const CATEGORIES = [
     passingScorePercent: 80, // DevOps exam requires 80% to pass
     isMultilingual: true,
     rawQuestions: devopsData.questions,
+  },
+  {
+    id: 'algorithms',
+    key: 'algorithms',
+    icon: 'Network',
+    color: 'from-cyan-500 to-blue-600',
+    totalQuestions: algorithmsData.questions.length,
+    practiceQuestionCount: 30,
+    examQuestionCount: 30,
+    examDurationMinutes: 60,
+    passingScorePercent: 50, // Algorithms requires 50% to pass
+    isMultilingual: true,
+    rawQuestions: algorithmsData.questions,
   },
   {
     id: 'http_js',

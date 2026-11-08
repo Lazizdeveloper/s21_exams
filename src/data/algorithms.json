@@ -1,0 +1,1571 @@
+{
+  "source": "algorithms_and_data_structures",
+  "title": {
+    "uz": "Algoritmlar va Ma'lumotlar Tuzilmalari",
+    "ru": "Алгоритмы и структуры данных",
+    "en": "Algorithms and Data Structures"
+  },
+  "total_questions": 30,
+  "questions": [
+    {
+      "id": 1,
+      "type": "radio",
+      "question": {
+        "uz": "Algoritm murakkabligini baholashda O(n) belgisi ishlatiladi. n nimani anglatadi?",
+        "ru": "При оценке сложности алгоритма используется обозначение O(n). Что означает n?",
+        "en": "In algorithmic complexity evaluation, the notation O(n) is used. What does n represent?"
+      },
+      "answers": [
+        {
+          "id": "101",
+          "text": {
+            "uz": "Algoritm hisoblashlari sonining bahosi",
+            "ru": "Оценка количества вычислений алгоритма",
+            "en": "Estimate of the number of computations"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "102",
+          "text": {
+            "uz": "Algoritm kod qatorlarining soni",
+            "ru": "Количество строк кода алгоритма",
+            "en": "Number of code lines in the algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "103",
+          "text": {
+            "uz": "Kirish ma'lumotlari hajmi",
+            "ru": "Размер входных данных",
+            "en": "Input data size"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "104",
+          "text": {
+            "uz": "Algoritm iteratsiyalari sonining bahosi",
+            "ru": "Оценка количества итераций алгоритма",
+            "en": "Estimate of the number of iterations"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "n — bu algoritmga beriladigan kirish ma'lumotlari hajmi (masalan, massiv elementlari soni).",
+        "ru": "n обозначает размер входных данных (например, количество элементов в массиве).",
+        "en": "n represents the input data size (e.g., number of elements in an array)."
+      }
+    },
+    {
+      "id": 2,
+      "type": "radio",
+      "question": {
+        "uz": "O(n log n) — bu algoritmning qaysi vaqt bo'yicha bajarilishining yuqori bahosi?",
+        "ru": "O(n log n) — это оценка выполнения алгоритма по какому времени?",
+        "en": "O(n log n) is an upper bound on an algorithm's execution in which time complexity?"
+      },
+      "answers": [
+        {
+          "id": "201",
+          "text": {
+            "uz": "Logarifmik vaqt",
+            "ru": "Логарифмическое время",
+            "en": "Logarithmic time"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "202",
+          "text": {
+            "uz": "Kvazilogarifmik vaqt",
+            "ru": "Квазилогарифмическое время",
+            "en": "Quasi-logarithmic time"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "203",
+          "text": {
+            "uz": "Eksponensial vaqt",
+            "ru": "Экспоненциальное время",
+            "en": "Exponential time"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "204",
+          "text": {
+            "uz": "Chiziqli-logarifmik vaqt",
+            "ru": "Линейно-логарифмическое время",
+            "en": "Linearithmic time"
+          },
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "uz": "O(n log n) murakkablik chiziqli-logarifmik (linearithmic) vaqt deb ataladi (Merge Sort va Quick Sort o'rtacha holatda shu vaqtda ishlaydi).",
+        "ru": "Сложность O(n log n) называется линейно-логарифмическим временем (Merge Sort, средний случай Quick Sort).",
+        "en": "O(n log n) complexity is called linearithmic time (Merge Sort, average-case Quick Sort)."
+      }
+    },
+    {
+      "id": 3,
+      "type": "radio",
+      "question": {
+        "uz": "Quyidagi ifoda qanday yuqori asimptotik bahoga ega: log(n) + 10·n·n³ + n³ + 10·n + 10?",
+        "ru": "Какую асимптотическую верхнюю оценку имеет выражение: log(n) + 10·n·n³ + n³ + 10·n + 10?",
+        "en": "What is the asymptotic upper bound of: log(n) + 10·n·n³ + n³ + 10·n + 10?"
+      },
+      "answers": [
+        {
+          "id": "301",
+          "text": {
+            "uz": "O(n⁴)",
+            "ru": "O(n⁴)",
+            "en": "O(n⁴)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "302",
+          "text": {
+            "uz": "O(log n)",
+            "ru": "O(log n)",
+            "en": "O(log n)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "303",
+          "text": {
+            "uz": "O(n³)",
+            "ru": "O(n³)",
+            "en": "O(n³)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "304",
+          "text": {
+            "uz": "O(n)",
+            "ru": "O(n)",
+            "en": "O(n)"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "10·n·n³ = 10·n⁴ bo'lib, eng yuqori darajali had hisoblanadi. O-notatsiyada konstanta tashlab yuborilib, O(n⁴) olinadi.",
+        "ru": "Член 10·n·n³ равен 10·n⁴ и является доминирующим. В O-нотации константы опускаются, получается O(n⁴).",
+        "en": "The term 10·n·n³ equals 10·n⁴, which is dominant. In Big-O notation constants are ignored, yielding O(n⁴)."
+      }
+    },
+    {
+      "id": 4,
+      "type": "radio",
+      "question": {
+        "uz": "Algoritm murakkabligining yuqori chegarasi qanday belgilanadi?",
+        "ru": "Как обозначается верхняя граница сложности алгоритма?",
+        "en": "How is the upper bound of an algorithm's complexity denoted?"
+      },
+      "answers": [
+        {
+          "id": "401",
+          "text": {
+            "uz": "Omega-notatsiya (Ω)",
+            "ru": "Омега-нотация (Ω)",
+            "en": "Omega notation (Ω)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "402",
+          "text": {
+            "uz": "Teta-notatsiya (Θ)",
+            "ru": "Тета-нотация (Θ)",
+            "en": "Theta notation (Θ)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "403",
+          "text": {
+            "uz": "O-notatsiya (Big O)",
+            "ru": "O-нотация (Большое O)",
+            "en": "Big O notation (O)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "404",
+          "text": {
+            "uz": "Delta-notatsiya (Δ)",
+            "ru": "Дельта-нотация (Δ)",
+            "en": "Delta notation (Δ)"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Big O — algoritmning eng yomon holatdagi yuqori chegarasini belgilaydi. Omega (Ω) quyi, Teta (Θ) esa aniq chegarani bildiradi.",
+        "ru": "Большое O (Big O) обозначает верхнюю границу (наихудший случай). Омега (Ω) — нижнюю, а Тета (Θ) — точную границу.",
+        "en": "Big O denotes the upper bound (worst-case). Omega (Ω) denotes the lower bound, while Theta (Θ) denotes tight bound."
+      }
+    },
+    {
+      "id": 5,
+      "type": "radio",
+      "question": {
+        "uz": "Byom–Yakopini teoremasi nimani ta'kidlaydi?",
+        "ru": "Что утверждает теорема Бёма — Якопини?",
+        "en": "What does the Böhm–Jacopini theorem state?"
+      },
+      "answers": [
+        {
+          "id": "501",
+          "text": {
+            "uz": "Har qanday algoritmni faqat uchta bazaviy konstruksiya (ketma-ketlik, tanlash, takrorlash) bilan amalga oshirish mumkin",
+            "ru": "Любой алгоритм можно выразить с помощью трех базовых конструкций (последовательность, ветвление, цикл)",
+            "en": "Any algorithm can be implemented using only three basic control structures (sequence, selection, iteration)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "502",
+          "text": {
+            "uz": "Har qanday algoritmni faqat rekursiya bilan yozish mumkin",
+            "ru": "Любой алгоритм можно написать только через рекурсию",
+            "en": "Any algorithm can only be written using recursion"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "503",
+          "text": {
+            "uz": "Algoritmlar har doim cheksiz bo'ladi",
+            "ru": "Алгоритмы всегда бесконечны",
+            "en": "Algorithms are always infinite"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "504",
+          "text": {
+            "uz": "Sikl va shartli o'tish bir xil hisoblanadi",
+            "ru": "Цикл и условный переход идентичны",
+            "en": "Loops and conditional branching are identical"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Bu teorema strukturaviy dasturlashning asosi bo'lib, har qanday dasturni ketma-ketlik, if-else (tanlash) va while (sikl) bilan yozish mumkinligini isbotlaydi.",
+        "ru": "Эта теорема — основа структурного программирования, доказывающая достаточность последовательности, ветвления и цикла.",
+        "en": "This theorem is the foundation of structured programming, proving sufficiency of sequence, selection, and iteration."
+      }
+    },
+    {
+      "id": 6,
+      "type": "radio",
+      "question": {
+        "uz": "Strukturaviy dasturlashning asoschisi va 'Go To Statement Considered Harmful' maqolasi muallifi kim?",
+        "ru": "Кто является создателем структурного программирования и автором статьи 'Go To Statement Considered Harmful'?",
+        "en": "Who is the pioneer of structured programming and author of 'Go To Statement Considered Harmful'?"
+      },
+      "answers": [
+        {
+          "id": "601",
+          "text": {
+            "uz": "Alan Tyuring",
+            "ru": "Алан Тьюринг",
+            "en": "Alan Turing"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "602",
+          "text": {
+            "uz": "Edsger Deykstra",
+            "ru": "Эдсгер Дейкстра",
+            "en": "Edsger W. Dijkstra"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "603",
+          "text": {
+            "uz": "Donald Knut",
+            "ru": "Дональд Кнут",
+            "en": "Donald Knuth"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "604",
+          "text": {
+            "uz": "Jon fon Neyman",
+            "ru": "Джон фон Нейман",
+            "en": "John von Neumann"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Edsger Deykstra strukturaviy dasturlashni targ'ib qilgan va goto operatoridan voz kechishni taklif etgan nufuzli olimdir.",
+        "ru": "Эдсгер Дейкстра внес огромный вклад в структурное программирование и алгоритмы графов.",
+        "en": "Edsger W. Dijkstra pioneered structured programming and advocated against using the goto statement."
+      }
+    },
+    {
+      "id": 7,
+      "type": "radio",
+      "question": {
+        "uz": "Umumiy ma'noda algoritm nima?",
+        "ru": "Что такое алгоритм в общем смысле?",
+        "en": "What is an algorithm in a general sense?"
+      },
+      "answers": [
+        {
+          "id": "701",
+          "text": {
+            "uz": "Dasturlash tili",
+            "ru": "Язык программирования",
+            "en": "A programming language"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "702",
+          "text": {
+            "uz": "Masalani yechish uchun aniq ko'rsatmalarning chekli ketma-ketligi",
+            "ru": "Конечная последовательность точных инструкций для решения задачи",
+            "en": "A finite sequence of well-defined instructions for solving a problem"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "703",
+          "text": {
+            "uz": "Kompyuter operativ xotirasi",
+            "ru": "Оперативная память компьютера",
+            "en": "Computer RAM"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "704",
+          "text": {
+            "uz": "Matematik formula",
+            "ru": "Математическая формула",
+            "en": "A mathematical formula"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Algoritm — berilgan boshlang'ich ma'lumotlardan kutilgan natijaga olib boruvchi qadam-baqadam ko'rsatmalar to'plamidir.",
+        "ru": "Алгоритм — пошаговая конечная последовательность действий, приводящая к решению задачи.",
+        "en": "An algorithm is a step-by-step finite set of instructions leading to the solution of a task."
+      }
+    },
+    {
+      "id": 8,
+      "type": "radio",
+      "question": {
+        "uz": "Qaysi algoritm eng qadimgi rasmiy matematik algoritmlardan biri hisoblanadi?",
+        "ru": "Какой алгоритм считается одним из древнейших формальных математических алгоритмов?",
+        "en": "Which algorithm is considered one of the oldest formal mathematical algorithms?"
+      },
+      "answers": [
+        {
+          "id": "801",
+          "text": {
+            "uz": "Evklid algoritmi (EKUB topish)",
+            "ru": "Алгоритм Евклида (поиск НОД)",
+            "en": "Euclidean algorithm (GCD)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "802",
+          "text": {
+            "uz": "Gyodel algoritmi",
+            "ru": "Алгоритм Гёделя",
+            "en": "Gödel's algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "803",
+          "text": {
+            "uz": "Tyuring algoritmi",
+            "ru": "Алгоритм Тьюринга",
+            "en": "Turing's algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "804",
+          "text": {
+            "uz": "Deykstra algoritmi",
+            "ru": "Алгоритм Дейкстры",
+            "en": "Dijkstra's algorithm"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Evklid algoritmi (miloddan avvalgi ~300 yilda yozilgan) ikki sonning eng katta umumiy bo'luvchisini (EKUB) topishning qadimiy usulidir.",
+        "ru": "Алгоритм Евклида для нахождения наибольшего общего делителя (НОД) описан около 300 года до н.э.",
+        "en": "The Euclidean algorithm for computing the greatest common divisor (GCD) dates back to ~300 BC."
+      }
+    },
+    {
+      "id": 9,
+      "type": "radio",
+      "question": {
+        "uz": "FIFO prinsipi nimani anglatadi?",
+        "ru": "Что означает принцип FIFO?",
+        "en": "What does the FIFO principle stand for?"
+      },
+      "answers": [
+        {
+          "id": "901",
+          "text": {
+            "uz": "Oxirgi kirgan — birinchi chiqadi (Last In, First Out)",
+            "ru": "Последним пришел — первым ушел",
+            "en": "Last In, First Out"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "902",
+          "text": {
+            "uz": "Birinchi kirgan — birinchi chiqadi (First In, First Out)",
+            "ru": "Первым пришел — первым ушел",
+            "en": "First In, First Out"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "903",
+          "text": {
+            "uz": "Tasodifiy tartibda kirish",
+            "ru": "Случайный доступ",
+            "en": "Random access"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "904",
+          "text": {
+            "uz": "Faqat indeks bo'yicha kirish",
+            "ru": "Доступ только по индексу",
+            "en": "Index-only access"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "FIFO (First In, First Out) — navbat (queue) tuzilmasining asosiy ishlash tamoyili hisoblanadi.",
+        "ru": "FIFO (First In, First Out) — принцип очереди: первый добавленный элемент извлекается первым.",
+        "en": "FIFO (First In, First Out) is the core operational principle of queues."
+      }
+    },
+    {
+      "id": 10,
+      "type": "radio",
+      "question": {
+        "uz": "Xesh-jadvalda (Hash Table) o'rtacha holatda elementni qidirish, qo'shish va o'chirishning vaqt murakkabligi qanday?",
+        "ru": "Какова временная сложность поиска, вставки и удаления элемента в хеш-таблице в среднем случае?",
+        "en": "What is the average-case time complexity of search, insert, and delete in a Hash Table?"
+      },
+      "answers": [
+        {
+          "id": "1001",
+          "text": {
+            "uz": "O(1) — doimiy (konstant) vaqt",
+            "ru": "O(1) — константное время",
+            "en": "O(1) — constant time"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1002",
+          "text": {
+            "uz": "O(n) — chiziqli vaqt",
+            "ru": "O(n) — линейное время",
+            "en": "O(n) — linear time"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1003",
+          "text": {
+            "uz": "O(log n) — logarifmik vaqt",
+            "ru": "O(log n) — логарифмическое время",
+            "en": "O(log n) — logarithmic time"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1004",
+          "text": {
+            "uz": "O(n²) — kvadratik vaqt",
+            "ru": "O(n²) — квадратичное время",
+            "en": "O(n²) — quadratic time"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Yaxshi xesh-funksiya mavjud bo'lganda, xesh-jadval elementlar ustida amallarni o'rtacha O(1) doimiy vaqtda bajaradi.",
+        "ru": "При хорошей хеш-функции хеш-таблица выполняет операции в среднем за константное время O(1).",
+        "en": "With a good hash function, hash tables perform operations in O(1) average constant time."
+      }
+    },
+    {
+      "id": 11,
+      "type": "radio",
+      "question": {
+        "uz": "Qaysi ma'lumotlar strukturasida elementga indeks bo'yicha to'g'ridan-to'g'ri O(1) vaqtda murojaat qilinadi?",
+        "ru": "В какой структуре данных доступ к элементу по индексу осуществляется напрямую за время O(1)?",
+        "en": "In which data structure can an element be accessed directly by index in O(1) time?"
+      },
+      "answers": [
+        {
+          "id": "1101",
+          "text": {
+            "uz": "Stek (Stack)",
+            "ru": "Стек",
+            "en": "Stack"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1102",
+          "text": {
+            "uz": "Navbat (Queue)",
+            "ru": "Очередь",
+            "en": "Queue"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1103",
+          "text": {
+            "uz": "Massiv (Array)",
+            "ru": "Массив",
+            "en": "Array"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1104",
+          "text": {
+            "uz": "Bog'langan ro'yxat (Linked List)",
+            "ru": "Связный список",
+            "en": "Linked List"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Massiv xotirada ketma-ket yacheykalarda saqlangani uchun indeks bo'yicha to'g'ridan-to'g'ri O(1) vaqtda murojaat qilish imkonini beradi.",
+        "ru": "Массив хранит элементы в непрерывной памяти, что позволяет обращаться по индексу за O(1).",
+        "en": "Arrays allocate contiguous memory, enabling direct random access by index in O(1) time."
+      }
+    },
+    {
+      "id": 12,
+      "type": "radio",
+      "question": {
+        "uz": "Qaysi ma'lumotlar strukturasi FIFO (First In, First Out) prinsipini ta'minlaydi?",
+        "ru": "Какая структура данных обеспечивает принцип FIFO (First In, First Out)?",
+        "en": "Which data structure enforces the FIFO (First In, First Out) principle?"
+      },
+      "answers": [
+        {
+          "id": "1201",
+          "text": {
+            "uz": "Stek (Stack)",
+            "ru": "Стек",
+            "en": "Stack"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1202",
+          "text": {
+            "uz": "Massiv (Array)",
+            "ru": "Массив",
+            "en": "Array"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1203",
+          "text": {
+            "uz": "Daraxt (Tree)",
+            "ru": "Дерево",
+            "en": "Tree"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1204",
+          "text": {
+            "uz": "Navbat (Queue)",
+            "ru": "Очередь",
+            "en": "Queue"
+          },
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "uz": "Navbat (Queue) doimo FIFO prinsipi asosida ishlaydi: birinchi kelgan element birinchi bo'lib qayta ishlanadi.",
+        "ru": "Очередь (Queue) работает строго по принципу FIFO.",
+        "en": "Queue operates strictly under the FIFO principle."
+      }
+    },
+    {
+      "id": 13,
+      "type": "radio",
+      "question": {
+        "uz": "Qaysi ma'lumotlar strukturasida elementlarga indeks bo'yicha emas, ko'rsatkichlar orqali faqat ketma-ket murojaat qilinadi?",
+        "ru": "В какой структуре данных доступ к элементам осуществляется последовательно через указатели, а не по индексу?",
+        "en": "In which data structure are elements accessed sequentially via pointers rather than by index?"
+      },
+      "answers": [
+        {
+          "id": "1301",
+          "text": {
+            "uz": "Massiv (Array)",
+            "ru": "Массив",
+            "en": "Array"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1302",
+          "text": {
+            "uz": "Xesh-jadval (Hash Table)",
+            "ru": "Хеш-таблица",
+            "en": "Hash Table"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1303",
+          "text": {
+            "uz": "Bog'langan ro'yxat (Linked List)",
+            "ru": "Связный список",
+            "en": "Linked List"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1304",
+          "text": {
+            "uz": "Matritsa",
+            "ru": "Матрица",
+            "en": "Matrix"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Bog'langan ro'yxat tugunlari xotirada tarqoq joylashadi va har bir tugun keyingisiga ko'rsatkich (pointer) orqali bog'lanadi, shuning uchun i-elementga borish O(n) vaqt oladi.",
+        "ru": "В связном списке элементы связаны указателями, поэтому для доступа к i-му элементу требуется последовательный обход O(n).",
+        "en": "In a linked list, nodes are connected via pointers, requiring sequential traversal O(n) to reach the i-th node."
+      }
+    },
+    {
+      "id": 14,
+      "type": "radio",
+      "question": {
+        "uz": "Qaysi holatda bog'langan ro'yxat o'rniga massivdan foydalanish afzalroq hisoblanadi?",
+        "ru": "В каком случае предпочтительнее использовать массив вместо связного списка?",
+        "en": "In which case is it preferable to use an array instead of a linked list?"
+      },
+      "answers": [
+        {
+          "id": "1401",
+          "text": {
+            "uz": "Ko'p qo'shish va o'chirish amallari o'rtada bajarilganda",
+            "ru": "Когда требуется частая вставка и удаление в середине",
+            "en": "When frequent insertions and deletions occur in the middle"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1402",
+          "text": {
+            "uz": "Indeks bo'yicha tezkor kirish (O(1)) kerak bo'lib, elementlar soni oldindan ma'lum bo'lganda",
+            "ru": "Когда нужен быстрый доступ по индексу (O(1)) и размер фиксирован",
+            "en": "When fast access by index (O(1)) is needed and the size is fixed"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1403",
+          "text": {
+            "uz": "Elementlar hajmi doimiy o'zgarib turganda",
+            "ru": "Когда размер постоянно динамически меняется",
+            "en": "When size changes constantly and unpredictably"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1404",
+          "text": {
+            "uz": "LIFO tartibida ishlash talab qilinganda",
+            "ru": "Когда требуется порядок LIFO",
+            "en": "When LIFO order is strictly required"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Massivlar xotirani tejamkor ishlatadi (pointerlar uchun ortiqcha bayt yo'q) va indeks bo'yicha O(1) da tezkor murojaatni kafolatlaydi.",
+        "ru": "Массивы не тратят память на указатели и обеспечивают мгновенный доступ O(1) по индексу.",
+        "en": "Arrays eliminate pointer memory overhead and provide instant O(1) random access."
+      }
+    },
+    {
+      "id": 15,
+      "type": "radio",
+      "question": {
+        "uz": "Saralangan ro'yxatdan elementni O(log n) vaqtda qidirish uchun qaysi usul qo'llaniladi?",
+        "ru": "Какой метод используется для поиска элемента в отсортированном списке за время O(log n)?",
+        "en": "Which search algorithm is used to find an element in a sorted list in O(log n) time?"
+      },
+      "answers": [
+        {
+          "id": "1501",
+          "text": {
+            "uz": "Chiziqli qidiruv (Linear Search)",
+            "ru": "Линейный поиск",
+            "en": "Linear Search"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1502",
+          "text": {
+            "uz": "Binar qidiruv (Binary Search)",
+            "ru": "Бинарный поиск",
+            "en": "Binary Search"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1503",
+          "text": {
+            "uz": "DFS qidiruvi",
+            "ru": "Поиск в глубину (DFS)",
+            "en": "Depth-First Search (DFS)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1504",
+          "text": {
+            "uz": "BFS qidiruvi",
+            "ru": "Поиск в ширину (BFS)",
+            "en": "Breadth-First Search (BFS)"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Binar qidiruv har qadamda qidiruv sohasini ikkiga bo'ladi va faqat saralangan massivda O(log n) vaqtda ishlaydi.",
+        "ru": "Бинарный поиск делит диапазон пополам на каждом шаге и работает за O(log n) в отсортированном массиве.",
+        "en": "Binary search halves the search space at each step, operating in O(log n) time on sorted collections."
+      }
+    },
+    {
+      "id": 16,
+      "type": "radio",
+      "question": {
+        "uz": "Quyidagi saralash usullaridan qaysi biri eng yomon holatda eng yuqori murakkablik bahosiga ega (O(n²))?",
+        "ru": "Какой из следующих методов сортировки имеет наихудшую сложность O(n²)?",
+        "en": "Which of the following sorting methods has a worst-case time complexity of O(n²)?"
+      },
+      "answers": [
+        {
+          "id": "1601",
+          "text": {
+            "uz": "Birlashtirib saralash (Merge Sort: O(n log n))",
+            "ru": "Сортировка слиянием (Merge Sort)",
+            "en": "Merge Sort"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1602",
+          "text": {
+            "uz": "Piramidal saralash (Heap Sort: O(n log n))",
+            "ru": "Пирамидальная сортировка (Heap Sort)",
+            "en": "Heap Sort"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1603",
+          "text": {
+            "uz": "Qo'yib saralash (Insertion Sort: O(n²))",
+            "ru": "Сортировка вставками (Insertion Sort)",
+            "en": "Insertion Sort"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1604",
+          "text": {
+            "uz": "TimSort: O(n log n)",
+            "ru": "Тимсорт (TimSort)",
+            "en": "TimSort"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Insertion Sort eng yomon holatda O(n²) kvadratik murakkablikka ega, Merge Sort va Heap Sort esa eng yomon holatda ham O(n log n) kafolat beradi.",
+        "ru": "В худшем случае Insertion Sort требует O(n²) операций, тогда как Merge Sort и Heap Sort гарантируют O(n log n).",
+        "en": "In the worst case, Insertion Sort takes O(n²), whereas Merge Sort and Heap Sort guarantee O(n log n)."
+      }
+    },
+    {
+      "id": 17,
+      "type": "radio",
+      "question": {
+        "uz": "Vaznli grafda manfiy bo'lmagan qirralar bo'yicha bitta uchdan boshqa barcha uchlargacha eng qisqa yo'lni topuvchi algoritm qaysi?",
+        "ru": "Какой алгоритм находит кратчайшие пути от одной вершины до всех остальных во взвешенном графе с неотрицательными весами?",
+        "en": "Which algorithm finds the shortest path from a single source to all vertices in a graph with non-negative edge weights?"
+      },
+      "answers": [
+        {
+          "id": "1701",
+          "text": {
+            "uz": "BFS algoritmi",
+            "ru": "Алгоритм BFS",
+            "en": "BFS algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1702",
+          "text": {
+            "uz": "DFS algoritmi",
+            "ru": "Алгоритм DFS",
+            "en": "DFS algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1703",
+          "text": {
+            "uz": "Deykstra algoritmi (Dijkstra)",
+            "ru": "Алгоритм Дейкстры",
+            "en": "Dijkstra's algorithm"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1704",
+          "text": {
+            "uz": "Kraskal algoritmi (Kruskal)",
+            "ru": "Алгоритм Краскала",
+            "en": "Kruskal's algorithm"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Deykstra algoritmi manfiy bo'lmagan og'irlikka ega grafda bitta uchdan eng qisqa masofalarni ochko'z (greedy) usul bilan topadi.",
+        "ru": "Алгоритм Дейкстры решает задачу поиска кратчайших путей от одной вершины во взвешенном графе без отрицательных весов.",
+        "en": "Dijkstra's algorithm finds the shortest path from a starting vertex in non-negative weighted graphs."
+      }
+    },
+    {
+      "id": 18,
+      "type": "radio",
+      "question": {
+        "uz": "Binar daraxtni aylanib chiqish ildizdan boshlanib, so'ng chap qism daraxt, keyin o'ng qism daraxtga o'tsa (Ildiz → Chap → O'ng) — bu qanday aylanib chiqish?",
+        "ru": "Если обход бинарного дерева начинается с корня, затем левое поддерево, затем правое (Корень → Лево → Право) — это:",
+        "en": "If a binary tree traversal visits root first, then left subtree, then right subtree (Root → Left → Right) — this is:"
+      },
+      "answers": [
+        {
+          "id": "1801",
+          "text": {
+            "uz": "In-order (Chap → Ildiz → O'ng)",
+            "ru": "In-order (Центрированный)",
+            "en": "In-order (Left → Root → Right)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1802",
+          "text": {
+            "uz": "Post-order (Chap → O'ng → Ildiz)",
+            "ru": "Post-order (Обратный)",
+            "en": "Post-order (Left → Right → Root)"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1803",
+          "text": {
+            "uz": "Pre-order (Ildiz → Chap → O'ng)",
+            "ru": "Pre-order (Прямой обход)",
+            "en": "Pre-order (Root → Left → Right)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1804",
+          "text": {
+            "uz": "Level-order (Qatlamlar bo'yicha)",
+            "ru": "Level-order (В ширину)",
+            "en": "Level-order (Breadth-first)"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Pre-order aylanib chiqishda avval ota tugun (ildiz), so'ng uning chap va o'ng farzandlari ko'rib chiqiladi.",
+        "ru": "Прямой обход (Pre-order) посещает текущий узел перед его дочерними поддеревьями.",
+        "en": "Pre-order traversal visits the root before traversing left and right subtrees."
+      }
+    },
+    {
+      "id": 19,
+      "type": "radio",
+      "question": {
+        "uz": "Grafni kenglik (BFS) va chuqurlik (DFS) bo'yicha aylanib chiqish bir-biridan asosiy qanday farq qiladi?",
+        "ru": "Чем принципиально отличаются обход графа в ширину (BFS) и в глубину (DFS)?",
+        "en": "What is the key difference between Breadth-First Search (BFS) and Depth-First Search (DFS)?"
+      },
+      "answers": [
+        {
+          "id": "1901",
+          "text": {
+            "uz": "BFS va DFS har doim aynan bir xil ketma-ketlikda yuradi",
+            "ru": "BFS и DFS всегда обходят вершины в одинаковом порядке",
+            "en": "BFS and DFS always visit vertices in identical order"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1902",
+          "text": {
+            "uz": "BFS qatlamlar (qo'shnilar) bo'yicha navbat bilan, DFS esa chuqurlikka (shox bo'ylab) stek bilan yuradi",
+            "ru": "BFS идет по слоям через очередь, а DFS идет вглубь ветви через стек/рекурсию",
+            "en": "BFS traverses level by level using a queue, while DFS explores branch depth using a stack/recursion"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "1903",
+          "text": {
+            "uz": "DFS faqat yo'naltirilgan graflar bilan ishlaydi",
+            "ru": "DFS работает только с ориентированными графами",
+            "en": "DFS works only with directed graphs"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "1904",
+          "text": {
+            "uz": "BFS xotiradan umuman foydalanmaydi",
+            "ru": "BFS вообще не использует память",
+            "en": "BFS consumes zero memory"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "BFS navbat (queue) yordamida to'lqin kabi barcha qo'shnilarni tekshiradi, DFS esa rekursiya/stek orqali bitta shoxning oxirigacha boradi.",
+        "ru": "BFS использует очередь для обхода ближайших соседей, а DFS использует стек для продвижения вглубь.",
+        "en": "BFS uses a queue to traverse neighbors level by level, whereas DFS uses a stack to go as deep as possible along each branch."
+      }
+    },
+    {
+      "id": 20,
+      "type": "radio",
+      "question": {
+        "uz": "Grafdagi minimal yoyilma daraxt (Minimum Spanning Tree — MST) nima?",
+        "ru": "Что такое минимальное остовное дерево (MST) в графе?",
+        "en": "What is a Minimum Spanning Tree (MST) in a graph?"
+      },
+      "answers": [
+        {
+          "id": "2001",
+          "text": {
+            "uz": "Eng ko'p qirralarga ega bo'lgan siklik graf",
+            "ru": "Граф с максимальным числом циклов",
+            "en": "Graph with maximum number of cycles"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2002",
+          "text": {
+            "uz": "Barcha uchlarni bog'lovchi va qirralari og'irliklari yig'indisi minimal bo'lgan siklsiz qism graf (daraxt)",
+            "ru": "Связный подграф без циклов, содержащий все вершины с минимальной суммой весов ребер",
+            "en": "A cycle-free subgraph spanning all vertices with minimal total edge weight"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2003",
+          "text": {
+            "uz": "Faqat yo'naltirilgan graflardagi eng qisqa yo'l",
+            "ru": "Кратчайший путь в ориентированном графе",
+            "en": "The shortest path in a directed graph"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2004",
+          "text": {
+            "uz": "Eng kam uchga ega bo'lgan bo'lak",
+            "ru": "Компонента с минимальным числом вершин",
+            "en": "Component with minimum vertices"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "MST — grafning barcha V ta uchini (V - 1) ta qirra bilan siklsiz bog'lab, umumiy vaznni minimumga keltiruvchi daraxtdir (Kraskal, Prim).",
+        "ru": "Остовное дерево соединяет все вершины графа без циклов, имея минимальный суммарный вес ребер.",
+        "en": "An MST connects all vertices with (V - 1) edges without cycles, minimizing the total edge weight."
+      }
+    },
+    {
+      "id": 21,
+      "type": "radio",
+      "question": {
+        "uz": "Kraskal (Kruskal) algoritmi minimal yoyilma daraxt tuzishda sikllar hosil bo'lishining oldini olish uchun qanday ma'lumotlar strukturasidan foydalanadi?",
+        "ru": "Какую структуру данных использует алгоритм Краскала для предотвращения образования циклов?",
+        "en": "Which data structure does Kruskal's algorithm use to avoid cycle creation?"
+      },
+      "answers": [
+        {
+          "id": "2101",
+          "text": {
+            "uz": "Binar qidiruv daraxti (BST)",
+            "ru": "Бинарное дерево поиска",
+            "en": "Binary Search Tree"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2102",
+          "text": {
+            "uz": "Kenglik bo'yicha aylanib chiqish navbati (BFS)",
+            "ru": "Очередь BFS",
+            "en": "BFS Queue"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2103",
+          "text": {
+            "uz": "Kesishmaydigan to'plamlarni birlashtirish (Disjoint Set Union — DSU / Union-Find)",
+            "ru": "Система непересекающихся множеств (DSU / Union-Find)",
+            "en": "Disjoint Set Union (DSU / Union-Find)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2104",
+          "text": {
+            "uz": "Dinamik dasturlash jadvali",
+            "ru": "Таблица динамического программирования",
+            "en": "Dynamic programming table"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "DSU (Union-Find) yangi qirraning ikkita uchi bitta komponentga tegishli ekanligini deyarli O(1) da aniqlab, sikl paydo bo'lishini bartaraf etadi.",
+        "ru": "DSU (система непересекающихся множеств) позволяет практически за O(1) проверять, принадлежат ли вершины одному компоненту.",
+        "en": "DSU (Union-Find) checks whether two vertices belong to the same component in near-constant time, preventing cycles."
+      }
+    },
+    {
+      "id": 22,
+      "type": "radio",
+      "question": {
+        "uz": "Chumolilar algoritmi (Ant Colony Optimization) qanday biologik prinsipga asoslanadi?",
+        "ru": "На каком биологическом принципе основан муравьиный алгоритм (Ant Colony Optimization)?",
+        "en": "What biological principle is the Ant Colony Optimization algorithm based on?"
+      },
+      "answers": [
+        {
+          "id": "2201",
+          "text": {
+            "uz": "Deterministik qat'iy ochko'z qidiruv",
+            "ru": "Детерминированный жадный поиск",
+            "en": "Deterministic greedy search"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2202",
+          "text": {
+            "uz": "Yo'llarga feromon izlarini qoldirish va yangilashga asoslangan stoxastik (ehtimolli) optimallash",
+            "ru": "Стохастический поиск на основе отложения и испарения феромонов на путях",
+            "en": "Stochastic optimization based on pheromone trail laying and evaporation"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2203",
+          "text": {
+            "uz": "Grafni rekursiv bo'lib tashlash",
+            "ru": "Рекурсивное разделение графа",
+            "en": "Recursive graph division"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2204",
+          "text": {
+            "uz": "Kommivoyajer masalasini qat'iy analitik yechish",
+            "ru": "Строгое аналитическое решение задачи коммивояжера",
+            "en": "Strict analytical TSP solution"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Haqiqiy chumolilar eng qisqa yo'lga ko'proq feromon to'planishi orqali jamoaviy optimal yo'lni topadi; algoritm ham shu tamoyilga tayanadi.",
+        "ru": "Алгоритм моделирует поведение муравьев, которые метят кратчайшие пути феромонами.",
+        "en": "The algorithm mimics real ants laying and reinforcing pheromone trails on shorter routes."
+      }
+    },
+    {
+      "id": 23,
+      "type": "radio",
+      "question": {
+        "uz": "DFS yordamida grafda sikl mavjudligini qanday aniqlash mumkin?",
+        "ru": "Как с помощью DFS определить наличие цикла в графе?",
+        "en": "How can cycles in a graph be detected using DFS?"
+      },
+      "answers": [
+        {
+          "id": "2301",
+          "text": {
+            "uz": "Barcha qirralar vaznini jamlash orqali",
+            "ru": "Суммированием весов всех ребер",
+            "en": "By summing all edge weights"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2302",
+          "text": {
+            "uz": "Uchlarni ranglash/belgilash: agar joriy rekursiv chaqiruvdagi uchga qayta murojaat qilinsa — sikl mavjud",
+            "ru": "Через отслеживание посещенных вершин: повторный визит в серую (обрабатываемую) вершину означает цикл",
+            "en": "By tracking visited states: revisiting a node currently in the recursion stack indicates a cycle"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2303",
+          "text": {
+            "uz": "Graf uchlari sonini qirralar soniga bo'lish orqali",
+            "ru": "Делением числа вершин на число ребер",
+            "en": "By dividing vertex count by edge count"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2304",
+          "text": {
+            "uz": "DFS bilan siklni umuman aniqlab bo'lmaydi",
+            "ru": "С помощью DFS цикл определить невозможно",
+            "en": "Cycles cannot be detected using DFS"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Oq-kulrang-qora ranglash usulida kulrang (rekursiya stekidagi) uchga qayta kirilsa, demak orqaga qaratilgan qirra (back-edge) orqali sikl mavjud.",
+        "ru": "При трехцветной раскраске переход в серую вершину (находящуюся в текущем стеке рекурсии) доказывает наличие цикла.",
+        "en": "In 3-color marking, encountering a gray vertex (currently in the recursion call stack) proves a cycle exists."
+      }
+    },
+    {
+      "id": 24,
+      "type": "radio",
+      "question": {
+        "uz": "Grafni xotirada tasvirlashda qo'shnilik matritsasi va qo'shnilik ro'yxati qachon afzalroq?",
+        "ru": "Когда матрица смежности и список смежности предпочтительнее для представления графа?",
+        "en": "When are adjacency matrices and adjacency lists respectively preferred for representing graphs?"
+      },
+      "answers": [
+        {
+          "id": "2401",
+          "text": {
+            "uz": "Matritsa har doim ro'yxatdan samaraliroq",
+            "ru": "Матрица всегда эффективнее списка",
+            "en": "Matrix is always more efficient than list"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2402",
+          "text": {
+            "uz": "Siyrak (qirralari kam) graflar uchun — qo'shnilik ro'yxati, zich (qirralari ko'p) graflar uchun — qo'shnilik matritsasi",
+            "ru": "Для разреженных графов — список смежности, для плотных графов — матрица смежности",
+            "en": "For sparse graphs — adjacency list, for dense graphs — adjacency matrix"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2403",
+          "text": {
+            "uz": "Ro'yxat har doim O(1) xotira oladi",
+            "ru": "Список всегда занимает O(1) памяти",
+            "en": "List always takes O(1) memory"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2404",
+          "text": {
+            "uz": "Ularning xotira va ishlash tezligi mutlaqo bir xil",
+            "ru": "Их производительность и память абсолютно одинаковы",
+            "en": "Their speed and memory usage are identical"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Matritsa O(V²) xotira talab qiladi (zich graflarga mos). Ro'yxat esa O(V + E) xotira oladi va siyrak graflarda xotirani keskin tejaydi.",
+        "ru": "Матрица требует O(V²) памяти (для плотных графов). Список смежности требует O(V + E) памяти, экономя память в разреженных графах.",
+        "en": "Matrix takes O(V²) memory (suitable for dense graphs). List takes O(V + E), saving substantial memory in sparse graphs."
+      }
+    },
+    {
+      "id": 25,
+      "type": "radio",
+      "question": {
+        "uz": "Deykstra algoritmi qaysi algoritmik yondashuvga (paradigmaga) asoslangan?",
+        "ru": "На какой алгоритмической парадигме основан алгоритм Дейкстры?",
+        "en": "Which algorithmic paradigm does Dijkstra's algorithm employ?"
+      },
+      "answers": [
+        {
+          "id": "2501",
+          "text": {
+            "uz": "Bo'lib tashla va hukmronlik qil (Divide and Conquer)",
+            "ru": "Разделяй и властвуй",
+            "en": "Divide and Conquer"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2502",
+          "text": {
+            "uz": "Orqaga chekinish (Backtracking)",
+            "ru": "Поиск с возвратом",
+            "en": "Backtracking"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2503",
+          "text": {
+            "uz": "Ochko'z algoritm (Greedy algorithm)",
+            "ru": "Жадный алгоритм (Greedy)",
+            "en": "Greedy algorithm"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2504",
+          "text": {
+            "uz": "Tasodifiy Monte-Karlo usuli",
+            "ru": "Метод Монте-Карло",
+            "en": "Monte Carlo method"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Deykstra algoritmi har bir qadamda hali ko'rilmagan eng yaqin (masofasi minimal) uchni tanlaydi — bu klassik ochko'z (greedy) strategiyadir.",
+        "ru": "На каждом шаге алгоритм Дейкстры жадно выбирает непосещенную вершину с минимальным известным расстоянием.",
+        "en": "At each step, Dijkstra's algorithm greedily selects the unvisited vertex with the smallest tentative distance."
+      }
+    },
+    {
+      "id": 26,
+      "type": "radio",
+      "question": {
+        "uz": "Yo'naltirilmagan grafning bog'langanlik komponentlarini (connected components) aniqlash uchun qaysi algoritmlar ishlatiladi?",
+        "ru": "Какие алгоритмы используются для определения компонент связности в неориентированном графе?",
+        "en": "Which algorithms are used to find connected components in an undirected graph?"
+      },
+      "answers": [
+        {
+          "id": "2601",
+          "text": {
+            "uz": "Binar qidiruv yoki Tezkor saralash",
+            "ru": "Бинарный поиск или Быстрая сортировка",
+            "en": "Binary search or Quick sort"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2602",
+          "text": {
+            "uz": "Faqat Deykstra algoritmi",
+            "ru": "Только алгоритм Дейкстры",
+            "en": "Only Dijkstra's algorithm"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2603",
+          "text": {
+            "uz": "DFS (Chuqurlik bo'yicha) yoki BFS (Kenglik bo'yicha)",
+            "ru": "DFS (поиск в глубину) или BFS (поиск в ширину)",
+            "en": "DFS (Depth-First) or BFS (Breadth-First)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2604",
+          "text": {
+            "uz": "Faqat Bellman-Ford algoritmi",
+            "ru": "Только алгоритм Беллмана-Форда",
+            "en": "Only Bellman-Ford algorithm"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Bitta uchni tanlab DFS yoki BFS yurgizilsa, u bilan bog'langan barcha uchlar topiladi va alohida komponentni tashkil qiladi.",
+        "ru": "Запуск DFS или BFS из непосещенной вершины обходит всю её компоненту связности за O(V + E).",
+        "en": "Running DFS or BFS from an unvisited vertex discovers its entire connected component in O(V + E)."
+      }
+    },
+    {
+      "id": 27,
+      "type": "radio",
+      "question": {
+        "uz": "Bir tomonlama yo'llar yoki o'tkazuvchanlik qobiliyatiga ega tarmoq oqimlarini modellashtirish uchun qaysi graf turi ishlatiladi?",
+        "ru": "Какой тип графа используется для моделирования односторонних дорог или сетевых потоков?",
+        "en": "Which type of graph is used to model one-way roads or network flow capacity?"
+      },
+      "answers": [
+        {
+          "id": "2701",
+          "text": {
+            "uz": "Yo'naltirilmagan graf",
+            "ru": "Неориентированный граф",
+            "en": "Undirected graph"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2702",
+          "text": {
+            "uz": "Yo'naltirilgan graf (Digraf)",
+            "ru": "Ориентированный граф (диграф)",
+            "en": "Directed graph (Digraph)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2703",
+          "text": {
+            "uz": "Oddiy daraxt",
+            "ru": "Простое дерево",
+            "en": "Simple tree"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2704",
+          "text": {
+            "uz": "To'la ikki qismli graf",
+            "ru": "Полный двудольный граф",
+            "en": "Complete bipartite graph"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Yo'naltirilgan grafda (directed graph) har bir qirra boshlang'ich va oxirgi yo'nalishga ega bo'ladi (A → B).",
+        "ru": "В ориентированном графе каждое ребро имеет строго заданное направление от начальной вершины к конечной.",
+        "en": "In a directed graph, each edge possesses a specific direction from a source to a target vertex."
+      }
+    },
+    {
+      "id": 28,
+      "type": "radio",
+      "question": {
+        "uz": "Deykstra algoritmi to'g'ri ishlashi uchun qanday muhim cheklov mavjud?",
+        "ru": "Какое ключевое ограничение требуется для корректной работы алгоритма Дейкстры?",
+        "en": "What key constraint is required for Dijkstra's algorithm to work correctly?"
+      },
+      "answers": [
+        {
+          "id": "2801",
+          "text": {
+            "uz": "Grafda sikllar umuman bo'lmasligi kerak",
+            "ru": "В графе не должно быть циклов",
+            "en": "The graph must be acyclic"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2802",
+          "text": {
+            "uz": "Qirralarning og'irliklari manfiy bo'lmasligi kerak (vazn ≥ 0)",
+            "ru": "Веса всех ребер должны быть неотрицательными (вес ≥ 0)",
+            "en": "All edge weights must be non-negative (weight ≥ 0)"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2803",
+          "text": {
+            "uz": "Faqat yo'naltirilmagan daraxt bo'lishi kerak",
+            "ru": "Граф должен быть неориентированным деревом",
+            "en": "The graph must be an undirected tree"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2804",
+          "text": {
+            "uz": "Barcha qirralar vazni bir xil bo'lishi kerak",
+            "ru": "Все ребра должны иметь одинаковый вес",
+            "en": "All edge weights must be equal"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Manfiy vaznli qirralar bo'lsa, ochko'z yondashuv xato natija beradi. Bunday holatda Bellman-Ford algoritmi ishlatiladi.",
+        "ru": "Алгоритм Дейкстры не работает с отрицательными весами ребер, в таких случаях применяют алгоритм Беллмана-Форда.",
+        "en": "Dijkstra fails with negative edge weights; in such scenarios, the Bellman-Ford algorithm must be used."
+      }
+    },
+    {
+      "id": 29,
+      "type": "radio",
+      "question": {
+        "uz": "Stek (Stack) ma'lumotlar strukturasi qanday prinsip bo'yicha ishlaydi?",
+        "ru": "По какому принципу работает структура данных Стек (Stack)?",
+        "en": "Which principle governs the Stack data structure?"
+      },
+      "answers": [
+        {
+          "id": "2901",
+          "text": {
+            "uz": "FIFO — birinchi kirgan, birinchi chiqadi",
+            "ru": "FIFO — первым пришел, первым ушел",
+            "en": "FIFO — First In, First Out"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2902",
+          "text": {
+            "uz": "LIFO — oxirgi kirgan, birinchi chiqadi (Last In, First Out)",
+            "ru": "LIFO — последним пришел, первым ушел",
+            "en": "LIFO — Last In, First Out"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2903",
+          "text": {
+            "uz": "Indeks bo'yicha tasodifiy murojaat",
+            "ru": "Произвольный доступ по индексу",
+            "en": "Random access by index"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2904",
+          "text": {
+            "uz": "Prioritet bo'yicha saralangan murojaat",
+            "ru": "Доступ по приоритету",
+            "en": "Priority-based access"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Stek LIFO tamoyilida ishlaydi (masalan likopchalar ustma-ust taxlanganda, eng oxirgi qo'yilgani birinchi olinadi).",
+        "ru": "Стек работает по принципу LIFO (последний добавленный элемент извлекается первым).",
+        "en": "Stack operates under LIFO (the last pushed element is the first one popped)."
+      }
+    },
+    {
+      "id": 30,
+      "type": "radio",
+      "question": {
+        "uz": "Grafni kompyuter xotirasida tasvirlashning standart usullari qatoriga qaysi biri kirmaydi?",
+        "ru": "Какой из перечисленных способов НЕ является стандартным для представления графа в памяти?",
+        "en": "Which of the following is NOT a standard representation of graphs in computer memory?"
+      },
+      "answers": [
+        {
+          "id": "3001",
+          "text": {
+            "uz": "Qo'shnilik matritsasi (Adjacency Matrix)",
+            "ru": "Матрица смежности",
+            "en": "Adjacency Matrix"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "3002",
+          "text": {
+            "uz": "Qo'shnilik ro'yxati (Adjacency List)",
+            "ru": "Список смежности",
+            "en": "Adjacency List"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "3003",
+          "text": {
+            "uz": "Qirralar ro'yxati (Edge List)",
+            "ru": "Список ребер",
+            "en": "Edge List"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "3004",
+          "text": {
+            "uz": "Tasodifiy tarqoq kalitlar jadvali",
+            "ru": "Случайная разреженная таблица ключей",
+            "en": "Random sparse key table"
+          },
+          "is_correct": true
+        }
+      ],
+      "explanation": {
+        "uz": "Graflar xotirada asosan Qo'shnilik matritsasi, Qo'shnilik ro'yxati yoki Qirralar ro'yxati orqali tasvirlanadi.",
+        "ru": "Стандартные представления графов — матрица смежности, список смежности и список ребер.",
+        "en": "Standard graph representations include adjacency matrices, adjacency lists, and edge lists."
+      }
+    }
+  ]
+}

@@ -1,0 +1,965 @@
+{
+  "version": 2,
+  "exportedAt": "2026-10-17T04:04:28.127Z",
+  "app": "test-platform",
+  "settings": {
+    "theme": "light",
+    "language": "uz",
+    "shuffleOptions": true,
+    "showExplanations": true,
+    "order": "random"
+  },
+  "questions": [
+    {
+      "id": "mvbvfdnq-rtc1nc",
+      "text": "16. Vaznli grafda eng qisqa yo'lni topish uchun qaysi algoritm qo'llaniladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbvemnu-5lh329",
+          "text": "A) BFS algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvbvemnu-y9z8wg",
+          "text": "B) DFS algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvbvemnu-ovch15",
+          "text": "C) Deykstra algoritmi",
+          "correct": true
+        },
+        {
+          "id": "mvbvemnu-o6rnm3",
+          "text": "D) Kraskal algoritmi",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792209776102,
+      "updatedAt": 1792209776102
+    },
+    {
+      "id": "mvbvemnq-uqz88f",
+      "text": "15. Qaysi saralash usuli eng yuqori murakkablik bahosiga ega?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbvdtbc-rq36i6",
+          "text": "A) Tezkor saralash (Quick Sort)",
+          "correct": false
+        },
+        {
+          "id": "mvbvdtbc-c7xluq",
+          "text": "B) Birlashtirib saralash (Merge Sort)",
+          "correct": false
+        },
+        {
+          "id": "mvbvdtbc-lerh20",
+          "text": "C) Qo'yib saralash (Insertion Sort)",
+          "correct": true
+        },
+        {
+          "id": "mvbvdtbc-x5fnpg",
+          "text": "D) Piramidal saralash (Heap Sort)",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792209741110,
+      "updatedAt": 1792209741110
+    },
+    {
+      "id": "mvbvdtb9-vfjiss",
+      "text": "14. Saralangan ro'yxat uchun qaysi qidiruv usuli qo'llaniladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbvd4de-689ly8",
+          "text": "A) Chiziqli qidiruv",
+          "correct": false
+        },
+        {
+          "id": "mvbvd4de-evhyvo",
+          "text": "B) Binar qidiruv",
+          "correct": true
+        },
+        {
+          "id": "mvbvd4de-io9utz",
+          "text": "C) DFS qidiruvi",
+          "correct": false
+        },
+        {
+          "id": "mvbvd4de-odo8rq",
+          "text": "D) BFS qidiruvi",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792209703077,
+      "updatedAt": 1792209703077
+    },
+    {
+      "id": "mvbvd4d9-a5a19v",
+      "text": "13. Qaysi holatda bog'langan ro'yxat o'rniga massivdan foydalanish yaxshiroq?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbvc7xl-w5xqla",
+          "text": "A) Ko'p qo'shish va o'chirish amallari kerak bo'lganda",
+          "correct": false
+        },
+        {
+          "id": "mvbvc7xl-392v50",
+          "text": "B) Indeks bo'yicha tezkor kirish kerak bo'lib, hajm o'zgarmas bo'lganda",
+          "correct": true
+        },
+        {
+          "id": "mvbvc7xl-q5ke67",
+          "text": "C) Dinamik hajm kerak bo'lganda",
+          "correct": false
+        },
+        {
+          "id": "mvbvc7xl-dhch16",
+          "text": "D) LIFO tartibi kerak bo'lganda",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792209670749,
+      "updatedAt": 1792209670749
+    },
+    {
+      "id": "mvbvc7xh-or01ed",
+      "text": "12. Qaysi ma'lumotlar strukturasida elementlarga ketma-ket murojaat qilinadi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbvbf76-bovwtg",
+          "text": "A) Massiv",
+          "correct": false
+        },
+        {
+          "id": "mvbvbf76-pck2wp",
+          "text": "B) Xesh-jadval",
+          "correct": false
+        },
+        {
+          "id": "mvbvbf76-ya73vl",
+          "text": "C) Bog'langan ro'yxat",
+          "correct": true
+        },
+        {
+          "id": "mvbvbf76-qw39h9",
+          "text": "D) Navbat",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792209628709,
+      "updatedAt": 1792209628709
+    },
+    {
+      "id": "mvbvbf72-38zhf3",
+      "text": "11. Qaysi ma'lumotlar strukturasi FIFO prinsipini ta'minlaydi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbumpwy-cc5ipp",
+          "text": "A) Stek",
+          "correct": false
+        },
+        {
+          "id": "mvbumpwy-g1rmk7",
+          "text": "B) Massiv",
+          "correct": false
+        },
+        {
+          "id": "mvbumpwy-4bz4fu",
+          "text": "C) Daraxt",
+          "correct": false
+        },
+        {
+          "id": "mvbumpwy-4avxai",
+          "text": "D) Navbat",
+          "correct": true
+        }
+      ],
+      "createdAt": 1792209591470,
+      "updatedAt": 1792209591470
+    },
+    {
+      "id": "mvbumpwu-cmucdx",
+      "text": "10. Qaysi ma'lumotlar strukturasida elementga indeks bo'yicha murojaat qilinadi?",
+      "topic": "a",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbulszu-c5zekn",
+          "text": "A) Stek",
+          "correct": false
+        },
+        {
+          "id": "mvbulszu-p8gngh",
+          "text": "B) Navbat",
+          "correct": false
+        },
+        {
+          "id": "mvbulszu-t2jfsh",
+          "text": "C) Massiv",
+          "correct": true
+        },
+        {
+          "id": "mvbulszu-6wvtuz",
+          "text": "D) Bog'langan ro'yxat",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792208438958,
+      "updatedAt": 1792208438958
+    },
+    {
+      "id": "mvbulszp-c12d6h",
+      "text": "9. FIFO nima?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbul0h6-hdcl21",
+          "text": "A) Oxirgi kirgan — birinchi chiqadi",
+          "correct": false
+        },
+        {
+          "id": "mvbul0h6-cbzjsb",
+          "text": "B) Birinchi kirgan — birinchi chiqadi",
+          "correct": true
+        },
+        {
+          "id": "mvbul0h6-xk5pya",
+          "text": "C) Tasodifiy tartibda kirish",
+          "correct": false
+        },
+        {
+          "id": "mvbul0h6-hjdlnn",
+          "text": "D) Indeks bo'yicha kirish",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792208396293,
+      "updatedAt": 1792208396293
+    },
+    {
+      "id": "mvbul0h2-1i33ej",
+      "text": "8. Qaysi algoritm eng qadimiysi hisoblanadi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvbtlnds-z074am",
+          "text": "A) Evklid algoritmi",
+          "correct": true
+        },
+        {
+          "id": "mvbtlnds-b5whf2",
+          "text": "B) Gyodel algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvbtlnds-wqcfw8",
+          "text": "C) Tyuring algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvbtlnds-53cu4b",
+          "text": "D) Deykstra algoritmi",
+          "correct": false
+        }
+      ],
+      "createdAt": 1792208359334,
+      "updatedAt": 1792208359334
+    },
+    {
+      "id": "mvaqigwd-l9kt1p",
+      "text": "16. Vaznli grafda eng qisqa yo'lni topish uchun qaysi algoritm qo'llaniladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaqhuhd-sgvtk7",
+          "text": "A) BFS algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvaqhuhd-e2fq25",
+          "text": "B) DFS algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvaqhuhd-hywwz6",
+          "text": "C) Deykstra algoritmi",
+          "correct": true
+        },
+        {
+          "id": "mvaqhuhd-1zavua",
+          "text": "D) Kraskal algoritmi",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792141056013,
+      "updatedAt": 1792141056013
+    },
+    {
+      "id": "mvaqhuh9-dc8q04",
+      "text": "17. Agar aylanib chiqish ildizdan boshlanib, keyin chap qism daraxt, so'ng o'ng qism daraxtga o'tsa — bu:",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaqh5fk-q4s4on",
+          "text": "A) In-order",
+          "correct": false
+        },
+        {
+          "id": "mvaqh5fk-8iphww",
+          "text": "B) Post-order",
+          "correct": false
+        },
+        {
+          "id": "mvaqh5fk-hn1dg3",
+          "text": "C) Pre-order",
+          "correct": false
+        },
+        {
+          "id": "mvaqh5fk-8b3932",
+          "text": "D) Level-order",
+          "correct": true
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792141026957,
+      "updatedAt": 1792141026957
+    },
+    {
+      "id": "mvaqh5fh-1n9jes",
+      "text": "18. Grafni kenglik va chuqurlik bo'yicha aylanib chiqish bir-biridan nimasi bilan farq qiladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaqg9ds-i0lv94",
+          "text": "A) BFS va DFS bir xil natija beradi",
+          "correct": false
+        },
+        {
+          "id": "mvaqg9ds-paty6f",
+          "text": "B) BFS qatlamlar bo'yicha, DFS esa shoxlar bo'yicha yuradi",
+          "correct": true
+        },
+        {
+          "id": "mvaqg9ds-fg7caj",
+          "text": "C) DFS faqat yo'naltirilgan graflar bilan ishlaydi",
+          "correct": false
+        },
+        {
+          "id": "mvaqg9ds-6gvd6n",
+          "text": "D) BFS faqat vaznli graflar bilan ishlaydi",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792140994493,
+      "updatedAt": 1792140994493
+    },
+    {
+      "id": "mvaqg9dp-lffsp1",
+      "text": "19. Grafdagi minimal yoyilma daraxt (MST) — bu:",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaqf4zk-i0249u",
+          "text": "A) Eng ko'p qirralarga ega bog'langan qism graf",
+          "correct": false
+        },
+        {
+          "id": "mvaqf4zk-kh8tv8",
+          "text": "B) Qirralar og'irliklari yig'indisi minimal bo'lgan bog'langan qism graf",
+          "correct": true
+        },
+        {
+          "id": "mvaqf4zk-jprp0g",
+          "text": "C) Faqat siklik graflar uchun tushuncha",
+          "correct": false
+        },
+        {
+          "id": "mvaqf4zk-cqwau7",
+          "text": "D) Yo'naltirilgan graflarda mavjud emas",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792140952957,
+      "updatedAt": 1792140952957
+    },
+    {
+      "id": "mvaqf4zg-6xhvc2",
+      "text": "21. Kraskal usuli sikllar hosil bo'lishining oldini olish uchun qanday usuldan foydalanadi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaqeg4w-asxwsq",
+          "text": "A) BFS aylanib chiqish",
+          "correct": false
+        },
+        {
+          "id": "mvaqeg4w-o7ckth",
+          "text": "B) Rekursiya",
+          "correct": false
+        },
+        {
+          "id": "mvaqeg4w-hujmr0",
+          "text": "C) To'plamlarni birlashtirish (Union-Find)",
+          "correct": true
+        },
+        {
+          "id": "mvaqeg4w-hplciv",
+          "text": "D) Dinamik dasturlash",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792140900604,
+      "updatedAt": 1792140900604
+    },
+    {
+      "id": "mvaqeg4t-bv3jro",
+      "text": "22. Chumolilar algoritmi asosida qanday prinsip yotadi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvapwjje-zjjmmd",
+          "text": "A) Ochko'z (greedy) algoritm",
+          "correct": false
+        },
+        {
+          "id": "mvapwjje-kf5v7l",
+          "text": "B) Feromon izlarini hisobga oluvchi stoxastik qidiruv",
+          "correct": true
+        },
+        {
+          "id": "mvapwjje-e9mh6p",
+          "text": "C) Dinamik dasturlash",
+          "correct": false
+        },
+        {
+          "id": "mvapwjje-e48tmn",
+          "text": "D) Daraxtning o'rtacha qiymati",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792140868397,
+      "updatedAt": 1792140868397
+    },
+    {
+      "id": "mvapwjja-p743nn",
+      "text": "23. DFS yordamida grafda sikl mavjudligini qanday aniqlash mumkin?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvapvlly-zh4w74",
+          "text": "A) Barcha qirralarni sanash",
+          "correct": false
+        },
+        {
+          "id": "mvapvlly-u3665i",
+          "text": "B) Tashrif buyurilgan uchlarni kuzatish: agar allaqachon tashrif buyurilgan uch qayta uchrasa — sikl mavjud",
+          "correct": true
+        },
+        {
+          "id": "mvapvlly-pwafo2",
+          "text": "C) Faqat yo'naltirilgan graflarda aniqlash mumkin",
+          "correct": false
+        },
+        {
+          "id": "mvapvlly-k3zkng",
+          "text": "D) DFS emas, BFS ishlatiladi",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792140032998,
+      "updatedAt": 1792140032998
+    },
+    {
+      "id": "mvapvllx-ic4r75",
+      "text": "24. Grafni xotirada qanday tasvirlash yaxshiroq: matritsa yoki qo'shnilar ro'yxati?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvapujwp-tpaqaz",
+          "text": "A) Matritsa har doim yaxshiroq",
+          "correct": false
+        },
+        {
+          "id": "mvapujwp-aj2bq4",
+          "text": "B) Siyrak graflar uchun — ro'yxat, zich graflar uchun — matritsa",
+          "correct": true
+        },
+        {
+          "id": "mvapujwp-brjlv5",
+          "text": "C) Ro'yxat har doim yaxshiroq",
+          "correct": false
+        },
+        {
+          "id": "mvapujwp-idkbck",
+          "text": "D) Farqi yo'q",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139989029,
+      "updatedAt": 1792139989029
+    },
+    {
+      "id": "mvapujwm-5lbsmy",
+      "text": "25. Deykstra algoritmi eng qisqa yo'lni qidirish uchun qaysi usuldan foydalanadi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaptve0-ismjxg",
+          "text": "A) Rekursiya",
+          "correct": false
+        },
+        {
+          "id": "mvaptve0-bc5hxv",
+          "text": "B) Dinamik dasturlash",
+          "correct": false
+        },
+        {
+          "id": "mvaptve0-z9zf9o",
+          "text": "C) Bo'lib tashla va hukmronlik qil (Divide and Conquer)",
+          "correct": false
+        },
+        {
+          "id": "mvaptve0-42gjxv",
+          "text": "D) Ochko'z (Greedy) algoritm",
+          "correct": true
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139940166,
+      "updatedAt": 1792139940166
+    },
+    {
+      "id": "mvaptvdx-4xwgge",
+      "text": "26. Graf bog'langan yoki yo'qligini tekshirish uchun qaysi algoritm qo'llaniladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvaprxqp-64z6uu",
+          "text": "A) Deykstra algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvaprxqp-7tugnu",
+          "text": "B) Kraskal algoritmi",
+          "correct": false
+        },
+        {
+          "id": "mvaprxqp-19bw9z",
+          "text": "C) DFS yoki BFS",
+          "correct": true
+        },
+        {
+          "id": "mvaprxqp-55jhtz",
+          "text": "D) Prim algoritmi",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139908389,
+      "updatedAt": 1792139908389
+    },
+    {
+      "id": "mvaprxql-xhnx25",
+      "text": "27. O'tkazuvchanlik qobiliyatiga ega tarmoq aloqalarini modellashtirish uchun qaysi graf turi ishlatiladi?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvapqufc-e8c0we",
+          "text": "A) Yo'naltirilmagan graf",
+          "correct": false
+        },
+        {
+          "id": "mvapqufc-bsaics",
+          "text": "B) Yo'naltirilgan graf",
+          "correct": true
+        },
+        {
+          "id": "mvapqufc-fdff17",
+          "text": "C) Daraxt",
+          "correct": false
+        },
+        {
+          "id": "mvapqufc-0l97ik",
+          "text": "D) Ikki qismli graf",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139818125,
+      "updatedAt": 1792139818125
+    },
+    {
+      "id": "mvapquf9-vh555v",
+      "text": "28. Deykstra algoritmi to'g'ri ishlashi uchun graf qanday xususiyatlarga ega bo'lishi kerak?",
+      "topic": "A",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvapq44f-bfqb47",
+          "text": "A) Siklik bo'lishi kerak",
+          "correct": false
+        },
+        {
+          "id": "mvapq44f-x56zh8",
+          "text": "B) Manfiy og'irlikdagi qirralar bo'lishi mumkin",
+          "correct": false
+        },
+        {
+          "id": "mvapq44f-8fxp6d",
+          "text": "C) Qirralari manfiy bo'lmagan og'irlikka ega bog'langan graf",
+          "correct": true
+        },
+        {
+          "id": "mvapq44f-yqmki3",
+          "text": "D) Faqat yo'naltirilmagan",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139767173,
+      "updatedAt": 1792139767173
+    },
+    {
+      "id": "mvapq44d-2hn2uv",
+      "text": "29. Stek (Stack) qanday prinsip bo'yicha ishlaydi?",
+      "topic": "a",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvappfd3-vn2ie6",
+          "text": "A) FIFO — birinchi kirgan, birinchi chiqadi",
+          "correct": false
+        },
+        {
+          "id": "mvappfd4-0vadm2",
+          "text": "B) LIFO — oxirgi kirgan, birinchi chiqadi",
+          "correct": true
+        },
+        {
+          "id": "mvappfd4-kqx9ov",
+          "text": "C) Indeks bo'yicha kirish",
+          "correct": false
+        },
+        {
+          "id": "mvappfd4-mj0rc1",
+          "text": "D) Tasodifiy tartib",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139733085,
+      "updatedAt": 1792139733085
+    },
+    {
+      "id": "mvappfd1-9j302y",
+      "text": "30. Grafni tasvirlashning qaysi usuli mavjud emas?",
+      "topic": "a",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvap0190-w4b9gf",
+          "text": "A) Qo'shnilik matritsasi",
+          "correct": false
+        },
+        {
+          "id": "mvap0190-x15vdd",
+          "text": "B) Qo'shnilar ro'yxati",
+          "correct": false
+        },
+        {
+          "id": "mvap0190-n3kp9q",
+          "text": "C) Qirralar ro'yxati",
+          "correct": false
+        },
+        {
+          "id": "mvap0190-83spf6",
+          "text": "D) Tasodifiy tarqoq jadval",
+          "correct": true
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792139700997,
+      "updatedAt": 1792139700997
+    },
+    {
+      "id": "mvakvpz9-cv881h",
+      "text": "7. Umumiy ma'noda algoritm nima?",
+      "topic": "a",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakuyrq-01vxnj",
+          "text": "A) Dasturlash tili",
+          "correct": false
+        },
+        {
+          "id": "mvakuyrq-1malwj",
+          "text": "B) Masalani yechish uchun aniq ko'rsatmalarning chekli ketma-ketligi",
+          "correct": true
+        },
+        {
+          "id": "mvakuyrq-bp93tr",
+          "text": "C) Kompyuter xotirasi",
+          "correct": false
+        },
+        {
+          "id": "mvakuyrq-nyatu7",
+          "text": "D) Matematik funksiya",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131596613,
+      "updatedAt": 1792131596613
+    },
+    {
+      "id": "mvakuyro-tfspu4",
+      "text": "6. Strukturaviy dasturlashning yaratuvchisi va targ'ibotchisi kim hisoblanadi?",
+      "topic": "a",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakubpa-znj5de",
+          "text": "A) Alan Tyuring",
+          "correct": false
+        },
+        {
+          "id": "mvakubpa-mnf2lu",
+          "text": "B) Edsger Deykstra",
+          "correct": true
+        },
+        {
+          "id": "mvakubpa-ducip4",
+          "text": "C) Donald Knut",
+          "correct": false
+        },
+        {
+          "id": "mvakubpa-788osf",
+          "text": "D) Jon fon Neyman",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131561348,
+      "updatedAt": 1792131561348
+    },
+    {
+      "id": "mvakubp8-ju4a2t",
+      "text": "5. Byom–Yakopini teoremasi nimani ta'kidlaydi?",
+      "topic": "algo",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakt1nh-mlj3h2",
+          "text": "A) Har qanday algoritmni faqat uchta bazaviy konstruksiya bilan amalga oshirish mumkin",
+          "correct": true
+        },
+        {
+          "id": "mvakt1nh-kvsbux",
+          "text": "B) Har qanday algoritmni faqat rekursiya bilan yozish mumkin",
+          "correct": false
+        },
+        {
+          "id": "mvakt1nh-5agkex",
+          "text": "C) Algoritmlar har doim cheksiz bo'ladi",
+          "correct": false
+        },
+        {
+          "id": "mvakt1nh-k75nr6",
+          "text": "D) Sikl va shartli o'tish bir xil",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131531452,
+      "updatedAt": 1792131531452
+    },
+    {
+      "id": "mvakt1ng-lzhp4w",
+      "text": "4. Algoritm murakkabligining yuqori chegarasi qanday belgilanadi?",
+      "topic": "algo",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakrrb9-hx10xo",
+          "text": "A) Omega-notatsiya",
+          "correct": false
+        },
+        {
+          "id": "mvakrrb9-02828g",
+          "text": "B) Teta-notatsiya",
+          "correct": false
+        },
+        {
+          "id": "mvakrrb9-fdjpy8",
+          "text": "C) O-notatsiya (Big O)",
+          "correct": true
+        },
+        {
+          "id": "mvakrrb9-0f30xp",
+          "text": "D) Delta-notatsiya",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131471772,
+      "updatedAt": 1792131471772
+    },
+    {
+      "id": "mvakrrb8-jsx3jl",
+      "text": "3. Quyidagi algoritm qanday yuqori bahoga ega: log(n) + 10·n·n³ + n³ + 10·n + 10?",
+      "topic": "algo",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakqtit-gqu7gy",
+          "text": "A) O(n⁴)",
+          "correct": true
+        },
+        {
+          "id": "mvakqtit-qhvv7b",
+          "text": "B) O(log n)",
+          "correct": false
+        },
+        {
+          "id": "mvakqtit-e8navx",
+          "text": "C) O(n³)",
+          "correct": false
+        },
+        {
+          "id": "mvakqtit-nv8dga",
+          "text": "D) O(log(n) + 10·n·n³ + n³ + 10·n)",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131411716,
+      "updatedAt": 1792131411716
+    },
+    {
+      "id": "mvakqtir-qxi27w",
+      "text": "2. O(n log n) — bu algoritmning qaysi vaqt bo'yicha bajarilishining yuqori bahosi?",
+      "topic": "algo",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvakpprp-h275lz",
+          "text": "A) Logarifmik vaqt",
+          "correct": false
+        },
+        {
+          "id": "mvakpprp-di4f20",
+          "text": "B) Kvazilogarifmik vaqt",
+          "correct": false
+        },
+        {
+          "id": "mvakpprp-n2xk58",
+          "text": "C) Eksponensial vaqt",
+          "correct": false
+        },
+        {
+          "id": "mvakpprp-94f4d4",
+          "text": "D) Chiziqli-logarifmik vaqt",
+          "correct": true
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131367923,
+      "updatedAt": 1792131367923
+    },
+    {
+      "id": "mvakpprn-gwcepp",
+      "text": "1. Algoritm murakkabligini baholashda O(n) belgisi ishlatiladi. n nimani anglatadi?",
+      "topic": "algo",
+      "explanation": "",
+      "type": "single",
+      "options": [
+        {
+          "id": "mvako1vr-3j7jmi",
+          "text": "A) Algoritm hisoblashlari sonining bahosi",
+          "correct": false
+        },
+        {
+          "id": "mvako1vr-p6nsea",
+          "text": "B) Algoritm kod qatorlarining soni",
+          "correct": false
+        },
+        {
+          "id": "mvako1vr-110p1p",
+          "text": "C) Kirish ma'lumotlari hajmi",
+          "correct": true
+        },
+        {
+          "id": "mvako1vr-3kulh8",
+          "text": "D) Algoritm iteratsiyalari sonining bahosi",
+          "correct": false
+        }
+      ],
+      "translations": {},
+      "createdAt": 1792131316403,
+      "updatedAt": 1792131316403
+    }
+  ]
+}

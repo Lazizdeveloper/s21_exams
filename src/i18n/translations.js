@@ -18,6 +18,11 @@ export const translations = {
         desc: "Docker, Kubernetes, Linux, CI/CD va tarmoqlar bo'yicha imtihon savollari",
         badge: "286 ta savol",
       },
+      algorithms: {
+        title: "Algoritmlar & Ma'lumotlar Tuzilmalari",
+        desc: "Big-O, saralash, qidiruv, daraxtlar (Tree), graflar (Dijkstra, MST) va stek/navbat",
+        badge: "30 ta savol (3 tilda)",
+      },
       c_theory: {
         title: "C Dasturlash (Nazariya)",
         desc: "C tili arxitekturasi, xotira (malloc/free), ko'rsatkichlar va Unix tizimlari",
@@ -85,7 +90,7 @@ export const translations = {
     },
     exam: {
       title: "Haqiqiy imtihon rejimi",
-      rules: "Qoidalar: 30 ta tasodifiy savol, 1 soat (60 daqiqa) vaqt (DevOps: 80%, C / JS / SQL: 50%).",
+      rules: "Qoidalar: 30 ta tasodifiy savol, 1 soat (60 daqiqa) vaqt (DevOps: 80%, C / JS / SQL / Algoritmlar: 50%).",
       passingScore: "O'tish chegarasi",
       yourScore: "Sizning natijangiz",
       timeLeft: "Qolgan vaqt",
@@ -140,6 +145,11 @@ export const translations = {
         title: "DevOps (Теория)",
         desc: "Вопросы по Docker, Kubernetes, Linux, CI/CD и сетям",
         badge: "286 вопросов",
+      },
+      algorithms: {
+        title: "Алгоритмы и Структуры Данных",
+        desc: "Big-O, сортировки, поиск, деревья, графы (Дейкстра, MST) и стек/очередь",
+        badge: "30 вопросов (на 3 языках)",
       },
       c_theory: {
         title: "C Программирование (Теория)",
@@ -208,7 +218,7 @@ export const translations = {
     },
     exam: {
       title: "Реальный экзаменационный режим",
-      rules: "Правила: 30 случайных вопросов, 1 час (60 минут). DevOps: проходной 80%, C / JS / SQL: 50%.",
+      rules: "Правила: 30 случайных вопросов, 1 час (60 минут). DevOps: проходной 80%, C / JS / SQL / Алгоритмы: 50%.",
       passingScore: "Проходной балл",
       yourScore: "Ваш результат",
       timeLeft: "Осталось времени",
@@ -263,6 +273,11 @@ export const translations = {
         title: "DevOps (Theory)",
         desc: "Exam questions on Docker, Kubernetes, Linux, CI/CD, and networking",
         badge: "286 questions",
+      },
+      algorithms: {
+        title: "Algorithms & Data Structures",
+        desc: "Big-O, sorting, search, binary trees, graphs (Dijkstra, Kruskal MST), stack & queue",
+        badge: "30 questions (in 3 languages)",
       },
       c_theory: {
         title: "C Programming (Theory)",
@@ -331,7 +346,7 @@ export const translations = {
     },
     exam: {
       title: "Official Exam Simulation",
-      rules: "Rules: 30 randomized questions, 1 hour (60 minutes). DevOps: 80% passing score, C / JS / SQL: 50%.",
+      rules: "Rules: 30 randomized questions, 1 hour (60 minutes). DevOps: 80% passing score, C / JS / SQL / Algorithms: 50%.",
       passingScore: "Passing score",
       yourScore: "Your score",
       timeLeft: "Time Left",

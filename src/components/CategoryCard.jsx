@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Globe, Database, Cpu, BookOpen, CheckCircle, ArrowRight } from 'lucide-react';
+import { Terminal, Globe, Database, Cpu, Network, BookOpen, CheckCircle, ArrowRight } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
 const ICONS = {
@@ -7,6 +7,7 @@ const ICONS = {
   Globe,
   Database,
   Cpu,
+  Network,
 };
 
 export default function CategoryCard({ category, onSelectPractice, onSelectExam, onSelectCatalog }) {

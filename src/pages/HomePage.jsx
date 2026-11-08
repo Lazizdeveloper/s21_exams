@@ -55,7 +55,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-            DevOps, C tili, SQL va Web protokollari bo'yicha barcha nazariy va amaliy imtihon savollari bitta qulay platformada. 
+            DevOps, C tili, SQL, Algoritmlar va Web protokollari bo'yicha barcha nazariy va amaliy imtihon savollari bitta qulay platformada. 
             O'zingizni sinab ko'ring, vaqt bilan mashq qiling va xatolaringiz ustida ishlang.
           </p>
 
@@ -66,7 +66,7 @@ export default function HomePage() {
               <div className="text-xs text-slate-400 font-medium">Jami savollar bazasi</div>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-teal-400">4 ta</div>
+              <div className="text-2xl sm:text-3xl font-extrabold text-teal-400">{CATEGORIES.length} ta</div>
               <div className="text-xs text-slate-400 font-medium">Asosiy fanlar</div>
             </div>
             <div>
