@@ -37,7 +37,7 @@ export default function TaskDetailsPanel({
   };
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 sm:p-6 space-y-5">
+    <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-4 sm:p-5 space-y-4 h-full overflow-y-auto scrollbar-thin">
       {/* Task Header */}
       <div className="space-y-2 pb-4 border-b border-slate-100 dark:border-slate-800">
         <div className="flex flex-wrap items-center justify-between gap-2">

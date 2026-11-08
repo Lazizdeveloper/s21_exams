@@ -91,7 +91,7 @@ export default function InteractiveTerminal({
 
   return (
     <div 
-      className="bg-slate-950 font-mono text-xs flex flex-col h-56 sm:h-64 border-t border-slate-800"
+      className="bg-slate-950 font-mono text-xs flex flex-col h-44 sm:h-52 border-t border-slate-800 shrink-0"
       onClick={() => inputRef.current?.focus()}
     >
       {/* Top Header of Terminal */}

@@ -57,9 +57,9 @@ export default function CodeEditorTerminal({
   };
 
   return (
-    <div className="flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md overflow-hidden">
+    <div className="flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md overflow-hidden h-full">
       {/* Top VS Code Header Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-800 text-xs">
+      <div className="flex items-center justify-between px-4 py-2.5 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-800 text-xs shrink-0">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 font-mono font-bold text-slate-800 dark:text-slate-200">
             <span className="w-2 h-2 rounded-full bg-blue-500" />
@@ -97,8 +97,8 @@ export default function CodeEditorTerminal({
         </div>
       </div>
 
-      {/* Monaco Code Editor */}
-      <div className="h-[340px] sm:h-[390px] w-full bg-slate-950 relative">
+      {/* Monaco Code Editor - Expands to fill available vertical space */}
+      <div className="flex-1 w-full bg-slate-950 relative min-h-[260px]">
         <Editor
           height="100%"
           defaultLanguage="c"
@@ -122,11 +122,11 @@ export default function CodeEditorTerminal({
       </div>
 
       {/* Terminal Bar & Check Code Button */}
-      <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 bg-slate-50 dark:bg-slate-800/60 border-t border-b border-slate-200 dark:border-slate-800">
+      <div className="flex flex-wrap items-center justify-between gap-2 p-2 bg-slate-50 dark:bg-slate-800/60 border-t border-b border-slate-200 dark:border-slate-800 shrink-0">
         <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 font-mono pl-1">
           <TerminalIcon size={14} className="text-emerald-500" />
           <span className="text-[11px]">
-            Buyruqlar: <code className="text-slate-700 dark:text-slate-300">gcc main.c</code>, <code className="text-slate-700 dark:text-slate-300">clang-format -i main.c</code>, <code className="text-slate-700 dark:text-slate-300">cppcheck main.c</code>, <code className="text-slate-700 dark:text-slate-300">./a.out</code>
+            Terminal: <code className="text-slate-700 dark:text-slate-300">gcc main.c</code>, <code className="text-slate-700 dark:text-slate-300">clang-format -i main.c</code>, <code className="text-slate-700 dark:text-slate-300">cppcheck main.c</code>, <code className="text-slate-700 dark:text-slate-300">./a.out</code>
           </span>
         </div>
 
@@ -134,10 +134,10 @@ export default function CodeEditorTerminal({
           type="button"
           disabled={isRunning}
           onClick={handleCheckCode}
-          className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-black text-xs shadow-md shadow-purple-500/25 transition-all hover:scale-[1.02]"
+          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-black text-xs shadow-md shadow-purple-500/25 transition-all hover:scale-[1.02]"
           title="Kodni to'liq avtotestlar orqali tekshirish"
         >
-          {isRunning ? <Loader2 size={14} className="animate-spin" /> : <CheckCircle2 size={14} />}
+          {isRunning ? <Loader2 size={13} className="animate-spin" /> : <CheckCircle2 size={13} />}
           <span>Kodni tekshirish</span>
         </button>
       </div>
