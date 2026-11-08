@@ -14,7 +14,14 @@ export function AppProvider({ children }) {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
 
-  const [currentView, setCurrentView] = useState('home');
+  const [currentView, setCurrentView] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const viewParam = params.get('view');
+      if (viewParam) return viewParam;
+    }
+    return 'home';
+  });
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [activeExamResult, setActiveExamResult] = useState(null);
 

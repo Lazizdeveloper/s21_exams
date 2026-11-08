@@ -15,7 +15,7 @@ function AppContent() {
   const isCIdeMode = currentView === 'c_practice';
 
   return (
-    <div className={`flex flex-col ${isCIdeMode ? 'h-screen overflow-hidden' : 'min-h-screen'}`}>
+    <div className={`flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors ${isCIdeMode ? 'h-screen overflow-hidden' : 'min-h-screen'}`}>
       <Navbar />
       {isCIdeMode ? (
         <main className="flex-1 w-full h-[calc(100vh-65px)] overflow-hidden">
