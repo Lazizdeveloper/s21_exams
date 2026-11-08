@@ -3,7 +3,6 @@ import Editor from '@monaco-editor/react';
 import { 
   CheckCircle2, 
   RotateCcw, 
-  FileCode, 
   Loader2,
   Terminal as TerminalIcon
 } from 'lucide-react';
@@ -19,7 +18,7 @@ export default function CodeEditorTerminal({
   onChangeCode,
   activeTask,
   onResetOriginal,
-  onLoadSolution,
+  onTaskPassed,
 }) {
   const [isRunning, setIsRunning] = useState(false);
   const [terminalEntries, setTerminalEntries] = useState([
@@ -54,6 +53,12 @@ export default function CodeEditorTerminal({
     const res = await shell.executeCommand('verter');
     setTerminalEntries(prev => [...prev, ...res]);
     setIsRunning(false);
+
+    // If Verter passes 100%, trigger onTaskPassed callback
+    const isPassed = res.some(r => r.type === 'success' || (r.text && r.text.includes('100% Passed')));
+    if (isPassed && onTaskPassed && activeTask) {
+      onTaskPassed(activeTask.id);
+    }
   };
 
   return (
@@ -80,18 +85,6 @@ export default function CodeEditorTerminal({
             >
               <RotateCcw size={12} />
               <span className="hidden sm:inline">Xatoli kodni yuklash</span>
-            </button>
-          )}
-
-          {activeTask?.solutionCode && (
-            <button
-              type="button"
-              onClick={onLoadSolution}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/40 transition-colors font-medium text-[11px]"
-              title="Yechim kodini yuklash"
-            >
-              <FileCode size={12} />
-              <span className="hidden sm:inline">Yechimni ko'rish</span>
             </button>
           )}
         </div>

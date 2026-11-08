@@ -1,15 +1,17 @@
 import React from 'react';
-import { ArrowLeft, Shuffle, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Shuffle, Trophy } from 'lucide-react';
 
 /**
  * ExamStepperBar - Imtihon yuqori navigatsiya paneli
- * 5 ta qiyinlashib boruvchi savol bosqichlari (Level 1 -> Level 5) va yangi variant tugmasi
+ * 5 ta qiyinlashib boruvchi savol bosqichlari (Level 1 -> Level 5),
+ * Imtihonni yakunlab yechimlarni ko'rish va yangi variant tugmalari
  */
 export default function ExamStepperBar({
   tasks,
   activeTaskId,
   onSelectTask,
   onShuffle,
+  onFinishExam,
   onBackHome,
   lang = 'uz'
 }) {
@@ -69,8 +71,18 @@ export default function ExamStepperBar({
         })}
       </div>
 
-      {/* Right: Shuffle / New 5 Questions Button */}
+      {/* Right: Finish Exam & Shuffle */}
       <div className="flex items-center gap-2">
+        <button
+          type="button"
+          onClick={onFinishExam}
+          className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors shadow-xs"
+          title="Imtihonni yakunlab, to'liq to'g'ri yechimlarni ochish"
+        >
+          <Trophy size={13} className="text-emerald-600 dark:text-emerald-400" />
+          <span>Imtihonni yakunlash</span>
+        </button>
+
         <button
           type="button"
           onClick={onShuffle}
@@ -78,8 +90,7 @@ export default function ExamStepperBar({
           title="Yangi 5 ta tasodifiy imtihon masalalarini tanlash"
         >
           <Shuffle size={13} className="text-purple-600 dark:text-purple-400" />
-          <span className="hidden sm:inline">Yangi 5 ta savol (Aralashtirish)</span>
-          <span className="sm:hidden">Yangi savollar</span>
+          <span className="hidden sm:inline">Yangi 5 ta savol</span>
         </button>
       </div>
     </div>

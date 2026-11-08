@@ -10,15 +10,18 @@ import TaskDetailsPanel from '../components/c_practice/TaskDetailsPanel';
 import CodeEditorTerminal from '../components/c_practice/CodeEditorTerminal';
 import VerterCheckerModal from '../components/c_practice/VerterCheckerModal';
 import VerterGuideModal from '../components/c_practice/VerterGuideModal';
+import ExamResultsModal from '../components/c_practice/ExamResultsModal';
 
 export default function CPracticePage() {
   const { lang, t, setCurrentView } = useApp();
   const allExercises = useMemo(() => cPracticalData.exercises || [], []);
 
   // Current session's 5 progressive exam tasks (Level 1 -> Level 5)
-  // Har safar kirganda avvalgisidan farqli 5 ta tasodifiy savol yaratiladi
   const [examTasks, setExamTasks] = useState(() => createFreshExamSession(allExercises));
   const [activeTaskId, setActiveTaskId] = useState(() => examTasks[0]?.id || 'ex_01_01');
+  
+  // Passed tasks tracking (Verter 100% Passed)
+  const [completedTaskIds, setCompletedTaskIds] = useState([]);
   
   // Active student code in Monaco Editor
   const [userCode, setUserCode] = useState('');
@@ -26,6 +29,7 @@ export default function CPracticePage() {
   // Modals state
   const [isVerterOpen, setIsVerterOpen] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
+  const [isResultsOpen, setIsResultsOpen] = useState(false);
 
   // Active task object
   const activeTask = useMemo(() => {
@@ -51,10 +55,22 @@ export default function CPracticePage() {
     }
   }, [activeTask]);
 
+  // Handle task passed via Verter evaluation
+  const handleTaskPassed = useCallback((taskId) => {
+    setCompletedTaskIds(prev => {
+      const next = [...new Set([...prev, taskId])];
+      if (next.length === examTasks.length) {
+        setIsResultsOpen(true);
+      }
+      return next;
+    });
+  }, [examTasks.length]);
+
   // Shuffle / Generate new 5 exam tasks
   const handleShuffleExam = useCallback(() => {
     const freshTasks = createFreshExamSession(allExercises);
     setExamTasks(freshTasks);
+    setCompletedTaskIds([]);
     if (freshTasks.length > 0) {
       setActiveTaskId(freshTasks[0].id);
     }
@@ -66,24 +82,19 @@ export default function CPracticePage() {
     }
   };
 
-  const handleLoadSolution = () => {
-    if (window.confirm("Yechim kodini muharrirga yuklamoqchimisiz?")) {
-      handleCodeChange(activeTask?.solutionCode || '');
-    }
-  };
-
   const getTaskTitle = (task) => task.title[lang] || task.title.uz || task.title.ru || task.id;
   const getTaskTopics = (task) => task.topics[lang] || task.topics.uz || task.topics.ru || '';
   const getTaskDesc = (task) => task.description[lang] || task.description.uz || task.description.ru || '';
 
   return (
     <div className="w-full h-full flex flex-col overflow-hidden px-2 sm:px-4 py-2 space-y-2 select-none">
-      {/* Top Stepper Bar: Back, 5 Level Steps & Shuffle */}
+      {/* Top Stepper Bar: Back, 5 Level Steps, Finish Exam & Shuffle */}
       <ExamStepperBar
         tasks={examTasks}
         activeTaskId={activeTask?.id}
         onSelectTask={(id) => setActiveTaskId(id)}
         onShuffle={handleShuffleExam}
+        onFinishExam={() => setIsResultsOpen(true)}
         onBackHome={() => setCurrentView('home')}
         lang={lang}
       />
@@ -122,7 +133,6 @@ export default function CPracticePage() {
                 desc={getTaskDesc(activeTask)}
                 onOpenVerter={() => setIsVerterOpen(true)}
                 onOpenGuide={() => setIsGuideOpen(true)}
-                onLoadSolutionToEditor={handleLoadSolution}
               />
             </div>
           )}
@@ -136,7 +146,7 @@ export default function CPracticePage() {
               onChangeCode={handleCodeChange}
               activeTask={activeTask}
               onResetOriginal={handleResetOriginal}
-              onLoadSolution={handleLoadSolution}
+              onTaskPassed={handleTaskPassed}
             />
           ) : (
             <div className="h-full flex items-center justify-center text-slate-500 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
@@ -157,6 +167,16 @@ export default function CPracticePage() {
       <VerterGuideModal
         isOpen={isGuideOpen}
         onClose={() => setIsGuideOpen(false)}
+      />
+
+      {/* Official Exam Results & Ready Solutions Modal (Oxirida chiqadi) */}
+      <ExamResultsModal
+        isOpen={isResultsOpen}
+        onClose={() => setIsResultsOpen(false)}
+        examTasks={examTasks}
+        completedTaskIds={completedTaskIds}
+        onStartNewExam={handleShuffleExam}
+        lang={lang}
       />
     </div>
   );
