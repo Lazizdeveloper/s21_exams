@@ -9,6 +9,7 @@ export default function InteractiveTerminal({
   onCommandRun,
   terminalEntries,
   setTerminalEntries,
+  height = 220,
 }) {
   const [inputVal, setInputVal] = useState('');
   const [historyIndex, setHistoryIndex] = useState(-1);
@@ -91,7 +92,8 @@ export default function InteractiveTerminal({
 
   return (
     <div 
-      className="bg-slate-950 font-mono text-xs flex flex-col h-44 sm:h-52 border-t border-slate-800 shrink-0"
+      className="bg-slate-950 font-mono text-xs flex flex-col border-t border-slate-800 shrink-0 overflow-hidden"
+      style={{ height: `${height}px` }}
       onClick={() => inputRef.current?.focus()}
     >
       {/* Top Header of Terminal */}

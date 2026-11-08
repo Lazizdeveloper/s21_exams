@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Shuffle, Trophy } from 'lucide-react';
+import { ArrowLeft, Trophy } from 'lucide-react';
 
 /**
  * ExamStepperBar - Imtihon yuqori navigatsiya paneli
@@ -71,26 +71,16 @@ export default function ExamStepperBar({
         })}
       </div>
 
-      {/* Right: Finish Exam & Shuffle */}
+      {/* Right: Finish Exam Action */}
       <div className="flex items-center gap-2">
         <button
           type="button"
           onClick={onFinishExam}
-          className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors shadow-xs"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition-colors shadow-xs"
           title="Imtihonni yakunlab, to'liq to'g'ri yechimlarni ochish"
         >
-          <Trophy size={13} className="text-emerald-600 dark:text-emerald-400" />
+          <Trophy size={14} className="text-emerald-600 dark:text-emerald-400" />
           <span>Imtihonni yakunlash</span>
-        </button>
-
-        <button
-          type="button"
-          onClick={onShuffle}
-          className="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors shadow-xs"
-          title="Yangi 5 ta tasodifiy imtihon masalalarini tanlash"
-        >
-          <Shuffle size={13} className="text-purple-600 dark:text-purple-400" />
-          <span className="hidden sm:inline">Yangi 5 ta savol</span>
         </button>
       </div>
     </div>
