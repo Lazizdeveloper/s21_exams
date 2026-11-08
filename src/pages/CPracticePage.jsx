@@ -1,19 +1,12 @@
-import React, { useState, useMemo } from 'react';
-import { 
-  Search, 
-  ArrowLeft, 
-  Terminal, 
-  AlertTriangle 
-} from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Search, ArrowLeft } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import cPracticalData from '../data/c_practical.json';
-import MarkdownView from '../components/MarkdownView';
 
-// Subcomponents
+// Modular Subcomponents
 import TaskListItem from '../components/c_practice/TaskListItem';
-import TaskHeader from '../components/c_practice/TaskHeader';
-import TaskExamplesTable from '../components/c_practice/TaskExamplesTable';
-import TaskCodeViewer from '../components/c_practice/TaskCodeViewer';
+import TaskDetailsPanel from '../components/c_practice/TaskDetailsPanel';
+import CodeEditorTerminal from '../components/c_practice/CodeEditorTerminal';
 import VerterCheckerModal from '../components/c_practice/VerterCheckerModal';
 import VerterGuideModal from '../components/c_practice/VerterGuideModal';
 
@@ -34,8 +27,9 @@ export default function CPracticePage() {
   const [selectedModule, setSelectedModule] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTaskId, setActiveTaskId] = useState('ex_01_01');
-  const [activeCodeTab, setActiveCodeTab] = useState('solution');
-  const [copied, setCopied] = useState(false);
+  
+  // Active student code in Monaco Editor
+  const [userCode, setUserCode] = useState('');
   
   // Modals state
   const [isVerterOpen, setIsVerterOpen] = useState(false);
@@ -63,11 +57,36 @@ export default function CPracticePage() {
     return exercises.find(t => t.id === activeTaskId) || filteredTasks[0] || exercises[0];
   }, [exercises, activeTaskId, filteredTasks]);
 
-  const handleCopyCode = (code) => {
-    if (!code) return;
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  // Load code from LocalStorage or initialize with original buggy code
+  useEffect(() => {
+    if (!activeTask) return;
+    const saved = localStorage.getItem(`s21_code_${activeTask.id}`);
+    if (saved) {
+      setUserCode(saved);
+    } else {
+      // Default to original code for the student to fix, or solution skeleton
+      setUserCode(activeTask.originalCode || activeTask.solutionCode || '');
+    }
+  }, [activeTask?.id]);
+
+  // Update user code & persist to LocalStorage
+  const handleCodeChange = (newCode) => {
+    setUserCode(newCode);
+    if (activeTask) {
+      localStorage.setItem(`s21_code_${activeTask.id}`, newCode);
+    }
+  };
+
+  const handleResetOriginal = () => {
+    if (window.confirm("Barcha o'zgarishlarni bekor qilib, masalaning asl xatoli kodini qaytarmoqchimisiz?")) {
+      handleCodeChange(activeTask?.originalCode || '');
+    }
+  };
+
+  const handleLoadSolution = () => {
+    if (window.confirm("Yechim kodini muharrirga yuklamoqchimisiz?")) {
+      handleCodeChange(activeTask?.solutionCode || '');
+    }
   };
 
   const getTaskTitle = (task) => task.title[lang] || task.title.uz || task.title.ru || task.id;
@@ -75,7 +94,7 @@ export default function CPracticePage() {
   const getTaskDesc = (task) => task.description[lang] || task.description.uz || task.description.ru || '';
 
   return (
-    <div className="max-w-7xl mx-auto py-6 space-y-6">
+    <div className="max-w-[1500px] mx-auto py-5 px-3 sm:px-6 space-y-5">
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-slate-200 dark:border-slate-800">
         <div className="flex items-center gap-3">
@@ -89,15 +108,15 @@ export default function CPracticePage() {
           </button>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+              <h1 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
                 {t.cPractice.title}
               </h1>
               <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                {exercises.length} ta masala
+                School 21 Web IDE
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              {t.cPractice.subtitle}
+              VS Code muharriri, Clang-Format (Google Style), Cppcheck va MiniVERTER avtotest tizimi
             </p>
           </div>
         </div>
@@ -116,7 +135,7 @@ export default function CPracticePage() {
       </div>
 
       {/* Module Selector Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
+      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin">
         {EXERCISE_MODULES.map((mod) => {
           const isSelected = selectedModule === mod.id;
           const count = mod.id === 'all' 
@@ -151,92 +170,52 @@ export default function CPracticePage() {
         })}
       </div>
 
-      {/* Main Grid: Left Tasks (4 col) + Right Details (8 col) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left: Task Navigation List */}
-        <div className="lg:col-span-5 xl:col-span-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-3 max-h-[calc(100vh-280px)] overflow-y-auto space-y-1.5">
-          <div className="flex items-center justify-between px-2 py-1 text-xs font-bold text-slate-400 uppercase tracking-wider">
-            <span>Masalalar ({filteredTasks.length})</span>
-            <span>Daraja</span>
-          </div>
-
-          {filteredTasks.length === 0 ? (
-            <div className="text-center py-8 text-xs text-slate-500">
-              {t.cPractice.noTasksFound}
+      {/* Main Layout: 3 Columns on Big screens, or Left-Task + Right-IDE */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        {/* Left Column (4 cols): Task List & Task Details Panel */}
+        <div className="lg:col-span-5 xl:col-span-4 space-y-4">
+          {/* Quick Task Switcher Dropdown / Mini list */}
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-2.5 max-h-48 overflow-y-auto space-y-1">
+            <div className="px-2 py-1 text-[11px] font-bold text-slate-400 uppercase tracking-wider flex justify-between">
+              <span>Masalalar ({filteredTasks.length})</span>
+              <span>Daraja</span>
             </div>
-          ) : (
-            filteredTasks.map((task) => (
+            {filteredTasks.map((task) => (
               <TaskListItem
                 key={task.id}
                 task={task}
-                isCurrent={task.id === activeTask.id}
+                isCurrent={task.id === activeTask?.id}
                 title={getTaskTitle(task)}
                 topics={getTaskTopics(task)}
-                onSelect={() => {
-                  setActiveTaskId(task.id);
-                  setActiveCodeTab('solution');
-                }}
+                onSelect={() => setActiveTaskId(task.id)}
               />
-            ))
+            ))}
+          </div>
+
+          {/* Task Instructions & Tests & Hints */}
+          {activeTask && (
+            <TaskDetailsPanel
+              activeTask={activeTask}
+              title={getTaskTitle(activeTask)}
+              topics={getTaskTopics(activeTask)}
+              desc={getTaskDesc(activeTask)}
+              onOpenVerter={() => setIsVerterOpen(true)}
+              onOpenGuide={() => setIsGuideOpen(true)}
+              onLoadSolutionToEditor={handleLoadSolution}
+            />
           )}
         </div>
 
-        {/* Right: Task Details & Verter Inspector */}
-        <div className="lg:col-span-7 xl:col-span-8 space-y-6">
+        {/* Right Column (7-8 cols): In-Browser VS Code (Monaco Editor) + Terminal */}
+        <div className="lg:col-span-7 xl:col-span-8">
           {activeTask ? (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 space-y-6 animate-fadeIn">
-              {/* Task Header with Verter Actions */}
-              <TaskHeader
-                activeTask={activeTask}
-                title={getTaskTitle(activeTask)}
-                topics={getTaskTopics(activeTask)}
-                onOpenVerter={() => setIsVerterOpen(true)}
-                onOpenGuide={() => setIsGuideOpen(true)}
-              />
-
-              {/* Task Description */}
-              <div className="space-y-2">
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                  <Terminal size={16} className="text-purple-500" />
-                  <span>{t.cPractice.taskDetails}</span>
-                </h3>
-                <div className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-800/40 p-4 rounded-xl border border-slate-200/60 dark:border-slate-800">
-                  <MarkdownView content={getTaskDesc(activeTask)} />
-                </div>
-              </div>
-
-              {/* Examples (Input -> Output) */}
-              <TaskExamplesTable 
-                examples={activeTask.examples} 
-                label={t.cPractice.examples} 
-              />
-
-              {/* School 21 Exam Requirement Notice */}
-              <div className="p-3.5 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 text-xs space-y-1">
-                <div className="flex items-center gap-2 font-bold text-amber-800 dark:text-amber-300">
-                  <AlertTriangle size={15} />
-                  <span>{t.cPractice.notes}</span>
-                </div>
-                <ul className="list-disc list-inside space-y-0.5 text-amber-800/90 dark:text-amber-300/90 pl-1">
-                  <li>Noto'g'ri kiritishda faqat <code className="font-mono font-bold bg-amber-100 dark:bg-amber-900/60 px-1 rounded">"n/a"</code> chiqariladi.</li>
-                  <li>Chiqarish oxirida ortiqcha <code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">\n</code> bo'lmasligi kerak.</li>
-                  <li>Dinamik xotira (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">malloc</code>) ishlatilgan bo'lsa, uni tozalash (<code className="font-mono bg-amber-100 dark:bg-amber-900/60 px-1 rounded">free</code>) shart.</li>
-                </ul>
-              </div>
-
-              {/* Code Viewer Box */}
-              <TaskCodeViewer
-                activeCodeTab={activeCodeTab}
-                setActiveCodeTab={setActiveCodeTab}
-                activeTask={activeTask}
-                copied={copied}
-                onCopyCode={handleCopyCode}
-                solutionLabel={t.cPractice.solutionCode}
-                originalLabel={t.cPractice.originalCode}
-                copyLabel={t.actions.copyCode}
-                copiedLabel={t.actions.copied}
-              />
-            </div>
+            <CodeEditorTerminal
+              code={userCode}
+              onChangeCode={handleCodeChange}
+              activeTask={activeTask}
+              onResetOriginal={handleResetOriginal}
+              onLoadSolution={handleLoadSolution}
+            />
           ) : (
             <div className="p-12 text-center text-slate-500 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
               {t.cPractice.noTasksFound}
