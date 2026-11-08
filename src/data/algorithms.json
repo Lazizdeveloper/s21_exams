@@ -1,11 +1,4 @@
 {
-  "source": "algorithms_and_data_structures",
-  "title": {
-    "uz": "Algoritmlar va Ma'lumotlar Tuzilmalari",
-    "ru": "Алгоритмы и структуры данных",
-    "en": "Algorithms and Data Structures"
-  },
-  "total_questions": 30,
   "questions": [
     {
       "id": 1,
@@ -479,58 +472,6 @@
       "id": 10,
       "type": "radio",
       "question": {
-        "uz": "Xesh-jadvalda (Hash Table) o'rtacha holatda elementni qidirish, qo'shish va o'chirishning vaqt murakkabligi qanday?",
-        "ru": "Какова временная сложность поиска, вставки и удаления элемента в хеш-таблице в среднем случае?",
-        "en": "What is the average-case time complexity of search, insert, and delete in a Hash Table?"
-      },
-      "answers": [
-        {
-          "id": "1001",
-          "text": {
-            "uz": "O(1) — doimiy (konstant) vaqt",
-            "ru": "O(1) — константное время",
-            "en": "O(1) — constant time"
-          },
-          "is_correct": true
-        },
-        {
-          "id": "1002",
-          "text": {
-            "uz": "O(n) — chiziqli vaqt",
-            "ru": "O(n) — линейное время",
-            "en": "O(n) — linear time"
-          },
-          "is_correct": false
-        },
-        {
-          "id": "1003",
-          "text": {
-            "uz": "O(log n) — logarifmik vaqt",
-            "ru": "O(log n) — логарифмическое время",
-            "en": "O(log n) — logarithmic time"
-          },
-          "is_correct": false
-        },
-        {
-          "id": "1004",
-          "text": {
-            "uz": "O(n²) — kvadratik vaqt",
-            "ru": "O(n²) — квадратичное время",
-            "en": "O(n²) — quadratic time"
-          },
-          "is_correct": false
-        }
-      ],
-      "explanation": {
-        "uz": "Yaxshi xesh-funksiya mavjud bo'lganda, xesh-jadval elementlar ustida amallarni o'rtacha O(1) doimiy vaqtda bajaradi.",
-        "ru": "При хорошей хеш-функции хеш-таблица выполняет операции в среднем за константное время O(1).",
-        "en": "With a good hash function, hash tables perform operations in O(1) average constant time."
-      }
-    },
-    {
-      "id": 11,
-      "type": "radio",
-      "question": {
         "uz": "Qaysi ma'lumotlar strukturasida elementga indeks bo'yicha to'g'ridan-to'g'ri O(1) vaqtda murojaat qilinadi?",
         "ru": "В какой структуре данных доступ к элементу по индексу осуществляется напрямую за время O(1)?",
         "en": "In which data structure can an element be accessed directly by index in O(1) time?"
@@ -580,7 +521,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 11,
       "type": "radio",
       "question": {
         "uz": "Qaysi ma'lumotlar strukturasi FIFO (First In, First Out) prinsipini ta'minlaydi?",
@@ -632,7 +573,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 12,
       "type": "radio",
       "question": {
         "uz": "Qaysi ma'lumotlar strukturasida elementlarga indeks bo'yicha emas, ko'rsatkichlar orqali faqat ketma-ket murojaat qilinadi?",
@@ -684,7 +625,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 13,
       "type": "radio",
       "question": {
         "uz": "Qaysi holatda bog'langan ro'yxat o'rniga massivdan foydalanish afzalroq hisoblanadi?",
@@ -736,7 +677,7 @@
       }
     },
     {
-      "id": 15,
+      "id": 14,
       "type": "radio",
       "question": {
         "uz": "Saralangan ro'yxatdan elementni O(log n) vaqtda qidirish uchun qaysi usul qo'llaniladi?",
@@ -788,7 +729,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 15,
       "type": "radio",
       "question": {
         "uz": "Quyidagi saralash usullaridan qaysi biri eng yomon holatda eng yuqori murakkablik bahosiga ega (O(n²))?",
@@ -840,7 +781,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 16,
       "type": "radio",
       "question": {
         "uz": "Vaznli grafda manfiy bo'lmagan qirralar bo'yicha bitta uchdan boshqa barcha uchlargacha eng qisqa yo'lni topuvchi algoritm qaysi?",
@@ -892,7 +833,7 @@
       }
     },
     {
-      "id": 18,
+      "id": 17,
       "type": "radio",
       "question": {
         "uz": "Binar daraxtni aylanib chiqish ildizdan boshlanib, so'ng chap qism daraxt, keyin o'ng qism daraxtga o'tsa (Ildiz → Chap → O'ng) — bu qanday aylanib chiqish?",
@@ -944,7 +885,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 18,
       "type": "radio",
       "question": {
         "uz": "Grafni kenglik (BFS) va chuqurlik (DFS) bo'yicha aylanib chiqish bir-biridan asosiy qanday farq qiladi?",
@@ -996,7 +937,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 19,
       "type": "radio",
       "question": {
         "uz": "Grafdagi minimal yoyilma daraxt (Minimum Spanning Tree — MST) nima?",
@@ -1045,6 +986,58 @@
         "uz": "MST — grafning barcha V ta uchini (V - 1) ta qirra bilan siklsiz bog'lab, umumiy vaznni minimumga keltiruvchi daraxtdir (Kraskal, Prim).",
         "ru": "Остовное дерево соединяет все вершины графа без циклов, имея минимальный суммарный вес ребер.",
         "en": "An MST connects all vertices with (V - 1) edges without cycles, minimizing the total edge weight."
+      }
+    },
+    {
+      "id": 20,
+      "type": "radio",
+      "question": {
+        "uz": "Prim algoritmida minimal yoyilma daraxtga (MST) yangi qirralarni tanlash mezoni qanday?",
+        "ru": "Каков критерий выбора ребер в алгоритме Прима для построения минимального остовного дерева (MST)?",
+        "en": "What is the edge selection criterion in Prim's algorithm for constructing a Minimum Spanning Tree (MST)?"
+      },
+      "answers": [
+        {
+          "id": "2001",
+          "text": {
+            "uz": "Eng katta og'irlikdagi qirra tanlanadi",
+            "ru": "Выбирается ребро с максимальным весом",
+            "en": "The edge with the maximum weight is chosen"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2002",
+          "text": {
+            "uz": "Tasodifiy qirra tanlanadi",
+            "ru": "Выбирается случайное ребро",
+            "en": "A random edge is chosen"
+          },
+          "is_correct": false
+        },
+        {
+          "id": "2003",
+          "text": {
+            "uz": "Allaqachon kiritilgan uchlar bilan qolganlari orasidagi minimal og'irlikdagi qirra tanlanadi",
+            "ru": "Выбирается ребро минимального веса, соединяющее уже включенные вершины с остальными",
+            "en": "The edge of minimum weight connecting already included vertices with the rest is chosen"
+          },
+          "is_correct": true
+        },
+        {
+          "id": "2004",
+          "text": {
+            "uz": "Barcha qirralar saralanadi va eng kichigi olinadi",
+            "ru": "Все ребра сортируются и берется наименьшее",
+            "en": "All edges are sorted and the smallest is taken"
+          },
+          "is_correct": false
+        }
+      ],
+      "explanation": {
+        "uz": "Prim algoritmi daraxtni bitta uchdan boshlab, har qadamda mavjud daraxt uchlari va qolgan uchlar o'rtasidagi eng kichik vaznli qirrani ochko'zlik bilan qo'shib boradi.",
+        "ru": "Алгоритм Прима начинает построение с одной вершины и на каждом шаге жадно добавляет ребро минимального веса между вершинами дерева и остальными вершинами графа.",
+        "en": "Prim's algorithm starts from a single vertex and greedily adds the minimum-weight edge between tree vertices and outside vertices at each step."
       }
     },
     {
