@@ -130,18 +130,15 @@ export class VirtualShell {
 
       case 'gcc': {
         const currentCode = this.getCode();
-        // Check local syntax errors quickly (e.g. INT vs int)
-        if (currentCode.includes('INT ')) {
-          return [{
-            type: 'error',
-            text: `main.c: In function 'main':\nmain.c:4:3: error: unknown type name 'INT'; did you mean 'int'?\n    4 |   INT a, b;\n      |   ^~~\n      |   int\ncompilation terminated due to -Werror.`
-          }];
-        }
 
         const execRes = await executeCCode(currentCode, '');
-        if (execRes.compileOutput && !execRes.success) {
+        if (!execRes.success) {
           this.hasCompiled = false;
-          return [{ type: 'error', text: `gcc xatoligi:\n${execRes.compileOutput}` }];
+          const errText = execRes.compileOutput || execRes.stderr || 'Kompilyatsiya xatosi yuz berdi.';
+          return [{
+            type: 'error',
+            text: `gcc -Wall -Werror -Wextra -std=c11 main.c -o a.out\n${errText}`
+          }];
         }
 
         this.hasCompiled = true;
@@ -155,18 +152,13 @@ export class VirtualShell {
       case './main':
       case './main.out': {
         const currentCode = this.getCode();
-        if (currentCode.includes('INT ')) {
-          return [{
-            type: 'error',
-            text: `bash: ./a.out: No such file or directory. Avval "gcc -Wall -Werror -Wextra -std=c11 main.c" orqali kompilyatsiya qiling.`
-          }];
-        }
-
         const stdinInput = args.join(' ') || this.activeTask?.examples?.[0]?.input || '';
         const execRes = await executeCCode(currentCode, stdinInput);
 
-        if (execRes.compileOutput && !execRes.success) {
-          return [{ type: 'error', text: `Kompilyatsiya xatosi:\n${execRes.compileOutput}` }];
+        if (!execRes.success) {
+          this.hasCompiled = false;
+          const err = execRes.compileOutput || execRes.stderr || 'Dasturni bajarishda xatolik yuz berdi.';
+          return [{ type: 'error', text: err }];
         }
 
         const outputLines = [

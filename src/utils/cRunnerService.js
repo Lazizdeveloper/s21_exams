@@ -1,29 +1,59 @@
-import { checkCodeStyle } from './clangFormatService';
-import { runCppcheck } from './cppcheckService';
+import { checkCodeStyle } from './clangFormatService.js';
+import { runCppcheck } from './cppcheckService.js';
 
 /**
- * Execute C Code via Judge0 CE public engine
+ * UTF-8 xavfsiz Base64 kodlash
+ */
+function toBase64(str) {
+  if (typeof window !== 'undefined' && window.btoa) {
+    return window.btoa(unescape(encodeURIComponent(str || '')));
+  }
+  return Buffer.from(str || '', 'utf-8').toString('base64');
+}
+
+/**
+ * UTF-8 xavfsiz Base64 dekodlash
+ */
+function fromBase64(str) {
+  if (!str) return '';
+  try {
+    if (typeof window !== 'undefined' && window.atob) {
+      return decodeURIComponent(escape(window.atob(str)));
+    }
+    return Buffer.from(str, 'base64').toString('utf-8');
+  } catch {
+    try {
+      return atob(str);
+    } catch {
+      return str;
+    }
+  }
+}
+
+/**
+ * Execute C Code via Judge0 CE public engine with strict GCC flags
+ * Flags: -Wall -Werror -Wextra -std=c11
  */
 export async function executeCCode(code, stdin = '') {
   if (!code || !code.trim()) {
     return {
       success: false,
       stdout: '',
-      stderr: 'Xatolik: Kod bo\'sh',
+      stderr: "Xatolik: Kod bo'sh",
       exitCode: -1,
-      compileOutput: '',
+      compileOutput: "Xatolik: main.c faylida kod mavjud emas.",
     };
   }
 
   try {
     const payload = {
-      source_code: code,
+      source_code: toBase64(code),
       language_id: 50, // C (GCC 9.2.0)
       compiler_options: '-Wall -Werror -Wextra -std=c11',
-      stdin: stdin || '',
+      stdin: toBase64(stdin || ''),
     };
 
-    const response = await fetch('https://ce.judge0.com/submissions?wait=true', {
+    const response = await fetch('https://ce.judge0.com/submissions?base64_encoded=true&wait=true', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,33 +62,36 @@ export async function executeCCode(code, stdin = '') {
     });
 
     if (!response.ok) {
-      throw new Error(`Kompilyator javob bermadi (${response.status})`);
+      const errJson = await response.json().catch(() => ({}));
+      throw new Error(errJson.error || `Kompilyator javob bermadi (${response.status})`);
     }
 
     const data = await response.json();
-    const stdout = data.stdout || '';
-    const stderr = data.stderr || '';
-    const compileOutput = data.compile_output || '';
+    const stdout = fromBase64(data.stdout || '');
+    const stderr = fromBase64(data.stderr || '');
+    const compileOutput = fromBase64(data.compile_output || '');
     const statusDesc = data.status?.description || '';
-    const exitCode = data.status?.id === 3 ? 0 : 1;
+    
+    // Status ID 3: Accepted (Dastur muvaffaqiyatli kompilyatsiya bo'ldi va ishladi)
+    const isSuccess = data.status?.id === 3;
+    const exitCode = isSuccess ? 0 : (data.exit_code || 1);
 
     return {
-      success: exitCode === 0,
+      success: isSuccess,
       stdout: stdout.trim(),
-      stderr: stderr || compileOutput || (exitCode !== 0 ? statusDesc : ''),
+      stderr: stderr || compileOutput || (!isSuccess ? statusDesc : ''),
       exitCode,
-      compileOutput,
+      compileOutput: compileOutput || (data.status?.id === 6 ? statusDesc : ''),
       time: data.time || '0.00',
       memory: data.memory || 0,
     };
   } catch (err) {
-    // If external API has network issues, provide clear simulated message
     return {
       success: false,
       stdout: '',
       stderr: `Server bilan aloqa xatoligi: ${err.message}. Internet aloqasini tekshiring.`,
       exitCode: -1,
-      compileOutput: '',
+      compileOutput: `Server bilan aloqa xatoligi: ${err.message}. Internet aloqasini tekshiring.`,
     };
   }
 }
@@ -117,8 +150,9 @@ export async function evaluateWithVerter(code, activeTask) {
     const ex = examples[i];
     const execRes = await executeCCode(code, ex.input);
 
-    if (execRes.compileOutput && !execRes.success) {
-      logs.push(`  -> Kompilyatsiya xatosi:\n${execRes.compileOutput}`);
+    if (!execRes.success && (execRes.compileOutput || execRes.stderr)) {
+      const err = execRes.compileOutput || execRes.stderr;
+      logs.push(`  -> Kompilyatsiya xatosi:\n${err}`);
       logs.push('❌ VERTER RESULT: FAIL (0%) — Kompilyatsiya amalga oshmadi.');
       return { success: false, score: 0, stage: 'build', logs };
     }
