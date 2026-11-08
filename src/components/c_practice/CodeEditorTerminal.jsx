@@ -1,9 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Editor from '@monaco-editor/react';
 import { 
-  CheckCircle2, 
   RotateCcw, 
-  Loader2,
   Terminal as TerminalIcon
 } from 'lucide-react';
 import { VirtualShell } from '../../utils/virtualTerminalService';
@@ -11,16 +9,15 @@ import InteractiveTerminal from './InteractiveTerminal';
 
 /**
  * CodeEditorTerminal - In-browser VS Code (Monaco) Editor with Interactive Bash Terminal
- * Tools (gcc, clang-format, cppcheck) are run directly inside the terminal.
+ * NOTE: "Kodni tekshirish" tugmasi olib tashlangan.
+ * Imtihon topshirilganda MiniVERTER avtomatik 5 ta savolni tekshiradi.
  */
 export default function CodeEditorTerminal({
   code,
   onChangeCode,
   activeTask,
   onResetOriginal,
-  onTaskPassed,
 }) {
-  const [isRunning, setIsRunning] = useState(false);
   const [terminalEntries, setTerminalEntries] = useState([
     {
       type: 'output',
@@ -46,25 +43,10 @@ export default function CodeEditorTerminal({
     });
   }, [code, activeTask, shell]);
 
-  // Submit & Check code evaluation
-  const handleCheckCode = async () => {
-    setIsRunning(true);
-    setTerminalEntries(prev => [...prev, { type: 'prompt', cmd: 'verter' }]);
-    const res = await shell.executeCommand('verter');
-    setTerminalEntries(prev => [...prev, ...res]);
-    setIsRunning(false);
-
-    // If Verter passes 100%, trigger onTaskPassed callback
-    const isPassed = res.some(r => r.type === 'success' || (r.text && r.text.includes('100% Passed')));
-    if (isPassed && onTaskPassed && activeTask) {
-      onTaskPassed(activeTask.id);
-    }
-  };
-
   return (
     <div className="flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md overflow-hidden h-full">
       {/* Top VS Code Header Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-800 text-xs shrink-0">
+      <div className="flex items-center justify-between px-4 py-2 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-800 text-xs shrink-0">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 font-mono font-bold text-slate-800 dark:text-slate-200">
             <span className="w-2 h-2 rounded-full bg-blue-500" />
@@ -114,25 +96,14 @@ export default function CodeEditorTerminal({
         />
       </div>
 
-      {/* Terminal Bar & Check Code Button */}
-      <div className="flex flex-wrap items-center justify-between gap-2 p-2 bg-slate-50 dark:bg-slate-800/60 border-t border-b border-slate-200 dark:border-slate-800 shrink-0">
+      {/* Terminal Bar (Without Manual Check button) */}
+      <div className="flex items-center justify-between px-3 py-1.5 bg-slate-50 dark:bg-slate-800/60 border-t border-b border-slate-200 dark:border-slate-800 shrink-0">
         <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 font-mono pl-1">
           <TerminalIcon size={14} className="text-emerald-500" />
           <span className="text-[11px]">
-            Terminal: <code className="text-slate-700 dark:text-slate-300">gcc main.c</code>, <code className="text-slate-700 dark:text-slate-300">clang-format -i main.c</code>, <code className="text-slate-700 dark:text-slate-300">cppcheck main.c</code>, <code className="text-slate-700 dark:text-slate-300">./a.out</code>
+            School 21 Terminal: <code className="text-slate-700 dark:text-slate-300">gcc main.c</code> • <code className="text-slate-700 dark:text-slate-300">./a.out</code> • <code className="text-slate-700 dark:text-slate-300">clang-format -i main.c</code> • <code className="text-slate-700 dark:text-slate-300">cppcheck main.c</code>
           </span>
         </div>
-
-        <button
-          type="button"
-          disabled={isRunning}
-          onClick={handleCheckCode}
-          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-black text-xs shadow-md shadow-purple-500/25 transition-all hover:scale-[1.02]"
-          title="Kodni to'liq avtotestlar orqali tekshirish"
-        >
-          {isRunning ? <Loader2 size={13} className="animate-spin" /> : <CheckCircle2 size={13} />}
-          <span>Kodni tekshirish</span>
-        </button>
       </div>
 
       {/* Real Interactive Bash Terminal */}

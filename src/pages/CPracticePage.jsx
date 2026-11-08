@@ -10,7 +10,7 @@ import TaskDetailsPanel from '../components/c_practice/TaskDetailsPanel';
 import CodeEditorTerminal from '../components/c_practice/CodeEditorTerminal';
 import VerterCheckerModal from '../components/c_practice/VerterCheckerModal';
 import VerterGuideModal from '../components/c_practice/VerterGuideModal';
-import ExamResultsModal from '../components/c_practice/ExamResultsModal';
+import AutoVerterExamModal from '../components/c_practice/AutoVerterExamModal';
 
 export default function CPracticePage() {
   const { lang, t, setCurrentView } = useApp();
@@ -19,9 +19,6 @@ export default function CPracticePage() {
   // Current session's 5 progressive exam tasks (Level 1 -> Level 5)
   const [examTasks, setExamTasks] = useState(() => createFreshExamSession(allExercises));
   const [activeTaskId, setActiveTaskId] = useState(() => examTasks[0]?.id || 'ex_01_01');
-  
-  // Passed tasks tracking (Verter 100% Passed)
-  const [completedTaskIds, setCompletedTaskIds] = useState([]);
   
   // Active student code in Monaco Editor
   const [userCode, setUserCode] = useState('');
@@ -55,22 +52,10 @@ export default function CPracticePage() {
     }
   }, [activeTask]);
 
-  // Handle task passed via Verter evaluation
-  const handleTaskPassed = useCallback((taskId) => {
-    setCompletedTaskIds(prev => {
-      const next = [...new Set([...prev, taskId])];
-      if (next.length === examTasks.length) {
-        setIsResultsOpen(true);
-      }
-      return next;
-    });
-  }, [examTasks.length]);
-
   // Shuffle / Generate new 5 exam tasks
   const handleShuffleExam = useCallback(() => {
     const freshTasks = createFreshExamSession(allExercises);
     setExamTasks(freshTasks);
-    setCompletedTaskIds([]);
     if (freshTasks.length > 0) {
       setActiveTaskId(freshTasks[0].id);
     }
@@ -146,7 +131,6 @@ export default function CPracticePage() {
               onChangeCode={handleCodeChange}
               activeTask={activeTask}
               onResetOriginal={handleResetOriginal}
-              onTaskPassed={handleTaskPassed}
             />
           ) : (
             <div className="h-full flex items-center justify-center text-slate-500 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
@@ -169,12 +153,11 @@ export default function CPracticePage() {
         onClose={() => setIsGuideOpen(false)}
       />
 
-      {/* Official Exam Results & Ready Solutions Modal (Oxirida chiqadi) */}
-      <ExamResultsModal
+      {/* Official Auto-Verter Exam Evaluation Modal */}
+      <AutoVerterExamModal
         isOpen={isResultsOpen}
         onClose={() => setIsResultsOpen(false)}
         examTasks={examTasks}
-        completedTaskIds={completedTaskIds}
         onStartNewExam={handleShuffleExam}
         lang={lang}
       />
