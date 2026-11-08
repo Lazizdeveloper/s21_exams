@@ -1,16 +1,18 @@
-import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Editor from '@monaco-editor/react';
-import { RotateCcw, Terminal as TerminalIcon } from 'lucide-react';
+import { 
+  RotateCcw, 
+  Terminal as TerminalIcon, 
+  Maximize2, 
+  Minimize2 
+} from 'lucide-react';
 import { VirtualShell } from '../../utils/virtualTerminalService';
+import { useVerticalResize } from '../../hooks/useVerticalResize';
 import InteractiveTerminal from './InteractiveTerminal';
-
-const DEFAULT_TERMINAL_HEIGHT = 220;
-const MIN_TERMINAL_HEIGHT = 90;
-const MIN_EDITOR_HEIGHT = 140;
 
 /**
  * CodeEditorTerminal - In-browser VS Code (Monaco) Editor with Interactive Bash Terminal
- * Includes draggable divider to resize IDE and Terminal vertically (VS Code style).
+ * Includes draggable divider to resize IDE and Terminal, and Fullscreen mode toggle.
  */
 export default function CodeEditorTerminal({
   code,
@@ -19,11 +21,16 @@ export default function CodeEditorTerminal({
   onResetOriginal,
 }) {
   const containerRef = useRef(null);
-  const [terminalHeight, setTerminalHeight] = useState(() => {
-    const saved = localStorage.getItem('s21_terminal_height');
-    return saved ? parseInt(saved, 10) : DEFAULT_TERMINAL_HEIGHT;
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Hook for smooth drag-to-resize divider
+  const { terminalHeight, isDragging, handleMouseDown } = useVerticalResize({
+    containerRef,
+    defaultHeight: 220,
+    minTerminalHeight: 90,
+    minEditorHeight: 140,
+    storageKey: 's21_terminal_height'
   });
-  const [isDragging, setIsDragging] = useState(false);
 
   const [terminalEntries, setTerminalEntries] = useState([
     {
@@ -50,51 +57,49 @@ export default function CodeEditorTerminal({
     });
   }, [code, activeTask, shell]);
 
-  // Drag-to-resize divider handlers
-  const handleMouseDown = useCallback((e) => {
-    e.preventDefault();
-    setIsDragging(true);
-    document.body.style.userSelect = 'none';
-    document.body.style.cursor = 'row-resize';
-  }, []);
+  // Toggle Fullscreen (both CSS fixed full screen and Browser Fullscreen API)
+  const toggleFullscreen = () => {
+    if (!isFullscreen) {
+      setIsFullscreen(true);
+      if (containerRef.current?.requestFullscreen && !document.fullscreenElement) {
+        containerRef.current.requestFullscreen().catch(() => {});
+      }
+    } else {
+      setIsFullscreen(false);
+      if (document.fullscreenElement && document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+  };
 
+  // Sync fullscreen state with browser exit (e.g. user pressed Esc)
   useEffect(() => {
-    if (!isDragging) return;
-
-    const handleMouseMove = (e) => {
-      if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const rawHeight = rect.bottom - e.clientY;
-      const maxHeight = rect.height - MIN_EDITOR_HEIGHT;
-      const clampedHeight = Math.max(MIN_TERMINAL_HEIGHT, Math.min(rawHeight, maxHeight));
-      setTerminalHeight(clampedHeight);
+    const handleFullscreenChange = () => {
+      if (!document.fullscreenElement && isFullscreen) {
+        setIsFullscreen(false);
+      }
     };
-
-    const handleMouseUp = () => {
-      setIsDragging(false);
-      document.body.style.userSelect = '';
-      document.body.style.cursor = '';
-      setTerminalHeight(curr => {
-        localStorage.setItem('s21_terminal_height', curr.toString());
-        return curr;
-      });
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isFullscreen) {
+        setIsFullscreen(false);
+      }
     };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
-
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-      document.body.style.userSelect = '';
-      document.body.style.cursor = '';
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isDragging]);
+  }, [isFullscreen]);
 
   return (
     <div 
       ref={containerRef}
-      className="flex flex-col rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-md overflow-hidden h-full relative"
+      className={`flex flex-col bg-white dark:bg-slate-900 shadow-md overflow-hidden transition-all ${
+        isFullscreen
+          ? 'fixed inset-0 z-50 rounded-none w-screen h-screen'
+          : 'rounded-2xl border border-slate-200 dark:border-slate-800 h-full relative'
+      }`}
     >
       {/* Top VS Code Header Bar */}
       <div className="flex items-center justify-between px-4 py-2 bg-slate-100 dark:bg-slate-800/90 border-b border-slate-200 dark:border-slate-800 text-xs shrink-0 select-none">
@@ -120,6 +125,21 @@ export default function CodeEditorTerminal({
               <span className="hidden sm:inline">Xatoli kodni yuklash</span>
             </button>
           )}
+
+          {/* Full Screen Toggle Button */}
+          <button
+            type="button"
+            onClick={toggleFullscreen}
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-colors font-semibold text-[11px] border ${
+              isFullscreen
+                ? 'bg-purple-600 text-white border-purple-500 hover:bg-purple-500 shadow-xs'
+                : 'text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:bg-slate-200/80 dark:hover:bg-slate-800'
+            }`}
+            title={isFullscreen ? "To'liq ekrandan chiqish (Esc)" : "To'liq ekranga yoyish (Full Screen)"}
+          >
+            {isFullscreen ? <Minimize2 size={12} /> : <Maximize2 size={12} />}
+            <span>{isFullscreen ? "Kichraytirish" : "To'liq ekran"}</span>
+          </button>
         </div>
       </div>
 
