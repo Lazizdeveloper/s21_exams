@@ -1,19 +1,18 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Editor from '@monaco-editor/react';
 import { 
-  Play, 
-  Sparkles, 
-  ShieldAlert, 
-  Bot, 
+  CheckCircle2, 
   RotateCcw, 
   FileCode, 
-  Loader2
+  Loader2,
+  Terminal as TerminalIcon
 } from 'lucide-react';
 import { VirtualShell } from '../../utils/virtualTerminalService';
 import InteractiveTerminal from './InteractiveTerminal';
 
 /**
  * CodeEditorTerminal - In-browser VS Code (Monaco) Editor with Interactive Bash Terminal
+ * Tools (gcc, clang-format, cppcheck) are run directly inside the terminal.
  */
 export default function CodeEditorTerminal({
   code,
@@ -26,7 +25,7 @@ export default function CodeEditorTerminal({
   const [terminalEntries, setTerminalEntries] = useState([
     {
       type: 'output',
-      text: 'School 21 Interactive Workstation v1.0 (x86_64-linux-gnu)\nFayllarni ko\'rish uchun "ls", o\'qish uchun "cat main.c", kompilyatsiya uchun "gcc main.c", tekshirish uchun "verter" deb yozing.',
+      text: 'School 21 Interactive Workstation v1.0 (x86_64-linux-gnu)\nFayllar ro\'yxati: "ls" • O\'qish: "cat main.c" • Formatlash: "clang-format -i main.c"\nStatik tahlil: "cppcheck main.c" • Kompilyatsiya: "gcc main.c" • Ishga tushirish: "./a.out"',
     },
   ]);
 
@@ -48,41 +47,8 @@ export default function CodeEditorTerminal({
     });
   }, [code, activeTask, shell]);
 
-  // Quick Action Button: Clang-Format
-  const handleQuickFormat = async () => {
-    setTerminalEntries(prev => [...prev, { type: 'prompt', cmd: 'clang-format -i main.c' }]);
-    const res = await shell.executeCommand('clang-format -i main.c');
-    setTerminalEntries(prev => [...prev, ...res]);
-  };
-
-  // Quick Action Button: Cppcheck
-  const handleQuickCppcheck = async () => {
-    setTerminalEntries(prev => [...prev, { type: 'prompt', cmd: 'cppcheck main.c' }]);
-    const res = await shell.executeCommand('cppcheck main.c');
-    setTerminalEntries(prev => [...prev, ...res]);
-  };
-
-  // Quick Action Button: Run (GCC + ./a.out)
-  const handleQuickRun = async () => {
-    setIsRunning(true);
-    setTerminalEntries(prev => [
-      ...prev,
-      { type: 'prompt', cmd: 'gcc -Wall -Werror -Wextra -std=c11 main.c -o a.out && ./a.out' },
-    ]);
-
-    const gccRes = await shell.executeCommand('gcc main.c');
-    setTerminalEntries(prev => [...prev, ...gccRes]);
-
-    if (!gccRes.some(r => r.type === 'error')) {
-      const runRes = await shell.executeCommand('./a.out');
-      setTerminalEntries(prev => [...prev, ...runRes]);
-    }
-
-    setIsRunning(false);
-  };
-
-  // Quick Action Button: Verter Test
-  const handleQuickVerter = async () => {
+  // Submit & Check code evaluation
+  const handleCheckCode = async () => {
     setIsRunning(true);
     setTerminalEntries(prev => [...prev, { type: 'prompt', cmd: 'verter' }]);
     const res = await shell.executeCommand('verter');
@@ -132,7 +98,7 @@ export default function CodeEditorTerminal({
       </div>
 
       {/* Monaco Code Editor */}
-      <div className="h-[340px] sm:h-[380px] w-full bg-slate-950 relative">
+      <div className="h-[340px] sm:h-[390px] w-full bg-slate-950 relative">
         <Editor
           height="100%"
           defaultLanguage="c"
@@ -155,50 +121,24 @@ export default function CodeEditorTerminal({
         />
       </div>
 
-      {/* Quick Actions Toolbar */}
+      {/* Terminal Bar & Check Code Button */}
       <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 bg-slate-50 dark:bg-slate-800/60 border-t border-b border-slate-200 dark:border-slate-800">
-        <div className="flex flex-wrap items-center gap-1.5">
-          <button
-            type="button"
-            disabled={isRunning}
-            onClick={handleQuickRun}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold text-xs shadow-sm transition-all hover:scale-[1.02]"
-            title="Kodni gcc orqali kompilyatsiya qilib, a.out ni ishga tushirish"
-          >
-            {isRunning ? <Loader2 size={13} className="animate-spin" /> : <Play size={13} fill="currentColor" />}
-            <span>Ishga tushirish (Run)</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={handleQuickFormat}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold text-xs transition-colors"
-            title="Google Style bo'yicha avtomatik formatlash (clang-format -i main.c)"
-          >
-            <Sparkles size={13} className="text-amber-500" />
-            <span>Clang-Format</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={handleQuickCppcheck}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold text-xs transition-colors"
-            title="Statik kod tahlili (cppcheck main.c)"
-          >
-            <ShieldAlert size={13} className="text-blue-500" />
-            <span>Cppcheck</span>
-          </button>
+        <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 font-mono pl-1">
+          <TerminalIcon size={14} className="text-emerald-500" />
+          <span className="text-[11px]">
+            Buyruqlar: <code className="text-slate-700 dark:text-slate-300">gcc main.c</code>, <code className="text-slate-700 dark:text-slate-300">clang-format -i main.c</code>, <code className="text-slate-700 dark:text-slate-300">cppcheck main.c</code>, <code className="text-slate-700 dark:text-slate-300">./a.out</code>
+          </span>
         </div>
 
         <button
           type="button"
           disabled={isRunning}
-          onClick={handleQuickVerter}
-          className="flex items-center gap-1.5 px-4 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-black text-xs shadow-md shadow-purple-500/25 transition-all hover:scale-[1.02]"
-          title="Verter avtotest tizimini ishga tushirish (verter)"
+          onClick={handleCheckCode}
+          className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white font-black text-xs shadow-md shadow-purple-500/25 transition-all hover:scale-[1.02]"
+          title="Kodni to'liq avtotestlar orqali tekshirish"
         >
-          <Bot size={14} />
-          <span>🤖 Verter Tekshiruvi</span>
+          {isRunning ? <Loader2 size={14} className="animate-spin" /> : <CheckCircle2 size={14} />}
+          <span>Kodni tekshirish</span>
         </button>
       </div>
 

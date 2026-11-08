@@ -68,7 +68,7 @@ export const translations = {
       topics: "Mavzular",
       noTasksFound: "Topshiriqlar topilmadi",
       copySolution: "Yechimni nusxalash",
-      verterCheck: "Verter Tekshiruvi",
+      verterCheck: "Kodni tekshirish",
       verterGuide: "Verter Qo'llanmasi",
     },
     practice: {
@@ -191,7 +191,7 @@ export const translations = {
       topics: "Темы",
       noTasksFound: "Задания не найдены",
       copySolution: "Копировать решение",
-      verterCheck: "Проверка Вертером",
+      verterCheck: "Проверить код",
       verterGuide: "Гайд по Вертеру",
     },
     practice: {
@@ -314,7 +314,7 @@ export const translations = {
       topics: "Topics",
       noTasksFound: "No tasks found",
       copySolution: "Copy Solution",
-      verterCheck: "Verter Check",
+      verterCheck: "Check Code",
       verterGuide: "Verter Guide",
     },
     practice: {
