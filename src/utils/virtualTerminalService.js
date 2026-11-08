@@ -1,6 +1,6 @@
-import { formatCCode, checkCodeStyle } from './clangFormatService';
-import { runCppcheck } from './cppcheckService';
-import { executeCCode, evaluateWithVerter } from './cRunnerService';
+import { formatCCode, checkCodeStyle } from './clangFormatService.js';
+import { runCppcheck } from './cppcheckService.js';
+import { executeCCode, evaluateWithVerter } from './cRunnerService.js';
 
 /**
  * Virtual Linux / School 21 Shell Engine
@@ -97,6 +97,11 @@ export class VirtualShell {
       }
 
       case 'clang-format': {
+        const fileArgs = args.filter(a => !a.startsWith('-'));
+        if (fileArgs.length > 0 && !fileArgs.includes('main.c')) {
+          return [{ type: 'error', text: `clang-format: error: cannot find file '${fileArgs[0]}'` }];
+        }
+
         const isInPlace = args.includes('-i');
         const isCheckOnly = args.includes('-n');
 
@@ -122,6 +127,11 @@ export class VirtualShell {
       }
 
       case 'cppcheck': {
+        const fileArgs = args.filter(a => !a.startsWith('-') && a !== '.');
+        if (fileArgs.length > 0 && !fileArgs.includes('main.c')) {
+          return [{ type: 'error', text: `cppcheck: error: could not find or open file '${fileArgs[0]}'` }];
+        }
+
         const res = runCppcheck(this.getCode());
         return [
           { type: res.ok ? 'success' : 'warning', text: res.logs.join('\n') }
@@ -129,6 +139,38 @@ export class VirtualShell {
       }
 
       case 'gcc': {
+        // No input files provided (masalan shunchaki "gcc")
+        if (args.length === 0) {
+          return [{
+            type: 'error',
+            text: 'gcc: fatal error: no input files\ncompilation terminated.'
+          }];
+        }
+
+        // -o dan keyingi chiqish fayli nomini chetlatamiz
+        const outputIdx = args.indexOf('-o');
+        const fileArgs = args.filter((a, idx) => {
+          if (a.startsWith('-')) return false;
+          if (outputIdx !== -1 && idx === outputIdx + 1) return false;
+          return true;
+        });
+
+        if (fileArgs.length === 0) {
+          return [{
+            type: 'error',
+            text: 'gcc: fatal error: no input files\ncompilation terminated.'
+          }];
+        }
+
+        // Mavjud bo'lmagan fayl tekshiruvi (masalan "mian.c" yoki "test.c")
+        const nonExistentFile = fileArgs.find(f => f !== 'main.c');
+        if (nonExistentFile) {
+          return [{
+            type: 'error',
+            text: `gcc: error: ${nonExistentFile}: No such file or directory\ngcc: fatal error: no input files\ncompilation terminated.`
+          }];
+        }
+
         const currentCode = this.getCode();
 
         const execRes = await executeCCode(currentCode, '');
