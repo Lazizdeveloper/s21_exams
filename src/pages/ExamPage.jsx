@@ -287,19 +287,25 @@ export default function ExamPage() {
           <span>{t.actions.prev}</span>
         </button>
 
-        <button
-          type="button"
-          onClick={() => setCurrentIndex(prev => prev + 1)}
-          disabled={isLast}
-          className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white transition-all ${
-            isLast
-              ? 'opacity-40 cursor-not-allowed bg-slate-400'
-              : 'bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-500/20 hover:scale-105'
-          }`}
-        >
-          <span>{t.actions.next}</span>
-          <ChevronRight size={18} />
-        </button>
+        {isLast ? (
+          <button
+            type="button"
+            onClick={() => setIsConfirmOpen(true)}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-lg shadow-emerald-500/25 hover:scale-105 active:scale-95 transition-all"
+          >
+            <CheckCircle size={18} />
+            <span>{t.actions.finishExam || "Imtihonni topshirish"}</span>
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setCurrentIndex(prev => prev + 1)}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all"
+          >
+            <span>{t.actions.next}</span>
+            <ChevronRight size={18} />
+          </button>
+        )}
       </div>
 
       {/* Finish Confirmation Modal */}
